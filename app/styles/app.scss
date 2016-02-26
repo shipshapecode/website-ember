@@ -1,10 +1,10 @@
-@import 'ember-paper';
+@import 'mixins';
 
 $brown: #62514F;
 $cream: #F5F0E1;
 $darkBlue: #354952;
 $lightBlue: #82B4BC;
-$red : #E35746;
+$red: #E35746;
 $whiteish: #DFE6E9;
 
 // fonts
@@ -71,3 +71,21 @@ a {
   color: $red;
   background-color: $red;
 }
+
+.waves {
+  height: 200px;
+  margin-top: 50px;
+  @include jagged(354952, 40, top, false, outside);
+  &:before {
+    animation: wave 50s linear infinite;
+    @keyframes wave {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 100%;
+      }
+    }
+  }
+}
+
