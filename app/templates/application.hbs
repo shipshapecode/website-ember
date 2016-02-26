@@ -1,3 +1,15 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+{{#ember-3d-nav as |section selectedIndex navItemClicked|}}
+  {{#if (eq section 'header')}}
+    <a href="//shipshape.io" class="cd-logo"><img src="img/ShipShapeIcon.svg" alt="Logo"></a>
+  {{/if}}
+  {{#if (eq section 'main')}}
+    {{outlet}}
+  {{/if}}
+  {{#if (eq section 'nav-items')}}
+    {{#each links as |link index|}}
+      {{#nav-item index=index selectedIndex=selectedIndex onClickAction=navItemClicked}}
+        <a href="{{link.href}}">{{link.text}}</a>
+      {{/nav-item}}
+    {{/each}}
+  {{/if}}
+{{/ember-3d-nav}}
