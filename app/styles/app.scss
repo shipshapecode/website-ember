@@ -1,4 +1,5 @@
 @import 'mixins';
+@import 'fonts';
 
 $brown: #62514F;
 $cream: #F5F0E1;
@@ -115,6 +116,17 @@ a {
         //transform: rotate(-2deg);
       }
     }
+  }
+}
+
+.comingSoon {
+  color: $cream;
+  padding: 50px;
+  text-align: center;
+  h1 {
+    font-family: ThirstySoft, cursive;
+    font-size: 8vw;
+    margin: 0;
   }
 }
 
