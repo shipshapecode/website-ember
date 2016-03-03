@@ -1,0 +1,19 @@
+@import 'variables';
+
+.header {
+  margin: 0 auto;
+  width: 50vw;
+  color: $cream;
+  text-align: center;
+  .logo {
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  h1 {
+    font-family: ThirstySoft, cursive;
+    font-size: 8vw;
+    margin: 0;
+  }
+}

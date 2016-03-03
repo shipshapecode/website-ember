@@ -1,16 +1,10 @@
+@import 'ember-paper';
+@import 'variables';
 @import 'mixins';
 @import 'fonts';
+@import 'home';
+@import 'technologies';
 
-$brown: #62514F;
-$cream: #F5F0E1;
-$darkBlue: #354952;
-$lightBlue: #82B4BC;
-$red: #E35746;
-$whiteish: #DFE6E9;
-
-// fonts
-
-$primary-font: 'Open Sans', sans-serif;
 
 *, *::after, *::before {
   box-sizing: border-box;
@@ -25,6 +19,10 @@ body {
     size: 1.6rem;
     family: $primary-font; // variables inside partials > _variables.scss
   }
+  background-color: $lightBlue;
+}
+
+body > .ember-view{
   background-color: $lightBlue;
 }
 
@@ -118,15 +116,3 @@ a {
     }
   }
 }
-
-.comingSoon {
-  color: $cream;
-  padding: 50px;
-  text-align: center;
-  h1 {
-    font-family: ThirstySoft, cursive;
-    font-size: 8vw;
-    margin: 0;
-  }
-}
-
