@@ -6,9 +6,9 @@
     {{outlet}}
   {{/if}}
   {{#if (eq section 'nav-items')}}
-    {{#each links as |link index|}}
+    {{#each model.links as |link index|}}
       {{#nav-item index=index selectedIndex=selectedIndex onClickAction=navItemClicked}}
-        <a href="{{link.href}}">{{link.text}}</a>
+        {{#link-to link.linkTo}}{{link.text}}{{/link-to}}
       {{/nav-item}}
     {{/each}}
   {{/if}}
