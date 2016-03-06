@@ -1,7 +1,12 @@
 @import 'variables';
 @import 'mixins';
 @import 'fonts';
+
+//Pages
+@import 'contact';
 @import 'home';
+@import 'portfolio';
+@import 'team';
 @import 'technologies';
 
 
@@ -71,7 +76,6 @@ a {
 }
 
 .waves {
-  height: 200px;
   margin-top: 50px;
   @include jagged(354952, 40, top, false, outside);
   &:before {
@@ -114,4 +118,9 @@ a {
       }
     }
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $cream;
+  font-family: 'Signika', sans-serif;
 }

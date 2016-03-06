@@ -4,6 +4,7 @@
   {{/if}}
   {{#if (eq section 'main')}}
     {{outlet}}
+    <div class="waves"></div>
   {{/if}}
   {{#if (eq section 'nav-items')}}
     {{#each model.links as |link index|}}
