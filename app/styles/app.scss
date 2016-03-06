@@ -30,7 +30,7 @@ a {
 }
 
 .cd-3d-nav {
-  li {
+  centered {
     &:first-of-type a::before {
       background-image: url(../img/boat.svg);
     }
