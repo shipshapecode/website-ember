@@ -1,7 +1,14 @@
 @import 'variables';
 
 .technologies {
-  background-color: $lightBlue;
+  h1, h2, h3, h4, h5, h6 {
+    color: $whiteish;
+    font-family: 'Signika', sans-serif;
+  }
+  h1 {
+    font-size: 4rem;
+    margin: 25px 0 50px 0;
+  }
   .logo {
     height: auto;
     width: 100%;
