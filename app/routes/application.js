@@ -30,6 +30,6 @@ export default Ember.Route.extend({
           text: 'Contact'
         }
       ])
-    }
+    };
   }
 });
