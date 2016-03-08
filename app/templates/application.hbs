@@ -1,16 +1,16 @@
-{{#ember-3d-nav fixed=true totalNavItems=model.links.length as |section selectedIndex navItemClicked|}}
-  {{#if (eq section 'header')}}
-    <a href="//shipshape.io" class="cd-logo"><img src="img/ShipShapeIcon.svg" alt="Logo"></a>
-  {{/if}}
-  {{#if (eq section 'main')}}
-    {{outlet}}
-    <div class="waves"></div>
-  {{/if}}
-  {{#if (eq section 'nav-items')}}
-    {{#each model.links as |link index|}}
-      {{#nav-item index=index selectedIndex=selectedIndex onClickAction=navItemClicked}}
-        {{#link-to link.linkTo}}{{link.text}}{{/link-to}}
-      {{/nav-item}}
-    {{/each}}
-  {{/if}}
-{{/ember-3d-nav}}
+{{#nav-trigger-container fixed=true}}
+  <a href="//shipshape.io" class="cd-logo"><img src="img/ShipShapeIcon.svg" alt="Logo"></a>
+{{/nav-trigger-container}}
+
+<main>
+  {{outlet}}
+  <div class="waves"></div>
+</main>
+
+{{#nav-container totalNavItems=model.links.length}}
+  {{#each model.links as |link index|}}
+    {{#nav-item index=index}}
+      {{#link-to link.linkTo}}{{link.text}}{{/link-to}}
+    {{/nav-item}}
+  {{/each}}
+{{/nav-container}}
