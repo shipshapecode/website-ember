@@ -19,9 +19,18 @@
       }
     }
     h1 {
+      color: $cream;
       font-family: ThirstySoft, cursive;
       font-size: 6vw;
       margin: 0;
     }
+  }
+}
+
+.tagline {
+  h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 50px 25px;
   }
 }
