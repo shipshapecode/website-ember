@@ -1,14 +1,12 @@
 @import 'variables';
 @import 'mixins';
 @import 'fonts';
-
 //Pages
 @import 'contact';
 @import 'home';
 @import 'portfolio';
 @import 'team';
 @import 'technologies';
-
 
 *, *::after, *::before {
   box-sizing: border-box;
@@ -26,12 +24,22 @@ body {
   background-color: $lightBlue;
 }
 
-body > .ember-view{
+body > .ember-view {
   background-color: $lightBlue;
 }
 
 a {
   text-decoration: none;
+}
+
+.cd-header {
+  &.fixed {
+    transition: background-color 400ms ease;
+  }
+
+  &.fixed-and-scrolled {
+    background-color: $darkBlue;
+  }
 }
 
 .cd-3d-nav {
@@ -60,7 +68,6 @@ a {
 
 .cd-logo {
   float: left;
-  margin-top: 15px;
 
   img {
     height: auto;
