@@ -8,7 +8,7 @@ import TweenLite from 'tweenlite';
 export default Ember.Component.extend({
   layout,
   didInsertElement(){
-    Ember.run.scheduleOnce('afterRender', this, function(){
+    Ember.run.scheduleOnce('afterRender', this, function() {
       const paths = this.$('#Layer_7 path');
 
       paths.each(function(i, e) {
@@ -16,15 +16,14 @@ export default Ember.Component.extend({
       });
 
 
-
       const tl = new TimelineLite();
 
       tl.add([
-        TweenLite.from('#Layer_3', 2, {x:200}),
-        TweenLite.to(paths.eq(0), 1, {strokeDashoffset: 0, delay: 0.5}),
-        TweenLite.to(paths.eq(1), 1, {strokeDashoffset: 0, delay: 0.5}),
-        TweenLite.to(paths.eq(2), 1, {strokeDashoffset: 0, delay: 0.5}),
-        TweenLite.to(paths.eq(3), 1, {strokeDashoffset: 0, delay: 0.5})
+        TweenLite.from('#Layer_3', 1, {x: 200, delay: 1.7}),
+        TweenLite.to(paths.eq(0), 2, {strokeDashoffset: 0, delay: 0.5}),
+        TweenLite.to(paths.eq(1), 2, {strokeDashoffset: 0, delay: 0.5}),
+        TweenLite.to(paths.eq(2), 2, {strokeDashoffset: 0, delay: 0.5}),
+        TweenLite.to(paths.eq(3), 2, {strokeDashoffset: 0, delay: 0.5})
       ]);
     });
   }
