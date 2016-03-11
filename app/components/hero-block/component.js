@@ -15,9 +15,12 @@ export default Ember.Component.extend({
         e.style.strokeDasharray = e.style.strokeDashoffset = e.getTotalLength();
       });
 
+
+
       const tl = new TimelineLite();
 
       tl.add([
+        TweenLite.from('#Layer_3', 2, {x:200}),
         TweenLite.to(paths.eq(0), 1, {strokeDashoffset: 0, delay: 0.5}),
         TweenLite.to(paths.eq(1), 1, {strokeDashoffset: 0, delay: 0.5}),
         TweenLite.to(paths.eq(2), 1, {strokeDashoffset: 0, delay: 0.5}),
