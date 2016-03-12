@@ -1,4 +1,4 @@
-/* global TimelineLite */
+/* global SVGInjector, TimelineLite */
 
 import Ember from 'ember';
 import layout from './template';
@@ -12,7 +12,7 @@ export default Ember.Component.extend({
     const mySVGsToInject = document.querySelectorAll('img.svg-logo');
 
     // Trigger the injection
-    SVGInjector(mySVGsToInject, {}, () => {
+    new SVGInjector(mySVGsToInject, {}, () => {
       const paths = this.$('#Layer_7 path');
 
       paths.each(function(i, e) {
