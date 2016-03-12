@@ -2,10 +2,10 @@
   <a href="//shipshape.io" class="cd-logo"><img src="img/ShipShapeIcon.svg" alt="Logo"></a>
 {{/nav-trigger-container}}
 
-<main>
+<screen class="main">
   {{outlet}}
-  {{wave-footer}}
-</main>
+</screen>
+{{wave-footer}}
 
 {{#nav-container totalNavItems=model.links.length}}
   {{#each model.links as |link index|}}
