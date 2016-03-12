@@ -51,3 +51,18 @@
     }
   }
 }
+
+.process {
+  box {
+    padding: 20px;
+    text-align: center;
+    .heading {
+      font-size: 5rem;
+    }
+    .svg-icon {
+      height: 75px;
+      margin: 0 auto;
+      width: 75px;
+    }
+  }
+}

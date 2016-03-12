@@ -22,6 +22,8 @@ body {
     family: $primary-font; // variables inside partials > _variables.scss
   }
   background-color: $lightBlue;
+  color: $whiteish;
+  font-family: 'Signika', sans-serif;
 }
 
 body > .ember-view {
@@ -129,5 +131,4 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   color: $cream;
-  font-family: 'Signika', sans-serif;
 }

@@ -14,7 +14,6 @@ export default Ember.Component.extend({
     // Trigger the injection
     new SVGInjector(mySVGsToInject, {}, () => {
       const paths = this.$('#Strokes path');
-      debugger;
 
       paths.each(function(i, e) {
         e.style.strokeDasharray = e.style.strokeDashoffset = e.getTotalLength();

@@ -1,0 +1,11 @@
+<svg class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48"><g transform="translate(0, 0)">
+<path data-color="color-2" fill="none" stroke="#f5f0e1" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M2,38.2
+	c0,4.4,3.6,8,8,8c3,0,5.6-1.7,7-4.2c1.4,2.5,4,4.2,7,4.2s5.6-1.7,7-4.2c1.4,2.5,4,4.2,7,4.2c4.4,0,8-3.6,8-8" stroke-linejoin="miter"></path>
+<line data-color="color-2" fill="none" stroke="#f5f0e1" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="20" y1="6" x2="28" y2="6" stroke-linejoin="miter"></line>
+<polyline fill="none" stroke="#f5f0e1" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="20,12 20,2 28,2 
+	28,12 " stroke-linejoin="miter"></polyline>
+<path data-cap="butt" fill="none" stroke="#f5f0e1" stroke-width="2" stroke-miterlimit="10" d="M10,27.8V16c0-2.2,1.8-4,4-4h20
+	c2.2,0,4,1.8,4,4v11.8" stroke-linejoin="miter" stroke-linecap="butt"></path>
+<polyline fill="none" stroke="#f5f0e1" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="10,38 6,30 24,20 
+	42,30 38,38 " stroke-linejoin="miter"></polyline>
+</g></svg>
