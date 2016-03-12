@@ -8,7 +8,11 @@ import TweenLite from 'tweenlite';
 export default Ember.Component.extend({
   layout,
   didInsertElement(){
-    Ember.run.scheduleOnce('afterRender', this, function() {
+    // Elements to inject
+    const mySVGsToInject = document.querySelectorAll('img.svg-logo');
+
+    // Trigger the injection
+    SVGInjector(mySVGsToInject, {}, () => {
       const paths = this.$('#Layer_7 path');
 
       paths.each(function(i, e) {
@@ -26,5 +30,6 @@ export default Ember.Component.extend({
         TweenLite.to(paths.eq(3), 2, {strokeDashoffset: 0, delay: 0.5})
       ]);
     });
+
   }
 });

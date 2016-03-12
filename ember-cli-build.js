@@ -24,6 +24,7 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   app.import(app.bowerDirectory + '/gsap/src/uncompressed/TimelineLite.js');
+  app.import(app.bowerDirectory + '/svg-injector/svg-injector.js');
 
   return app.toTree();
 };
