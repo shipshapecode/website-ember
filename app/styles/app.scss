@@ -8,6 +8,8 @@
 @import 'team';
 @import 'technologies';
 
+@import "pod-styles";
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -82,51 +84,6 @@ a {
 .color-1 {
   color: $red;
   background-color: $red;
-}
-
-.waves {
-  margin-top: 50px;
-  @include jagged(354952, 40, top, false, outside);
-  &:before {
-    animation: wave 30s linear infinite;
-    @keyframes wave {
-      0% {
-        background-position: 0%;
-        //transform: rotate(0deg);
-      }
-      /*10% {
-        transform: rotate(2deg);
-      }
-      20% {
-        transform: rotate(-2deg);
-      }
-      30% {
-        transform: rotate(0deg);
-      }
-      40% {
-        transform: rotate(2deg);
-      }
-      50% {
-        transform: rotate(0deg);
-      }
-      60% {
-        transform: rotate(-2deg);
-      }
-      70% {
-        transform: rotate(0deg);
-      }
-      80% {
-        transform: rotate(2deg);
-      }
-      90% {
-        transform: rotate(0deg);
-      }*/
-      100% {
-        background-position: 100%;
-        //transform: rotate(-2deg);
-      }
-    }
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {

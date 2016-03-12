@@ -1,12 +1,9 @@
 /* global SVGInjector, TimelineLite */
 
 import Ember from 'ember';
-import layout from './template';
 import TweenLite from 'tweenlite';
 
-
 export default Ember.Component.extend({
-  layout,
   didInsertElement(){
     // Elements to inject
     const mySVGsToInject = document.querySelectorAll('img.svg-logo');

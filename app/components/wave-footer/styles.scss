@@ -1,0 +1,36 @@
+.footer {
+  background-color: $darkBlue;
+  margin-top: 50px;
+  min-height: 100px;
+  padding: 25px;
+  @include jagged(354952, 40, top, fill, outside);
+  a {
+    &:active {
+      color: $whiteish;
+    }
+    &:hover, & > i:hover {
+      color: $red;
+      cursor: pointer;
+    }
+    &:visited {
+      color: $whiteish;
+    }
+  }
+  i {
+    padding: 10px;
+  }
+
+  &:before {
+    animation: wave 30s linear infinite;
+    @keyframes wave {
+      0% {
+        background-position: 0%;
+        //transform: rotate(0deg);
+      }
+      100% {
+        background-position: 100%;
+        //transform: rotate(-2deg);
+      }
+    }
+  }
+}
