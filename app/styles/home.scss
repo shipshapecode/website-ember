@@ -8,16 +8,13 @@
   width: 100vw;
   .inner {
     color: $cream;
-    margin-left: auto;
-    margin-right: auto;
     padding: 80px 15vw;
     text-align: center;
-    .logo {
-      svg {
-        height: auto;
-        width: 100%;
-      }
+    svg {
+      height: auto;
+      width: 100%;
     }
+
     h1 {
       color: $cream;
       font-family: ThirstySoft, cursive;
