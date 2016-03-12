@@ -6,28 +6,28 @@ export default Ember.Route.extend({
       links: Ember.A([
         {
           linkTo: 'home',
-          selected: true,
-          text: 'Home'
+          text: 'Home',
+          type: 'linkTo'
         },
         {
           linkTo: 'technologies',
-          selected: false,
-          text: 'Technologies'
+          text: 'Technologies',
+          type: 'linkTo'
         },
         {
           linkTo: 'team',
-          selected: false,
-          text: 'Team'
+          text: 'Team',
+          type: 'linkTo'
         },
         {
           linkTo: 'portfolio',
-          selected: false,
-          text: 'Portfolio'
+          text: 'Portfolio',
+          type: 'linkTo'
         },
         {
           linkTo: 'contact',
-          selected: false,
-          text: 'Contact'
+          text: 'Contact',
+          type: 'linkTo'
         }
       ])
     };

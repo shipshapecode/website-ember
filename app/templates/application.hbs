@@ -9,8 +9,6 @@
 
 {{#nav-container totalNavItems=model.links.length}}
   {{#each model.links as |link index|}}
-    {{#nav-item index=index}}
-      {{#link-to link.linkTo}}{{link.text}}{{/link-to}}
-    {{/nav-item}}
+    {{nav-item index=index link=link}}
   {{/each}}
 {{/nav-container}}
