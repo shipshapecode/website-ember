@@ -15,8 +15,8 @@ export default Ember.Route.extend({
           type: 'linkTo'
         },
         {
-          linkTo: 'team',
-          text: 'Team',
+          linkTo: 'blog',
+          text: 'Blog',
           type: 'linkTo'
         },
         {

@@ -8,9 +8,10 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('home', {path: '/'});
   this.route('technologies');
-  this.route('team');
   this.route('portfolio');
   this.route('contact');
+  this.foute('blog', 'http://blog.shipshape.io');
+  this.route('team');
 });
 
 export default Router;
