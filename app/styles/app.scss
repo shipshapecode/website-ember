@@ -7,7 +7,14 @@
 @import 'portfolio';
 @import 'team';
 @import 'technologies';
-@import "pod-styles";
+@import 'pod-styles';
+
+//3rd party
+//Ember-3d-nav variables
+$text-color: $cream;
+$body-bg: $lightBlue;
+$fixed-color: $darkBlue;
+@import 'ember-3d-nav';
 
 *, *::after, *::before {
   box-sizing: border-box;
@@ -35,7 +42,7 @@ a {
   text-decoration: none;
 }
 
-.cd-header {
+.header {
   &.fixed {
     transition: background-color 400ms ease;
   }
@@ -45,8 +52,21 @@ a {
   }
 }
 
-.cd-3d-nav {
+.ember-3d-nav {
+  background-color: $nav-bg;
   centered {
+    a {
+      &:hover {
+        background-color: darken($body-bg, 15%);
+      }
+    }
+    &.is-selected a {
+      background-color: darken($body-bg, 20%);
+
+      &:hover {
+        background-color: darken($body-bg, 20%);
+      }
+    }
     &:first-of-type a::before {
       background-image: url(../img/boat.svg);
     }
@@ -69,7 +89,7 @@ a {
   }
 }
 
-.cd-logo {
+.logo {
   float: left;
 
   img {
