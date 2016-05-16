@@ -2,6 +2,12 @@
 
 .technologies {
   padding-top: 100px;
+  grid {
+    padding: 0 10%;
+    centered {
+      padding: 0 20px;
+    }
+  }
   h1 {
     color: $whiteish;
     font-size: 4rem;
