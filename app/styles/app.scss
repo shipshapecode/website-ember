@@ -108,18 +108,3 @@ a {
 h1, h2, h3, h4, h5, h6 {
   color: $cream;
 }
-
-.foute-container {
-  margin-top: 110px;
-  position: relative;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex: 1 0 auto;
-  max-width: 100vw;
-  min-width: 100vw;
-  min-height: 100vh;
-  .foute-iframe {
-    flex: 1 0 auto;
-  }
-}

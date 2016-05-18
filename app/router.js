@@ -10,7 +10,6 @@ Router.map(function() {
   this.route('technologies');
   this.route('portfolio');
   this.route('contact');
-  this.foute('blog', 'http://blog.shipshape.io');
   this.route('team');
 });
 

@@ -15,9 +15,9 @@ export default Ember.Route.extend({
           type: 'linkTo'
         },
         {
-          linkTo: 'blog',
+          href: 'http://blog.shipshape.io',
           text: 'Blog',
-          type: 'linkTo'
+          type: 'href'
         },
         {
           linkTo: 'portfolio',
