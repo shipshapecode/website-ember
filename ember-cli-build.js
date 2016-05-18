@@ -7,7 +7,9 @@ shim(EmberApp);
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    // Add options here
+    'ember-font-awesome': {
+      useScss: true
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
