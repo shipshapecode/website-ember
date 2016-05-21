@@ -28,11 +28,10 @@ html {
 body {
   font: {
     size: 1.6rem;
-    family: $primary-font; // variables inside partials > _variables.scss
   }
   background-color: $lightBlue;
   color: $whiteish;
-  font-family: 'Signika', sans-serif;
+  font-family: 'Pier Sans', sans-serif;
 }
 
 body > .ember-view {

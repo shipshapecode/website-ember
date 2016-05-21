@@ -30,6 +30,47 @@
 
 @import url(https://fonts.googleapis.com/css?family=Signika|Pacifico|Source+Sans+Pro:400,300);
 
+@font-face {
+  font-family: 'Pier Sans';
+  src: url('../../fonts/PierSans-BoldItalic.eot');
+  src: url('../../fonts/PierSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/PierSans-BoldItalic.woff') format('woff'),
+  url('../../fonts/PierSans-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Pier Sans';
+  src: url('../../fonts/PierSans-Italic.eot');
+  src: url('../../fonts/PierSans-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/PierSans-Italic.woff') format('woff'),
+  url('../../fonts/PierSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Pier Sans';
+  src: url('../../fonts/PierSans.eot');
+  src: url('../../fonts/PierSans.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/PierSans.woff') format('woff'),
+  url('../../fonts/PierSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pier Sans';
+  src: url('../../fonts/PierSans-Bold.eot');
+  src: url('../../fonts/PierSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/PierSans-Bold.woff') format('woff'),
+  url('../../fonts/PierSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 
 @font-face {font-family: 'ThirstySoft';src: url('../../fonts/307BC7_0_0.eot');src: url('../../fonts/307BC7_0_0.eot?#iefix') format('embedded-opentype'),url('../../fonts/307BC7_0_0.woff2') format('woff2'),url('../../fonts/307BC7_0_0.woff') format('woff'),url('../../fonts/307BC7_0_0.ttf') format('truetype'),url('../../fonts/307BC7_0_0.svg#wf') format('svg');}
 

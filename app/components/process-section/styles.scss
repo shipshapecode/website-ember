@@ -3,22 +3,29 @@
     padding: 20px;
     text-align: center;
     .heading {
-      font-size: 5rem;
+      font: {
+        size: 5rem;
+        weight: bold;
+      }
+      padding: 10px;
+      text-transform: uppercase;
     }
     .sub-heading {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      font-weight: bold;
       padding: 5px;
     }
     .info {
-      font-family: 'Source Sans Pro', sans-serif;
-      font-size: 2.2rem;
-      font-weight: 300;
+      font-size: 2rem;
+      font-weight: normal;
+      line-height: 22px;
       padding: 20px;
     }
     .svg-icon {
-      height: 75px;
+      height: 100px;
       margin: 0 auto;
-      width: 75px;
+      padding: 10px;
+      width: 100px;
     }
   }
 }
