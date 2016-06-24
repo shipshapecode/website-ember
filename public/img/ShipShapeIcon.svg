@@ -7,13 +7,13 @@
 <g id="Layer_1">
 </g>
 <g id="Layer_5">
-	<path fill="none" stroke="#354952" stroke-width="7" stroke-miterlimit="10" d="M328.21,23.694
+	<path fill="none" stroke="#35858B" stroke-width="7" stroke-miterlimit="10" d="M328.21,23.694
 		c-168.185,0-304.524,136.331-304.524,304.514c0,168.185,136.339,304.522,304.524,304.522
 		c168.191,0,304.523-136.338,304.523-304.522C632.733,160.024,496.401,23.694,328.21,23.694z"/>
-	<path fill="none" stroke="#354952" stroke-width="4" stroke-miterlimit="10" stroke-dasharray="3.5569" d="M328.21,2
+	<path fill="none" stroke="#35858B" stroke-width="4" stroke-miterlimit="10" stroke-dasharray="3.5569" d="M328.21,2
 		C148.049,2,2,148.049,2,328.208c0,180.171,146.049,326.215,326.21,326.215c180.164,0,326.212-146.044,326.212-326.215
 		C654.423,148.049,508.374,2,328.21,2z"/>
-	<path fill="none" stroke="#354952" stroke-width="7" stroke-miterlimit="10" d="M328.824,51.785
+	<path fill="none" stroke="#35858B" stroke-width="7" stroke-miterlimit="10" d="M328.824,51.785
 		c-152.91,0-276.867,123.949-276.867,276.858c0,152.91,123.957,276.865,276.867,276.865c152.916,0,276.866-123.955,276.866-276.865
 		C605.689,175.734,481.739,51.785,328.824,51.785z"/>
 </g>
@@ -149,7 +149,7 @@
 		<polygon points="279.438,198.846 288.457,193.959 316.943,195.597 305.34,198.396 		"/>
 	</g>
 	<text transform="matrix(1 0 0 1 121.0737 397.3213)" display="inline" font-family="'LocalBrewery-Regular'" font-size="193.7149">S</text>
-	
+
 		<text transform="matrix(1 0 0 1 451.3076 397.3223)" display="inline" font-family="'LocalBreweryTwo-Regular'" font-size="193.7149">S</text>
 </g>
 <g id="Layer_6">
@@ -447,11 +447,11 @@
 	</g>
 </g>
 <g id="Layer_7" display="none">
-	
+
 		<text transform="matrix(0.9844 -0.176 0.176 0.9844 245.4268 454.3896)" display="inline" fill="#F5F0E1" font-family="'LocalBreweryTwo-Regular'" font-size="173.8399">hape</text>
-	
+
 		<text transform="matrix(0.9844 -0.176 0.176 0.9844 269.8345 317.8989)" display="inline" fill="#F5F0E1" font-family="'LocalBreweryTwo-Regular'" font-size="173.8399">hip</text>
-	
+
 		<text transform="matrix(0.9939 -0.1101 0.1101 0.9939 107.8965 442.3398)" display="inline" fill="#F5F0E1" font-family="'LocalBreweryTwo-Regular'" font-size="328.1087">S</text>
 	<g display="inline">
 		<g>
@@ -587,9 +587,9 @@
 <g id="Layer_3" display="none">
 </g>
 <g id="Layer_4" display="none">
-	
+
 		<line display="inline" stroke="#000000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="144.564" y1="514.476" x2="514.722" y2="144.306"/>
-	
+
 		<line display="inline" stroke="#000000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="514.722" y1="515.253" x2="143.858" y2="144.306"/>
 </g>
 </svg>

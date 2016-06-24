@@ -13,8 +13,9 @@
 //3rd party
 //Ember-3d-nav variables
 $text-color: $cream;
-$body-bg: $lightBlue;
-$fixed-color: $darkBlue;
+$body-bg: $background;
+$fixed-color: $waveBlue;
+$nav-bg: $navBar;
 @import 'ember-3d-nav';
 
 *, *::after, *::before {
@@ -29,13 +30,13 @@ body {
   font: {
     size: 1.6rem;
   }
-  background-color: $lightBlue;
+  background-color: $background;
   color: $whiteish;
   font-family: 'Pier Sans', sans-serif;
 }
 
 body > .ember-view {
-  background-color: $lightBlue;
+  background-color: $background;
 }
 
 a {
@@ -48,7 +49,7 @@ a {
   }
 
   &.fixed-and-scrolled {
-    background-color: $darkBlue;
+    background-color: $waveBlue;
   }
 }
 
@@ -57,14 +58,14 @@ a {
   centered {
     a {
       &:hover {
-        background-color: darken($body-bg, 15%);
+        background-color: darken($nav-bg, 2%);
       }
     }
     &.is-selected a {
-      background-color: darken($body-bg, 20%);
+      background-color: darken($nav-bg, 5%);
 
       &:hover {
-        background-color: darken($body-bg, 20%);
+        background-color: darken($nav-bg, 5%);
       }
     }
     &:first-of-type a::before {
