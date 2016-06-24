@@ -8,16 +8,16 @@
 <desc>Created with Sketch.</desc>
 <g transform="translate(0, 0)">
 
-		<line fill="none" stroke="#35858B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16" y1="6.402" x2="16" y2="30.692"/>
+		<line fill="none" stroke="#183C3F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16" y1="6.402" x2="16" y2="30.692"/>
 
-		<circle fill="none" stroke="#35858B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="16" cy="3.703" r="2.699"/>
+		<circle fill="none" stroke="#183C3F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="16" cy="3.703" r="2.699"/>
 
-		<line fill="none" stroke="#35858B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="11.952" y1="10.45" x2="20.049" y2="10.45"/>
-	<path fill="none" stroke="#35858B" stroke-width="2" stroke-miterlimit="10" d="M26.795,24.08
+		<line fill="none" stroke="#183C3F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="11.952" y1="10.45" x2="20.049" y2="10.45"/>
+	<path fill="none" stroke="#183C3F" stroke-width="2" stroke-miterlimit="10" d="M26.795,24.08
 		c-2.023,3.913-6.072,6.612-10.795,6.612c-4.723,0-8.771-2.699-10.795-6.612"/>
-	<polyline fill="none" stroke="#35858B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="5.205,29.343
+	<polyline fill="none" stroke="#183C3F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="5.205,29.343
 		5.205,23.945 10.603,23.945 	"/>
-	<polyline fill="none" stroke="#35858B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="21.398,23.945
+	<polyline fill="none" stroke="#183C3F" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="21.398,23.945
 		26.795,23.945 26.795,29.343 	"/>
 </g>
 <title>icon-1</title>
