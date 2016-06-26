@@ -1,6 +1,6 @@
 /* jshint node: true */
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   var ENV = {
     modulePrefix: 'website',
     environment: environment,
@@ -16,6 +16,12 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    firebase: {
+      apiKey: "AIzaSyAUTGQVHJmAD_XtrC_m_xAQ_NSGQIW3jeE",
+      authDomain: "shipshape.firebaseapp.com",
+      databaseURL: "https://shipshape.firebaseio.com",
+      storageBucket: "project-6663340002093576455.appspot.com"
     }
   };
 
