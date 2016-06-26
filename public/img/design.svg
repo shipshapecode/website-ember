@@ -1,14 +1,14 @@
 <svg id="design-svg" class="nc-icon outline" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48"><g transform="translate(0, 0)">
-<line data-cap="butt" data-color="color-2" fill="none" stroke="#3C5658" stroke-width="2" stroke-miterlimit="10" x1="8" y1="16" x2="16" y2="8" stroke-linejoin="miter" stroke-linecap="butt"></line>
-<line data-cap="butt" data-color="color-2" fill="none" stroke="#3C5658" stroke-width="2" stroke-miterlimit="10" x1="42" y1="34" x2="34" y2="42" stroke-linejoin="miter" stroke-linecap="butt"></line>
-<polyline data-color="color-2" fill="none" stroke="#3C5658" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#5F888B" stroke-width="2" stroke-miterlimit="10" x1="8" y1="16" x2="16" y2="8" stroke-linejoin="miter" stroke-linecap="butt"></line>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#5F888B" stroke-width="2" stroke-miterlimit="10" x1="42" y1="34" x2="34" y2="42" stroke-linejoin="miter" stroke-linecap="butt"></line>
+<polyline data-color="color-2" fill="none" stroke="#5F888B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
 	25,33 34,42 44,44 42,34 33,25 " stroke-linejoin="miter"></polyline>
-<polyline data-color="color-2" fill="none" stroke="#3C5658" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="23,15
+<polyline data-color="color-2" fill="none" stroke="#5F888B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="23,15
 	12,4 4,12 15,23 " stroke-linejoin="miter"></polyline>
-<polygon fill="none" stroke="#3C5658" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="14,44 4,34 34,4
+<polygon fill="none" stroke="#5F888B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="14,44 4,34 34,4
 	34,4 44,14 " stroke-linejoin="miter"></polygon>
-<line fill="none" stroke="#3C5658" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="22" y1="16" x2="24" y2="18" stroke-linejoin="miter"></line>
-<line fill="none" stroke="#3C5658" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="28" y1="10" x2="32" y2="14" stroke-linejoin="miter"></line>
-<line fill="none" stroke="#3C5658" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16" y1="22" x2="20" y2="26" stroke-linejoin="miter"></line>
-<line fill="none" stroke="#3C5658" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="28" x2="12" y2="30" stroke-linejoin="miter"></line>
+<line fill="none" stroke="#5F888B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="22" y1="16" x2="24" y2="18" stroke-linejoin="miter"></line>
+<line fill="none" stroke="#5F888B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="28" y1="10" x2="32" y2="14" stroke-linejoin="miter"></line>
+<line fill="none" stroke="#5F888B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16" y1="22" x2="20" y2="26" stroke-linejoin="miter"></line>
+<line fill="none" stroke="#5F888B" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="28" x2="12" y2="30" stroke-linejoin="miter"></line>
 </g></svg>
