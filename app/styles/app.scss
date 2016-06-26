@@ -15,7 +15,7 @@
 $text-color: $cream;
 $body-bg: $background;
 $fixed-color: $waveBlue;
-$nav-bg: $navBar;
+$nav-bg: $darkNavBar;
 @import 'ember-3d-nav';
 
 *, *::after, *::before {
@@ -33,10 +33,6 @@ body {
   background-color: $background;
   color: $whiteish;
   font-family: 'Pier Sans', sans-serif;
-}
-
-body > .ember-view {
-  background-color: $background;
 }
 
 a {
@@ -58,14 +54,14 @@ a {
   centered {
     a {
       &:hover {
-        background-color: $darkNavBar;
+        background-color: lighten($darkNavBar, 5%);
       }
     }
     &.is-selected a {
-      background-color: $darkNavBar;
+      background-color: lighten($darkNavBar, 5%);
 
       &:hover {
-        background-color: $darkNavBar;
+        background-color: lighten($darkNavBar, 5%);
       }
     }
     &:first-of-type a::before {
