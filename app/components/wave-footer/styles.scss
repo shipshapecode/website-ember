@@ -4,18 +4,6 @@
   min-height: 100px;
   padding: 25px;
   @include jagged(35858B, 40, top, fill, outside);
-  a {
-    &:active {
-      color: $whiteish;
-    }
-    &:hover, & > i:hover {
-      color: $lightBlue;
-      cursor: pointer;
-    }
-    &:visited {
-      color: $whiteish;
-    }
-  }
   i {
     padding: 10px;
   }

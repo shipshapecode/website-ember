@@ -12,7 +12,8 @@
         </hbox>
         <hbox>
           <centered>
-            Stars: {{project.stars}}
+            {{fa-icon 'star' size='lg'}} <span class="stars">{{project.stars}}</span>
+            <a href="https://github.com/shipshapecode/{{project.repo}}">{{fa-icon "github-alt" size='lg'}}</a>
           </centered>
         </hbox>
       </vbox>

@@ -37,6 +37,16 @@ body {
 
 a {
   text-decoration: none;
+  &:active {
+    color: $whiteish;
+  }
+  &:hover, & > i:hover {
+    color: $lightBlue;
+    cursor: pointer;
+  }
+  &:visited {
+    color: $whiteish;
+  }
 }
 
 .header {
