@@ -1,0 +1,22 @@
+<centered>
+  <h1>Ember Addons</h1>
+</centered>
+<grid>
+  {{#each projects as |project|}}
+    <centered xs="12" sm="6" md="4">
+      <vbox>
+        <hbox>
+          <centered>
+            <h2>{{project.name}}</h2>
+          </centered>
+        </hbox>
+        <hbox>
+          <centered>
+            Stars: {{project.stars}}
+          </centered>
+        </hbox>
+      </vbox>
+    </centered>
+  {{/each}}
+</grid>
+
