@@ -1,5 +1,3 @@
-import Ember from 'ember';
-
 export function initialize(appInstance) {
   const meta = appInstance.lookup('service:meta');
   meta.reopen({
