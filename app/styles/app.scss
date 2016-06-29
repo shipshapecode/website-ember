@@ -13,8 +13,9 @@
 //3rd party
 //Ember-3d-nav variables
 $text-color: $cream;
-$body-bg: $lightBlue;
-$fixed-color: $darkBlue;
+$body-bg: $background;
+$fixed-color: $waveBlue;
+$nav-bg: $darkNavBar;
 @import 'ember-3d-nav';
 
 *, *::after, *::before {
@@ -29,17 +30,23 @@ body {
   font: {
     size: 1.6rem;
   }
-  background-color: $lightBlue;
+  background-color: $background;
   color: $whiteish;
   font-family: 'Pier Sans', sans-serif;
 }
 
-body > .ember-view {
-  background-color: $lightBlue;
-}
-
 a {
   text-decoration: none;
+  &:active {
+    color: $whiteish;
+  }
+  &:hover, & > i:hover {
+    color: $lightBlue;
+    cursor: pointer;
+  }
+  &:visited {
+    color: $whiteish;
+  }
 }
 
 .header {
@@ -48,7 +55,7 @@ a {
   }
 
   &.fixed-and-scrolled {
-    background-color: $darkBlue;
+    background-color: $waveBlue;
   }
 }
 
@@ -57,14 +64,14 @@ a {
   centered {
     a {
       &:hover {
-        background-color: darken($body-bg, 15%);
+        background-color: lighten($darkNavBar, 5%);
       }
     }
     &.is-selected a {
-      background-color: darken($body-bg, 20%);
+      background-color: lighten($darkNavBar, 5%);
 
       &:hover {
-        background-color: darken($body-bg, 20%);
+        background-color: lighten($darkNavBar, 5%);
       }
     }
     &:first-of-type a::before {
@@ -101,10 +108,14 @@ a {
 /* these are the colors of the markers - line + arrow */
 
 .color-1 {
-  color: $red;
-  background-color: $red;
+  color: $lightBlue;
+  background-color: $lightBlue;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $cream;
+h1, h2 {
+  color: $waveBlue;
+}
+
+h3, h4, h5, h6 {
+  color: $navBar;
 }
