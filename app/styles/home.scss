@@ -1,53 +1,56 @@
 @import 'variables';
 
-.hero {
-  background: url(../img/ocean.jpg) no-repeat bottom center;
-  background-size: cover;
-  min-height: 100vh;
-  padding-bottom: 25px;
-  width: 100vw;
-  .inner {
-    color: $cream;
-    padding: 80px 15vw;
-    text-align: center;
-    .svg-logo {
-      height: auto;
-      width: 100%;
-    }
-
-    h1 {
+.home {
+  background-color: $cream;
+  .hero {
+    background: url(../img/ocean.jpg) no-repeat bottom center;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 25px;
+    width: 100vw;
+    .inner {
       color: $cream;
-      font-family: ThirstySoft, cursive;
-      font-size: 6vw;
-      margin: 0;
+      padding: 80px 15vw;
+      text-align: center;
+      .svg-logo {
+        height: auto;
+        width: 100%;
+      }
+
+      h1 {
+        color: $cream;
+        font-family: ThirstySoft, cursive;
+        font-size: 6vw;
+        margin: 0;
+      }
     }
   }
-}
 
-.tagline {
-  background-color: $background;
-  text-align: center;
-  .element {
-    color: $whiteish;
-    font-family: 'Signika', sans-serif;
-    font-size: 4rem;
-    margin: 0;
-    padding: 50px 25px;
-  }
-  .typed-cursor {
-    color: $whiteish;
-    font-size: 4rem;
-    opacity: 1;
-    animation: blink 0.7s infinite;
-    @keyframes blink {
-      0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
+  .tagline {
+    background-color: $background;
+    text-align: center;
+    .element {
+      color: $whiteish;
+      font-family: 'Signika', sans-serif;
+      font-size: 4rem;
+      margin: 0;
+      padding: 50px 25px;
+    }
+    .typed-cursor {
+      color: $whiteish;
+      font-size: 4rem;
+      opacity: 1;
+      animation: blink 0.7s infinite;
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
     }
   }
