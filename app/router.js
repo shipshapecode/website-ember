@@ -7,10 +7,9 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('home', {path: '/'});
-  this.route('technologies');
-  this.route('portfolio');
   this.route('contact');
-  this.route('team');
+  this.route('ember-consulting');
+  this.route('open-source');
 });
 
 export default Router;

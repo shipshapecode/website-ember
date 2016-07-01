@@ -1,33 +1,34 @@
 import Ember from 'ember';
+const {A, Route} = Ember;
 
-export default Ember.Route.extend({
+export default Route.extend({
   model() {
     return {
-      links: Ember.A([
+      links: A([
         {
           linkTo: 'home',
           text: 'Home',
           type: 'linkTo'
         },
         {
-          linkTo: 'technologies',
-          text: 'Technologies',
+          linkTo: 'ember-consulting',
+          text: 'Ember Consulting',
           type: 'linkTo'
         },
         {
-          href: 'http://blog.shipshape.io',
-          text: 'Blog',
-          type: 'href'
-        },
-        {
-          linkTo: 'portfolio',
-          text: 'Portfolio',
+          linkTo: 'open-source',
+          text: 'Open Source',
           type: 'linkTo'
         },
         {
           linkTo: 'contact',
           text: 'Contact',
           type: 'linkTo'
+        },
+        {
+          href: 'http://blog.shipshape.io',
+          text: 'Blog',
+          type: 'href'
         }
       ])
     };

@@ -7,9 +7,8 @@ export default Route.extend({
   },
   afterModel() {
     this.get('meta').update({
-      title: 'Portfolio',
-      description: 'We have created several Ember addons and collaborated extensively with the Ember community. ' +
-      'We have also worked on several ambitious, full scale apps for various companies.',
+      title: 'Open Source',
+      description: 'We have created several Ember addons and collaborated extensively with the Ember community.',
       'og:title': 'Ship Shape - Portfolio',
       'og:type': 'website',
       'og:image': 'http://shipshape.io/img/ShipShapeIcon.svg',
