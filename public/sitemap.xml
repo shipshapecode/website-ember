@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-<url>
-  <loc>http://shipshape.io/</loc>
-  <lastmod>2016-05-22T12:21:10+00:00</lastmod>
-</url>
-<url>
-    <loc>http://shipshape.io/technologies</loc>
-    <lastmod>2016-05-22T12:21:10+00:00</lastmod>
-</url>
-<url>
-    <loc>http://shipshape.io/portfolio</loc>
-    <lastmod>2016-05-22T12:21:10+00:00</lastmod>
-</url>
-<url>
+  <url>
+    <loc>http://shipshape.io/</loc>
+    <lastmod>2016-07-01T12:21:10+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://shipshape.io/ember-consulting</loc>
+    <lastmod>2016-07-01T12:21:10+00:00</lastmod>
+  </url>
+  <url>
+    <loc>http://shipshape.io/open-source</loc>
+    <lastmod>2016-07-01T12:21:10+00:00</lastmod>
+  </url>
+  <url>
     <loc>http://shipshape.io/contact</loc>
-    <lastmod>2016-05-22T12:21:10+00:00</lastmod>
-</url>
+    <lastmod>2016-07-01T12:21:10+00:00</lastmod>
+  </url>
 </urlset>
