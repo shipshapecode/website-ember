@@ -56,6 +56,7 @@
     "ember-vivus": "0.0.3",
     "emberfire": "2.0.0",
     "flexi": "1.1.8",
+    "liquid-fire": "0.23.1",
     "loader.js": "^4.0.4"
   }
 }
