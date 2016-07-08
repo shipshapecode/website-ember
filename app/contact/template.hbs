@@ -1,5 +1,54 @@
 <div class="contact-container">
   <centered>
-    <h1>We will be available for work soon!</h1>
+    <h1>Contact Us</h1>
   </centered>
+  <form class="cd-form floating-labels">
+    <fieldset>
+      <centered xs="12">
+        {{contact-input
+        fieldName="name"
+        labelText="Name"
+        required=true
+        type="text"
+        value=name
+        }}
+      </centered>
+
+      <centered xs="12">
+        {{contact-input
+        fieldName="company"
+        labelText="Company"
+        required=false
+        type="text"
+        value=company
+        }}
+      </centered>
+
+      <centered xs="12">
+        {{contact-input
+        fieldName="email"
+        labelText="Email"
+        required=true
+        type="email"
+        value=email
+        }}
+      </centered>
+    </fieldset>
+
+    <fieldset>
+      <centered xs="12">
+        {{contact-input
+        fieldName="textarea"
+        labelText="Project description"
+        required=true
+        textarea=true
+        value=description
+        }}
+      </centered>
+    </fieldset>
+
+    <div>
+      <input type="submit" value="Send Message">
+    </div>
+  </form>
 </div>
