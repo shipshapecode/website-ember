@@ -21,6 +21,7 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "ember-3d-nav": "0.0.19",
+    "ember-animatable": "1.0.0",
     "ember-body-class": "0.3.9",
     "ember-browserify": "1.1.9",
     "ember-cli": "2.6.0-beta.3",
@@ -47,7 +48,7 @@
     "ember-load": "0.0.9",
     "ember-load-initializers": "^0.5.1",
     "ember-math-helpers": "1.0.1",
-    "ember-meta-meta": "0.2.0",
+    "ember-meta-meta": "0.3.1",
     "ember-newton-cradle-loader": "0.0.0",
     "ember-pagefront": "0.11.1",
     "ember-resolver": "^2.0.3",

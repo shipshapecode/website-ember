@@ -7,6 +7,9 @@ shim(EmberApp);
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    'ember-animatable': {
+      include: ['bounceIn']
+    },
     'ember-font-awesome': {
       useScss: true
     }

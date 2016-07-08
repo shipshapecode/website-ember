@@ -12,6 +12,7 @@
     "svg-injector": "^1.1.3",
     "font-awesome": "~4.5.0",
     "vivus": "0.3.0",
-    "firebase": "^3.0.0"
+    "firebase": "^3.0.0",
+    "animate.css": "~3.4.0"
   }
 }
