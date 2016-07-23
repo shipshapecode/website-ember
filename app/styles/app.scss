@@ -12,10 +12,16 @@
 
 //3rd party
 //Ember-3d-nav variables
-$text-color: $cream;
-$body-bg: $background;
-$fixed-color: $waveBlue;
-$nav-bg: $darkNavBar;
+$ember-3d-nav: (
+  'is-fixed-nav-bg': $waveBlue,
+  'nav-bg': $darkNavBar,
+  'nav-items': 5,
+  'nav-item-hover': lighten($darkNavBar, 5%),
+  'nav-item-selected': lighten($darkNavBar, 5%),
+  'nav-text-color': $cream,
+  'nav-trigger-color': $cream
+);
+
 @import 'ember-3d-nav';
 
 *, *::after, *::before {
@@ -60,20 +66,7 @@ a {
 }
 
 .ember-3d-nav {
-  background-color: $nav-bg;
   centered {
-    a {
-      &:hover {
-        background-color: lighten($darkNavBar, 5%);
-      }
-    }
-    &.is-selected a {
-      background-color: lighten($darkNavBar, 5%);
-
-      &:hover {
-        background-color: lighten($darkNavBar, 5%);
-      }
-    }
     &:first-of-type a::before {
       background-image: url(../img/boat.svg);
     }
