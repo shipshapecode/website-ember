@@ -1,5 +1,5 @@
 import Ember from 'ember';
-const {A, Route} = Ember;
+const { A, Route } = Ember;
 
 export default Route.extend({
   model() {

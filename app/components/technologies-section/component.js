@@ -1,8 +1,9 @@
 import Ember from 'ember';
 import InViewportMixin from 'ember-in-viewport';
 import AnimatableMixin from 'ember-animatable';
+const { Component } = Ember;
 
-export default Ember.Component.extend(AnimatableMixin, InViewportMixin, {
+export default Component.extend(AnimatableMixin, InViewportMixin, {
   didEnterViewport() {
     this.animate('bounceIn');
   }

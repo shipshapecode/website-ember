@@ -1,8 +1,8 @@
 export function initialize(appInstance) {
-  const meta = appInstance.lookup('service:meta');
+  let meta = appInstance.lookup('service:meta');
   meta.reopen({
-    title: function (value) {
-      return 'Ship Shape - ' + value;
+    title(value) {
+      return `Ship Shape - ${value}`;
     }
   });
 }
