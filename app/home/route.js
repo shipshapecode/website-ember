@@ -9,7 +9,7 @@ export default Route.extend({
     };
   },
   afterModel() {
-    this.get('headData').setProperties({
+    return this.get('headData').setProperties({
       title: 'Ship Shape',
       description: 'Ship Shape is a Washington D.C. based Ember consultancy. We leverage Ember.js, '
       + 'and all the latest technologies, to create truly ambitious applications.',

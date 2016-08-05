@@ -4,7 +4,7 @@ const { inject: { service }, Route } = Ember;
 export default Route.extend({
   headData: service(),
   afterModel() {
-    this.get('headData').setProperties({
+    return this.get('headData').setProperties({
       title: 'Ship Shape - Contact',
       description: 'Contact us for Ember.js consulting work!',
       type: 'website',
