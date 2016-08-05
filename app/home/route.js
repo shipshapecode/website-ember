@@ -1,21 +1,21 @@
 import Ember from 'ember';
-const { Route } = Ember;
+const { inject: { service }, Route } = Ember;
 
 export default Route.extend({
+  headData: service(),
   model() {
     return {
       strings: ['Meticulously crafted ambitious web applications']
     };
   },
   afterModel() {
-    this.get('meta').update({
-      title: 'Home',
+    this.get('headData').setProperties({
+      title: 'Ship Shape',
       description: 'Ship Shape is a Washington D.C. based Ember consultancy. We leverage Ember.js, '
       + 'and all the latest technologies, to create truly ambitious applications.',
-      'og:title': 'Ship Shape - Home',
-      'og:type': 'website',
-      'og:image': 'http://shipshape.io/img/ShipShapeIcon.svg',
-      'og:url': 'http://shipshape.io/'
+      type: 'website',
+      image: 'http://shipshape.io/img/ShipShapeIcon.svg',
+      url: 'http://shipshape.io/'
     });
   }
 });
