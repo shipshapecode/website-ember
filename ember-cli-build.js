@@ -1,12 +1,12 @@
-/*jshint node:true*/
+/* eslint-disable */
 /* global require, module */
-var EmberApp = require('ember-cli/lib/broccoli/ember-app');
-var shim = require('flexi/lib/pod-templates-shim');
+let EmberApp = require('ember-cli/lib/broccoli/ember-app');
+let shim = require('flexi/lib/pod-templates-shim');
 
 shim(EmberApp);
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {
+  let app = new EmberApp(defaults, {
     'ember-animatable': {
       include: ['bounceIn']
     },
@@ -28,8 +28,12 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  app.import(app.bowerDirectory + '/gsap/src/uncompressed/TimelineLite.js');
-  app.import(app.bowerDirectory + '/svg-injector/svg-injector.js');
+  if (!process.env.EMBER_CLI_FASTBOOT) {
+    app.import(app.bowerDirectory + '/gsap/src/uncompressed/TimelineLite.js');
+    app.import(app.bowerDirectory + '/svg-injector/svg-injector.js');
+  }
 
   return app.toTree();
 };
+
+/* eslint-enable */
