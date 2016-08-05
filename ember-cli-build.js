@@ -1,12 +1,12 @@
 /* eslint-disable */
 /* global require, module */
-let EmberApp = require('ember-cli/lib/broccoli/ember-app');
-let shim = require('flexi/lib/pod-templates-shim');
+var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var shim = require('flexi/lib/pod-templates-shim');
 
 shim(EmberApp);
 
 module.exports = function(defaults) {
-  let app = new EmberApp(defaults, {
+  var app = new EmberApp(defaults, {
     'ember-animatable': {
       include: ['bounceIn']
     },
