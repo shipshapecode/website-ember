@@ -1,15 +1,15 @@
 import Ember from 'ember';
-const { Route } = Ember;
+const { inject: { service }, Route } = Ember;
 
 export default Route.extend({
+  headData: service(),
   afterModel() {
-    this.get('meta').update({
-      title: 'Contact',
+    this.get('headData').setProperties({
+      title: 'Ship Shape - Contact',
       description: 'Contact us for Ember.js consulting work!',
-      'og:title': 'Ship Shape - Contact',
-      'og:type': 'website',
-      'og:image': 'http://shipshape.io/img/ShipShapeIcon.svg',
-      'og:url': 'http://shipshape.io/contact'
+      type: 'website',
+      image: 'http://shipshape.io/img/ShipShapeIcon.svg',
+      url: 'http://shipshape.io/contact'
     });
   }
 });
