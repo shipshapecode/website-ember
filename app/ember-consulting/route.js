@@ -9,7 +9,6 @@ export default Route.extend({
       description: 'We have worked on several ambitious, full scale apps for various companies. '
       + 'Contact us for Ember.js consulting work!',
       type: 'website',
-      image: 'http://shipshape.io/img/ShipShapeIcon.svg',
       url: 'http://shipshape.io/ember-consulting'
     });
   }

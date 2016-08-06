@@ -14,7 +14,6 @@ export default Route.extend({
       description: 'Ship Shape is a Washington D.C. based Ember consultancy. We leverage Ember.js, '
       + 'and all the latest technologies, to create truly ambitious applications.',
       type: 'website',
-      image: 'http://shipshape.io/img/ShipShapeIcon.svg',
       url: 'http://shipshape.io/'
     });
   }

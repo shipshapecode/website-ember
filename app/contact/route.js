@@ -8,7 +8,6 @@ export default Route.extend({
       title: 'Ship Shape - Contact',
       description: 'Contact us for Ember.js consulting work!',
       type: 'website',
-      image: 'http://shipshape.io/img/ShipShapeIcon.svg',
       url: 'http://shipshape.io/contact'
     });
   }
