@@ -1,9 +1,8 @@
 @import 'variables';
 
 .home {
-  background-color: $cream;
   .hero {
-    background: url(../img/ocean.jpg) no-repeat bottom center;
+    //background: url(../img/ocean.jpg) no-repeat bottom center;
     background-size: cover;
     padding-bottom: 25px;
     .inner {
