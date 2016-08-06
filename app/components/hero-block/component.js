@@ -5,6 +5,8 @@ import TweenLite from 'tweenlite';
 const { Component } = Ember;
 
 export default Component.extend({
+  tagName: 'page',
+  classNameBindings: [':hero'],
   didInsertElement() {
     // Elements to inject
     let mySVGsToInject = document.querySelectorAll('img.svg-logo');

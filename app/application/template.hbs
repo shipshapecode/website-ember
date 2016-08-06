@@ -1,17 +1,19 @@
-{{#nav-trigger-container isFixed=true}}
-  <a href="//shipshape.io" class="logo"><img src="img/ShipShapeIcon.svg" alt="Logo"></a>
-{{/nav-trigger-container}}
+{{#unless fastboot.isFastBoot}}
+  {{#nav-trigger-container isFixed=true}}
+    <a href="//shipshape.io" class="logo"><img src="img/ShipShapeIcon.svg" alt="Logo"></a>
+  {{/nav-trigger-container}}
 
-<screen class="main">
-  {{liquid-outlet}}
-</screen>
-{{wave-footer}}
+  <screen class="main">
+    {{liquid-outlet}}
+  </screen>
+  {{wave-footer}}
 
-{{#nav-container totalNavItems=model.links.length}}
-  {{#each model.links as |link index|}}
-    {{nav-item index=index link=link}}
-  {{/each}}
-{{/nav-container}}
+  {{#nav-container totalNavItems=model.links.length}}
+    {{#each model.links as |link index|}}
+      {{nav-item index=index link=link}}
+    {{/each}}
+  {{/nav-container}}
 
-{{!-- This is just to remove the spinner, after the app loads --}}
-{{ember-load-remover}}
+  {{!-- This is just to remove the spinner, after the app loads --}}
+  {{ember-load-remover}}
+{{/unless}}
