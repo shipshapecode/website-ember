@@ -6,19 +6,19 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>http://shipshape.io/</loc>
+    <loc>https://shipshape.io/</loc>
     <lastmod>2016-07-01T12:21:10+00:00</lastmod>
   </url>
   <url>
-    <loc>http://shipshape.io/ember-consulting</loc>
+    <loc>https://shipshape.io/ember-consulting</loc>
     <lastmod>2016-07-01T12:21:10+00:00</lastmod>
   </url>
   <url>
-    <loc>http://shipshape.io/open-source</loc>
+    <loc>https://shipshape.io/open-source</loc>
     <lastmod>2016-07-01T12:21:10+00:00</lastmod>
   </url>
   <url>
-    <loc>http://shipshape.io/contact</loc>
+    <loc>https://shipshape.io/contact</loc>
     <lastmod>2016-07-01T12:21:10+00:00</lastmod>
   </url>
 </urlset>
