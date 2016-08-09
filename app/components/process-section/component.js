@@ -8,7 +8,7 @@ const { Component } = Ember;
 export default Component.extend(InViewportMixin, {
   didInsertElement() {
     // Elements to inject
-    let mySVGsToInject = document.querySelectorAll('img.svg-icon');
+    let mySVGsToInject = document.querySelectorAll('.svg-icon');
 
     // Trigger the injection
     new SVGInjector(mySVGsToInject, {}, () => {
