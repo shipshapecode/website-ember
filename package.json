@@ -60,6 +60,6 @@
     "eslint-plugin-ember-suave": "^0.1.2",
     "flexi": "1.1.9",
     "liquid-fire": "0.24.1",
-    "loader.js": "^4.0.1"
+    "loader.js": "^4.0.11"
   }
 }
