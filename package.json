@@ -21,6 +21,7 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "ember-3d-nav": "1.0.4",
+    "ember-a11y": "0.1.11",
     "ember-animatable": "1.0.0",
     "ember-body-class": "0.3.9",
     "ember-browserify": "1.1.9",
@@ -59,7 +60,6 @@
     "emberfire": "2.0.0",
     "eslint-plugin-ember-suave": "^0.1.2",
     "flexi": "1.1.9",
-    "liquid-fire": "0.24.1",
     "loader.js": "^4.0.1"
   }
 }

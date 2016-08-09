@@ -1,12 +1,20 @@
 @import 'variables';
 
 .open-source {
-  .portfolio-container {
-    padding-top: 100px;
-    h1 {
-      color: $whiteish;
-      font-size: 4rem;
-      margin: 25px 0 50px 0;
-    }
+  @media(max-width: 756px){
+  padding-top: 75px;
+}
+
+  h1 {
+    color: $whiteish;
+    font-size: 4rem;
+    margin: 25px 0 50px 0;
+    padding: 0 10%;
+  }
+
+  .info {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 10%;
   }
 }
