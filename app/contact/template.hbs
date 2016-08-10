@@ -5,6 +5,7 @@
   <centered>
     <form class="cd-form floating-labels">
       <fieldset>
+        <legend>Personal Info</legend>
         <centered xs="12">
           {{contact-input
           fieldName="name"
@@ -37,6 +38,15 @@
       </fieldset>
 
       <fieldset>
+        <legend>Project Info</legend>
+
+        <centered xs="12">
+          {{form-list
+          groupValue="oss"
+          options=model.projectTypes
+          type="radio"}}
+        </centered>
+
         <centered xs="12">
           {{contact-input
           fieldName="textarea"
@@ -46,6 +56,7 @@
           value=description
           }}
         </centered>
+
       </fieldset>
 
       <div>
