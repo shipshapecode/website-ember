@@ -30,7 +30,14 @@
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" content="#82b4bc">
 
+    {{content-for "head"}}
 
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/website.css">
+
+    {{content-for "head-footer"}}
+  </head>
+  <body>
     <div class="ember-load-indicator">
       <style>
         .ember-load-indicator {
@@ -231,14 +238,6 @@
       </div>
     </div>
 
-    {{content-for "head"}}
-
-    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link rel="stylesheet" href="{{rootURL}}assets/website.css">
-
-    {{content-for "head-footer"}}
-  </head>
-  <body>
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>
