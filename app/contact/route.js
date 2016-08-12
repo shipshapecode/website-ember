@@ -29,7 +29,7 @@ export default Route.extend({
       title: 'Ship Shape - Contact',
       description: 'Contact us for Ember.js consulting work!',
       type: 'website',
-      url: 'http://shipshape.io/contact'
+      url: 'https://shipshape.io/contact'
     });
   }
 });

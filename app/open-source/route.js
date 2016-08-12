@@ -11,7 +11,7 @@ export default Route.extend({
       title: 'Ship Shape - Open Source',
       description: 'We have created several Ember addons and collaborated extensively with the Ember community.',
       type: 'website',
-      url: 'http://shipshape.io/portfolio'
+      url: 'https://shipshape.io/portfolio'
     });
   }
 });
