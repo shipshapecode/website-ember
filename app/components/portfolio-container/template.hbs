@@ -7,12 +7,19 @@
       <centered xs="12" sm="6" md="4">
         <vbox>
           <hbox>
-            <centered>
+            <centered xs="12">
+              <centered xs="10">
+                {{device-mock name=project.repo}}
+              </centered>
+            </centered>
+          </hbox>
+          <hbox>
+            <centered xs="12">
               <h2>{{project.name}}</h2>
             </centered>
           </hbox>
           <hbox>
-            <centered>
+            <centered xs="12">
               {{fa-icon 'star' size='lg'}} <span class="stars">{{project.stars}}</span>
               <a href="https://github.com/shipshapecode/{{project.repo}}">{{fa-icon "github-alt" size='lg'}}</a>
             </centered>
