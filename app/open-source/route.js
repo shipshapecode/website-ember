@@ -1,8 +1,7 @@
 import Ember from 'ember';
-import ResetScrollMixin from 'ember-scroll-operator/mixins/reset-scroll';
 const { inject: { service }, Route } = Ember;
 
-export default Route.extend(ResetScrollMixin, {
+export default Route.extend({
   headData: service(),
   model() {
     return this.store.findAll('github-repo');

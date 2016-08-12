@@ -1,11 +1,11 @@
-/* jshint node: true */
+/* eslint-disable */
 
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'website',
     environment: environment,
     rootURL: '/',
-    locationType: 'auto',
+    locationType: 'router-scroll',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
