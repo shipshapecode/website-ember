@@ -14,7 +14,7 @@ module.exports = function(defaults) {
       useScss: true
     },
     fingerprint: {
-      exclude: ['img/']
+      extensions: ['js', 'css', 'map']
     }
   });
 
