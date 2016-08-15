@@ -10,6 +10,28 @@ module.exports = function(defaults) {
     'ember-animatable': {
       include: ['bounceIn']
     },
+    emberCliConcat: {
+      enabled: true,
+      outputDir: 'assets',
+      outputFileName: 'app',
+      useSelfClosingTags: false,
+      wrapScriptsInFunction: false,
+      js: {
+        concat: true,
+        contentFor: 'concat-js',
+        footer: null,
+        header: null,
+        preserveOriginal: true
+      },
+
+      css: {
+        concat: true,
+        contentFor: 'concat-css',
+        footer: null,
+        header: null,
+        preserveOriginal: true
+      }
+    },
     'ember-font-awesome': {
       useScss: true
     },
