@@ -21,7 +21,7 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "ember-3d-nav": "1.0.4",
-    "ember-a11y": "0.1.11",
+    "ember-a11y": "0.1.12",
     "ember-animatable": "1.0.0",
     "ember-body-class": "0.3.9",
     "ember-browserify": "1.1.9",
