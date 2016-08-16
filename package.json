@@ -19,7 +19,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "broccoli-asset-rev": "^2.4.2",
+    "broccoli-asset-rev": "^2.4.6",
     "ember-3d-nav": "1.0.4",
     "ember-a11y": "0.1.12",
     "ember-animatable": "1.0.0",
