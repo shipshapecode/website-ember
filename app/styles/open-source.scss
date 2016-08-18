@@ -2,8 +2,6 @@
 
 .open-source {
   @media (max-width: 768px) {
-    padding-top: 75px;
-
     h1 {
       padding: 0 10%;
     }
@@ -13,17 +11,23 @@
     background: url(../img/open-source.jpg) no-repeat bottom center;
     background-size: cover;
     text-align: center;
+
     .mouse-icon {
       position: absolute !important;
       left: 50%;
-      margin-left: -24px;
-      transform:translateX(-50%);
+      margin-left: -12px;
+      transform: translateX(-50%);
+    }
+
+    h1 {
+      font-size: 6vw;
     }
   }
 
   h1 {
     color: $whiteish;
-    font-size: 6vw;
+    font-size: 48px;
+    margin-top: 50px;
     margin-bottom: 50px;
   }
 
