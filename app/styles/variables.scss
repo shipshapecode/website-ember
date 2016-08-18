@@ -1,9 +1,21 @@
+// $cream: #F5F0E1;
+// $lightBlue: #52CED8;
+// $navBar: #5F888B;
+// $darkNavBar: #3C5658;
+// $waveBlue: #35858B;
+// $background: #183C3F;
+// $red: #E35746;
+// $whiteish: #DFE6E9;
+
+$primary: #3D2F53;
+$secondary: #624B86;
 $cream: #F5F0E1;
-$lightBlue: #52CED8;
-$navBar: #5F888B;
-$darkNavBar: #3C5658;
+$bloodOrange: #DA4843;
+$blue: #35BCE0;
+
+$navBar: darken($primary, 5%);
 $waveBlue: #35858B;
-$background: #183C3F;
+$background: $primary;
 $red: #E35746;
 $whiteish: #DFE6E9;
 

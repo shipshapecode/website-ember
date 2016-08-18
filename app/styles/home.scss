@@ -1,7 +1,7 @@
 @import 'variables';
 
 .home {
-  background-color: #3D2F53;
+  background-color: $background;
   .hero {
     background: url(../img/sails.jpg) no-repeat bottom center;
     background-size: cover;
