@@ -9,9 +9,21 @@
     }
   }
 
+  .hero {
+    background: url(../img/open-source.jpg) no-repeat bottom center;
+    background-size: cover;
+    text-align: center;
+    .mouse-icon {
+      position: absolute !important;
+      left: 50%;
+      margin-left: -24px;
+      transform:translateX(-50%);
+    }
+  }
+
   h1 {
     color: $whiteish;
-    font-size: 4rem;
+    font-size: 6vw;
     margin-bottom: 50px;
   }
 
