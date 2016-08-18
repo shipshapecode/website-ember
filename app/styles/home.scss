@@ -22,6 +22,11 @@
     }
   }
 
+  .mouse-icon {
+    position: absolute !important;
+    left: 50%;
+  }
+
   .tagline {
     background-color: $background;
     text-align: center;
