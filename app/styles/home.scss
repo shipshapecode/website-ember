@@ -1,25 +1,10 @@
 @import 'variables';
 
 .home {
-  background-color: $lighter;;
+  background-color: $lighter;
   .hero {
     background: url(../img/sails.jpg) no-repeat bottom center;
     background-size: cover;
-    .inner {
-
-      h1, h2 {
-        color: $cream;
-        font-family: 'Pier Sans';
-        margin: 20px 0px 0px 0px;
-      }
-
-      h1 {
-        font-size: 12vw;
-      }
-      h2 {
-        font-size: 5vw;
-      }
-    }
   }
 
   .mouse-icon {
