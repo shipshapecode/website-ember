@@ -1,6 +1,6 @@
-<page class="process">
-  <centered class="design">
-    <box>
+<page class="process design">
+  <centered>
+    <box xs="12" sm="10" md="8">
       {{svg-jar "design" class="svg-icon" id="design-svg"}}
       <h2 class="heading">Design</h2>
       <h5 class="sub-heading">Measure twice, cut once</h5>
@@ -11,10 +11,13 @@
       </p>
     </box>
   </centered>
+  {{#scroll-to href='.build'}}
+    {{scroll-suggest}}
+  {{/scroll-to}}
 </page>
-<page class="process">
-  <centered class="build">
-    <box>
+<page class="process build">
+  <centered>
+    <box xs="12" sm="10" md="8">
       {{svg-jar "build" class="svg-icon" id="build-svg"}}
       <h2 class="heading">Build</h2>
       <h5 class="sub-heading">Convention over configuration</h5>
@@ -26,10 +29,13 @@
       </p>
     </box>
   </centered>
+  {{#scroll-to href='.ship'}}
+    {{scroll-suggest}}
+  {{/scroll-to}}
 </page>
-<page class="process">
-  <centered class="ship">
-    <box>
+<page class="process ship">
+  <centered>
+    <box xs="12" sm="10" md="8">
       {{svg-jar "ship" class="svg-icon" id="ship-svg"}}
       <h2 class="heading">Ship</h2>
       <h5 class="sub-heading">Real artists ship</h5>

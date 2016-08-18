@@ -13,7 +13,7 @@
 //3rd party
 //Ember-3d-nav variables
 $ember-3d-nav: (
-  'is-fixed-nav-bg': $primary,
+  'is-fixed-nav-bg': transparent,
   'nav-bg': $navBar,
   'nav-items': 5,
   'nav-item-hover': darken($navBar, 5%),

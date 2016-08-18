@@ -1,8 +1,24 @@
 .process {
   background-color: $background;
+
+  &.build {
+    background-color: $light;
+    h2 {
+      color: $blue;
+    }
+  }
+
+  &.ship {
+    background-color: $bloodOrange;
+    h2 {
+      color: $lighter;
+    }
+  }
+
   centered {
     padding: 20px;
     text-align: center;
+
     .heading {
       font: {
         size: 5rem;
@@ -11,22 +27,25 @@
       padding: 10px;
       text-transform: uppercase;
     }
+
     .sub-heading {
       font-size: 2.5rem;
       font-weight: bold;
       padding: 5px;
     }
+
     .info {
       font-size: 2rem;
       font-weight: normal;
       line-height: 22px;
       padding: 20px;
     }
+
     .svg-icon {
-      height: 100px;
+      height: 125px;
       margin: 0 auto;
       padding: 10px;
-      width: 100px;
+      width: 125px;
     }
   }
 }
