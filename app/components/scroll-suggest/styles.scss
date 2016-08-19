@@ -1,16 +1,19 @@
-
 &.mouse-icon {
   animation: pulseDelay 5s infinite;
-  display: block;
-  position: relative;
   bottom: 0px;
   border: 2px solid #fff;
   border-radius: 16px;
+  display: block;
   height: 40px;
-  margin: 60px auto;
+  left: 50%;
+  margin-left: -12px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  opacity: 0.7;
+  position: absolute;
+  transform: translateX(-50%);
   width: 24px;
   z-index: 10;
-  opacity: 0.7;
 
   .wheel {
     animation-name: drop;

@@ -5,12 +5,6 @@
   .hero {
     background: url(../img/sails.jpg) no-repeat bottom center;
     background-size: cover;
-    .mouse-icon {
-      position: absolute !important;
-      left: 50%;
-      margin-left: -12px;
-      transform:translateX(-50%);
-    }
   }
 
   .tagline {

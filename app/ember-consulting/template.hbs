@@ -2,8 +2,12 @@
   <centered>
     <h1 class="hero-header">Ember.js Consulting</h1>
   </centered>
+  {{#scroll-to href='.clients'}}
+    {{scroll-suggest}}
+  {{/scroll-to}}
 </page>
-<page>
+<page class="clients">
+  <centered>
   <grid>
     <centered xs="12">
       <h2 class="hero-subheader">Who we've worked with</h2>
@@ -41,4 +45,5 @@
       </a>
     </centered>
   </grid>
+</centered>
 </page>
