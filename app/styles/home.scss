@@ -1,27 +1,10 @@
 @import 'variables';
 
 .home {
-  background-color: $cream;
+  background-color: $lighter;
   .hero {
-    background: url(../img/ocean.jpg) no-repeat bottom center;
+    background: url(../img/sails.jpg) no-repeat bottom center;
     background-size: cover;
-    padding-bottom: 25px;
-    .inner {
-      color: $cream;
-      padding: 80px 15vw;
-      text-align: center;
-      .svg-logo {
-        height: auto;
-        width: 100%;
-      }
-
-      h1 {
-        color: $cream;
-        font-family: 'Pier Sans';
-        font-size: 6vw;
-        margin: 20px 0px 0px 0px;
-      }
-    }
   }
 
   .tagline {

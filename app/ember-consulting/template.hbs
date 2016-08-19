@@ -1,42 +1,49 @@
-<div class="consulting-container">
+<page class="hero">
   <centered>
-    <h1>Ember.js Consulting</h1>
+    <h1 class="hero-header">Ember.js Consulting</h1>
   </centered>
-  <grid>
-    <centered xs="12">
-      <h2>Who we've worked with</h2>
-    </centered>
-    <centered xs="12" sm="6" md="4">
-      <a href="https://www.scoutforpets.com/">
-        <vbox>
-          <hbox>
-            <centered>
-              <img src="img/scout-logo.png">
-            </centered>
-          </hbox>
-          <hbox>
-            <centered>
-              <h2>Scout</h2>
-            </centered>
-          </hbox>
-        </vbox>
-      </a>
-    </centered>
-    <centered xs="12" sm="6" md="4">
-      <a href="http://williamsonwagner.com/">
-        <vbox>
-          <hbox>
-            <centered>
-              <img src="img/WW.png">
-            </centered>
-          </hbox>
-          <hbox>
-            <centered>
-              <h2>Williamson Wagner</h2>
-            </centered>
-          </hbox>
-        </vbox>
-      </a>
-    </centered>
-  </grid>
-</div>
+  {{#scroll-to href='.clients' }}
+    {{scroll-suggest}}
+  {{/scroll-to}}
+</page>
+<page class="clients">
+  <centered>
+    <grid>
+      <centered xs="12">
+        <h2 class="hero-subheader">Who we've worked with</h2>
+      </centered>
+      <centered xs="12" sm="6" md="4">
+        <a href="https://www.scoutforpets.com/">
+          <vbox>
+            <hbox>
+              <centered>
+                <img src="img/scout-logo.png">
+              </centered>
+            </hbox>
+            <hbox>
+              <centered>
+                <h2>Scout</h2>
+              </centered>
+            </hbox>
+          </vbox>
+        </a>
+      </centered>
+      <centered xs="12" sm="6" md="4">
+        <a href="http://williamsonwagner.com/">
+          <vbox>
+            <hbox>
+              <centered>
+                <img src="img/WW.png">
+              </centered>
+            </hbox>
+            <hbox>
+              <centered>
+                <h2>Williamson Wagner</h2>
+              </centered>
+            </hbox>
+          </vbox>
+        </a>
+      </centered>
+    </grid>
+  </centered>
+</page>

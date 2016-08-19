@@ -1,9 +1,9 @@
 .footer {
-  background-color: $waveBlue;
+  background-color: $blue;
   margin-top: 50px;
   min-height: 100px;
   padding: 25px;
-  @include jagged(35858B, 40, top, fill, outside);
+  @include jagged(35BCE0, 40, top, fill, outside);
   i {
     padding: 10px;
   }

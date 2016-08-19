@@ -13,11 +13,11 @@
 //3rd party
 //Ember-3d-nav variables
 $ember-3d-nav: (
-  'is-fixed-nav-bg': $waveBlue,
-  'nav-bg': $darkNavBar,
+  'is-fixed-nav-bg': transparent,
+  'nav-bg': $navBar,
   'nav-items': 5,
-  'nav-item-hover': lighten($darkNavBar, 5%),
-  'nav-item-selected': lighten($darkNavBar, 5%),
+  'nav-item-hover': darken($navBar, 5%),
+  'nav-item-selected': darken($navBar, 5%),
   'nav-text-color': $cream,
   'nav-trigger-color': $cream
 );
@@ -49,7 +49,7 @@ a {
     color: $whiteish;
   }
   &:hover, & > i:hover {
-    color: $lightBlue;
+    color: $bloodOrange;
     cursor: pointer;
   }
   &:visited {
@@ -63,7 +63,7 @@ a {
   }
 
   &.fixed-and-scrolled {
-    background-color: $waveBlue;
+    background-color: $secondary;
   }
 }
 
@@ -94,14 +94,27 @@ a {
 /* these are the colors of the markers - line + arrow */
 
 .color-1 {
-  color: $lightBlue;
-  background-color: $lightBlue;
+  color: $bloodOrange;
+  background-color: $bloodOrange;
 }
 
 h1, h2 {
-  color: $waveBlue;
+  color: $bloodOrange;
 }
 
 h3, h4, h5, h6 {
-  color: $navBar;
+  color: $secondary;
+}
+
+.hero-header, .hero-subheader {
+  color: $cream;
+  font-family: 'Pier Sans';
+  margin: 20px 0px 0px 0px;
+}
+
+.hero-header {
+  font-size: 12vw;
+}
+.hero-subheader {
+  font-size: 5vw;
 }
