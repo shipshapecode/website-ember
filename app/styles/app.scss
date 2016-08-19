@@ -1,13 +1,35 @@
-@import "font-awesome";
-@import 'variables';
-@import 'mixins';
-@import 'fonts';
-//Pages
-@import 'contact';
-@import 'ember-consulting';
-@import 'home';
-@import 'open-source';
-@import 'team';
+//////////////////////////////
+// Globals
+//////////////////////////////
+@import 'font-awesome';
+@import 'globals/variables';
+@import 'globals/mixins';
+@import 'globals/fonts';
+@import 'globals/tags';
+@import 'globals/typography';
+
+//////////////////////////////
+// Sections
+//////////////////////////////
+@import 'sections/header';
+
+//////////////////////////////
+// Components
+//////////////////////////////
+@import 'components/hero';
+
+//////////////////////////////
+// Pages
+//////////////////////////////
+@import 'pages/contact';
+@import 'pages/ember-consulting';
+@import 'pages/home';
+@import 'pages/open-source';
+@import 'pages/team';
+
+//////////////////////////////
+// Pod Styles - Ember Component CSS addon
+//////////////////////////////
 @import 'pod-styles';
 
 //3rd party
@@ -24,48 +46,6 @@ $ember-3d-nav: (
 
 @import 'ember-3d-nav';
 @import 'ember-contact-form';
-
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font: {
-    size: 1.6rem;
-  }
-  background-color: $background;
-  color: $whiteish;
-  font-family: 'Pier Sans', sans-serif;
-}
-
-a {
-  color: $whiteish;
-  text-decoration: none;
-  &:active {
-    color: $whiteish;
-  }
-  &:hover, & > i:hover {
-    color: $bloodOrange;
-    cursor: pointer;
-  }
-  &:visited {
-    color: $whiteish;
-  }
-}
-
-.header {
-  &.fixed {
-    transition: background-color 400ms ease;
-  }
-
-  &.fixed-and-scrolled {
-    background-color: $secondary;
-  }
-}
 
 .ember-3d-nav {
   centered {
@@ -96,25 +76,4 @@ a {
 .color-1 {
   color: $bloodOrange;
   background-color: $bloodOrange;
-}
-
-h1, h2 {
-  color: $bloodOrange;
-}
-
-h3, h4, h5, h6 {
-  color: $secondary;
-}
-
-.hero-header, .hero-subheader {
-  color: $cream;
-  font-family: 'Pier Sans';
-  margin: 20px 0px 0px 0px;
-}
-
-.hero-header {
-  font-size: 12vw;
-}
-.hero-subheader {
-  font-size: 5vw;
 }

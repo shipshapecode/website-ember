@@ -1,0 +1,35 @@
+//////////////////////////////
+// HTML Tags
+//////////////////////////////
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: {
+    size: 1.6rem;
+  }
+  background-color: $background;
+  color: $whiteish;
+  font-family: 'Pier Sans', sans-serif;
+}
+
+a {
+  color: $whiteish;
+  text-decoration: none;
+  &:active {
+    color: $whiteish;
+  }
+  &:hover, & > i:hover {
+    color: $bloodOrange;
+    cursor: pointer;
+  }
+  &:visited {
+    color: $whiteish;
+  }
+}
