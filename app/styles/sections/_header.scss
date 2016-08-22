@@ -2,16 +2,7 @@
 // Header Styles
 //////////////////////////////
 
-.header {
-  &.fixed {
-    transition: background-color 400ms ease;
-  }
-
-  &.fixed-and-scrolled {
-    // background-color: $secondary;
-  }
-
-}
+.header {}
 
 .logo {
   float: left;

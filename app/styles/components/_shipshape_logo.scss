@@ -1,0 +1,20 @@
+//////////////////////////////
+// ShipShape Logo
+//////////////////////////////
+
+.shipshape_logo {
+
+  &-rings {
+    stroke: black(.65);
+  }
+
+  &-text--hape,
+  &-text--hip,
+  &-text--S {
+    fill: $c-purple;
+  }
+
+  &-ship {
+    fill: $c-orange;
+  }
+}

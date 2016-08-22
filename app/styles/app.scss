@@ -1,8 +1,18 @@
 //////////////////////////////
-// Globals
+// 3rd party imports
 //////////////////////////////
 @import 'font-awesome';
+
+//////////////////////////////
+// Bower Components
+//////////////////////////////
+@import '../../bower_components/shevy/core/shevy';
+
+//////////////////////////////
+// Globals
+//////////////////////////////
 @import 'globals/variables';
+@import 'globals/functions';
 @import 'globals/mixins';
 @import 'globals/reset';
 @import 'globals/fonts';
@@ -18,6 +28,7 @@
 // Components
 //////////////////////////////
 @import 'components/hero';
+@import 'components/shipshape_logo';
 
 //////////////////////////////
 // Pages
@@ -39,28 +50,7 @@
 @import 'ember-3d-nav';
 @import 'ember-contact-form';
 
-.ember-3d-nav {
-  centered {
-    &:first-of-type a::before {
-      background-image: url(../img/boat.svg);
-    }
-    &:nth-of-type(2) a::before {
-      background-image: url(../img/ember-consulting.svg);
-    }
-    &:nth-of-type(3) a::before {
-      background-image: url(../img/code.svg);
-    }
-    &:nth-of-type(4) a::before {
-      background-image: url(../img/anchor.svg);
-    }
-    &:nth-of-type(5) a::before {
-      background-image: url(../img/blog.svg);
-    }
-  }
-}
-
-// these are the colors of the markers - line + arrow
-.color-1 {
-  color: $c-orange;
-  background-color: $c-orange;
-}
+//////////////////////////////
+// Overrides
+//////////////////////////////
+@import 'globals/overrides';

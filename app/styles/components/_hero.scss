@@ -2,16 +2,24 @@
 // Hero Styles
 //////////////////////////////
 
-.hero-header,
-.hero-subheader {
-  color: $c-light-gray;
-  font-family: 'Pier Sans';
-  margin: 20px 0px 0px 0px;
-}
+.hero {
+  font-family: $f-pier;
+  color: $c-purple;
+  text-align: center;
+  padding: 150px 0;
 
-.hero-header {
-  font-size: 12vw;
-}
-.hero-subheader {
-  font-size: 5vw;
+  &-heading,
+  &-subheading {
+    margin-bottom: 0;
+    text-shadow: .035em .035em .015em black(.25);
+  }
+
+  &-heading {
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  &-subheading {}
 }
