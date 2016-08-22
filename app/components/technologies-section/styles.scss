@@ -1,8 +1,9 @@
 .technologies {
-  background-color: $lighterMutePurple;
   padding-bottom: 50px;
+
   .logos {
     padding: 0 10%;
+
     centered {
       padding: 0 5%;
       .logo {
@@ -11,6 +12,7 @@
       }
     }
   }
+
   h1 {
     color: $background;
     font-size: 38px;

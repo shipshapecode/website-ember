@@ -2,17 +2,17 @@
   background-color: $background;
 
   &.build {
-    background-color: $mutePurple;
+    // background-color: $mutePurple;
+
     h2 {
-      color: $blue;
+      color: $c-teal;
     }
   }
 
   &.ship {
-    background-color: $bloodOrange;
-    h2 {
-      color: $lighterMutePurple;
-    }
+    background-color: $c-orange;
+
+    h2 {}
   }
 
   centered {

@@ -2,7 +2,9 @@
 // HTML Tags
 //////////////////////////////
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -13,22 +15,22 @@ html {
 
 body {
   background-color: $background;
-  color: $whiteish;
+  color: $c-black;
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
 a {
-  color: $whiteish;
+  color: $c-white;
   text-decoration: none;
   &:active {
-    color: $whiteish;
+    color: $c-white;
   }
   &:hover, & > i:hover {
-    color: $bloodOrange;
+    color: $c-orange;
     cursor: pointer;
   }
   &:visited {
-    color: $whiteish;
+    color: $c-white;
   }
 }

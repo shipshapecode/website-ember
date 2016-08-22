@@ -7,22 +7,16 @@
 //////////////////////////////
 
 // Semantic Colors
-$black: #000;
-$white: #fff;
-$whiteish: #DFE6E9;
-$cream: #F5F0E1;
-$bloodOrange: #DA4843;
-$blue: #35BCE0;
-$deepPurple: #3D2F53;
-$richPurple: #624B86;
-$darkMauve: #35323A;
-$mutePurple: #7B7486;
-$lighterMutePurple: #C1B5D3;
+$c-black: #090208;
+$c-purple: #591e54;
+$c-orange: #f36c13;
+$c-teal: #32b8d0;
+$c-light-gray: #f2ecf2;
+$c-white: #fefcfc;
 
 // Functional Colors
-$primary: $deepPurple;
-$secondary: $richPurple;
-$background: $primary;
+$primary: $c-purple;
+$background: $c-white;
 $navBar: darken($primary, 5%);
 
 //////////////////////////////
@@ -46,6 +40,6 @@ $ember-3d-nav: (
   'nav-items': 5,
   'nav-item-hover': darken($navBar, 5%),
   'nav-item-selected': darken($navBar, 5%),
-  'nav-text-color': $cream,
-  'nav-trigger-color': $cream
+  'nav-text-color': $c-light-gray,
+  'nav-trigger-color': $c-light-gray
 );
