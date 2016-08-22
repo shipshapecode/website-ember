@@ -4,6 +4,7 @@
 @import 'font-awesome';
 @import 'globals/variables';
 @import 'globals/mixins';
+@import 'globals/reset';
 @import 'globals/fonts';
 @import 'globals/tags';
 @import 'globals/typography';
@@ -32,18 +33,9 @@
 //////////////////////////////
 @import 'pod-styles';
 
-//3rd party
-//Ember-3d-nav variables
-$ember-3d-nav: (
-  'is-fixed-nav-bg': transparent,
-  'nav-bg': $navBar,
-  'nav-items': 5,
-  'nav-item-hover': darken($navBar, 5%),
-  'nav-item-selected': darken($navBar, 5%),
-  'nav-text-color': $cream,
-  'nav-trigger-color': $cream
-);
-
+//////////////////////////////
+// Addon CSS
+//////////////////////////////
 @import 'ember-3d-nav';
 @import 'ember-contact-form';
 
@@ -67,12 +59,7 @@ $ember-3d-nav: (
   }
 }
 
-.logo {
-  float: left;
-}
-
-/* these are the colors of the markers - line + arrow */
-
+// these are the colors of the markers - line + arrow
 .color-1 {
   color: $bloodOrange;
   background-color: $bloodOrange;

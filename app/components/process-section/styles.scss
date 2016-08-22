@@ -2,7 +2,7 @@
   background-color: $background;
 
   &.build {
-    background-color: $light;
+    background-color: $mutePurple;
     h2 {
       color: $blue;
     }
@@ -11,7 +11,7 @@
   &.ship {
     background-color: $bloodOrange;
     h2 {
-      color: $lighter;
+      color: $lighterMutePurple;
     }
   }
 
@@ -37,7 +37,6 @@
     .info {
       font-size: 2rem;
       font-weight: normal;
-      line-height: 22px;
       padding: 20px;
     }
 
