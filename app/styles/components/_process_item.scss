@@ -1,0 +1,64 @@
+//////////////////////////////
+// Process Item
+//////////////////////////////
+
+.process_item {
+
+  &-container {
+    @include container(80%);
+    padding: 200px 0;
+    position: relative;
+  }
+
+  &-header {
+    @include span(4);
+    position: relative;
+    z-index: 2;
+  }
+
+  &-heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  &-sub-heading {}
+
+  &-content {
+    @include span(8);
+    @include last;
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
+  }
+
+  &.build {
+    background: $c-orange;
+    color: $c-white;
+  }
+
+  &.ship {
+    background: $c-purple;
+    color: $c-white;
+
+    .svg-icon * {
+      stroke: white(.1);
+    }
+  }
+
+  .svg-icon {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    * {
+      fill: none;
+      stroke: rgba($c-purple, .1);
+    }
+  }
+}
