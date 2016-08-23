@@ -2,6 +2,14 @@
 // Variables
 //////////////////////////////
 
+// Breakpoints
+$breakpoints: (
+  alpha: 481px,
+  bravo: 769px,
+  charlie: 1025px,
+  delta: 1300px
+);
+
 // Condo Grids
 $condo: (
   container: 80%,
@@ -42,7 +50,7 @@ $primary-font: $f-open;
 // Ember 3d Nav
 //////////////////////////////
 $ember-3d-nav: (
-  'is-fixed-nav-bg': transparent,
+  'is-fixed-nav-bg': $c-light-gray,
   'nav-bg': $navBar,
   'nav-items': 5,
   'nav-item-hover': darken($navBar, 5%),

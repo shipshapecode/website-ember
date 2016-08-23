@@ -1,6 +1,25 @@
+//////////////////////////////
+// Mixins
+//////////////////////////////
+
+// Breakpoint Mixin
+
+@mixin bp($breakpoint, $map: $breakpoints) {
+  $value: map-get($map, $breakpoint);
+
+  @if $value != null {
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn 'Unfortunately, no value with the name #{$breakpoint} could be retrieved from `$breakpoints`. ' +
+      'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+// Jagged waves mixin
 // always use even numbers for size (or else you will get half pixel for height). Without 'px'. Only works with pixels
 // don't add hash # for color
-
 @mixin jagged($color: 000, $size: 16, $location: bottom, $type: fill, $side: outside, $animate: false) {
   $width: $size;
   $height: $width / 2;

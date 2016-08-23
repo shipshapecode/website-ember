@@ -1,8 +1,9 @@
 .footer {
-  background-color: $c-teal;
-  margin-top: 50px;
   min-height: 100px;
+  background-color: $c-teal;
+  color: $c-white;
   padding: 25px;
+  margin-top: 50px;
   @include jagged(32b8d0, 40, top, fill, outside);
 
   i {

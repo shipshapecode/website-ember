@@ -6,14 +6,21 @@
 
   &-container {
     @include container(80%);
-    padding: 200px 0;
+    padding: 75px 0;
     position: relative;
+
+    @include bp(bravo) {
+      padding: 200px 0;
+    }
   }
 
   &-header {
-    @include span(4);
     position: relative;
     z-index: 2;
+
+    @include bp(bravo) {
+      @include span(4);
+    }
   }
 
   &-heading {
@@ -25,11 +32,15 @@
   &-sub-heading {}
 
   &-content {
-    @include span(8);
-    @include last;
+    font-size: 1.2rem;
     font-weight: normal;
     position: relative;
     z-index: 2;
+
+    @include bp(bravo) {
+      @include span(8);
+      @include last;
+    }
   }
 
   &.build {
@@ -58,7 +69,7 @@
 
     * {
       fill: none;
-      stroke: rgba($c-purple, .1);
+      stroke: rgba($c-purple, .075);
     }
   }
 }

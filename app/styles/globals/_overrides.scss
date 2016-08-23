@@ -2,7 +2,6 @@
 // Overrides
 //////////////////////////////
 
-// Ember 3d nav overrides
 .ember-3d-nav {
 
   a {
@@ -32,4 +31,9 @@
 .color-1 {
   color: $c-orange;
   background-color: $c-orange;
+}
+
+// Ember Load Indicator
+.ember-load-indicator {
+  background-color: $c-white !important;
 }
