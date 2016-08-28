@@ -1,8 +1,9 @@
 .footer {
   background-color: $blue;
-  margin-top: 50px;
+  margin-top: 68px;
   min-height: 100px;
   padding: 25px;
+  box-sizing: border-box;
   @include jagged(35BCE0, 40, top, fill, outside);
   i {
     padding: 10px;

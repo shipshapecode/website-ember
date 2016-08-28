@@ -1,0 +1,30 @@
+& {
+  background-color: $primary;
+  color: $veryLight;
+  padding: 100px 10px 32px 10px;
+  text-align: center;
+  a {
+    color: $veryLight;
+    background-color: transparent;
+    border: 2px solid $veryLight;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    margin: 10px;
+    padding: 15px 20px 10px 20px;
+    text-decoration: none;
+    transition-duration: .25s;
+    transition-property: background-color,color,fill;
+    &:visited, &:active{
+      color: $veryLight;
+    }
+    &:hover {
+      color: $primary;
+      background-color: $veryLight;
+    }
+  }
+  h1 {
+    color: $veryLight;
+    font-size: 4rem;
+    padding: 5px;
+  }
+}
