@@ -32,11 +32,8 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   if (!process.env.EMBER_CLI_FASTBOOT) {
-    app.import(app.bowerDirectory + '/gsap/src/uncompressed/TimelineLite.js');
     app.import(app.bowerDirectory + '/svg-injector/svg-injector.js');
   }
 
   return app.toTree();
 };
-
-/* eslint-enable */
