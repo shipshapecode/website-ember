@@ -2,27 +2,32 @@
 
 .open-source {
   @media (max-width: 768px) {
-    h1 {
+    .heading {
       padding: 0 10%;
     }
+  }
+
+  .heading {
+    color: $whiteish;
+    font-size: 48px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .hero {
     background: url(../img/open-source.jpg) no-repeat bottom center;
     background-size: cover;
     text-align: center;
-
-    h1 {
-      font-size: 6vw;
+    .hero-header {
+      padding: 15px;
+    }
+    p {
+      color: $cream;
+      text-align: left;
     }
   }
 
-  h1 {
-    color: $whiteish;
-    font-size: 48px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
+
 
   .info {
     font-size: 20px;
