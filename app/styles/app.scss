@@ -24,10 +24,12 @@ $ember-3d-nav: (
 
 @import 'ember-3d-nav';
 @import 'ember-contact-form';
+@import 'reset';
 
 *, *::after, *::before {
   box-sizing: border-box;
 }
+
 
 html {
   font-size: 62.5%;
