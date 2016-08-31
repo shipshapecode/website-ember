@@ -20,8 +20,10 @@
           </hbox>
           <hbox>
             <centered xs="12">
-              {{fa-icon 'star' size='lg'}} <span class="stars">{{project.stars}}</span>
-              <a href="https://github.com/shipshapecode/{{project.repo}}">{{fa-icon "github-alt" size='lg'}}</a>
+              {{svg-jar "star" height="20px" width="20px"}} <span class="stars">{{project.stars}}</span>
+              <a href="https://github.com/shipshapecode/{{project.repo}}" class="ssIcon github-icon">
+                {{svg-jar "github-alt" height="24px" width="24px"}}
+              </a>
             </centered>
           </hbox>
         </vbox>

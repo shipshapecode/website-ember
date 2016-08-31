@@ -20,11 +20,22 @@
     text-align: center;
     .hero-header {
       padding: 15px;
+      .heartIcon {
+        position: relative;
+        top: 1vw;
+        path {
+          fill: $cream;
+        }
+      }
     }
     p {
       color: $cream;
       text-align: left;
     }
+  }
+
+  .github-icon {
+    padding-top: 4px;
   }
 
   .info {

@@ -5,21 +5,38 @@
   padding: 25px;
   box-sizing: border-box;
   @include jagged(35BCE0, 40, top, fill, outside);
+
   i {
     padding: 10px;
   }
 
   &:before {
     animation: wave 30s linear infinite;
+
     @keyframes wave {
       0% {
         background-position: 0%;
-        //transform: rotate(0deg);
+        /*transform: rotate(0deg);*/
       }
+
       100% {
         background-position: 100%;
-        //transform: rotate(-2deg);
+        /*transform: rotate(-2deg);*/
       }
     }
+  }
+
+  .copyright {
+    svg {
+      padding-bottom: 4px;
+
+      path {
+        fill: $whiteish;
+      }
+    }
+  }
+
+  .ssIcon {
+    padding: 5px;
   }
 }

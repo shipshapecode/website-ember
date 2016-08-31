@@ -10,9 +10,6 @@ module.exports = function(defaults) {
     'ember-animatable': {
       include: ['bounceIn']
     },
-    'ember-font-awesome': {
-      useScss: true
-    },
     fingerprint: {
       extensions: ['js', 'css', 'map']
     }

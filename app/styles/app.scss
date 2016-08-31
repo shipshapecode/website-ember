@@ -1,4 +1,3 @@
-@import "font-awesome";
 @import 'variables';
 @import 'mixins';
 @import 'fonts';
@@ -72,19 +71,19 @@ a {
 .ember-3d-nav {
   centered {
     &:first-of-type a::before {
-      background-image: url(../img/boat.svg);
+      background-image: url(../img/navbar/boat.svg);
     }
     &:nth-of-type(2) a::before {
-      background-image: url(../img/ember-consulting.svg);
+      background-image: url(../img/navbar/ember-consulting.svg);
     }
     &:nth-of-type(3) a::before {
-      background-image: url(../img/code.svg);
+      background-image: url(../img/navbar/code.svg);
     }
     &:nth-of-type(4) a::before {
-      background-image: url(../img/anchor.svg);
+      background-image: url(../img/navbar/anchor.svg);
     }
     &:nth-of-type(5) a::before {
-      background-image: url(../img/blog.svg);
+      background-image: url(../img/navbar/blog.svg);
     }
   }
 }
@@ -130,4 +129,15 @@ h3, h4, h5, h6 {
 }
 .hero-subheader {
   font-size: 5vw;
+}
+
+.ssIcon {
+  path {
+    fill: $whiteish;
+  }
+  &:hover{
+    path {
+      fill: $bloodOrange;
+    }
+  }
 }
