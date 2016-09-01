@@ -9,6 +9,6 @@
     "hammerjs": "^2.0.6",
     "matchMedia": "0.2.0",
     "vivus": "0.3.0",
-    "headroom.js": "https://npmcdn.com/headroom.js/bower.zip#^0.9.3"
+    "headroom.js": "https://npmcdn.com/headroom.js/bower.zip"
   }
 }
