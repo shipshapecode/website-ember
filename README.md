@@ -10,6 +10,6 @@ This website is made possible by the following Ember addons:
 - [ember-typewriter](https://github.com/shipshapecode/ember-typewriter) (A Ship Shape addon)
 - [ember-vivus](https://github.com/shipshapecode/ember-vivus) (A Ship Shape addon)
 - [flexi](https://github.com/runspired/flexi)
-- headroom.js
+- [headroom.js](https://github.com/WickyNilliams/headroom.js)
 
 Special thanks to Nathan Gordon for this [article](https://medium.com/@gordonnl/stylised-line-animations-ded23320ffe5#.ow4kgdbks), which helped immensely with svg animation techniques, even though I have since abandoned that animation.
