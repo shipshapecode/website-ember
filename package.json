@@ -20,7 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
-    "ember-3d-nav": "1.0.6",
+    "ember-3d-nav": "1.1.2",
     "ember-animatable": "1.0.0",
     "ember-body-class": "0.3.9",
     "ember-browserify": "1.1.12",
