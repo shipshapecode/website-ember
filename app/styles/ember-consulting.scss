@@ -7,6 +7,31 @@
     text-align: center;
   }
 
+  .quote {
+    background-color: $veryLight;
+    text-align: center;
+    h1 {
+      color: $color4;
+
+      padding: 10px 5vw;
+      //Mobile
+      @media(max-width: 992px) {
+        font-size: 30px;
+        line-height: 35px;
+      }
+      //Dektop
+      @media(min-width: 992px) {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+    .quoteInfo {
+      color: $dark;
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+
   img {
     height: 100px;
     width: auto;

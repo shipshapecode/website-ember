@@ -2,10 +2,29 @@
   <centered>
     <h1 class="hero-header">Ember.js Consulting</h1>
   </centered>
+  {{#scroll-to href='.quote' }}
+    {{scroll-suggest}}
+  {{/scroll-to}}
+</page>
+
+<page class="quote">
+  <centered>
+    <box>
+      <h1>
+      “Ship Shape knows what they’re doing.
+      A thoughtful approach, pristine code and a 200% effort in everything
+      they do, makes recommending them a no-brainer.”
+    </h1>
+      <br/>
+      <p class="quoteInfo">James Dixon</p>
+      <p class="quoteInfo">Founder of Scout</p>
+    </box>
+  </centered>
   {{#scroll-to href='.clients' }}
     {{scroll-suggest}}
   {{/scroll-to}}
 </page>
+
 <page class="clients">
   <centered>
     <grid>
