@@ -1,41 +1,53 @@
-@import url(https://fonts.googleapis.com/css?family=Signika|Pacifico|Source+Sans+Pro:400,300);
+@font-face {
+  font-family: 'Pacifico';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../fonts/Pacifico-regular/Pacifico-regular.eot');
+  src: url('../../fonts/Pacifico-regular/Pacifico-regular.eot?#iefix') format('embedded-opentype'),
+       local('Pacifico Regular'),
+       local('Pacifico-regular'),
+       url('../../fonts/Pacifico-regular/Pacifico-regular.woff2') format('woff2'),
+       url('../../fonts/Pacifico-regular/Pacifico-regular.woff') format('woff'),
+       url('../../fonts/Pacifico-regular/Pacifico-regular.ttf') format('truetype'),
+       url('../../fonts/Pacifico-regular/Pacifico-regular.svg#Pacifico') format('svg');
+}
 
 @font-face {
   font-family: 'Pier Sans';
-  src: url('../../fonts/PierSans-BoldItalic.eot');
-  src: url('../../fonts/PierSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
-  url('../../fonts/PierSans-BoldItalic.woff') format('woff'),
-  url('../../fonts/PierSans-BoldItalic.ttf') format('truetype');
+  src: url('../../fonts/pier-sans/PierSans-BoldItalic.eot');
+  src: url('../../fonts/pier-sans/PierSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/pier-sans/PierSans-BoldItalic.woff') format('woff'),
+  url('../../fonts/pier-sans/PierSans-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Pier Sans';
-  src: url('../../fonts/PierSans-Italic.eot');
-  src: url('../../fonts/PierSans-Italic.eot?#iefix') format('embedded-opentype'),
-  url('../../fonts/PierSans-Italic.woff') format('woff'),
-  url('../../fonts/PierSans-Italic.ttf') format('truetype');
+  src: url('../../fonts/pier-sans/PierSans-Italic.eot');
+  src: url('../../fonts/pier-sans/PierSans-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/pier-sans/PierSans-Italic.woff') format('woff'),
+  url('../../fonts/pier-sans/PierSans-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Pier Sans';
-  src: url('../../fonts/PierSans.eot');
-  src: url('../../fonts/PierSans.eot?#iefix') format('embedded-opentype'),
-  url('../../fonts/PierSans.woff') format('woff'),
-  url('../../fonts/PierSans.ttf') format('truetype');
+  src: url('../../fonts/pier-sans/PierSans.eot');
+  src: url('../../fonts/pier-sans/PierSans.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/pier-sans/PierSans.woff') format('woff'),
+  url('../../fonts/pier-sans/PierSans.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Pier Sans';
-  src: url('../../fonts/PierSans-Bold.eot');
-  src: url('../../fonts/PierSans-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../../fonts/PierSans-Bold.woff') format('woff'),
-  url('../../fonts/PierSans-Bold.ttf') format('truetype');
+  src: url('../../fonts/pier-sans/PierSans-Bold.eot');
+  src: url('../../fonts/pier-sans/PierSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/pier-sans/PierSans-Bold.woff') format('woff'),
+  url('../../fonts/pier-sans/PierSans-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
