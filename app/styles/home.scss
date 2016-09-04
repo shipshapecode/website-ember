@@ -1,36 +1,31 @@
 @import 'variables';
 
 .home {
-  .hero {
-    background: url(../img/sails.jpg) no-repeat bottom center;
-    background-size: cover;
-  }
-
-  .tagline {
-    background-color: $background;
-    text-align: center;
-    .element {
-      color: $whiteish;
-      font-size: 4rem;
-      margin: 0;
-      padding: 50px 25px;
-    }
-    .typed-cursor {
-      color: $whiteish;
-      font-size: 4rem;
-      opacity: 1;
-      animation: blink 0.7s infinite;
-      @keyframes blink {
-        0% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    }
-  }
+  // .tagline {
+  //   background-color: $background;
+  //   text-align: center;
+  //   .element {
+  //     color: $whiteish;
+  //     font-size: 4rem;
+  //     margin: 0;
+  //     padding: 50px 25px;
+  //   }
+  //   .typed-cursor {
+  //     color: $whiteish;
+  //     font-size: 4rem;
+  //     opacity: 1;
+  //     animation: blink 0.7s infinite;
+  //     @keyframes blink {
+  //       0% {
+  //         opacity: 1;
+  //       }
+  //       50% {
+  //         opacity: 0;
+  //       }
+  //       100% {
+  //         opacity: 1;
+  //       }
+  //     }
+  //   }
+  // }
 }

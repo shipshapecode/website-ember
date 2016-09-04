@@ -12,6 +12,13 @@ module.exports = function(defaults) {
     },
     fingerprint: {
       extensions: ['js', 'css', 'map']
+    },
+    inlineContent: {
+      'contact': './app/styles/inline/contact.css',
+      'ember-consulting': './app/styles/inline/ember-consulting.css',
+      'fonts': './app/styles/inline/fonts.css',
+      'home': './app/styles/inline/home.css',
+      'open-source': './app/styles/inline/open-source.css'
     }
   });
 

@@ -1,0 +1,19 @@
+.contact {
+  background: url(../img/contact.jpg) no-repeat bottom center;
+  background-size: cover;
+}
+
+.contact .hero {
+    text-align: center;
+}
+
+.contact h1 {
+  color: #f1eef7;
+  font-size: 4rem;
+  margin: 25px 0 50px 0;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  margin: 25px 0 50px 0;
+}

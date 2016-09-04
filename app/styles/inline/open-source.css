@@ -1,0 +1,23 @@
+.open-source .hero {
+  background: url(../img/open-source.jpg) no-repeat bottom center;
+  background-size: cover;
+  text-align: center;
+}
+
+.open-source .hero .hero-header {
+  padding: 15px;
+}
+
+.open-source .hero .hero-header .heartIcon {
+  position: relative;
+  top: 1vw;
+}
+
+.open-source .hero .hero-header .heartIcon path {
+  fill: #F5F0E1;
+}
+
+.open-source .hero  p {
+  color: #F5F0E1;
+  text-align: left;
+}
