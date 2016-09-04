@@ -6,12 +6,40 @@
   }
 
   .css-device__image {
-    max-width: 100%;
-    height: auto;
+    // Huge
+    @media all
+    and (min-width: 1200px)
+     {
+       height: 15vw;
+       width: 30vw;
+    }
+    // Desktop
+    @media all
+    and (min-width: 992px)
+    and (max-width: 1199px)
+     {
+       height: 15vw;
+       width: 30vw;
+    }
+    // Tablet
+    @media all
+    and (min-width: 768px)
+    and (max-width: 991px) {
+      height: 20vw;
+      width: 40vw;
+    }
+
+    // Mobile
+    @media all
+    and (min-width: 0px)
+    and (max-width: 767px) {
+      height: 50vw;
+      width: 85vw;
+    }
   }
 
   .css-device--browser {
-    max-width: 400px;
+    width: 100%;
     /* max-width: 100%; set max width here if you need to. */
     border-top: solid 36px #dfdfdf;
     border-right: solid 2px #dfdfdf;

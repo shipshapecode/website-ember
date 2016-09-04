@@ -3,10 +3,13 @@
     text-align: center;
   }
 
-  .mouse-icon {
-    left: auto !important;
+  .mobile-scroll, .mouse-icon {
     margin: 60px auto;
     position: relative !important;
+  }
+
+  .mouse-icon {
+    left: auto !important;
   }
 
   .stars {
