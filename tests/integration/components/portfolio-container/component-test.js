@@ -11,14 +11,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{portfolio-container}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#portfolio-container}}
-      template block text
-    {{/portfolio-container}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim(), 'Ember Addons');
 });

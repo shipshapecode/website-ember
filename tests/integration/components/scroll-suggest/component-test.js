@@ -12,13 +12,4 @@ test('it renders', function(assert) {
   this.render(hbs`{{scroll-suggest}}`);
 
   assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#scroll-suggest}}
-      template block text
-    {{/scroll-suggest}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });

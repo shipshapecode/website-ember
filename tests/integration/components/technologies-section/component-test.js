@@ -1,5 +1,6 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import stripWhitespace from '../../../helpers/strip-whitespace';
 
 moduleForComponent('technologies-section', 'Integration | Component | technologies section', {
   integration: true
@@ -11,14 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{technologies-section}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#technologies-section}}
-      template block text
-    {{/technologies-section}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(stripWhitespace(stripWhitespace(this.$().text().trim())), 'Technologies we use node');
 });

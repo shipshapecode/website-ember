@@ -1,8 +1,7 @@
 import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:contact', 'Unit | Route | contact', {
-  // Specify the other units that are required for this test.
-  // needs: ['controller:foo']
+  needs: ['service:router-scroll']
 });
 
 test('it exists', function(assert) {
