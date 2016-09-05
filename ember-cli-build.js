@@ -11,7 +11,8 @@ module.exports = function(defaults) {
       include: ['bounceIn']
     },
     fingerprint: {
-      extensions: ['js', 'css', 'map']
+      enabled: false
+      //extensions: ['js', 'css', 'map']
     },
     inlineContent: {
       contact: './app/styles/inline/contact.css',
