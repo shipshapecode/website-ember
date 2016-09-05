@@ -2,12 +2,58 @@ import Ember from 'ember';
 const { inject: { service }, Route } = Ember;
 
 export default Route.extend({
-  fastboot: service(),
   headData: service(),
   model() {
-    if (!this.get('fastboot.isFastBoot')) {
-      return this.store.findAll('github-repo');
-    }
+    // return this.store.findAll('github-repo');
+
+    // Use static data for now, since EmberFire gives Fastboot Errors
+    return [
+      {
+        'name': 'Ember 3D Nav',
+        'repo': 'ember-3d-nav',
+        'stars': 9
+      },
+      {
+        'name': 'Ember Drop',
+        'repo': 'ember-drop',
+        'stars': 4
+      },
+      {
+        'name': 'Ember Flatpickr',
+        'repo': 'ember-flatpickr',
+        'stars': 16
+      },
+      {
+        'name': 'Ember Math Helpers',
+        'repo': 'ember-math-helpers',
+        'stars': 12
+      },
+      {
+        'name': 'Ember Newton Cradle Loader',
+        'repo': 'ember-newton-cradle-loader',
+        'stars': 0
+      },
+      {
+        'name': 'Ember Shepherd',
+        'repo': 'ember-shepherd',
+        'stars': 62
+      },
+      {
+        'name': 'Ember Typewriter',
+        'repo': 'ember-typewriter',
+        'stars': 0
+      },
+      {
+        'name': 'Ember Vivus',
+        'repo': 'ember-vivus',
+        'stars': 0
+      },
+      {
+        'name': 'Ember X-Editable',
+        'repo': 'ember-x-editable',
+        'stars': 12
+      }
+    ];
   },
   afterModel() {
     return this.get('headData').setProperties({
