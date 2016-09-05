@@ -2,9 +2,12 @@ import Ember from 'ember';
 const { inject: { service }, Route } = Ember;
 
 export default Route.extend({
+  fastboot: service(),
   headData: service(),
   model() {
-    return this.store.findAll('github-repo');
+    if (!this.get('fastboot.isFastBoot')) {
+      return this.store.findAll('github-repo');
+    }
   },
   afterModel() {
     return this.get('headData').setProperties({
