@@ -6,41 +6,34 @@
   }
 
   .css-device__image {
-    // Huge
+    height: 100%;
+    width: 100%;
+  }
+
+  .css-device--browser {
+    /* Desktop */
     @media all
-    and (min-width: 1200px)
-     {
-       height: 15vw;
-       width: 30vw;
+    and (min-width: 992px) {
+      height: 15vw;
+      width: 25vw;
     }
-    // Desktop
-    @media all
-    and (min-width: 992px)
-    and (max-width: 1199px)
-     {
-       height: 15vw;
-       width: 30vw;
-    }
-    // Tablet
+
+    /* Tablet */
     @media all
     and (min-width: 768px)
     and (max-width: 991px) {
-      height: 20vw;
+      height: 25vw;
       width: 40vw;
     }
 
-    // Mobile
+    /* Mobile */
     @media all
     and (min-width: 0px)
     and (max-width: 767px) {
       height: 50vw;
-      width: 85vw;
+      width: 80vw;
     }
-  }
 
-  .css-device--browser {
-    width: 100%;
-    /* max-width: 100%; set max width here if you need to. */
     border-top: solid 36px #dfdfdf;
     border-right: solid 2px #dfdfdf;
     border-left: solid 2px #dfdfdf;
