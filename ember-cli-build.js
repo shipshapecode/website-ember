@@ -11,36 +11,16 @@ module.exports = function(defaults) {
       include: ['bounceIn']
     },
     fingerprint: {
-      enabled: false
-      //extensions: ['js', 'css', 'map']
+      extensions: ['js', 'css', 'map']
+    },
+    inlineContent: {
+      contact: './app/styles/inline/contact.css',
+      'ember-consulting': './app/styles/inline/ember-consulting.css',
+      fonts: './app/styles/inline/fonts.css',
+      home: './app/styles/inline/home.css',
+      'open-source': './app/styles/inline/open-source.css'
     }
   });
-
-  if(app.env === 'development'){
-    app.options.inlineContent = {
-      contact: './app/styles/inline/contact.css',
-      'ember-consulting': './app/styles/inline/ember-consulting.css',
-      fonts: './app/styles/inline/fonts.css',
-      home: './app/styles/inline/home.css',
-      'open-source': './app/styles/inline/open-source.css',
-      vendorCSS: '/dist/assets/vendor.css',
-      vendorJS: '/dist/assets/vendor.js',
-      websiteCSS: '/dist/assets/website.css',
-      websiteJS: '/dist/assets/website.js'
-    }
-  } else if(app.env === 'production'){
-    app.options.inlineContent = {
-      contact: './app/styles/inline/contact.css',
-      'ember-consulting': './app/styles/inline/ember-consulting.css',
-      fonts: './app/styles/inline/fonts.css',
-      home: './app/styles/inline/home.css',
-      'open-source': './app/styles/inline/open-source.css',
-      vendorCSS: '/assets/vendor.css',
-      vendorJS: '/assets/vendor.js',
-      websiteCSS: '/assets/website.css',
-      websiteJS: '/assets/website.js'
-    }
-  }
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
