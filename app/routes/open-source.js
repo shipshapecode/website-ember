@@ -51,7 +51,7 @@ export default Route.extend({
       {
         'name': 'Ember X-Editable',
         'repo': 'ember-x-editable',
-        'stars': 12
+        'stars': 13
       }
     ];
   },
