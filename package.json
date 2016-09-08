@@ -19,6 +19,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer": "^6.4.1",
     "broccoli-asset-rev": "^2.4.2",
     "ember-3d-nav": "1.2.1",
     "ember-animatable": "1.0.0",
@@ -36,13 +37,12 @@
     "ember-cli-inline-content": "^0.4.0",
     "ember-cli-qunit": "^2.1.0",
     "ember-cli-release": "^0.2.9",
-    "ember-cli-sass": "5.5.1",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-template-lint": "0.4.12",
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
-    "ember-component-css": "0.1.9",
     "ember-contact-form": "0.0.7",
+    "ember-css-modules": "0.4.4",
     "ember-data": "^2.5.3",
     "ember-export-application-global": "^1.0.5",
     "ember-in-viewport": "git+https://github.com/davidpett/ember-in-viewport.git#506e42e720fb7d15bcb5367118895b8cfbfb69ce",
@@ -57,6 +57,8 @@
     "emberfire": "2.0.0",
     "eslint-plugin-ember-suave": "^0.1.2",
     "flexi": "runspired/flexi#develop",
-    "loader.js": "^4.0.1"
+    "loader.js": "^4.0.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^3.0.0"
   }
 }

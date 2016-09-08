@@ -1,12 +1,26 @@
 /* eslint-disable */
 /* global require, module */
-var EmberApp = require('ember-cli/lib/broccoli/ember-app');
-var shim = require('flexi/lib/pod-templates-shim');
 
+// PostCSS Plugins
+var autoprefixer = require('autoprefixer');
+var postCssSimpleVars = require('postcss-simple-vars');
+var postCssNested = require('postcss-nested');
+
+var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+// Flexi shim
+var shim = require('flexi/lib/pod-templates-shim');
 shim(EmberApp);
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    cssModules: {
+      plugins: [
+        autoprefixer('last 2 versions'),
+        postCssNested(),
+        postCssSimpleVars()
+      ]
+    },
     'ember-animatable': {
       include: ['bounceIn']
     },

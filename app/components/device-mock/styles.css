@@ -1,4 +1,4 @@
-& {
+.device-mock {
   margin-bottom: 15px;
 
   .css-device {
@@ -12,28 +12,26 @@
 
   .css-device--browser {
     /* Desktop */
+
     @media all
     and (min-width: 992px) {
       height: 15vw;
       width: 25vw;
-    }
+    }/* Tablet */
 
-    /* Tablet */
     @media all
     and (min-width: 768px)
     and (max-width: 991px) {
       height: 25vw;
       width: 40vw;
-    }
+    }/* Mobile */
 
-    /* Mobile */
     @media all
     and (min-width: 0px)
     and (max-width: 767px) {
       height: 50vw;
       width: 80vw;
     }
-
     border-top: solid 36px #dfdfdf;
     border-right: solid 2px #dfdfdf;
     border-left: solid 2px #dfdfdf;
