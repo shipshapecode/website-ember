@@ -43,7 +43,7 @@
     "ember-cli-uglify": "^1.2.0",
     "ember-component-css": "0.1.9",
     "ember-contact-form": "0.0.7",
-    "ember-data": "^2.5.3",
+    "ember-data": "^2.8.0",
     "ember-export-application-global": "^1.0.5",
     "ember-in-viewport": "git+https://github.com/davidpett/ember-in-viewport.git#506e42e720fb7d15bcb5367118895b8cfbfb69ce",
     "ember-load-initializers": "^0.5.1",
