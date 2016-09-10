@@ -25,46 +25,14 @@
   {{/scroll-to}}
 </page>
 
-<page class="clients">
-  <centered>
-    <grid>
-      <centered xs="12">
-        <h2 class="hero-subheader">Who we've worked with</h2>
-      </centered>
-      <centered xs="12" sm="6" md="4">
-        <a href="https://www.scoutforpets.com/">
-          <vbox>
-            <hbox>
-              <centered>
-                <img src="img/scout-logo.png">
-              </centered>
-            </hbox>
-            <hbox>
-              <centered>
-                <h2>Scout</h2>
-              </centered>
-            </hbox>
-          </vbox>
-        </a>
-      </centered>
-      <centered xs="12" sm="6" md="4">
-        <a href="http://williamsonwagner.com/">
-          <vbox>
-            <hbox>
-              <centered>
-                <img src="img/WW.png">
-              </centered>
-            </hbox>
-            <hbox>
-              <centered>
-                <h2>Williamson Wagner</h2>
-              </centered>
-            </hbox>
-          </vbox>
-        </a>
-      </centered>
-    </grid>
-  </centered>
-</page>
+<div class="clients">
+  {{#ember-3d-folding-panel}}
+    {{#each model as |item|}}
+      {{#item-square item=item}}
+        <img src="{{item.imageURL}}">
+      {{/item-square}}
+    {{/each}}
+  {{/ember-3d-folding-panel}}
+</div>
 
 {{contact-footer}}
