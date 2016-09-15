@@ -1,6 +1,11 @@
 @import 'variables';
 
 .ember-consulting {
+  .fold-content {
+    p {
+      color: $color3;
+    }
+  }
   .quote {
     background-color: $veryLight;
     text-align: center;
