@@ -27,7 +27,16 @@ module.exports = function(environment) {
       authDomain: "shipshape.firebaseapp.com",
       databaseURL: "https://shipshape.firebaseio.com",
       storageBucket: "project-6663340002093576455.appspot.com"
-    }
+    },
+    metricsAdapters: [
+      {
+        name: 'GoogleAnalytics',
+        environments: ['production'],
+        config: {
+          id: 'UA-84561982-1'
+        }
+      }
+    ]
   };
 
   if (environment === 'development') {

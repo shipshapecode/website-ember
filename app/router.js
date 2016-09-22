@@ -1,11 +1,29 @@
 import Ember from 'ember';
 import config from './config/environment';
 import RouterScroll from 'ember-router-scroll';
-const { Router: EmberRouter } = Ember;
+const { inject, Router: EmberRouter, run } = Ember;
 
 const Router = EmberRouter.extend(RouterScroll, {
   location: config.locationType,
-  rootURL: config.rootURL
+  rootURL: config.rootURL,
+  fastboot: inject.service(),
+  metrics: inject.service(),
+
+  didTransition() {
+    this._super(...arguments);
+    this._trackPage();
+  },
+
+  _trackPage() {
+    if (!this.get('fastboot.isFastBoot')) {
+      run.scheduleOnce('afterRender', this, () => {
+        let page = document.location.pathname;
+        let title = this.getWithDefault('currentRouteName', 'unknown');
+
+        this.get('metrics').trackPage({ page, title });
+      });
+    }
+  }
 });
 
 Router.map(function() {
