@@ -71,7 +71,7 @@
     "ember-svg-jar": "0.9.3",
     "ember-truth-helpers": "1.2.0",
     "ember-vivus": "0.1.0",
-    "eslint-plugin-ember-suave": "^0.1.2",
+    "eslint-plugin-ember-suave": "^1.0.0",
     "flexi": "runspired/flexi#develop",
     "loader.js": "^4.0.10"
   }
