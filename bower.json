@@ -6,6 +6,7 @@
     "ember-cli-shims": "0.1.3",
     "hammerjs": "^2.0.6",
     "matchMedia": "0.2.0",
-    "vivus": "0.3.0"
+    "vivus": "0.3.0",
+    "hammer-time": "^1.1.0"
   }
 }
