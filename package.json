@@ -3,20 +3,6 @@
   "version": "0.0.0",
   "description": "Small description for website goes here",
   "private": true,
-  "greenkeeper": {
-    "ignore": [
-      "broccoli-asset-rev",
-      "ember-cli-app-version",
-      "ember-cli-babel",
-      "ember-cli-htmlbars",
-      "ember-cli-htmlbars-inline-precompile",
-      "ember-cli-qunit",
-      "ember-cli-sri",
-      "ember-cli-test-loader",
-      "ember-resolver",
-      "loader.js"
-    ]
-  },
   "directories": {
     "doc": "doc",
     "test": "tests"
