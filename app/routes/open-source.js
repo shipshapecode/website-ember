@@ -11,7 +11,7 @@ export default Route.extend({
       {
         'name': 'Ember 3D Nav',
         'repo': 'ember-3d-nav',
-        'stars': 9
+        'stars': 10
       },
       {
         'name': 'Ember Drop',
@@ -26,7 +26,7 @@ export default Route.extend({
       {
         'name': 'Ember Math Helpers',
         'repo': 'ember-math-helpers',
-        'stars': 12
+        'stars': 17
       },
       {
         'name': 'Ember Newton Cradle Loader',
@@ -36,7 +36,7 @@ export default Route.extend({
       {
         'name': 'Ember Shepherd',
         'repo': 'ember-shepherd',
-        'stars': 62
+        'stars': 66
       },
       {
         'name': 'Ember Typewriter',
