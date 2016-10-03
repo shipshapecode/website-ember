@@ -49,6 +49,7 @@
     "ember-export-application-global": "^1.0.5",
     "ember-hammertime": "runspired/ember-hammertime",
     "ember-in-viewport": "git+https://github.com/davidpett/ember-in-viewport.git#506e42e720fb7d15bcb5367118895b8cfbfb69ce",
+    "ember-load": "0.0.9",
     "ember-load-initializers": "^0.5.1",
     "ember-metrics": "0.6.3",
     "ember-newton-cradle-loader": "0.1.1",
