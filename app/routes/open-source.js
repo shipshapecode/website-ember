@@ -57,7 +57,7 @@ export default Route.extend({
   },
   afterModel() {
     return this.get('headData').setProperties({
-      title: 'Ship Shape - Open Source',
+      title: 'Open Source - Ship Shape',
       description: 'We have created several Ember addons and collaborated extensively with the Ember community.',
       type: 'website',
       url: 'https://shipshape.io/portfolio'

@@ -44,9 +44,10 @@ export default Route.extend({
   },
   afterModel() {
     return this.get('headData').setProperties({
-      title: 'Ship Shape - Ember Consulting',
-      description: 'We have worked on several ambitious, full scale apps for various companies. '
-      + 'Contact us for Ember.js consulting work!',
+      title: 'Ember Consulting - Ship Shape',
+      description: 'Ember consulting is our specialty at Ship Shape.'
+      + 'We have worked on several ambitious, full scale apps for various companies. '
+      + 'Contact us for Ember consulting work!',
       type: 'website',
       url: 'https://shipshape.io/ember-consulting'
     });

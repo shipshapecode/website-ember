@@ -26,7 +26,7 @@ export default Route.extend({
   },
   afterModel() {
     return this.get('headData').setProperties({
-      title: 'Ship Shape - Contact',
+      title: 'Contact - Ship Shape',
       description: 'Contact us for Ember.js consulting work!',
       type: 'website',
       url: 'https://shipshape.io/contact'
