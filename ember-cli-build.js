@@ -19,7 +19,10 @@ module.exports = function(defaults) {
       fonts: './app/styles/inline/fonts.css',
       home: './app/styles/inline/home.css',
       'open-source': './app/styles/inline/open-source.css'
-    }
+    },
+    SRI: {
+      enabled: false
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
