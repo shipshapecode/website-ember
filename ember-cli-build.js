@@ -1,6 +1,7 @@
 /* eslint-disable */
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var environment = process.env.EMBER_ENV;
 var shim = require('flexi/lib/pod-templates-shim');
 
 shim(EmberApp);
@@ -9,6 +10,27 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     'ember-animatable': {
       include: ['bounceIn']
+    },
+    emberCliConcat: {
+      enabled: true,
+      outputDir: 'assets',
+      outputFileName: 'app',
+      useSelfClosingTags: false,
+      wrapScriptsInFunction: false,
+      js: {
+        concat: false,
+        contentFor: 'concat-js',
+        footer: null,
+        header: null,
+        preserveOriginal: true
+      },
+      css: {
+        concat: true,
+        contentFor: 'concat-css',
+        footer: null,
+        header: null,
+        preserveOriginal: true
+      },
     },
     fingerprint: {
       extensions: ['js', 'css', 'map']
@@ -25,6 +47,7 @@ module.exports = function(defaults) {
       enabled: false
     },
   });
+
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
