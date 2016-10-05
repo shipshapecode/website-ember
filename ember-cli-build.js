@@ -18,7 +18,7 @@ module.exports = function(defaults) {
       useSelfClosingTags: false,
       wrapScriptsInFunction: false,
       js: {
-        concat: false,
+        concat: true,
         contentFor: 'concat-js',
         footer: null,
         header: null,
