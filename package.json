@@ -23,7 +23,6 @@
     "broccoli-asset-rev": "^2.4.5",
     "ember-3d-folding-panel": "0.0.6",
     "ember-3d-nav": "1.2.2",
-    "ember-animatable": "1.0.0",
     "ember-body-class": "0.3.9",
     "ember-cli": "2.9.0-beta.1",
     "ember-cli-app-version": "^2.0.0",

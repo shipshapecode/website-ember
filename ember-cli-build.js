@@ -8,9 +8,6 @@ shim(EmberApp);
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    'ember-animatable': {
-      include: ['bounceIn']
-    },
     emberCliConcat: {
       enabled: true,
       outputDir: 'assets',

@@ -1,7 +1,6 @@
 {
   "name": "website",
   "dependencies": {
-    "animate.css": "~3.4.0",
     "ember": "~2.9.0-beta.4",
     "ember-cli-shims": "0.1.3",
     "hammerjs": "^2.0.6",
