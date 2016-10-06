@@ -33,8 +33,6 @@ module.exports = function(defaults) {
       extensions: ['js', 'css', 'map']
     },
     inlineContent: {
-      'app-css': '/dist/assets/app.css',
-      'app-js': '/dist/assets/app.js',
       contact: './app/styles/inline/contact.css',
       'ember-consulting': './app/styles/inline/ember-consulting.css',
       fonts: './app/styles/inline/fonts.css',
