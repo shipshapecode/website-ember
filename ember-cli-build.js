@@ -33,6 +33,7 @@ module.exports = function(defaults) {
       extensions: ['js', 'css', 'map']
     },
     inlineContent: {
+      app: './app/styles/inline/app.css',
       contact: './app/styles/inline/contact.css',
       'ember-consulting': './app/styles/inline/ember-consulting.css',
       fonts: './app/styles/inline/fonts.css',

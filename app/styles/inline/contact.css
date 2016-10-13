@@ -3,14 +3,14 @@
   background-size: cover;
 }
 
-.contact .hero {
-    text-align: center;
+.contact vbox {
+  margin-top: 150px;
+  text-align: center;
 }
-
 .contact h1 {
   color: #f1eef7;
   font-size: 4rem;
-  margin: 25px 0 50px 0;
+  margin-bottom: 25px;
 }
 
 .contact h2 {
