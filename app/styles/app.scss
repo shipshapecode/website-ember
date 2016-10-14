@@ -28,7 +28,6 @@ $ember-3d-nav: (
   box-sizing: border-box;
 }
 
-
 html {
   font-size: 62.5%;
 }
@@ -127,9 +126,22 @@ h3, h4, h5, h6 {
   path {
     fill: $whiteish;
   }
-  &:hover{
+  &:hover {
     path {
       fill: $bloodOrange;
+    }
+  }
+}
+
+.cd-form {
+  input[type="submit"] {
+    &:disabled {
+      cursor: not-allowed;
+      //pointer-events: none;
+
+      /*Button disabled - CSS color class*/
+      color: $grey;
+      background-color: $darkGrey;
     }
   }
 }

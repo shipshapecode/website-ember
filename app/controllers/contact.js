@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import { not } from 'ember-computed-decorators';
 const { Controller } = Ember;
 
 export default Controller.extend({
@@ -18,5 +19,6 @@ export default Controller.extend({
       name: 'project-type',
       text: 'Ember Development'
     }
-  ]
+  ],
+  @not('model.validations.isValid') sendDisabled: null
 });
