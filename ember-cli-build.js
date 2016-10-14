@@ -7,7 +7,7 @@ var shim = require('flexi/lib/pod-templates-shim');
 shim(EmberApp);
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {
+  var options = {
     emberCliConcat: {
       enabled: true,
       outputDir: 'assets',
@@ -15,14 +15,14 @@ module.exports = function(defaults) {
       useSelfClosingTags: false,
       wrapScriptsInFunction: false,
       js: {
-        concat: true,
+        concat: false,
         contentFor: 'concat-js',
         footer: null,
         header: null,
         preserveOriginal: true
       },
       css: {
-        concat: true,
+        concat: false,
         contentFor: 'concat-css',
         footer: null,
         header: null,
@@ -43,8 +43,22 @@ module.exports = function(defaults) {
     SRI: {
       enabled: false
     },
-  });
+  };
 
+  if (environment === 'production') {
+    options.emberCliConcat = {
+      css: {
+        concat: true,
+        preserveOriginal: false
+      },
+      js: {
+        concat: true,
+        preserveOriginal: false
+      }
+    }
+  }
+
+  var app = new EmberApp(defaults, options);
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
