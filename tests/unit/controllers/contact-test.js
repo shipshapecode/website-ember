@@ -1,10 +1,11 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:page-not-found', 'Unit | Route | page not found', {
+moduleFor('controller:contact', 'Unit | Controller | contact', {
   needs: ['service:fastboot', 'service:metrics', 'service:router-scroll']
 });
 
+// Replace this with your real tests.
 test('it exists', function(assert) {
-  let route = this.subject();
-  assert.ok(route);
+  let controller = this.subject();
+  assert.ok(controller);
 });

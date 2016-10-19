@@ -8,6 +8,9 @@ shim(EmberApp);
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    babel: {
+      optional: ['es7.decorators']
+    },
     emberCliConcat: {
       enabled: true,
       outputDir: 'assets',
@@ -33,6 +36,7 @@ module.exports = function(defaults) {
       extensions: ['js', 'css', 'map']
     },
     inlineContent: {
+      app: './app/styles/inline/app.css',
       contact: './app/styles/inline/contact.css',
       'ember-consulting': './app/styles/inline/ember-consulting.css',
       fonts: './app/styles/inline/fonts.css',

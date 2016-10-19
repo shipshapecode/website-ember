@@ -1,55 +1,41 @@
 <page class="hero">
+  <vbox align="center">
+    <h1>Let's create something amazing.</h1>
+    <h2>We would love to work on your next Ember app or addon.</h2>
+  </vbox>
+
   <centered>
-    <grid>
-      <centered xs="12">
-        <h1>Batten down the hatches</h1>
-      </centered>
-      <centered xs="12">
-        <centered xs="8">
-          <h2>
-            We'd love to work with you on your next Ember project. Drop us a line to get the
-            ball rolling!
-          </h2>
-        </centered>
-      </centered>
-      <centered xs="12">
-        <h2><a href="mailto:ahoy@shipshape.io">ahoy@shipshape.io</a></h2>
-      </centered>
-    </grid>
-  </centered>
-</page>
-{{!--
-  <centered>
-    <form class="cd-form floating-labels">
+    <form class="cd-form floating-labels"
+      {{action (route-action 'sendContactRequest' model) on="submit"}}>
       <fieldset>
         <legend>Personal Info</legend>
         <centered xs="12">
           {{contact-input
-          fieldName="name"
-          labelText="Name"
-          required=true
-          type="text"
-          value=name
+            fieldName="name"
+            labelText="Name"
+            required=true
+            type="text"
+            value=model.name
           }}
         </centered>
 
         <centered xs="12">
           {{contact-input
-          fieldName="company"
-          labelText="Company"
-          required=false
-          type="text"
-          value=company
+            fieldName="company"
+            labelText="Company"
+            required=false
+            type="text"
+            value=model.company
           }}
         </centered>
 
         <centered xs="12">
           {{contact-input
-          fieldName="email"
-          labelText="Email"
-          required=true
-          type="email"
-          value=email
+            fieldName="email"
+            labelText="Email"
+            required=true
+            type="email"
+            value=model.email
           }}
         </centered>
       </fieldset>
@@ -59,26 +45,29 @@
 
         <centered xs="12">
           {{form-list
-          groupValue="oss"
-          options=model.projectTypes
-          type="radio"}}
+            groupValue=model.projectType
+            options=projectTypes
+            type="radio"}}
         </centered>
 
         <centered xs="12">
           {{contact-input
-          fieldName="textarea"
-          labelText="Project description"
-          required=true
-          textarea=true
-          value=description
+            fieldName="textarea"
+            labelText="Project description"
+            required=true
+            textarea=true
+            value=model.description
           }}
         </centered>
 
       </fieldset>
 
       <div>
-        <input type="submit" value="Send Message">
+        {{input
+          disabled=sendDisabled
+          type="submit"
+          value="Send Message"}}
       </div>
     </form>
   </centered>
-  --}}
+</page>
