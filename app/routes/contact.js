@@ -2,6 +2,7 @@ import Ember from 'ember';
 const { inject: { service }, Route } = Ember;
 
 export default Route.extend({
+  ajax: service(),
   headData: service(),
   model() {
     return this.store.createRecord('contact');
@@ -18,7 +19,12 @@ export default Route.extend({
   actions: {
     sendContactRequest(model) {
       if (model.get('validations.isValid')) {
-        return model.save();
+        return model.save().then((contact) => {
+          this.get('ajax').post('https://shipshape.stamplayapp.com/api/webhook/v1/emailcontactinfo/catch',
+            {
+              data: contact.toJSON()
+            });
+        });
       }
     }
   }
