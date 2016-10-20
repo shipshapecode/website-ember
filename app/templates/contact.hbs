@@ -68,6 +68,14 @@
           type="submit"
           value="Send Message"}}
       </div>
+
+      <vbox class="alerts">
+        <centered>
+          {{#each flashMessages.queue as |flash|}}
+            {{flash-message flash=flash}}
+          {{/each}}
+        </centered>
+      </vbox>
     </form>
   </centered>
 </page>

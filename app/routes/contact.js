@@ -3,6 +3,7 @@ const { inject: { service }, Route } = Ember;
 
 export default Route.extend({
   ajax: service(),
+  flashMessages: service(),
   headData: service(),
   model() {
     return this.store.createRecord('contact');
@@ -19,12 +20,25 @@ export default Route.extend({
   actions: {
     sendContactRequest(model) {
       if (model.get('validations.isValid')) {
-        return model.save().then((contact) => {
-          this.get('ajax').post('https://shipshape.stamplayapp.com/api/webhook/v1/emailcontactinfo/catch',
-            {
-              data: contact.toJSON()
+        return model.save()
+          .then(
+            (contact) => {
+              this.get('ajax').post('https://shipshape.stamplayapp.com/api/webhook/v1/emailcontactinfo/catch',
+                {
+                  data: contact.toJSON()
+                })
+                .then(
+                  () => {
+                    this.get('flashMessages').success('Thanks for contacting us! We\'ll be in touch shortly.');
+                  },
+                  () => {
+                    this.get('flashMessages').danger('Something went wrong :(. Please refresh and try again.');
+                  }
+                );
+            },
+            () => {
+              this.get('flashMessages').danger('Something went wrong :(. Please refresh and try again.');
             });
-        });
       }
     }
   }
