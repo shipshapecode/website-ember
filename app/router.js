@@ -17,8 +17,8 @@ const Router = EmberRouter.extend(RouterScroll, {
   _trackPage() {
     if (!this.get('fastboot.isFastBoot')) {
       run.scheduleOnce('afterRender', this, () => {
-        let page = document.location.pathname;
-        let title = this.getWithDefault('currentRouteName', 'unknown');
+        const page = document.location.pathname;
+        const title = this.getWithDefault('currentRouteName', 'unknown');
 
         this.get('metrics').trackPage({ page, title });
       });

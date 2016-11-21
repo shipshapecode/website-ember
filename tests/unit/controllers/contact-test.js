@@ -5,7 +5,7 @@ moduleFor('controller:contact', 'Unit | Controller | contact', {
 });
 
 test('sendDisabled calculates correctly', function(assert) {
-  let controller = this.subject();
+  const controller = this.subject();
 
   controller.set('model', { validations: { isValid: false } });
 

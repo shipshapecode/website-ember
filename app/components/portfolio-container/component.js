@@ -4,6 +4,9 @@ const { Component, computed } = Ember;
 export default Component.extend({
   tagName: 'page',
   classNameBindings: [':portfolio-container'],
-  projectSorting: ['stars:desc'],
-  projects: computed.sort('model', 'projectSorting')
+  projects: computed.sort('model', 'projectSorting'),
+  init() {
+    this._super(...arguments);
+    this.projectSorting = ['stars:desc'];
+  }
 });

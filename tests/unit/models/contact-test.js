@@ -8,7 +8,7 @@ moduleForModel('contact', 'Unit | Model | contact', {
 });
 
 test('model validations are correct', function(assert) {
-  let model = this.subject();
+  const model = this.subject();
 
   assert.equal(model.get('validations.isValid'), false, 'Model is invalid');
 
