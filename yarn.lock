@@ -1204,6 +1204,12 @@ can-symlink@^1.0.0:
   dependencies:
     tmp "0.0.28"
 
+capture-exit@^1.0.4:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/capture-exit/-/capture-exit-1.1.0.tgz#d931b32b11c2bd20ae57f34af0c1eb2c18781626"
+  dependencies:
+    rsvp "^3.3.3"
+
 cardinal@^0.5.0:
   version "0.5.0"
   resolved "https://registry.npmjs.org/cardinal/-/cardinal-0.5.0.tgz#00d5f661dbd4aabfdf7d41ce48a5a59bca35a291"
@@ -1927,9 +1933,9 @@ ember-3d-nav@1.2.4:
     ember-truth-helpers "1.2.0"
     flexi "1.2.0"
 
-ember-ajax@2.5.2:
-  version "2.5.2"
-  resolved "https://registry.npmjs.org/ember-ajax/-/ember-ajax-2.5.2.tgz#aefd6f860b03ab75c97e73ed410aa9e371ea88c6"
+ember-ajax@^2.4.1:
+  version "2.5.3"
+  resolved "https://registry.yarnpkg.com/ember-ajax/-/ember-ajax-2.5.3.tgz#02dded6c132290edd47ee9862a7a8821c6919dad"
   dependencies:
     ember-cli-babel "^5.1.5"
 
@@ -2270,9 +2276,9 @@ ember-cli-version-checker@^1.0.2, ember-cli-version-checker@^1.1.4, ember-cli-ve
     rsvp "3.0.14"
     yuidocjs "^0.10.0"
 
-ember-cli@2.10.0-beta.2:
-  version "2.10.0-beta.2"
-  resolved "https://registry.npmjs.org/ember-cli/-/ember-cli-2.10.0-beta.2.tgz#59f874adfded2dab68dddc65fb34b3e699c5ee92"
+ember-cli@2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-2.10.0.tgz#3aefd56a207f60be1ba120aeacd41e7e7a9383d8"
   dependencies:
     amd-name-resolver "0.0.6"
     bower "^1.3.12"
@@ -2290,6 +2296,7 @@ ember-cli@2.10.0-beta.2:
     broccoli-middleware "^0.18.1"
     broccoli-source "^1.1.0"
     broccoli-stew "^1.2.0"
+    capture-exit "^1.0.4"
     chalk "^1.1.3"
     clean-base-url "^1.0.0"
     compression "^1.4.4"
@@ -2349,7 +2356,7 @@ ember-cli@2.10.0-beta.2:
     temp "0.8.3"
     testem "^1.8.1"
     through "^2.3.6"
-    tiny-lr "1.0.2"
+    tiny-lr "^1.0.3"
     tree-sync "^1.1.4"
     walk-sync "^0.3.0"
     yam "0.0.22"
@@ -2398,9 +2405,9 @@ ember-cp-validations@3.1.2:
     exists-sync "0.0.3"
     walk-sync "^0.3.1"
 
-ember-data@^2.10.0-beta.1:
-  version "2.10.0-beta.2"
-  resolved "https://registry.npmjs.org/ember-data/-/ember-data-2.10.0-beta.2.tgz#d3c54a94a675dc818fd0deaceaf22190593bb78d"
+ember-data@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/ember-data/-/ember-data-2.10.0.tgz#9d6e23ba21ab242afc03a2ac77e8071bc51a5c62"
   dependencies:
     amd-name-resolver "0.0.5"
     babel-plugin-feature-flags "^0.2.1"
@@ -3477,11 +3484,7 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-git-repo-info@^1.0.4, git-repo-info@^1.1.2:
-  version "1.3.1"
-  resolved "https://registry.npmjs.org/git-repo-info/-/git-repo-info-1.3.1.tgz#0c1a19ef1964b822a7230f087396af80481ce8ec"
-
-git-repo-info@~1.2.0:
+git-repo-info@^1.0.4, git-repo-info@^1.1.2, git-repo-info@~1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/git-repo-info/-/git-repo-info-1.2.0.tgz#43d8513e04a24dd441330a2f7c6655a709fdbaf2"
 
@@ -5084,11 +5087,11 @@ mustache@^2.2.1:
   version "2.3.0"
   resolved "https://registry.npmjs.org/mustache/-/mustache-2.3.0.tgz#4028f7778b17708a489930a6e52ac3bca0da41d0"
 
-mute-stream@0.0.5:
+mute-stream@0.0.5, mute-stream@~0.0.4:
   version "0.0.5"
   resolved "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.5.tgz#8fbfabb0a98a253d3184331f9e8deb7372fac6c0"
 
-mute-stream@0.0.6, mute-stream@~0.0.4:
+mute-stream@0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.6.tgz#48962b19e169fd1dfc240b3f1e7317627bbc47db"
 
@@ -5831,7 +5834,7 @@ read@1, read@1.0.x, read@~1.0.1, read@~1.0.7:
   dependencies:
     mute-stream "~0.0.4"
 
-"readable-stream@1 || 2", readable-stream@^2, "readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.2, readable-stream@^2.0.4, readable-stream@~2.1.5:
+"readable-stream@1 || 2", readable-stream@^2, readable-stream@^2.0.2, readable-stream@~2.1.5:
   version "2.1.5"
   resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-2.1.5.tgz#66fa8b720e1438b364681f2ad1a63c618448c9d0"
   dependencies:
@@ -5852,16 +5855,7 @@ readable-stream@1.1:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readable-stream@~1.0.2:
-  version "1.0.34"
-  resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.34.tgz#125820e34bc842d2f2aaafafe4c2916ee32c157c"
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "0.0.1"
-    string_decoder "~0.10.x"
-
-readable-stream@~2.0.0, readable-stream@~2.0.5:
+"readable-stream@^2.0.0 || ^1.1.13", readable-stream@^2.0.4, readable-stream@~2.0.0, readable-stream@~2.0.5:
   version "2.0.6"
   resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-2.0.6.tgz#8f90341e68a53ccc928788dacfcd11b36eb9b78e"
   dependencies:
@@ -5871,6 +5865,15 @@ readable-stream@~2.0.0, readable-stream@~2.0.5:
     process-nextick-args "~1.0.6"
     string_decoder "~0.10.x"
     util-deprecate "~1.0.1"
+
+readable-stream@~1.0.2:
+  version "1.0.34"
+  resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.34.tgz#125820e34bc842d2f2aaafafe4c2916ee32c157c"
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "0.0.1"
+    string_decoder "~0.10.x"
 
 readdir-scoped-modules@^1.0.0:
   version "1.0.2"
@@ -6195,11 +6198,11 @@ sax@^1.1.4, sax@~1.2.1:
   version "1.2.1"
   resolved "https://registry.npmjs.org/sax/-/sax-1.2.1.tgz#7b8e656190b228e81a66aea748480d828cd2d37a"
 
-"semver@2 >=2.2.1 || 3.x || 4 || 5", "semver@2 || 3 || 4 || 5", "semver@2.x || 3.x || 4 || 5", "semver@^2.3.0 || 3.x || 4 || 5", semver@^5.1.0, semver@^5.1.1, semver@~5.3.0:
+"semver@2 >=2.2.1 || 3.x || 4 || 5", "semver@^2.3.0 || 3.x || 4 || 5", semver@^5.1.0, semver@^5.1.1, semver@~5.3.0:
   version "5.3.0"
   resolved "https://registry.npmjs.org/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
 
-semver@^4.1.0, semver@^4.2.2, semver@^4.3.1:
+"semver@2 || 3 || 4 || 5", "semver@2.x || 3.x || 4 || 5", semver@^4.1.0, semver@^4.2.2, semver@^4.3.1:
   version "4.3.6"
   resolved "https://registry.npmjs.org/semver/-/semver-4.3.6.tgz#300bc6e0e86374f7ba61068b5b1ecd57fc6532da"
 
@@ -6703,14 +6706,15 @@ through@^2.3.6, through@~2.3.8:
   version "2.3.8"
   resolved "https://registry.npmjs.org/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
 
-tiny-lr@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/tiny-lr/-/tiny-lr-1.0.2.tgz#be6a01663118f31d3f478143b6124bf1bcd9d96e"
+tiny-lr@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tiny-lr/-/tiny-lr-1.0.3.tgz#386731170ce521263a9d337f769ee8f11e88eb04"
   dependencies:
     body "^5.1.0"
     debug "~2.2.0"
     faye-websocket "~0.10.0"
     livereload-js "^2.2.2"
+    object-assign "^4.1.0"
     qs "^6.2.0"
 
 tmp@0.0.28:

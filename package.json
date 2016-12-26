@@ -2,7 +2,8 @@
   "name": "website",
   "version": "0.0.0",
   "description": "Small description for website goes here",
-  "private": true,
+  "license": "MIT",
+  "author": "",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -13,16 +14,14 @@
     "test": "ember test"
   },
   "repository": "https://github.com/shipshapecode/website",
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^7.0.0",
     "broccoli-asset-rev": "^2.4.5",
     "ember-3d-folding-panel": "0.0.6",
     "ember-3d-nav": "1.2.4",
-    "ember-ajax": "2.5.2",
+    "ember-ajax": "^2.4.1",
     "ember-body-class": "0.4.0",
-    "ember-cli": "2.10.0-beta.2",
+    "ember-cli": "2.10.0",
     "ember-cli-app-version": "^2.0.0",
     "ember-cli-babel": "^5.1.7",
     "ember-cli-concat": "1.1.2",
@@ -46,7 +45,7 @@
     "ember-computed-decorators": "0.2.2",
     "ember-contact-form": "0.0.9",
     "ember-cp-validations": "3.1.2",
-    "ember-data": "^2.10.0-beta.1",
+    "ember-data": "^2.10.0",
     "ember-export-application-global": "^1.0.5",
     "ember-hammertime": "runspired/ember-hammertime",
     "ember-in-viewport": "git+https://github.com/davidpett/ember-in-viewport.git#506e42e720fb7d15bcb5367118895b8cfbfb69ce",
@@ -67,6 +66,7 @@
   "engines": {
     "node": ">= 0.12.0"
   },
+  "private": true,
   "greenkeeper": {
     "ignore": [
       "broccoli-asset-rev",
