@@ -2,7 +2,7 @@
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var environment = process.env.EMBER_ENV;
-var shim = require('flexi/lib/pod-templates-shim');
+var shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
 
 shim(EmberApp);
 
