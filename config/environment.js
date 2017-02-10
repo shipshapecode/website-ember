@@ -23,7 +23,7 @@ module.exports = function(environment) {
       // when it is created
     },
     firebase: {
-      apiKey: "AIzaSyAUTGQVHJmAD_XtrC_m_xAQ_NSGQIW3jeE",
+      apiKey: process.env.FIREBASE_API_KEY,
       authDomain: "shipshape.firebaseapp.com",
       databaseURL: "https://shipshape.firebaseio.com",
       storageBucket: "project-6663340002093576455.appspot.com"
