@@ -31,7 +31,7 @@ Router.map(function() {
   this.route('contact');
   this.route('ember-consulting');
   this.route('open-source');
-  this.route('page-not-found', { path: '/*path' });
+  this.route('lost-at-sea', { path: '/*path' });
 });
 
 export default Router;

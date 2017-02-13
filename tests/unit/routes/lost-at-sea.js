@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:page-not-found', 'Unit | Route | page not found', {
+moduleFor('route:lost-at-sea', 'Unit | Route | lost at sea', {
   needs: ['service:fastboot', 'service:metrics', 'service:router-scroll']
 });
 
