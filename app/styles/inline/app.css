@@ -1,6 +1,12 @@
+.hero {
+  background-size: cover;
+  text-align: center;
+}
+
 .hero-header {
   font-size: 12vw;
 }
+
 .hero-subheader {
   font-size: 5vw;
 }
