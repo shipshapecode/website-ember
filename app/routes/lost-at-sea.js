@@ -7,5 +7,13 @@ export default Route.extend({
     if (window && window.location && window.location.pathname !== url) {
       this.replaceWith('/lost-at-sea');
     }
+  },
+  afterModel() {
+    return this.get('headData').setProperties({
+      title: '404 - Ship Shape',
+      description: 'Oops!',
+      type: 'website',
+      url: 'https://shipshape.io/lost-at-sea'
+    });
   }
 });
