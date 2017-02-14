@@ -1,21 +1,21 @@
-.open-source .hero {
+.hero.open-source {
   background: url(../img/open-source.jpg) no-repeat bottom center;
 }
 
-.open-source .hero .hero-header {
+.hero.open-source .hero-header {
   padding: 15px;
 }
 
-.open-source .hero .hero-header .heartIcon {
+.hero.open-source .hero-header .heartIcon {
   position: relative;
   top: 1vw;
 }
 
-.open-source .hero .hero-header .heartIcon path {
+.hero.open-source .hero-header .heartIcon path {
   fill: #F5F0E1;
 }
 
-.open-source .hero  p {
+.hero.open-source p {
   color: #F5F0E1;
   text-align: left;
 }

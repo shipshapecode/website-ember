@@ -1,24 +1,21 @@
-<page class="hero">
-  <centered>
-    <grid>
-      <centered xs="12">
-        <h1 class="hero-header">We {{svg-jar "heart1" class="heartIcon" height="11vw" width="11vw"}} OSS</h1>
+{{#hero-block
+  heroClasses='open-source'
+  scrollToHref='#ember-addons'}}
+  <grid>
+    <centered xs="12">
+      <h1 class="hero-header">We {{svg-jar "heart1" class="heartIcon" height="11vw" width="11vw"}} OSS</h1>
+    </centered>
+    <centered xs="12">
+      <centered xs="10" class="info">
+        <p>
+          At Ship Shape, contributing to open source software is an addiction. We maintain
+          several Ember addons of our own, and have contributed to countless other
+          projects throughout the open source community.
+        </p>
       </centered>
-      <centered xs="12">
-        <centered xs="10" class="info">
-          <p>
-            At Ship Shape, contributing to open source software is an addiction. We maintain
-            several Ember addons of our own, and have contributed to countless other
-            projects throughout the open source community.
-          </p>
-        </centered>
-      </centered>
-    </grid>
-  </centered>
-  {{#scroll-to href='#ember-addons'}}
-    {{scroll-suggest}}
-  {{/scroll-to}}
-</page>
+    </centered>
+  </grid>
+{{/hero-block}}
 
 {{portfolio-container model=model}}
 

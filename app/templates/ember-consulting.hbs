@@ -1,11 +1,9 @@
-<page class="hero">
-  <centered>
-    <h1 class="hero-header">Ember Consulting</h1>
-  </centered>
-  {{#scroll-to href='.quote' }}
-    {{scroll-suggest}}
-  {{/scroll-to}}
-</page>
+{{#hero-block
+  heroClasses='ember-consulting'
+  scrollToHref='.quote'}}
+  <h1 class="hero-header">Ember Consulting</h1>
+{{/hero-block}}
+
 
 <page class="quote">
   <centered>
