@@ -1,7 +1,8 @@
-import Ember from 'ember';
-const { Route } = Ember;
+import Route from 'ember-route';
+import service from 'ember-service/inject';
 
 export default Route.extend({
+  headData: service(),
   redirect() {
     const url = this.router.location.formatURL('/lost-at-sea');
     if (window && window.location && window.location.pathname !== url) {

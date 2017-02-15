@@ -1,7 +1,6 @@
-import Ember from 'ember';
+import Component from 'ember-component';
 import InViewportMixin from 'ember-in-viewport';
 import Vivus from 'vivus';
-const { Component } = Ember;
 
 export default Component.extend(InViewportMixin, {
   didInsertElement() {

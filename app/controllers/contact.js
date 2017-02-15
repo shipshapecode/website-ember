@@ -1,6 +1,5 @@
-import Ember from 'ember';
+import Controller from 'ember-controller';
 import { not } from 'ember-computed-decorators';
-const { Controller } = Ember;
 
 export default Controller.extend({
   projectTypes: [

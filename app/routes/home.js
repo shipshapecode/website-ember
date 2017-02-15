@@ -1,5 +1,5 @@
-import Ember from 'ember';
-const { inject: { service }, Route } = Ember;
+import Route from 'ember-route';
+import service from 'ember-service/inject';
 
 export default Route.extend({
   headData: service(),

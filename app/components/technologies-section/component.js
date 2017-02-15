@@ -1,6 +1,5 @@
-import Ember from 'ember';
+import Component from 'ember-component';
 import InViewportMixin from 'ember-in-viewport';
-const { Component } = Ember;
 
 export default Component.extend(InViewportMixin, {
 });

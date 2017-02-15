@@ -1,5 +1,6 @@
-import Ember from 'ember';
-const { inject: { service }, Route, String: { htmlSafe } } = Ember;
+import { htmlSafe } from 'ember-string';
+import Route from 'ember-route';
+import service from 'ember-service/inject';
 
 export default Route.extend({
   headData: service(),
