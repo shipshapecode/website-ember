@@ -15,10 +15,10 @@
   },
   "repository": "https://github.com/shipshapecode/website",
   "devDependencies": {
-    "@html-next/flexi-config": "2.0.0-beta.11",
-    "@html-next/flexi-default-styles": "2.0.0-beta.11",
-    "@html-next/flexi-dsl": "2.0.0-beta.11",
-    "@html-next/flexi-layouts": "2.0.0-beta.11",
+    "@html-next/flexi-config": "2.0.0-beta.12",
+    "@html-next/flexi-default-styles": "2.0.0-beta.12",
+    "@html-next/flexi-dsl": "2.0.0-beta.12",
+    "@html-next/flexi-layouts": "2.0.0-beta.12",
     "babel-eslint": "^7.0.0",
     "broccoli-asset-rev": "^2.4.5",
     "ember-3d-folding-panel": "0.0.9",
@@ -66,7 +66,7 @@
     "ember-vivus": "0.1.1",
     "emberfire": "2.0.6",
     "eslint-plugin-ship-shape": "^0.4.0",
-    "flexi": "2.0.0-beta.11",
+    "flexi": "2.0.0-beta.12",
     "loader.js": "^4.0.10"
   },
   "engines": {
