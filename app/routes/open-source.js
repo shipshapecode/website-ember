@@ -1,10 +1,11 @@
 import Route from 'ember-route';
 import service from 'ember-service/inject';
+import repos from '../data/repos';
 
 export default Route.extend({
   headData: service(),
   model() {
-    return this.store.findAll('github-repo');
+    return repos;
   },
   afterModel() {
     return this.get('headData').setProperties({

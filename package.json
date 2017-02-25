@@ -64,7 +64,6 @@
     "ember-svg-jar": "0.9.3",
     "ember-truth-helpers": "1.3.0",
     "ember-vivus": "0.1.1",
-    "emberfire": "2.0.6",
     "eslint-plugin-ship-shape": "^0.4.0",
     "flexi": "2.0.0-beta.12",
     "loader.js": "^4.0.10"

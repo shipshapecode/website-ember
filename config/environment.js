@@ -22,12 +22,6 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
-    firebase: {
-      apiKey: process.env.FIREBASE_API_KEY,
-      authDomain: "shipshape.firebaseapp.com",
-      databaseURL: "https://shipshape.firebaseio.com",
-      storageBucket: "project-6663340002093576455.appspot.com"
-    },
     metricsAdapters: [
       {
         name: 'GoogleAnalytics',
