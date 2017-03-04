@@ -1,15 +1,20 @@
 <page class="process design">
   <centered>
-    <box xs="12" sm="10" md="8">
-      {{svg-jar "design" class="svg-icon" id="design-svg"}}
-      <h2 class="heading">Design</h2>
-      <h5 class="sub-heading">Measure twice, cut once</h5>
-      <p class="info">
-        We put a great deal of time into developing a sound architecture and ensuring we
-        have a solid understanding of your wants and needs. We'll work with you to
-        develop a gameplan and we won't start working until you sign off on it.
-      </p>
-    </box>
+    <hbox xs="12" sm="10" md="8" justify="between">
+      <centered xs="12" sm="6">
+        {{svg-jar "design-line" class="svg-icon" id="design-svg"}}
+      </centered>
+
+      <box xs="12" sm="6" justify="center" fit>
+        <h2 class="heading">Design</h2>
+        <h5 class="sub-heading">Measure twice, cut once</h5>
+        <p class="info">
+          We put a great deal of time into developing a sound architecture and ensuring we
+          have a solid understanding of your wants and needs. We'll work with you to
+          develop a gameplan and we won't start working until you sign off on it.
+        </p>
+      </box>
+    </hbox>
   </centered>
   {{#scroll-to href='.build'}}
     {{scroll-suggest}}
@@ -17,17 +22,22 @@
 </page>
 <page class="process build">
   <centered>
-    <box xs="12" sm="10" md="8">
-      {{svg-jar "build" class="svg-icon" id="build-svg"}}
-      <h2 class="heading">Build</h2>
-      <h5 class="sub-heading">Convention over configuration</h5>
-      <p class="info">
-        We use the latest versions of Ember.js and Ember-CLI in all of our products, and
-        we strive to stay up to date with new releases. We leverage the amazing Ember
-        community, and the huge breadth of addons, to help us iterate faster, and
-        focus on making quality apps, rather than reinventing the wheel.
-      </p>
-    </box>
+    <hbox xs="12" sm="10" md="8" justify="between">
+      <centered xs="12" sm="6">
+        {{svg-jar "build-line" class="svg-icon" id="build-svg"}}
+      </centered>
+
+      <box xs="12" sm="6" justify="center" fit>
+        <h2 class="heading">Build</h2>
+        <h5 class="sub-heading">Convention over configuration</h5>
+        <p class="info">
+          We use the latest versions of Ember.js and Ember-CLI in all of our products, and
+          we strive to stay up to date with new releases. We leverage the amazing Ember
+          community, and the huge breadth of addons, to help us iterate faster, and
+          focus on making quality apps, rather than reinventing the wheel.
+        </p>
+      </box>
+    </hbox>
   </centered>
   {{#scroll-to href='.ship'}}
     {{scroll-suggest}}
@@ -35,17 +45,22 @@
 </page>
 <page class="process ship">
   <centered>
-    <box xs="12" sm="10" md="8">
-      {{svg-jar "ship" class="svg-icon" id="ship-svg"}}
-      <h2 class="heading">Ship</h2>
-      <h5 class="sub-heading">Real artists ship</h5>
-      <p class="info">
-        We'll keep you in the loop with regular demos, frequent calls, chats, dinners, drinks,
-        whatever floats your boat. We won't just develop huge chunks of the app and
-        hope you like it. Your input is crucial to making sure you are 100% happy
-        with the product.
-      </p>
-    </box>
+    <hbox xs="12" sm="10" md="8" justify="between">
+      <centered xs="12" sm="6">
+        {{svg-jar "ship-line" class="svg-icon" id="ship-svg"}}
+      </centered>
+
+      <box xs="12" sm="6" justify="center" fit>
+        <h2 class="heading">Ship</h2>
+        <h5 class="sub-heading">Real artists ship</h5>
+        <p class="info">
+          We'll keep you in the loop with regular demos, frequent calls, chats, dinners, drinks,
+          whatever floats your boat. We won't just develop huge chunks of the app and
+          hope you like it. Your input is crucial to making sure you are 100% happy
+          with the product.
+        </p>
+      </box>
+    </hbox>
   </centered>
   {{#scroll-to href='.technologies'}}
     {{scroll-suggest}}
