@@ -12,5 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{technologies-section}}`);
 
-  assert.equal(stripWhitespace(stripWhitespace(this.$().text().trim())), 'Technologies we use node');
+  assert.ok(stripWhitespace(stripWhitespace(this.$().text().trim())).includes('Technologies we use'));
 });

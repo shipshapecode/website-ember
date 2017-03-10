@@ -1,7 +1,10 @@
 import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:contact', 'Unit | Route | contact', {
-  needs: ['service:fastboot', 'service:metrics', 'service:router-scroll']
+  needs: [
+    'service:ajax', 'service:fastboot', 'service:flashMessages',
+    'service:headData', 'service:metrics', 'service:router-scroll'
+  ]
 });
 
 test('it exists', function(assert) {
