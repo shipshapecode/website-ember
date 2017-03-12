@@ -1,0 +1,31 @@
+@mixin device-mock($name) {
+  $addon-name: '../../img/addons/' + $name;
+  background: url($addon-name + '.png') no-repeat bottom center;
+  background-size: cover;
+  .webp & {
+    background: url($addon-name + '.webp') no-repeat bottom center;
+    background-size: cover;
+  }
+}
+
+.css-device__image {
+  &.ember-3d-nav {
+    @include device-mock('ember-3d-nav');
+  }
+  &.ember-drop {
+    @include device-mock('ember-drop');
+  }
+  &.ember-flatpickr {
+    @include device-mock('ember-flatpickr');
+  }
+  &.ember-math-helpers {
+    @include device-mock('ember-math-helpers');
+  }
+  &.ember-shepherd {
+    @include device-mock('ember-shepherd');
+  }
+  &.ember-x-editable {
+    @include device-mock('ember-x-editable');
+  }
+}
+
