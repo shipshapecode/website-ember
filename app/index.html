@@ -29,14 +29,15 @@
     {{content-for 'open-source'}}
     <!-- End inline css for above the fold -->
 
-    {{content-for 'concat-css'}}
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/website.css">
 
     {{content-for "head-footer"}}
   </head>
   <body>
     {{content-for "body"}}
 
-    {{content-for 'concat-js'}}
+    <script async src="{{rootURL}}assets/app.js"></script>
 
     {{content-for "body-footer"}}
   </body>

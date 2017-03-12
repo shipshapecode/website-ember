@@ -11,27 +11,6 @@ module.exports = function(defaults) {
     babel: {
       optional: ['es7.decorators']
     },
-    emberCliConcat: {
-      enabled: true,
-      outputDir: 'assets',
-      outputFileName: 'app',
-      useSelfClosingTags: false,
-      wrapScriptsInFunction: false,
-      js: {
-        concat: true,
-        contentFor: 'concat-js',
-        footer: null,
-        header: null,
-        preserveOriginal: true
-      },
-      css: {
-        concat: true,
-        contentFor: 'concat-css',
-        footer: null,
-        header: null,
-        preserveOriginal: true
-      },
-    },
     fingerprint: {
       extensions: ['js', 'css', 'map']
     },
@@ -49,21 +28,9 @@ module.exports = function(defaults) {
     },
   });
 
-
-  // Use `app.import` to add additional libraries to the generated
-  // output files.
-  //
-  // If you need to use different assets in different
-  // environments, specify an object as the first parameter. That
-  // object's keys should be the environment name and the values
-  // should be the asset to use in that environment.
-  //
-  // If the library that you are including contains AMD or ES6
-  // modules that you would like to import into your application
-  // please specify an object with the list of modules as keys
-  // along with the exports of each module as its value.
-
-  app.import('vendor/modernizr.min.js');
+  if (!process.env.EMBER_CLI_FASTBOOT) {
+    app.import('vendor/modernizr.min.js');
+  }
 
   return app.toTree();
 };
