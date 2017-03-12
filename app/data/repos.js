@@ -7,12 +7,12 @@ export default [
   {
     name: 'Ember Math Helpers',
     repo: 'ember-math-helpers',
-    stars: 45
+    stars: 46
   },
   {
     name: 'Ember Flatpickr',
     repo: 'ember-flatpickr',
-    stars: 29
+    stars: 32
   },
   {
     name: 'Ember X-Editable',
@@ -22,7 +22,7 @@ export default [
   {
     name: 'Ember 3D Nav',
     repo: 'ember-3d-nav',
-    stars: 12
+    stars: 11
   },
   {
     name: 'Ember Drop',
