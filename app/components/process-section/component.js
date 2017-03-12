@@ -1,8 +1,7 @@
 import Component from 'ember-component';
-import InViewportMixin from 'ember-in-viewport';
 import Vivus from 'vivus';
 
-export default Component.extend(InViewportMixin, {
+export default Component.extend({
   didInsertElement() {
     new Vivus('design-svg', { duration: 100, type: 'delayed' }, function(obj) {
       obj.el.classList.add('finished');
