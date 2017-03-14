@@ -20,6 +20,7 @@ module.exports = function(defaults) {
       'ember-consulting': './app/styles/inline/ember-consulting.css',
       fonts: './app/styles/inline/fonts.css',
       home: './app/styles/inline/home.css',
+      loadCSS: './app/inline/loadCSS.js',
       'loading-indicator': './app/templates/inline/loading-indicator.html',
       'open-source': './app/styles/inline/open-source.css'
     },
