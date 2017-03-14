@@ -27,12 +27,12 @@
 		</g>
 	</g>
 	<g>
-		<rect x="57" y="11" fill="#FF5F5C" width="6" height="45"/>
+		<rect x="57" y="11" fill="#DA4843" width="6" height="45"/>
 		<path fill="none" stroke="#34303D" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M63,11l-3-6l-3,6v47
 			c0,0.512,0.195,1.023,0.586,1.414S58.488,60,59,60h2c0.512,0,1.023-0.195,1.414-0.586S63,58.512,63,58V11z"/>
-		
+
 			<line fill="none" stroke="#34303D" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="57" y1="56" x2="63" y2="56"/>
-		
+
 			<line fill="none" stroke="#34303D" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="57" y1="11" x2="63" y2="11"/>
 	</g>
 	<g>

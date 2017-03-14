@@ -51,7 +51,7 @@
 		<rect x="1" y="44" fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" width="44" height="16"/>
 		<g>
 			<g>
-				<line fill="none" stroke="#FF5F5C" stroke-width="2" stroke-miterlimit="10" x1="4" y1="48" x2="6" y2="48"/>
+				<line fill="none" stroke="#DA4843" stroke-width="2" stroke-miterlimit="10" x1="4" y1="48" x2="6" y2="48"/>
 				<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="8" y1="48" x2="10" y2="48"/>
 				<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="12" y1="48" x2="14" y2="48"/>
 				<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="16" y1="48" x2="18" y2="48"/>
@@ -76,7 +76,7 @@
 			<g>
 				<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="4" y1="56" x2="6" y2="56"/>
 				<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="8" y1="56" x2="10" y2="56"/>
-				<line fill="none" stroke="#FF5F5C" stroke-width="2" stroke-miterlimit="10" x1="12" y1="56" x2="34" y2="56"/>
+				<line fill="none" stroke="#DA4843" stroke-width="2" stroke-miterlimit="10" x1="12" y1="56" x2="34" y2="56"/>
 				<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="36" y1="56" x2="38" y2="56"/>
 				<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="40" y1="56" x2="42" y2="56"/>
 			</g>
