@@ -1,62 +1,63 @@
 .process {
   background-color: $background;
+  padding: 20px;
+
+  .heading {
+    font: {
+      size: 5rem;
+      weight: bold;
+    }
+    padding: 10px 0px;
+    text-transform: uppercase;
+  }
+
+  .sub-heading {
+    font: {
+      size: 2.5rem;
+      weight: bold;
+    }
+    padding: 5px 0px;
+  }
+
+  .info {
+    font: {
+      size: 2rem;
+      weight: normal;
+    }
+    line-height: 22px;
+    padding: 20px 0px;
+  }
+
+  .svg-icon {
+    height: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 300px;
+
+    // Hack to animate in the svg fills
+    * {
+      fill-opacity: 0;
+      transition: fill-opacity 0.25s;
+    }
+
+    &.finished {
+      * {
+        fill-opacity: 1;
+      }
+    }
+  }
 
   &.build {
     background-color: $light;
-    h2 {
+    .heading {
       color: $blue;
     }
   }
 
   &.ship {
     background-color: $bloodOrange;
-    h2 {
-      color: $lighter;
-    }
-  }
-
-  centered {
-    padding: 20px;
-
     .heading {
-      font: {
-        size: 5rem;
-        weight: bold;
-      }
-      padding: 10px 0px;
-      text-transform: uppercase;
-    }
-
-    .sub-heading {
-      font-size: 2.5rem;
-      font-weight: bold;
-      padding: 5px 0px;
-    }
-
-    .info {
-      font-size: 2rem;
-      font-weight: normal;
-      line-height: 22px;
-      padding: 20px 0px;
-    }
-
-    .svg-icon {
-      height: 300px;
-      margin: 0 auto;
-      padding: 10px;
-      width: 300px;
-
-      // Hack to animate in the svg fills
-      * {
-        fill-opacity: 0;
-        transition: fill-opacity 0.25s;
-      }
-
-      &.finished {
-        * {
-          fill-opacity: 1;
-        }
-      }
+      color: $lighter;
     }
   }
 }
