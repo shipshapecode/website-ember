@@ -5,57 +5,57 @@
 	 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
 <g>
 	<g>
-		<circle fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" cx="32" cy="61" r="2"/>
-		<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="32" y1="55" x2="32" y2="59"/>
-		<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="37" y1="61" x2="59" y2="61"/>
-		<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="5" y1="61" x2="27" y2="61"/>
+		<circle fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" cx="32" cy="61" r="2"/>
+		<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="32" y1="55" x2="32" y2="59"/>
+		<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="37" y1="61" x2="59" y2="61"/>
+		<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="5" y1="61" x2="27" y2="61"/>
 	</g>
 	<rect x="6" y="13" fill="#57DCF2" width="52" height="10"/>
 	<rect x="6" y="41" fill="#57DCF2" width="52" height="10"/>
 	<g>
-		<rect x="2" y="9" fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" width="60" height="46"/>
-		<rect x="2" y="1" fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" width="60" height="8"/>
-		<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="6" y1="5" x2="8" y2="5"/>
-		<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="10" y1="5" x2="12" y2="5"/>
-		<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="14" y1="5" x2="16" y2="5"/>
-		<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="18" y1="5" x2="58" y2="5"/>
+		<rect x="2" y="9" fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" width="60" height="46"/>
+		<rect x="2" y="1" fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" width="60" height="8"/>
+		<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="6" y1="5" x2="8" y2="5"/>
+		<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="10" y1="5" x2="12" y2="5"/>
+		<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="14" y1="5" x2="16" y2="5"/>
+		<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="18" y1="5" x2="58" y2="5"/>
 	</g>
 	<g>
 		<g>
 			<g>
-				
-					<polyline fill="none" stroke="#34303D" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" points="
+
+					<polyline fill="none" stroke="#35323A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" points="
 					24,28 24,32 22,36 20,32 20,28 				"/>
-				
-					<polyline fill="none" stroke="#34303D" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" points="
+
+					<polyline fill="none" stroke="#35323A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" points="
 					20,28 20,32 18,36 16,32 16,28 				"/>
 			</g>
 			<g>
-				
-					<polyline fill="none" stroke="#34303D" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" points="
+
+					<polyline fill="none" stroke="#35323A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" points="
 					36,28 36,32 34,36 32,32 32,28 				"/>
-				
-					<polyline fill="none" stroke="#34303D" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" points="
+
+					<polyline fill="none" stroke="#35323A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" points="
 					32,28 32,32 30,36 28,32 28,28 				"/>
 			</g>
 			<g>
-				
-					<polyline fill="none" stroke="#34303D" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" points="
+
+					<polyline fill="none" stroke="#35323A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" points="
 					48,28 48,32 46,36 44,32 44,28 				"/>
-				
-					<polyline fill="none" stroke="#34303D" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" points="
+
+					<polyline fill="none" stroke="#35323A" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" stroke-miterlimit="10" points="
 					44,28 44,32 42,36 40,32 40,28 				"/>
 			</g>
 		</g>
 		<g>
-			<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="53" y1="36" x2="51" y2="36"/>
-			<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="13" y1="36" x2="11" y2="36"/>
+			<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="53" y1="36" x2="51" y2="36"/>
+			<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="13" y1="36" x2="11" y2="36"/>
 		</g>
 		<g>
-			<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="15" y1="18" x2="22" y2="18"/>
-			<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="24" y1="18" x2="31" y2="18"/>
-			<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="33" y1="18" x2="40" y2="18"/>
-			<line fill="none" stroke="#34303D" stroke-width="2" stroke-miterlimit="10" x1="42" y1="18" x2="49" y2="18"/>
+			<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="15" y1="18" x2="22" y2="18"/>
+			<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="24" y1="18" x2="31" y2="18"/>
+			<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="33" y1="18" x2="40" y2="18"/>
+			<line fill="none" stroke="#35323A" stroke-width="2" stroke-miterlimit="10" x1="42" y1="18" x2="49" y2="18"/>
 		</g>
 		<g>
 			<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="27" y1="46" x2="29" y2="46"/>
