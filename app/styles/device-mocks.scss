@@ -9,22 +9,22 @@
 }
 
 .css-device__image {
-  &.ember-3d-nav {
+  &.ember-3d-nav-mock {
     @include device-mock('ember-3d-nav');
   }
-  &.ember-drop {
+  &.ember-drop-mock {
     @include device-mock('ember-drop');
   }
-  &.ember-flatpickr {
+  &.ember-flatpickr-mock {
     @include device-mock('ember-flatpickr');
   }
-  &.ember-math-helpers {
+  &.ember-math-helpers-mock {
     @include device-mock('ember-math-helpers');
   }
-  &.ember-shepherd {
+  &.ember-shepherd-mock {
     @include device-mock('ember-shepherd');
   }
-  &.ember-x-editable {
+  &.ember-x-editable-mock {
     @include device-mock('ember-x-editable');
   }
 }
