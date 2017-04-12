@@ -2,12 +2,12 @@ export default [
   {
     name: 'Ember Shepherd',
     repo: 'ember-shepherd',
-    stars: 83
+    stars: 94
   },
   {
     name: 'Ember Math Helpers',
     repo: 'ember-math-helpers',
-    stars: 46
+    stars: 47
   },
   {
     name: 'Ember Flatpickr',
@@ -27,6 +27,6 @@ export default [
   {
     name: 'Ember Drop',
     repo: 'ember-drop',
-    stars: 4
+    stars: 7
   }
 ];
