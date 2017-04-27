@@ -1,8 +1,0 @@
-{
-  "name": "website",
-  "dependencies": {
-    "hammer-time": "^1.1.0",
-    "hammerjs": "^2.0.6",
-    "matchMedia": "0.2.0"
-  }
-}
