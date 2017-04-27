@@ -3294,11 +3294,14 @@ ember-getowner-polyfill@^1.0.0, ember-getowner-polyfill@^1.1.1, ember-getowner-p
     ember-cli-version-checker "^1.2.0"
     ember-factory-for-polyfill "^1.1.0"
 
-ember-hammertime@html-next/ember-hammertime:
+ember-hammertime@html-next/ember-hammertime#master:
   version "1.1.2"
   resolved "https://codeload.github.com/html-next/ember-hammertime/tar.gz/555c65d76a8070f1dd65b89b325e00bc373b1b18"
   dependencies:
+    broccoli-funnel "^1.1.0"
+    broccoli-merge-trees "^2.0.0"
     ember-cli-babel "^5.1.6"
+    hammer-timejs "^1.1.0"
 
 ember-inflector@^1.9.4:
   version "1.12.1"
