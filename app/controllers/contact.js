@@ -1,5 +1,5 @@
 import Controller from 'ember-controller';
-import { not } from 'ember-computed-decorators';
+import { not } from 'ember-computed';
 
 export default Controller.extend({
   projectTypes: [
@@ -19,5 +19,5 @@ export default Controller.extend({
       text: 'Ember Development'
     }
   ],
-  @not('model.validations.isValid') sendDisabled: null
+  sendDisabled: not('model.validations.isValid')
 });
