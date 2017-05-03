@@ -20,10 +20,7 @@ export default Route.extend({
   actions: {
     sendContactRequest(model) {
       if (model.get('validations.isValid')) {
-        return this.get('ajax').post('https://shipshape.stamplayapp.com/api/webhook/v1/emailcontactinfo/catch',
-          {
-            data: model.toJSON()
-          })
+        return model.save()
           .then(
             () => {
               this.get('flashMessages').success('Thanks for contacting us! We\'ll be in touch shortly.');
