@@ -1,5 +1,6 @@
-import DS from 'ember-data';
+import JSONAPIAdapter from 'ember-data/adapters/json-api';
+import ENV from '../config/environment';
 
-export default DS.JSONAPIAdapter.extend({
-  host: 'https://api.shipshape.io'
+export default JSONAPIAdapter.extend({
+  host: ENV.host
 });

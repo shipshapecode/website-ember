@@ -39,6 +39,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.host = 'http://localhost:3000';
   }
 
   if (environment === 'test') {
@@ -53,7 +54,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.host = 'http://api.shipshape.io';
   }
 
   return ENV;
