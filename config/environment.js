@@ -54,7 +54,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.host = 'http://api.shipshape.io';
+    ENV.host = 'https://api.shipshape.io';
   }
 
   return ENV;
