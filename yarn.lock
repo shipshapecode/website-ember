@@ -264,6 +264,12 @@ anymatch@^1.3.0:
     arrify "^1.0.0"
     micromatch "^2.1.5"
 
+aot-test-generators@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/aot-test-generators/-/aot-test-generators-0.1.0.tgz#43f0f615f97cb298d7919c1b0b4e6b7310b03cd0"
+  dependencies:
+    jsesc "^2.5.0"
+
 aproba@^1.0.3, aproba@~1.0.1:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.0.4.tgz#2713680775e7614c8ba186c065d4e2e52d1072c0"
@@ -1620,13 +1626,13 @@ broccoli-kitchen-sink-helpers@^0.3.1:
     mkdirp "^0.5.1"
 
 broccoli-lint-eslint@^3.2.0, broccoli-lint-eslint@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/broccoli-lint-eslint/-/broccoli-lint-eslint-3.3.0.tgz#708bad893101241980c168702d61cb41ca30bba2"
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/broccoli-lint-eslint/-/broccoli-lint-eslint-3.3.1.tgz#35c675546a5a7ad8f3319edd732e3aad8ca241de"
   dependencies:
+    aot-test-generators "^0.1.0"
     broccoli-concat "^3.2.2"
     broccoli-persistent-filter "^1.2.0"
     eslint "^3.0.0"
-    js-string-escape "^1.0.1"
     json-stable-stringify "^1.0.1"
     lodash.defaultsdeep "^4.6.0"
     md5-hex "^2.0.0"
@@ -1802,15 +1808,6 @@ broccoli-string-replace@0.1.1:
   dependencies:
     broccoli-persistent-filter "^1.1.5"
     minimatch "^2.0.8"
-
-broccoli-style-manifest@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/broccoli-style-manifest/-/broccoli-style-manifest-1.2.2.tgz#4a91bde0a44d82beb51a55c838270c8dbc2a59d9"
-  dependencies:
-    broccoli-plugin "^1.3.0"
-    fs-tree-diff "^0.5.6"
-    rsvp "^3.5.0"
-    walk-sync "^0.3.1"
 
 broccoli-svg-optimizer@^1.0.1:
   version "1.0.1"
@@ -2649,7 +2646,11 @@ dom-serializer@0, dom-serializer@~0.1.0:
     domelementtype "~1.1.1"
     entities "~1.1.1"
 
-domelementtype@1, domelementtype@~1.1.1:
+domelementtype@1:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.3.0.tgz#b17aed82e8ab59e52dd9c19b1756e0fc187204c2"
+
+domelementtype@~1.1.1:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.1.3.tgz#bd28773e2642881aec51544924299c5cd822185b"
 
@@ -3182,27 +3183,6 @@ ember-component-css@0.3.1:
     rsvp "^3.2.1"
     walk-sync "^0.3.1"
 
-ember-component-css@0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/ember-component-css/-/ember-component-css-0.3.3.tgz#505cdfce8b05ed97ed55e714c26e914fdfb745e5"
-  dependencies:
-    broccoli-concat "^3.0.5"
-    broccoli-funnel "^1.0.9"
-    broccoli-merge-trees "^2.0.0"
-    broccoli-persistent-filter "1.2.13"
-    broccoli-plugin "^1.2.1"
-    broccoli-style-manifest "^1.2.2"
-    ember-cli-babel "^5.1.7"
-    ember-getowner-polyfill "^1.1.1"
-    fs-tree-diff "^0.5.6"
-    md5 "^2.1.0"
-    postcss "^5.2.10"
-    postcss-less "^0.15.0"
-    postcss-scss "^0.4.0"
-    postcss-selector-namespace "^1.3.0"
-    rsvp "^3.2.1"
-    walk-sync "^0.3.1"
-
 ember-computed-decorators@0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/ember-computed-decorators/-/ember-computed-decorators-0.2.2.tgz#7c934a575c55ac3a18b6aaeb7cd2cbe149bc9b34"
@@ -3283,11 +3263,11 @@ ember-getowner-polyfill@^1.0.0, ember-getowner-polyfill@^1.1.1, ember-getowner-p
 
 ember-hammertime@html-next/ember-hammertime#master:
   version "1.1.2"
-  resolved "https://codeload.github.com/html-next/ember-hammertime/tar.gz/555c65d76a8070f1dd65b89b325e00bc373b1b18"
+  resolved "https://codeload.github.com/html-next/ember-hammertime/tar.gz/1014ee0866bf0f5fadefcd78aa5488e10f616589"
   dependencies:
     broccoli-funnel "^1.1.0"
     broccoli-merge-trees "^2.0.0"
-    ember-cli-babel "^5.1.6"
+    ember-cli-babel "^6.0.0"
     hammer-timejs "^1.1.0"
 
 ember-headroom@^1.0.0:
@@ -5164,7 +5144,7 @@ js-reporters@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/js-reporters/-/js-reporters-1.2.0.tgz#7cf2cb698196684790350d0c4ca07f4aed9ec17e"
 
-js-string-escape@^1.0.0, js-string-escape@^1.0.1:
+js-string-escape@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/js-string-escape/-/js-string-escape-1.0.1.tgz#e2625badbc0d67c7533e9edc1068c587ae4137ef"
 
@@ -5218,7 +5198,7 @@ jsesc@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-1.3.0.tgz#46c3fec8c1892b12b0833db9bc7622176dbab34b"
 
-jsesc@^2.4.0:
+jsesc@^2.4.0, jsesc@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-2.5.0.tgz#ce895de28feb034dcbf55fbeeabbcaeb63d73086"
 
@@ -6651,7 +6631,7 @@ postcss-scss@^0.4.0:
   dependencies:
     postcss "^5.2.13"
 
-postcss-selector-namespace@^1.2.8, postcss-selector-namespace@^1.3.0:
+postcss-selector-namespace@^1.2.8:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/postcss-selector-namespace/-/postcss-selector-namespace-1.4.1.tgz#3f039182c64e3abb2a1b6e33a147639133e13db0"
   dependencies:
@@ -7255,7 +7235,7 @@ rsvp@3.0.14:
   version "3.0.14"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.0.14.tgz#9d2968cf36d878d3bb9a9a5a4b8e1ff55a76dd31"
 
-rsvp@^3.0.14, rsvp@^3.0.16, rsvp@^3.0.17, rsvp@^3.0.18, rsvp@^3.0.21, rsvp@^3.0.6, rsvp@^3.1.0, rsvp@^3.2.0, rsvp@^3.2.1, rsvp@^3.3.3, rsvp@^3.4.0, rsvp@^3.5.0:
+rsvp@^3.0.14, rsvp@^3.0.16, rsvp@^3.0.17, rsvp@^3.0.18, rsvp@^3.0.21, rsvp@^3.0.6, rsvp@^3.1.0, rsvp@^3.2.0, rsvp@^3.2.1, rsvp@^3.3.3, rsvp@^3.4.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.5.0.tgz#a62c573a4ae4e1dfd0697ebc6242e79c681eaa34"
 
