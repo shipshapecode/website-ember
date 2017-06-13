@@ -67,6 +67,9 @@
     "flexi": "2.0.0-rc.1",
     "loader.js": "^4.2.3"
   },
+  "fastbootDependencies": [
+    "showdown"
+  ],
   "engines": {
     "node": "7.5.0"
   },
