@@ -1,9 +1,10 @@
-/* eslint-disable */
+/* eslint-env node */
+'use strict';
 
 module.exports = function(environment) {
-  var ENV = {
+  let ENV = {
     modulePrefix: 'website',
-    environment: environment,
+    environment,
     rootURL: '/',
     locationType: 'router-scroll',
     historySupportMiddleware: true,
