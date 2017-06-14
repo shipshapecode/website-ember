@@ -88,28 +88,14 @@
   dependencies:
     ember-cli-babel "^6.0.0"
 
-"@html-next/flexi-config@2.0.0-rc.1":
-  version "2.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@html-next/flexi-config/-/flexi-config-2.0.0-rc.1.tgz#a19417e5b5d1e85eb56df116b6892562ac17d259"
+"@html-next/flexi-default-styles@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/@html-next/flexi-default-styles/-/flexi-default-styles-2.0.1.tgz#edbd0be0a08bd8743edd9d099565d8d57d992161"
   dependencies:
-    ember-cli-babel "^5.1.7"
-
-"@html-next/flexi-default-styles@2.0.0-rc.2":
-  version "2.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@html-next/flexi-default-styles/-/flexi-default-styles-2.0.0-rc.2.tgz#0d4f299e5a0e430354dd9142a5cdd7c7897978d5"
-  dependencies:
-    "@html-next/flexi-config" "2.0.0-rc.1"
-    ember-cli-babel "^5.1.7"
-    ember-cli-sass "^6.0.0"
-    rsvp "^3.2.0"
-
-"@html-next/flexi-dsl@2.0.0-rc.2":
-  version "2.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@html-next/flexi-dsl/-/flexi-dsl-2.0.0-rc.2.tgz#7249585bb7a8519ea5af0ae542daa0d037921d8a"
-  dependencies:
-    "@html-next/flexi-config" "2.0.0-rc.1"
-    ember-cli-babel "^5.1.7"
-    ember-cli-preprocess-registry "^3.0.0"
+    "@html-next/flexi-config" "2.0.0"
+    broccoli-plugin "^1.3.0"
+    ember-cli-babel "^6.0.0"
+    ember-cli-sass "^6.2.0"
     rsvp "^3.2.0"
 
 "@html-next/flexi-dsl@^2.0.1":
@@ -118,21 +104,6 @@
   dependencies:
     "@html-next/flexi-config" "2.0.0"
     ember-cli-babel "^6.0.0"
-    ember-cli-preprocess-registry "^3.0.0"
-    rsvp "^3.2.0"
-
-"@html-next/flexi-layouts@2.0.0-rc.2":
-  version "2.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/@html-next/flexi-layouts/-/flexi-layouts-2.0.0-rc.2.tgz#09a60e09ea52ab387270df3c853bd860fa9c79c4"
-  dependencies:
-    "@html-next/flexi-config" "2.0.0-rc.1"
-    broccoli-funnel "^1.0.1"
-    broccoli-merge-trees "^2.0.0"
-    broccoli-plugin "^1.2.1"
-    chalk "^1.1.1"
-    debug "^2.2.0"
-    ember-cli-babel "^5.1.7"
-    ember-cli-htmlbars "^1.1.1"
     ember-cli-preprocess-registry "^3.0.0"
     rsvp "^3.2.0"
 
@@ -2620,35 +2591,35 @@ electron-to-chromium@^1.3.14:
   version "1.3.14"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.14.tgz#64af0f9efd3c3c6acd57d71f83b49ca7ee9c4b43"
 
-ember-3d-folding-panel@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/ember-3d-folding-panel/-/ember-3d-folding-panel-0.1.0.tgz#78a3cd67ceed39510e9cea4b58548d3a86e43b6a"
+ember-3d-folding-panel@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.npmjs.org/ember-3d-folding-panel/-/ember-3d-folding-panel-0.1.1.tgz#3f344110a61edab43b8e075c1aa09379e32152a0"
   dependencies:
-    "@html-next/flexi-config" "2.0.0-rc.1"
-    "@html-next/flexi-default-styles" "2.0.0-rc.2"
-    "@html-next/flexi-dsl" "2.0.0-rc.2"
-    "@html-next/flexi-layouts" "2.0.0-rc.2"
+    "@html-next/flexi-config" "^2.0.0"
+    "@html-next/flexi-default-styles" "^2.0.1"
+    "@html-next/flexi-dsl" "^2.0.1"
+    "@html-next/flexi-layouts" "^2.0.1"
     ember-cli-babel "^6.0.0"
     ember-cli-htmlbars "^2.0.1"
     ember-cli-sass "^6.2.0"
     ember-component-css "^0.3.4"
-    flexi "2.0.0-rc.1"
+    flexi "^2.0.1"
 
-ember-3d-nav@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/ember-3d-nav/-/ember-3d-nav-1.4.0.tgz#492a44ee0e64a8565ebceb77eef1854d20b17481"
+ember-3d-nav@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.npmjs.org/ember-3d-nav/-/ember-3d-nav-1.4.1.tgz#c2da2965f8d19f5c9cb294f0b071b5b6272ab133"
   dependencies:
-    "@html-next/flexi-config" "2.0.0-rc.1"
-    "@html-next/flexi-default-styles" "2.0.0-rc.2"
-    "@html-next/flexi-dsl" "2.0.0-rc.2"
-    "@html-next/flexi-layouts" "2.0.0-rc.2"
+    "@html-next/flexi-config" "^2.0.0"
+    "@html-next/flexi-default-styles" "^2.0.1"
+    "@html-next/flexi-dsl" "^2.0.1"
+    "@html-next/flexi-layouts" "^2.0.1"
     ember-cli-babel "^6.0.0"
-    ember-cli-htmlbars "^1.1.1"
-    ember-cli-sass "^6.1.3"
+    ember-cli-htmlbars "^2.0.1"
+    ember-cli-sass "^6.2.0"
     ember-headroom "^1.0.0"
     ember-responds-to "1.3.0"
     ember-truth-helpers "1.3.0"
-    flexi "2.0.0-rc.1"
+    flexi "^2.0.1"
 
 ember-ajax@^3.0.0:
   version "3.0.0"
@@ -2915,7 +2886,7 @@ ember-cli-sass@5.5.2:
     ember-cli-version-checker "^1.0.2"
     merge "^1.2.0"
 
-ember-cli-sass@^6.0.0, ember-cli-sass@^6.1.3, ember-cli-sass@^6.2.0:
+ember-cli-sass@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/ember-cli-sass/-/ember-cli-sass-6.2.0.tgz#e1f81289678e1e22d9cf9dbf7fa2de76a0de9a2f"
   dependencies:
@@ -4093,14 +4064,6 @@ flat-cache@^1.2.1:
     del "^2.0.2"
     graceful-fs "^4.1.2"
     write "^0.2.1"
-
-flexi@2.0.0-rc.1:
-  version "2.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/flexi/-/flexi-2.0.0-rc.1.tgz#8afeb6ea4487b2fc61a7319a4b72cfae725dc5ff"
-  dependencies:
-    chalk "^1.1.3"
-    ember-cli-babel "^5.1.7"
-    semver "^5.3.0"
 
 flexi@^2.0.1:
   version "2.0.1"
