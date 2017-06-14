@@ -71,7 +71,7 @@
     "showdown"
   ],
   "engines": {
-    "node": ">= 4"
+    "node": "7.9.0"
   },
   "private": true,
   "greenkeeper": {
