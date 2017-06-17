@@ -26,9 +26,5 @@ module.exports = function(defaults) {
     },
   });
 
-  if (!process.env.EMBER_CLI_FASTBOOT) {
-    app.import('vendor/modernizr.min.js');
-  }
-
   return app.toTree();
 };
