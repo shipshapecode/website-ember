@@ -13,5 +13,5 @@ test('it renders', function(assert) {
   this.render(hbs`{{contact-footer}}`);
 
   assert.equal(stripWhitespace(this.$().text().trim()),
-  'Set a course for success Ember.js consulting, development, and training for your project. Let\'s talk. CONTACT US');
+    'Set a course for success Ember.js consulting, development, and training for your project. Let\'s talk. CONTACT US');
 });
