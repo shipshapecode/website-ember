@@ -1,5 +1,5 @@
 .hero.open-source {
-  background: url(../img/open-source.jpg) no-repeat bottom center;
+  background: url(../img/open-source.jpg) no-repeat bottom center/cover;
 }
 
 .hero.open-source .hero-header {

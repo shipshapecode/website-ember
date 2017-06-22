@@ -1,6 +1,5 @@
 .contact {
-  background: url(../img/contact.jpg) no-repeat bottom center;
-  background-size: cover;
+  background: url(../img/contact.jpg) no-repeat bottom center/cover;
 }
 
 .contact vbox {
