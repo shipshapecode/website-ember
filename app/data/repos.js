@@ -2,17 +2,17 @@ export default [
   {
     name: 'Ember Shepherd',
     repo: 'ember-shepherd',
-    stars: 102
+    stars: 103
   },
   {
     name: 'Ember Math Helpers',
     repo: 'ember-math-helpers',
-    stars: 50
+    stars: 53
   },
   {
     name: 'Ember Flatpickr',
     repo: 'ember-flatpickr',
-    stars: 35
+    stars: 36
   },
   {
     name: 'Ember X-Editable',
