@@ -1,6 +1,5 @@
 import Route from 'ember-route';
 import service from 'ember-service/inject';
-import repos from '../data/repos';
 
 export default Route.extend({
   headData: service(),
