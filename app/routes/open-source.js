@@ -5,7 +5,7 @@ import repos from '../data/repos';
 export default Route.extend({
   headData: service(),
   model() {
-    return repos;
+    return this.store.findAll('github-repo');
   },
   afterModel() {
     return this.get('headData').setProperties({
