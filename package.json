@@ -43,6 +43,7 @@
     "ember-cli-shims": "^1.1.0",
     "ember-cli-showdown": "^3.2.1",
     "ember-cli-sri": "^2.1.0",
+    "ember-cli-stylelint": "^0.15.0",
     "ember-cli-template-lint": "0.7.0",
     "ember-component-css": "0.3.4",
     "ember-contact-form": "0.0.9",
@@ -65,7 +66,8 @@
     "ember-vivus": "^1.0.1",
     "eslint-plugin-ship-shape": "^0.4.0",
     "flexi": "^2.0.1",
-    "loader.js": "^4.2.3"
+    "loader.js": "^4.2.3",
+    "stylelint-config-ship-shape": "^0.0.4"
   },
   "fastbootDependencies": [
     "showdown"

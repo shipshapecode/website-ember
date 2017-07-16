@@ -1,20 +1,24 @@
 .technologies {
   background-color: $lighter;
   padding-bottom: 50px;
+
   .logos {
     padding: 0 10%;
+
     centered {
       padding: 0 5%;
+
       .logo {
         height: 100%;
         width: 100%;
       }
     }
   }
+
   h1 {
     color: $background;
     font-size: 38px;
-    margin: 25px 0 50px 0;
+    margin: 25px 0 50px;
     padding: 0;
   }
 }

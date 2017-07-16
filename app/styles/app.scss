@@ -19,8 +19,8 @@ $ember-3d-nav: (
 );
 
 $ember-3d-folding-panel: (
-  'color-1': darken(#3A9688, 10%),
-  'color-2': darken(#616C7B, 10%),
+  'color-1': darken(#3a9688, 10%),
+  'color-2': darken(#616c7b, 10%),
   'color-3': #292929
 );
 
@@ -31,7 +31,9 @@ $ember-3d-folding-panel: (
 @import 'ember-contact-form';
 @import 'reset';
 
-*, *::after, *::before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
@@ -43,6 +45,7 @@ body {
   font: {
     size: 1.6rem;
   }
+
   background-color: $background;
   color: $whiteish;
   font-family: 'Pier Sans', sans-serif;
@@ -51,13 +54,17 @@ body {
 a {
   color: $whiteish;
   text-decoration: none;
+
   &:active {
     color: $whiteish;
   }
-  &:hover, & > i:hover {
+
+  &:hover,
+  & > i:hover {
     color: $bloodOrange;
     cursor: pointer;
   }
+
   &:visited {
     color: $whiteish;
   }
@@ -75,19 +82,23 @@ a {
 
 .ember-3d-nav {
   centered {
-    &:first-of-type a::before {
+    &:first-of-type a:before {
       background-image: url(../img/navbar/boat.svg);
     }
-    &:nth-of-type(2) a::before {
+
+    &:nth-of-type(2) a:before {
       background-image: url(../img/navbar/ember-consulting.svg);
     }
-    &:nth-of-type(3) a::before {
+
+    &:nth-of-type(3) a:before {
       background-image: url(../img/navbar/code.svg);
     }
-    &:nth-of-type(4) a::before {
+
+    &:nth-of-type(4) a:before {
       background-image: url(../img/navbar/anchor.svg);
     }
-    &:nth-of-type(5) a::before {
+
+    &:nth-of-type(5) a:before {
       background-image: url(../img/navbar/blog.svg);
     }
   }
@@ -95,10 +106,11 @@ a {
 
 .logo {
   float: left;
+
   .logoText {
     color: $cream;
-    font-size: 30px;
     float: right;
+    font-size: 30px;
     height: 35px;
     margin-top: 14px;
   }
@@ -111,28 +123,34 @@ a {
 /* these are the colors of the markers - line + arrow */
 
 .color-1 {
-  color: $bloodOrange;
   background-color: $bloodOrange;
-}
-
-h1, h2 {
   color: $bloodOrange;
 }
 
-h3, h4, h5, h6 {
+h1,
+h2 {
+  color: $bloodOrange;
+}
+
+h3,
+h4,
+h5,
+h6 {
   color: $secondary;
 }
 
-.hero-header, .hero-subheader {
+.hero-header,
+.hero-subheader {
   color: $cream;
   font-family: 'Pier Sans';
-  margin: 20px 0px 0px 0px;
+  margin: 20px 0 0;
 }
 
 .ssIcon {
   path {
     fill: $whiteish;
   }
+
   &:hover {
     path {
       fill: $bloodOrange;
@@ -143,12 +161,12 @@ h3, h4, h5, h6 {
 .cd-form {
   input[type="submit"] {
     &:disabled {
-      cursor: not-allowed;
-      //pointer-events: none;
-
-      /*Button disabled - CSS color class*/
-      color: $grey;
       background-color: $darkGrey;
+      // pointer-events: none;
+
+      /* Button disabled - CSS color class */
+      color: $grey;
+      cursor: not-allowed;
     }
   }
 }

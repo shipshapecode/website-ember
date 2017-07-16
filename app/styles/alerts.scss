@@ -1,8 +1,8 @@
 .alert {
-  padding: 0.75rem 1.25rem;
-  margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.25rem;
 }
 
 .alert-heading {
@@ -15,11 +15,12 @@
 
 .alert-dismissible {
   padding-right: 2.5rem;
+
   .close {
-    position: relative;
-    top: -.125rem;
-    right: -1.25rem;
     color: inherit;
+    position: relative;
+    right: -1.25rem;
+    top: -0.125rem;
   }
 }
 
@@ -27,9 +28,11 @@
   background-color: #dff0d8;
   border-color: #d0e9c6;
   color: #3c763d;
+
   hr {
     border-top-color: #c1e2b3;
   }
+
   .alert-link {
     color: #2b542c;
   }
@@ -39,9 +42,11 @@
   background-color: #d9edf7;
   border-color: #bcdff1;
   color: #31708f;
+
   hr {
     border-top-color: #a6d5ec;
   }
+
   .alert-link {
     color: #245269;
   }
@@ -51,9 +56,11 @@
   background-color: #fcf8e3;
   border-color: #faf2cc;
   color: #8a6d3b;
+
   hr {
     border-top-color: #f7ecb5;
   }
+
   .alert-link {
     color: #66512c;
   }
@@ -63,9 +70,11 @@
   background-color: #f2dede;
   border-color: #ebcccc;
   color: #a94442;
+
   hr {
     border-top-color: #e4b9b9;
   }
+
   .alert-link {
     color: #843534;
   }
