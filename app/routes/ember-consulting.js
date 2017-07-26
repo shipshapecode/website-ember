@@ -59,6 +59,19 @@ export default Route.extend({
             full development of williamsonwagner.com.
           </p>`
         )
+      },
+      {
+        heading: 'greenlight.guru',
+        imageURL: 'img/clients/greenlight-logo.png',
+        panelHeading: 'greenlight.guru',
+        panelSubheading: '1.10 - 1.13 update and deprecation fixes, grunt to ember-cli',
+        panelInfo: htmlSafe(
+          `<p>
+            We first updated the greenlight.guru app to Ember 1.12, fixing deprecations as we went.
+            After 1.12 was complete, we undertook the task of migrating a grunt based build to ember-cli.
+            We finally updated the app to Ember 1.13 and fixed all the deprecations.
+          </p>`
+        )
       }
     ];
   },

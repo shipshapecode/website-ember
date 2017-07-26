@@ -21,7 +21,8 @@ $ember-3d-nav: (
 $ember-3d-folding-panel: (
   'color-1': darken(#3a9688, 10%),
   'color-2': darken(#616c7b, 10%),
-  'color-3': #292929
+  'color-3': #292929,
+  'color-4': $veryLight
 );
 
 @import 'alerts';
