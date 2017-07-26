@@ -53,6 +53,7 @@
     "ember-hammertime": "^1.2.3",
     "ember-load-initializers": "^1.0.0",
     "ember-metrics": "^0.11.0",
+    "ember-percy": "^1.2.13",
     "ember-resolver": "^4.0.0",
     "ember-route-action-helper": "2.0.3",
     "ember-router-scroll": "0.2.0",
