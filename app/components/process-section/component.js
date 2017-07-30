@@ -1,4 +1,4 @@
-import Component from 'ember-component';
+import Component from '@ember/component';
 import Vivus from 'vivus';
 
 export default Component.extend({

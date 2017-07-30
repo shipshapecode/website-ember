@@ -1,8 +1,8 @@
 import config from './config/environment';
-import EmberRouter from 'ember-router';
+import EmberRouter from '@ember/routing/router';
 import RouterScroll from 'ember-router-scroll';
-import run from 'ember-runloop';
-import service from 'ember-service/inject';
+import { run } from '@ember/runloop';
+import { inject as service } from '@ember/service';
 
 const Router = EmberRouter.extend(RouterScroll, {
   location: config.locationType,

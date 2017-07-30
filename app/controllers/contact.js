@@ -1,5 +1,5 @@
-import Controller from 'ember-controller';
-import { not } from 'ember-computed';
+import Controller from '@ember/controller';
+import { not } from '@ember/object/computed';
 
 export default Controller.extend({
   projectTypes: [

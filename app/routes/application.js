@@ -1,5 +1,5 @@
-import { A } from 'ember-array/utils';
-import Route from 'ember-route';
+import { A } from '@ember/array';
+import Route from '@ember/routing/route';
 
 export default Route.extend({
   model() {
