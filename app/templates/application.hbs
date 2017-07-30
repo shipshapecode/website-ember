@@ -10,8 +10,8 @@
 </screen>
 {{wave-footer}}
 
-{{#nav-container totalNavItems=model.links.length}}
-  {{#each model.links as |link index|}}
+{{#nav-container totalNavItems=links.length}}
+  {{#each links as |link index|}}
     {{nav-item index=index link=link}}
   {{/each}}
 {{/nav-container}}

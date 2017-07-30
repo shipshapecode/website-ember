@@ -2786,6 +2786,12 @@ ember-body-class@0.4.0:
   dependencies:
     ember-cli-babel "^5.0.0"
 
+ember-chrome-devtools@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/ember-chrome-devtools/-/ember-chrome-devtools-0.1.1.tgz#2c95ec1819125169b15b3f0cbc9a871c0862329b"
+  dependencies:
+    ember-cli-babel "^6.0.0"
+
 ember-cli-babel@5.1.10:
   version "5.1.10"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-5.1.10.tgz#d403f178aab602e1337c403c5a58c0200a8969aa"
@@ -3357,6 +3363,12 @@ ember-data@~2.14.7:
     silent-error "^1.0.0"
     testem "1.15.0"
 
+ember-debonair@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/ember-debonair/-/ember-debonair-0.4.2.tgz#8316aa808eb8beaa006527b4bb74c64cefee0299"
+  dependencies:
+    ember-cli-babel "^6.6.0"
+
 ember-export-application-global@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ember-export-application-global/-/ember-export-application-global-2.0.0.tgz#8d6d7619ac8a1a3f8c43003549eb21ebed685bd2"
@@ -3802,6 +3814,12 @@ escodegen@^1.6.1:
     optionator "^0.8.1"
   optionalDependencies:
     source-map "~0.2.0"
+
+eslint-plugin-ember-suave@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember-suave/-/eslint-plugin-ember-suave-1.0.0.tgz#ea7d232a126562dcd8b1ee3aa2700ac3b626e514"
+  dependencies:
+    requireindex "~1.1.0"
 
 eslint-plugin-ember@^4.0.0:
   version "4.0.0"
@@ -6776,7 +6794,7 @@ require-uncached@^1.0.3:
     caller-path "^0.1.0"
     resolve-from "^1.0.0"
 
-requireindex@^1.1.0:
+requireindex@^1.1.0, requireindex@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/requireindex/-/requireindex-1.1.0.tgz#e5404b81557ef75db6e49c5a72004893fe03e162"
 
@@ -7356,6 +7374,10 @@ stylehacks@^2.3.0, stylehacks@^2.3.2:
     text-table "^0.2.0"
     write-file-stdout "0.0.2"
 
+stylelint-config-recommended@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-1.0.0.tgz#752c17fc68fa64cd5e7589e24f6e46e77e14a735"
+
 stylelint-config-ship-shape@^0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/stylelint-config-ship-shape/-/stylelint-config-ship-shape-0.0.4.tgz#766141e0e1afe83c3812622550ab1733d8c2bd49"
@@ -7366,6 +7388,12 @@ stylelint-config-ship-shape@^0.0.4:
 stylelint-config-standard@^16.0.0:
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-standard/-/stylelint-config-standard-16.0.0.tgz#bb7387bff1d7dd7186a52b3ebf885b2405d691bf"
+
+stylelint-config-standard@^17.0.0:
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-standard/-/stylelint-config-standard-17.0.0.tgz#42103a090054ee2a3dde9ecaed55e5d4d9d059fc"
+  dependencies:
+    stylelint-config-recommended "^1.0.0"
 
 stylelint-order@^0.5.0:
   version "0.5.0"

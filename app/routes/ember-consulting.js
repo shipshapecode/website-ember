@@ -1,5 +1,6 @@
-import { htmlSafe } from '@ember/string';
+import { get, setProperties } from '@ember/object';
 import Route from '@ember/routing/route';
+import { htmlSafe } from '@ember/string';
 import { inject as service } from '@ember/service';
 
 export default Route.extend({
@@ -76,7 +77,7 @@ export default Route.extend({
     ];
   },
   afterModel() {
-    return this.get('headData').setProperties({
+    return setProperties(get(this, 'headData'), {
       title: 'Ember Consulting - Ship Shape',
       description: 'Ember consulting is our specialty at Ship Shape. We have worked on several ambitious, '
       + 'full scale Ember apps. Contact us for Ember consulting work today!',

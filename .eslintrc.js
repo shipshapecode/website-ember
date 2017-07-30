@@ -5,13 +5,17 @@ module.exports = {
     sourceType: 'module'
   },
   extends: [
-    'eslint:recommended'
+    'eslint:recommended',
+    'plugin:ember/base',
+    'plugin:ember-suave/recommended'
   ],
-  plugins: ['ember'],
   env: {
     browser: true
   },
   rules: {
-    'ember/no-old-shims': 'error'
+    'prefer-const': 'error',
+
+    'ember/no-old-shims': 'error',
+    'ember-suave/no-const-outside-module-scope': 0
   }
 };

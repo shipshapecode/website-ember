@@ -6,7 +6,7 @@
 
   <centered>
     <form class="cd-form floating-labels"
-      {{action (route-action 'sendContactRequest' model) on="submit"}}>
+      {{action (route-action 'sendContactRequest' contact) on="submit"}}>
       <fieldset>
         <legend>Personal Info</legend>
         <centered xs="12">
@@ -15,7 +15,7 @@
             labelText="Name"
             required=true
             type="text"
-            value=model.name
+            value=contact.name
           }}
         </centered>
 
@@ -25,7 +25,7 @@
             labelText="Company"
             required=false
             type="text"
-            value=model.company
+            value=contact.company
           }}
         </centered>
 
@@ -35,7 +35,7 @@
             labelText="Email"
             required=true
             type="email"
-            value=model.email
+            value=contact.email
           }}
         </centered>
       </fieldset>
@@ -45,7 +45,7 @@
 
         <centered xs="12">
           {{form-list
-            groupValue=model.projectType
+            groupValue=contact.projectType
             options=projectTypes
             type="radio"}}
         </centered>
@@ -56,7 +56,7 @@
             labelText="Project description"
             required=true
             textarea=true
-            value=model.description
+            value=contact.description
           }}
         </centered>
 

@@ -1,6 +1,7 @@
 import config from './config/environment';
 import EmberRouter from '@ember/routing/router';
 import RouterScroll from 'ember-router-scroll';
+import { get, getWithDefault } from '@ember/object';
 import { run } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 
@@ -16,12 +17,12 @@ const Router = EmberRouter.extend(RouterScroll, {
   },
 
   _trackPage() {
-    if (!this.get('fastboot.isFastBoot')) {
+    if (!get(this, 'fastboot.isFastBoot')) {
       run.scheduleOnce('afterRender', this, () => {
         const page = document.location.pathname;
-        const title = this.getWithDefault('currentRouteName', 'unknown');
+        const title = getWithDefault(this, 'currentRouteName', 'unknown');
 
-        this.get('metrics').trackPage({ page, title });
+        get(this, 'metrics').trackPage({ page, title });
       });
     }
   }
