@@ -27,12 +27,20 @@
     @include device-mock('ember-math-helpers');
   }
 
+  &.ember-newton-cradle-loader-mock {
+    @include device-mock('ember-newton-cradle-loader');
+  }
+
   &.ember-shepherd-mock {
     @include device-mock('ember-shepherd');
   }
 
   &.ember-x-editable-mock {
     @include device-mock('ember-x-editable');
+  }
+
+  &.shipshape\.io-mock {
+    @include device-mock('shipshape.io');
   }
 }
 

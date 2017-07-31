@@ -1,11 +1,17 @@
 import { get, setProperties } from '@ember/object';
+import ENV from 'website/config/environment';
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
+import repos from '../data/repos';
 
 export default Route.extend({
   headData: service(),
 
   model() {
+    if (ENV.environment === 'development') {
+      return repos;
+    }
+
     return this.store.findAll('github-repo');
   },
 
