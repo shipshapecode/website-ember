@@ -11,6 +11,10 @@
 }
 
 .css-device__image {
+  &.ember-3d-folding-panel {
+    @include device-mock('ember-3d-folding-panel');
+  }
+
   &.ember-3d-nav-mock {
     @include device-mock('ember-3d-nav');
   }
