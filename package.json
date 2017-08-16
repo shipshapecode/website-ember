@@ -22,7 +22,7 @@
     "babel-eslint": "^7.2.3",
     "broccoli-asset-rev": "^2.4.5",
     "ember-3d-folding-panel": "^0.1.2",
-    "ember-3d-nav": "^1.5.0",
+    "ember-3d-nav": "^1.6.0",
     "ember-body-class": "0.4.0",
     "ember-chrome-devtools": "^0.1.1",
     "ember-cli": "~2.14.2",
