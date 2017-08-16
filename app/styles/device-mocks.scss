@@ -1,17 +1,12 @@
 @mixin device-mock($name) {
   $addon-name: '../../img/addons/' + $name;
 
-  background: url($addon-name + '.png') no-repeat bottom center;
+  background: url($addon-name + '.svg') no-repeat bottom center;
   background-size: cover;
-
-  .webp & {
-    background: url($addon-name + '.webp') no-repeat bottom center;
-    background-size: cover;
-  }
 }
 
 .css-device__image {
-  &.ember-3d-folding-panel {
+  &.ember-3d-folding-panel-mock {
     @include device-mock('ember-3d-folding-panel');
   }
 
@@ -37,6 +32,10 @@
 
   &.ember-shepherd-mock {
     @include device-mock('ember-shepherd');
+  }
+
+  &.ember-typewriter-mock {
+    @include device-mock('ember-typewriter');
   }
 
   &.ember-x-editable-mock {

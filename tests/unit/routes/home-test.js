@@ -1,7 +1,7 @@
 import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:home', 'Unit | Route | home', {
-  needs: ['service:fastboot', 'service:headData', 'service:metrics', 'service:router-scroll']
+  needs: ['service:fastboot', 'service:headData', 'service:metrics', 'service:router-scroll', 'service:scheduler']
 });
 
 test('it exists', function(assert) {
