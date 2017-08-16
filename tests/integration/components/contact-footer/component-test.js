@@ -7,9 +7,6 @@ moduleForComponent('contact-footer', 'Integration | Component | contact footer',
 });
 
 test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
   this.render(hbs`{{contact-footer}}`);
 
   assert.equal(stripWhitespace(this.$().text().trim()),

@@ -2,9 +2,8 @@ import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:contact', 'Unit | Route | contact', {
   needs: [
-    'service:ajax', 'service:fastboot', 'service:flashMessages',
-    'service:headData', 'service:metrics', 'service:router-scroll',
-    'service:scheduler'
+    'service:fastboot', 'service:flashMessages', 'service:headData',
+    'service:metrics', 'service:router-scroll', 'service:scheduler'
   ]
 });
 
