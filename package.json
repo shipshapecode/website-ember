@@ -73,7 +73,7 @@
     "eslint-plugin-ember-suave": "^1.0.0",
     "flexi": "^2.0.1",
     "loader.js": "^4.2.3",
-    "stylelint-config-ship-shape": "^0.0.5"
+    "stylelint-config-ship-shape": "^0.0.6"
   },
   "fastbootDependencies": [
     "showdown"
