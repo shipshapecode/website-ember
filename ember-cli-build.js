@@ -1,12 +1,13 @@
-/* eslint-disable */
-/* global require, module */
-var EmberApp = require('ember-cli/lib/broccoli/ember-app');
-var shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
+/* eslint-env node */
+'use strict';
+
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
 
 shim(EmberApp);
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {
+  const app = new EmberApp(defaults, {
     fingerprint: {
       extensions: ['js', 'css', 'map']
     },
@@ -22,7 +23,7 @@ module.exports = function(defaults) {
     },
     SRI: {
       enabled: false
-    },
+    }
   });
 
   return app.toTree();
