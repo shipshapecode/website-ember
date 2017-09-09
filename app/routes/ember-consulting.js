@@ -76,6 +76,7 @@ export default Route.extend({
       }
     ];
   },
+
   afterModel() {
     return setProperties(get(this, 'headData'), {
       title: 'Ember.js Consulting and Training - Ship Shape',
