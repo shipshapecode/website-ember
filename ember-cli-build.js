@@ -1,6 +1,7 @@
 /* eslint-env node */
 'use strict';
 
+const fastbootTransform = require('fastboot-transform');
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
 
@@ -21,8 +22,30 @@ module.exports = function(defaults) {
       'loading-indicator': './app/templates/inline/loading-indicator.html',
       'open-source': './app/styles/inline/open-source.css'
     },
+    nodeAssets: {
+      'smooth-scroll': {
+        vendor: {
+          srcDir: 'dist/js',
+          destDir: 'smooth-scroll',
+          include: ['smooth-scroll.js'],
+          processTree(input) {
+            return fastbootTransform(input);
+          }
+        }
+      }
+    },
     SRI: {
       enabled: false
+    },
+    vendorFiles: { 'jquery.js': null }
+  });
+
+  app.import('vendor/smooth-scroll/smooth-scroll.js');
+
+  app.import('vendor/smooth-scroll/shim.js', {
+    type: 'vendor',
+    exports: {
+      'smooth-scroll': ['default']
     }
   });
 

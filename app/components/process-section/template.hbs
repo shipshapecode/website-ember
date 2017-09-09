@@ -1,4 +1,4 @@
-<page class="process design">
+<page class="process design" id="design">
   <centered>
     <hbox xs="12" sm="10" md="8" justify="between">
       <centered xs="12" sm="6">
@@ -16,11 +16,11 @@
       </box>
     </hbox>
   </centered>
-  {{#scroll-to href='.build'}}
+  <a data-scroll href="#build">
     {{scroll-suggest}}
-  {{/scroll-to}}
+  </a>
 </page>
-<page class="process build">
+<page class="process build" id="build">
   <centered>
     <hbox xs="12" sm="10" md="8" justify="between">
       <centered xs="12" sm="6">
@@ -39,11 +39,11 @@
       </box>
     </hbox>
   </centered>
-  {{#scroll-to href='.ship'}}
+  <a data-scroll href="#ship">
     {{scroll-suggest}}
-  {{/scroll-to}}
+  </a>
 </page>
-<page class="process ship">
+<page class="process ship" id="ship">
   <centered>
     <hbox xs="12" sm="10" md="8" justify="between">
       <centered xs="12" sm="6">
@@ -62,7 +62,7 @@
       </box>
     </hbox>
   </centered>
-  {{#scroll-to href='.technologies'}}
+  <a data-scroll href="#technologies">
     {{scroll-suggest}}
-  {{/scroll-to}}
+  </a>
 </page>

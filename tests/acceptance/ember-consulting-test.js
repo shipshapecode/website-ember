@@ -6,8 +6,6 @@ moduleForAcceptance('Acceptance | ember consulting');
 test('visiting /ember-consulting', function(assert) {
   visit('/ember-consulting');
 
-  percySnapshot(assert);
-
   andThen(function() {
     assert.equal(currentURL(), '/ember-consulting');
   });

@@ -23,9 +23,8 @@
     "broccoli-asset-rev": "^2.4.5",
     "ember-3d-folding-panel": "^0.2.2",
     "ember-3d-nav": "^1.6.0",
-    "ember-body-class": "0.4.0",
     "ember-chrome-devtools": "^0.1.1",
-    "ember-cli": "^2.16.0-beta.1",
+    "ember-cli": "~2.16.0-beta.1",
     "ember-cli-babel": "^6.8.1",
     "ember-cli-dependency-checker": "^2.0.1",
     "ember-cli-eslint": "^4.0.0",
@@ -36,6 +35,7 @@
     "ember-cli-htmlbars-inline-precompile": "^1.0.2",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-inline-content": "^0.4.0",
+    "ember-cli-node-assets": "^0.2.2",
     "ember-cli-one-script": "0.0.1",
     "ember-cli-qunit": "^4.0.0",
     "ember-cli-sass": "^7.0.0",
@@ -58,11 +58,9 @@
     "ember-metrics": "^0.12.1",
     "ember-native-dom-event-dispatcher": "^0.6.3",
     "ember-native-dom-helpers": "^0.5.3",
-    "ember-percy": "^1.2.13",
     "ember-resolver": "^4.4.0",
     "ember-route-action-helper": "2.0.5",
     "ember-router-scroll": "0.3.0",
-    "ember-scroll-to": "0.6.4",
     "ember-service-worker": "^0.6.8",
     "ember-service-worker-asset-cache": "0.6.1",
     "ember-service-worker-index": "0.6.2",
@@ -72,9 +70,11 @@
     "ember-vivus": "^1.1.0",
     "eslint-plugin-ember": "^4.3.0",
     "eslint-plugin-ember-suave": "^1.0.0",
+    "fastboot-transform": "^0.1.2",
     "flexi": "^2.0.1",
     "loader.js": "^4.2.3",
-    "stylelint-config-ship-shape": "^0.0.6"
+    "smooth-scroll": "^12.1.5",
+    "stylelint-config-ship-shape": "^0.1.0"
   },
   "fastbootDependencies": [
     "showdown"

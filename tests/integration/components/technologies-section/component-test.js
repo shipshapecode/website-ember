@@ -1,3 +1,4 @@
+import { find } from 'ember-native-dom-helpers';
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 import stripWhitespace from '../../../helpers/strip-whitespace';
@@ -12,5 +13,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{technologies-section}}`);
 
-  assert.ok(stripWhitespace(stripWhitespace(this.$().text().trim())).includes('Technologies we use'));
+  assert.ok(stripWhitespace(stripWhitespace(find('*').textContent.trim())).includes('Technologies we use'));
 });
