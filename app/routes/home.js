@@ -13,7 +13,7 @@ export default Route.extend({
 
   afterModel() {
     return setProperties(get(this, 'headData'), {
-      title: 'Ship Shape - Ember Consulting',
+      title: 'Ship Shape - Ember.js Code That Won\'t Sink',
       description: 'Ship Shape is an Ember consulting agency. We leverage Ember.js, and all the '
       + 'latest Ember addons and technologies, to create truly ambitious applications.',
       type: 'website',
