@@ -9,13 +9,13 @@
 //3rd party
 //Ember-3d-nav variables
 $ember-3d-nav: (
-  'is-fixed-nav-bg': $primary,
+  'is-fixed-nav-bg': transparent,
   'nav-bg': $navBar,
   'nav-items': 5,
   'nav-item-hover': darken($navBar, 5%),
   'nav-item-selected': darken($navBar, 5%),
-  'nav-text-color': $cream,
-  'nav-trigger-color': $cream
+  'nav-text-color': #ffffff,
+  'nav-trigger-color': #ffffff
 );
 
 $ember-3d-folding-panel: (
@@ -48,16 +48,16 @@ body {
   }
 
   background-color: $background;
-  color: $whiteish;
+  color: $white;
   font-family: 'Pier Sans', sans-serif;
 }
 
 a {
-  color: $whiteish;
+  color: $white;
   text-decoration: none;
 
   &:active {
-    color: $whiteish;
+    color: $white;
   }
 
   &:hover,
@@ -67,7 +67,7 @@ a {
   }
 
   &:visited {
-    color: $whiteish;
+    color: $white;
   }
 }
 
@@ -109,7 +109,7 @@ a {
   float: left;
 
   .logoText {
-    color: $cream;
+    color: $white;
     float: right;
     font-size: 30px;
     height: 35px;
@@ -142,14 +142,14 @@ h6 {
 
 .hero-header,
 .hero-subheader {
-  color: $cream;
+  color: $white;
   font-family: 'Pier Sans';
   margin: 20px 0 0;
 }
 
 .ssIcon {
   path {
-    fill: $whiteish;
+    fill: $white;
   }
 
   &:hover {

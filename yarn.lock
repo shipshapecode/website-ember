@@ -2579,18 +2579,19 @@ ember-3d-folding-panel@^0.2.2:
     ember-component-css "^0.3.4"
     flexi "^2.0.1"
 
-ember-3d-nav@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/ember-3d-nav/-/ember-3d-nav-1.6.0.tgz#3687df98801dcecf7ffa61df7091da2bc38d5155"
+ember-3d-nav@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/ember-3d-nav/-/ember-3d-nav-1.6.1.tgz#e32d6daec3ce4a3276aa609cecacc9d42217f06e"
   dependencies:
     "@html-next/flexi-config" "^2.0.0"
     "@html-next/flexi-default-styles" "^2.0.1"
     "@html-next/flexi-dsl" "^2.0.1"
     "@html-next/flexi-layouts" "^2.0.1"
-    ember-cli-babel "^6.6.0"
+    ember-cli-babel "^6.8.2"
     ember-cli-htmlbars "^2.0.1"
     ember-cli-sass "^7.0.0"
     ember-headroom "^1.1.1"
+    ember-router-service-polyfill "^1.0.1"
     ember-truth-helpers "1.3.0"
     flexi "^2.0.1"
 
@@ -3299,6 +3300,12 @@ ember-router-scroll@0.3.1:
     ember-app-scheduler "0.0.5"
     ember-cli-babel "^6.6.0"
     ember-getowner-polyfill "^2.0.1"
+
+ember-router-service-polyfill@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ember-router-service-polyfill/-/ember-router-service-polyfill-1.0.1.tgz#a04d3d84c4bb6927e8438d367d9e40dfd40646f6"
+  dependencies:
+    ember-cli-babel "^6.0.0"
 
 ember-runtime-enumerable-includes-polyfill@^1.0.1:
   version "1.0.4"
