@@ -9,13 +9,13 @@
 //3rd party
 //Ember-3d-nav variables
 $ember-3d-nav: (
-  'is-fixed-nav-bg': transparent,
-  'nav-bg': $navBar,
+  'is-fixed-nav-bg': $white,
+  'nav-bg': $white,
   'nav-items': 5,
-  'nav-item-hover': darken($navBar, 5%),
-  'nav-item-selected': darken($navBar, 5%),
-  'nav-text-color': #ffffff,
-  'nav-trigger-color': #ffffff
+  'nav-item-hover': darken($white, 5%),
+  'nav-item-selected': darken($white, 5%),
+  'nav-text-color': $dark,
+  'nav-trigger-color': $dark
 );
 
 $ember-3d-folding-panel: (
@@ -108,8 +108,14 @@ a {
 .logo {
   float: left;
 
+  .cls-5,
+  .cls-8 {
+    fill: $dark;
+    stroke: $dark;
+  }
+
   .logoText {
-    color: $white;
+    color: $dark;
     float: right;
     font-size: 30px;
     height: 35px;
