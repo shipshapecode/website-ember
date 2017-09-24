@@ -14,6 +14,7 @@ $ember-3d-nav: (
   'nav-items': 5,
   'nav-item-hover': darken($white, 5%),
   'nav-item-selected': darken($white, 5%),
+  'nav-marker-color': #6CA3BB,
   'nav-text-color': $dark,
   'nav-trigger-color': $dark
 );
@@ -125,13 +126,6 @@ a {
 
 .nav-trigger {
   margin-top: 5px;
-}
-
-/* these are the colors of the markers - line + arrow */
-
-.color-1 {
-  background-color: $bloodOrange;
-  color: $bloodOrange;
 }
 
 h1,
