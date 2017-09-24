@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 154.5 256.73">
+<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 -10 155 275">
   <defs>
     <style>
-      .cls-1,.cls-2,.cls-8{fill:none;}.cls-2{clip-rule:evenodd;}.cls-3{clip-path:url(#clip-path);}.cls-4{clip-path:url(#clip-path-2);}.cls-5{fill:#fff;}.cls-6{clip-path:url(#clip-path-3);}.cls-7{clip-path:url(#clip-path-5);}.cls-8{stroke:#fff;stroke-miterlimit:10;stroke-width:16px;}
+      .cls-1,.cls-2,.cls-8{fill:none;}.cls-2{clip-rule:evenodd;}.cls-3{clip-path:url(#clip-path);}.cls-4{clip-path:url(#clip-path-2);}.cls-5{fill:#fff;}.cls-6{clip-path:url(#clip-path-3);}.cls-7{clip-path:url(#clip-path-5);}.cls-8{stroke:#fff;stroke-miterlimit:10;stroke-width:30px;}
     </style>
     <clipPath id="clip-path" transform="translate(-10 -10)">
       <circle cx="50.54" cy="125.5" r="10.5" class="cls-1"/>
