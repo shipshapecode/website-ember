@@ -36,18 +36,6 @@
     margin: 0 auto;
     padding: 10px;
     width: 275px;
-
-    // Hack to animate in the svg fills
-    * {
-      fill-opacity: 0;
-      transition: fill-opacity 0.25s;
-    }
-
-    &.finished {
-      * {
-        fill-opacity: 1;
-      }
-    }
   }
 
   &.build {

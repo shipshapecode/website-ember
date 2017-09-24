@@ -58,7 +58,6 @@
     "ember-smooth-scroll": "0.0.0",
     "ember-source": "~2.16.0-beta.1",
     "ember-svg-jar": "^0.11.1",
-    "ember-vivus": "^1.1.0",
     "flexi": "^2.0.1",
     "loader.js": "^4.2.3"
   },

@@ -2631,7 +2631,7 @@ ember-cli-babel@^5.0.0, ember-cli-babel@^5.1.5, ember-cli-babel@^5.1.6, ember-cl
     ember-cli-version-checker "^1.0.2"
     resolve "^1.1.2"
 
-ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.0.0-beta.9, ember-cli-babel@^6.1.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.4.1, ember-cli-babel@^6.6.0, ember-cli-babel@^6.7.2, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2:
+ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.1.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.4.1, ember-cli-babel@^6.6.0, ember-cli-babel@^6.7.2, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2:
   version "6.8.2"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.8.2.tgz#eac2785964f4743f4c815cd53c6288f00cc087d7"
   dependencies:
@@ -2792,7 +2792,7 @@ ember-cli-lodash-subset@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/ember-cli-lodash-subset/-/ember-cli-lodash-subset-2.0.1.tgz#20cb68a790fe0fde2488ddfd8efbb7df6fe766f2"
 
-ember-cli-node-assets@0.2.2, ember-cli-node-assets@^0.2.2:
+ember-cli-node-assets@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/ember-cli-node-assets/-/ember-cli-node-assets-0.2.2.tgz#d2d55626e7cc6619f882d7fe55751f9266022708"
   dependencies:
@@ -3470,15 +3470,6 @@ ember-validators@1.0.3:
     ember-cli-babel "^5.1.6"
     ember-require-module "^0.1.2"
 
-ember-vivus@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/ember-vivus/-/ember-vivus-1.1.0.tgz#8b64e152421d098ce5738503bf5c3b264485bbc5"
-  dependencies:
-    ember-cli-babel "^6.0.0-beta.9"
-    ember-cli-node-assets "0.2.2"
-    fastboot-transform "^0.1.0"
-    vivus "^0.4.0"
-
 encodeurl@~1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.1.tgz#79e3d58655346909fe6f0f45a5de68103b294d20"
@@ -3928,7 +3919,7 @@ fastboot-express-middleware@^1.0.0:
     fastboot "^1.0.0"
     request "^2.81.0"
 
-fastboot-transform@^0.1.0, fastboot-transform@^0.1.2:
+fastboot-transform@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/fastboot-transform/-/fastboot-transform-0.1.2.tgz#f910d666ab93e75604492ea655270d1804bc8de7"
   dependencies:
@@ -7919,10 +7910,6 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
-
-vivus@^0.4.0:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/vivus/-/vivus-0.4.2.tgz#5d142437c47695258324d691512b747a1ad43f05"
 
 vlq@^0.2.1:
   version "0.2.2"

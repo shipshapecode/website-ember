@@ -9,8 +9,6 @@ This website is made possible by the following Ember addons:
 - [ember-contact-form](https://github.com/shipshapecode/ember-contact-form)
 - [ember-headroom](https://github.com/shipshapecode/ember-headroom)
 - [ember-typewriter](https://github.com/shipshapecode/ember-typewriter)
-- [ember-vivus](https://github.com/shipshapecode/ember-vivus)
-
 
 ### Other Addons
 
