@@ -26,6 +26,15 @@ $ember-3d-folding-panel: (
   'color-4': darken($white, 8%)
 );
 
+$ecf: (
+  'background': transparent,
+  'color': $grey,
+  'input-background': transparent,
+  'input-border': darken($grey, 10%),
+  'input-color': $grey,
+  'submit-color': $offWhite
+);
+
 @import 'alerts';
 @import 'device-mocks';
 @import 'ember-3d-folding-panel';
@@ -63,7 +72,7 @@ a {
 
   &:hover,
   & > i:hover {
-    color: $bloodOrange;
+    color: $pink;
     cursor: pointer;
   }
 
@@ -166,27 +175,19 @@ h6 {
 
   &:hover {
     path {
-      fill: $bloodOrange;
+      fill: $pink;
     }
   }
 }
 
 .cd-form {
-  color: $dark;
-
-  input,
-  select,
-  textarea {
-    color: $dark;
-  }
-
   input[type="submit"] {
     &:disabled {
       background-color: $darkGrey;
       // pointer-events: none;
 
       /* Button disabled - CSS color class */
-      color: $grey;
+      color: darken($offWhite, 20%);
       cursor: not-allowed;
     }
   }
