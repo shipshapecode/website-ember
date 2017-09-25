@@ -1,8 +1,10 @@
 .process {
-  background-color: $background;
+  background-color: $offWhite;
+  color: $grey;
   padding: 20px;
 
   .heading {
+    color: $blue;
     font: {
       size: 5rem;
       weight: bold;
@@ -13,6 +15,7 @@
   }
 
   .sub-heading {
+    color: $dark;
     font: {
       size: 2.5rem;
       weight: bold;
@@ -32,23 +35,13 @@
   }
 
   .svg-icon {
-    margin: 0 auto;
+    @media (min-width: 768px) {
+      margin-right: 50px;
+    }
     padding: 10px;
   }
 
   &.build {
-    background-color: #c1c0bb;
-
-    .heading {
-      color: $blue;
-    }
-  }
-
-  &.ship {
-    background-color: $bloodOrange;
-
-    .heading {
-      color: $lighter;
-    }
+    background-color: $white;
   }
 }
