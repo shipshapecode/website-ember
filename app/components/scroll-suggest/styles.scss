@@ -26,7 +26,7 @@
 
   .mouse-icon {
     animation: pulseDelay 5s infinite;
-    border: 2px solid $white;
+    border: 2px solid $dark;
     border-radius: 16px;
     bottom: 0;
     display: block;
@@ -49,7 +49,7 @@
 
       .wheel {
         animation: drop 1s infinite;
-        background: $white;
+        background: $dark;
         border-radius: 10px;
         height: 5px;
         left: 0;
@@ -60,7 +60,7 @@
 
       .wheelSecond {
         animation: dropSecond 1s 1.1s infinite;
-        background: $white;
+        background: $dark;
         border-radius: 10px;
         height: 5px;
         position: absolute;
