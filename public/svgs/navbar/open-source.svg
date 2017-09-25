@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="55" viewBox="0 0 60 55">
+  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+    <path fill="#D0E8F9" d="M33,4 C33,6.209 31.209,8 29,8 C26.791,8 25,6.209 25,4 C25,1.791 26.791,0 29,0 C31.209,0 33,1.791 33,4 L33,4 Z"/>
+    <path stroke="#0096E6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M33,4 C33,6.209 31.209,8 29,8 C26.791,8 25,6.209 25,4 C25,1.791 26.791,0 29,0 C31.209,0 33,1.791 33,4 L33,4 Z"/>
+    <polygon fill="#FFF" points="0 21 58 21 58 53 0 53"/>
+    <polygon stroke="#0096E6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="0 21 58 21 58 53 0 53"/>
+    <path fill="#FFF" d="M25,4 L8,21"/>
+    <path stroke="#0096E6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M25 4L8 21M33 4L50 21"/>
+    <path fill="#FFF" d="M11,47 L11,47 C8.8,47 7,45.2 7,43 L7,31 C7,28.8 8.8,27 11,27 C13.2,27 15,28.8 15,31 L15,43 C15,45.2 13.2,47 11,47 L11,47 Z"/>
+    <path stroke="#0096E6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11,47 L11,47 C8.8,47 7,45.2 7,43 L7,31 C7,28.8 8.8,27 11,27 C13.2,27 15,28.8 15,31 L15,43 C15,45.2 13.2,47 11,47 L11,47 Z"/>
+    <path fill="#FFF" d="M23,40 L23,40 C20.8,40 19,38.2 19,36 L19,31 C19,28.8 20.8,27 23,27 C25.2,27 27,28.8 27,31 L27,36 C27,38.2 25.2,40 23,40 L23,40 Z"/>
+    <path stroke="#0096E6" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 40L23 40C20.8 40 19 38.2 19 36L19 31C19 28.8 20.8 27 23 27 25.2 27 27 28.8 27 31L27 36C27 38.2 25.2 40 23 40L23 40zM31 47L31 27M51 27L51 47M43 47L43 27M19 36L19 47M39 37L31 37M39 27L31 27M39 47L31 47M43 27L51 47"/>
+  </g>
+</svg>

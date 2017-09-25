@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'mixins';
-
 //Pages
 @import 'ember-consulting';
 @import 'open-source';
@@ -84,25 +83,40 @@ a {
 }
 
 .ember-3d-nav {
+  a:before {
+    background-size: 40px;
+    height: 60px;
+    width: 58px;
+
+    @media only screen and (min-width: 768px) {
+      top: 4.4rem;
+    }
+  }
+
   centered {
+    a:before,
+    &.is-selected a:before {
+      background-position: center;
+    }
+
     &:first-of-type a:before {
-      background-image: url(../img/navbar/boat.svg);
+      background-image: url(../svgs/navbar/home.svg);
     }
 
     &:nth-of-type(2) a:before {
-      background-image: url(../img/navbar/ember-consulting.svg);
+      background-image: url(../svgs/navbar/ember-consulting.svg);
     }
 
     &:nth-of-type(3) a:before {
-      background-image: url(../img/navbar/code.svg);
+      background-image: url(../svgs/navbar/open-source.svg);
     }
 
     &:nth-of-type(4) a:before {
-      background-image: url(../img/navbar/anchor.svg);
+      background-image: url(../svgs/navbar/contact.svg);
     }
 
     &:nth-of-type(5) a:before {
-      background-image: url(../img/navbar/blog.svg);
+      background-image: url(../svgs/navbar/blog.svg);
     }
   }
 }
