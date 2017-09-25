@@ -172,6 +172,14 @@ h6 {
 }
 
 .cd-form {
+  color: $dark;
+
+  input,
+  select,
+  textarea {
+    color: $dark;
+  }
+
   input[type="submit"] {
     &:disabled {
       background-color: $darkGrey;
