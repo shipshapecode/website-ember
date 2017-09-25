@@ -1,13 +1,17 @@
-.mouse-icon {
-  border: 2px solid $white;
+& {
+  [data-scroll] {
+    .mouse-icon {
+      border: 2px solid $white;
 
-  .wheelContainer {
-    .wheel {
-      background: $white;
-    }
+      .wheelContainer {
+        .wheel {
+          background: $white;
+        }
 
-    .wheelSecond {
-      background: $white;
+        .wheelSecond {
+          background: $white;
+        }
+      }
     }
   }
 }
