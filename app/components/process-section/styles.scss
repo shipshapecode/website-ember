@@ -5,23 +5,21 @@
 
   .heading {
     color: $blue;
+    padding: 10px 0;
+    text-transform: uppercase;
     font: {
       size: 5rem;
       weight: bold;
     }
-
-    padding: 10px 0;
-    text-transform: uppercase;
   }
 
   .sub-heading {
     color: $dark;
+    padding: 5px 0;
     font: {
       size: 2.5rem;
       weight: bold;
     }
-
-    padding: 5px 0;
   }
 
   .info {
@@ -38,6 +36,7 @@
     @media (min-width: 768px) {
       margin-right: 50px;
     }
+
     padding: 10px;
   }
 
