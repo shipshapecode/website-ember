@@ -9,20 +9,32 @@
 //3rd party
 //Ember-3d-nav variables
 $ember-3d-nav: (
-  'is-fixed-nav-bg': $primary,
-  'nav-bg': $navBar,
+  'is-fixed-nav-bg': $white,
+  'nav-bg': $white,
   'nav-items': 5,
-  'nav-item-hover': darken($navBar, 5%),
-  'nav-item-selected': darken($navBar, 5%),
-  'nav-text-color': $cream,
-  'nav-trigger-color': $cream
+  'nav-item-hover': darken($white, 5%),
+  'nav-item-selected': darken($white, 5%),
+  'nav-marker-color': #6ca3bb,
+  'nav-text-color': $dark,
+  'nav-trigger-color': $dark
 );
 
 $ember-3d-folding-panel: (
-  'color-1': darken(#3a9688, 10%),
-  'color-2': darken(#616c7b, 10%),
-  'color-3': #292929,
-  'color-4': $veryLight
+  'color-1': darken($white, 2%),
+  'color-2': darken($white, 4%),
+  'color-3': darken($white, 6%),
+  'color-4': darken($white, 8%),
+  'dark-color': $dark-green,
+  'light-color': $dark
+);
+
+$ecf: (
+  'background': transparent,
+  'color': $grey,
+  'input-background': transparent,
+  'input-border': darken($grey, 10%),
+  'input-color': $grey,
+  'submit-color': $offWhite
 );
 
 @import 'alerts';
@@ -47,27 +59,27 @@ body {
     size: 1.6rem;
   }
 
-  background-color: $background;
-  color: $whiteish;
+  background-color: $white;
+  color: $white;
   font-family: 'Pier Sans', sans-serif;
 }
 
 a {
-  color: $whiteish;
+  color: $white;
   text-decoration: none;
 
   &:active {
-    color: $whiteish;
+    color: $white;
   }
 
   &:hover,
   & > i:hover {
-    color: $bloodOrange;
+    color: $pink;
     cursor: pointer;
   }
 
   &:visited {
-    color: $whiteish;
+    color: $white;
   }
 }
 
@@ -82,25 +94,40 @@ a {
 }
 
 .ember-3d-nav {
+  a:before {
+    background-size: 40px;
+    height: 60px;
+    width: 58px;
+
+    @media only screen and (min-width: 768px) {
+      top: 4.4rem;
+    }
+  }
+
   centered {
+    a:before,
+    &.is-selected a:before {
+      background-position: center;
+    }
+
     &:first-of-type a:before {
-      background-image: url(../img/navbar/boat.svg);
+      background-image: url(../svgs/navbar/home.svg);
     }
 
     &:nth-of-type(2) a:before {
-      background-image: url(../img/navbar/ember-consulting.svg);
+      background-image: url(../svgs/navbar/ember-consulting.svg);
     }
 
     &:nth-of-type(3) a:before {
-      background-image: url(../img/navbar/code.svg);
+      background-image: url(../svgs/navbar/open-source.svg);
     }
 
     &:nth-of-type(4) a:before {
-      background-image: url(../img/navbar/anchor.svg);
+      background-image: url(../svgs/navbar/contact.svg);
     }
 
     &:nth-of-type(5) a:before {
-      background-image: url(../img/navbar/blog.svg);
+      background-image: url(../svgs/navbar/blog.svg);
     }
   }
 }
@@ -108,8 +135,14 @@ a {
 .logo {
   float: left;
 
+  .cls-5,
+  .cls-8 {
+    fill: $dark;
+    stroke: $dark;
+  }
+
   .logoText {
-    color: $cream;
+    color: $dark;
     float: right;
     font-size: 30px;
     height: 35px;
@@ -121,40 +154,30 @@ a {
   margin-top: 5px;
 }
 
-/* these are the colors of the markers - line + arrow */
-
-.color-1 {
-  background-color: $bloodOrange;
-  color: $bloodOrange;
-}
-
 h1,
-h2 {
-  color: $bloodOrange;
-}
-
+h2,
 h3,
 h4,
 h5,
 h6 {
-  color: $secondary;
+  color: $grey;
 }
 
 .hero-header,
 .hero-subheader {
-  color: $cream;
-  font-family: 'Pier Sans';
+  color: $white;
+  font-family: 'Pier Sans', sans-serif;
   margin: 20px 0 0;
 }
 
 .ssIcon {
   path {
-    fill: $whiteish;
+    fill: $white;
   }
 
   &:hover {
     path {
-      fill: $bloodOrange;
+      fill: $pink;
     }
   }
 }
@@ -166,7 +189,7 @@ h6 {
       // pointer-events: none;
 
       /* Button disabled - CSS color class */
-      color: $grey;
+      color: darken($offWhite, 20%);
       cursor: not-allowed;
     }
   }
@@ -174,4 +197,10 @@ h6 {
 
 .folding-panel.is-open {
   z-index: 10;
+}
+
+@media only screen and (min-width: 600px) {
+  .cd-form .contact-item {
+    margin: 20px 0;
+  }
 }

@@ -1,9 +1,12 @@
-<page class="hero">
-  <vbox align="center">
-    <h1>Let's create something amazing.</h1>
-    <h2>We would love to work on your next Ember app or addon.</h2>
-  </vbox>
+{{#hero-block
+  heroClasses='contact'
+  scrollToHref='#contact-form'}}
+  <h1 class="hero-header">Contact</h1>
+{{/hero-block}}
 
+
+
+<page class="contact-form" id="contact-form">
   <centered>
     <form class="cd-form floating-labels"
       {{action (route-action 'sendContactRequest' contact) on="submit"}}>

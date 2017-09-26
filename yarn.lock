@@ -2579,18 +2579,19 @@ ember-3d-folding-panel@^0.2.2:
     ember-component-css "^0.3.4"
     flexi "^2.0.1"
 
-ember-3d-nav@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/ember-3d-nav/-/ember-3d-nav-1.6.0.tgz#3687df98801dcecf7ffa61df7091da2bc38d5155"
+ember-3d-nav@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/ember-3d-nav/-/ember-3d-nav-1.6.1.tgz#e32d6daec3ce4a3276aa609cecacc9d42217f06e"
   dependencies:
     "@html-next/flexi-config" "^2.0.0"
     "@html-next/flexi-default-styles" "^2.0.1"
     "@html-next/flexi-dsl" "^2.0.1"
     "@html-next/flexi-layouts" "^2.0.1"
-    ember-cli-babel "^6.6.0"
+    ember-cli-babel "^6.8.2"
     ember-cli-htmlbars "^2.0.1"
     ember-cli-sass "^7.0.0"
     ember-headroom "^1.1.1"
+    ember-router-service-polyfill "^1.0.1"
     ember-truth-helpers "1.3.0"
     flexi "^2.0.1"
 
@@ -2630,7 +2631,7 @@ ember-cli-babel@^5.0.0, ember-cli-babel@^5.1.5, ember-cli-babel@^5.1.6, ember-cl
     ember-cli-version-checker "^1.0.2"
     resolve "^1.1.2"
 
-ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.0.0-beta.9, ember-cli-babel@^6.1.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.4.1, ember-cli-babel@^6.6.0, ember-cli-babel@^6.7.2, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2:
+ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.1.0, ember-cli-babel@^6.3.0, ember-cli-babel@^6.4.1, ember-cli-babel@^6.6.0, ember-cli-babel@^6.7.2, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2:
   version "6.8.2"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.8.2.tgz#eac2785964f4743f4c815cd53c6288f00cc087d7"
   dependencies:
@@ -2693,13 +2694,13 @@ ember-cli-fastboot@^1.0.5:
     md5-hex "^2.0.0"
     silent-error "^1.0.0"
 
-ember-cli-flash@^1.4.3:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/ember-cli-flash/-/ember-cli-flash-1.4.3.tgz#ce5288b0089f146d5f59ae7d530d2816952934a2"
+ember-cli-flash@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-flash/-/ember-cli-flash-1.5.0.tgz#d4e0edf618376ffbf648512d92d5ff7a0f0ffb0c"
   dependencies:
-    ember-cli-babel "^5.1.6"
-    ember-cli-htmlbars "^1.0.3"
-    ember-runtime-enumerable-includes-polyfill "^1.0.1"
+    ember-cli-babel "^6.3.0"
+    ember-cli-htmlbars "^2.0.1"
+    ember-runtime-enumerable-includes-polyfill "^2.0.0"
 
 ember-cli-get-component-path-option@^1.0.0:
   version "1.0.0"
@@ -2709,9 +2710,9 @@ ember-cli-get-dependency-depth@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ember-cli-get-dependency-depth/-/ember-cli-get-dependency-depth-1.0.0.tgz#e0afecf82a2d52f00f28ab468295281aec368d11"
 
-ember-cli-head@^0.3.0:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/ember-cli-head/-/ember-cli-head-0.3.1.tgz#a407df4880f235280371c437bb5b0b5cbdaea646"
+ember-cli-head@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-head/-/ember-cli-head-0.4.0.tgz#348f7595cee5bcb024a87d1c72c8d55fedda32f7"
   dependencies:
     ember-cli-babel "^6.1.0"
     ember-cli-htmlbars "^2.0.1"
@@ -2726,7 +2727,7 @@ ember-cli-htmlbars-inline-precompile@^1.0.2:
     heimdalljs-logger "^0.1.7"
     silent-error "^1.1.0"
 
-ember-cli-htmlbars@^1.0.10, ember-cli-htmlbars@^1.0.3, ember-cli-htmlbars@^1.1.1:
+ember-cli-htmlbars@^1.0.10, ember-cli-htmlbars@^1.1.1:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-1.3.4.tgz#461289724b34af372a6a0c4b6635819156963353"
   dependencies:
@@ -2791,7 +2792,7 @@ ember-cli-lodash-subset@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/ember-cli-lodash-subset/-/ember-cli-lodash-subset-2.0.1.tgz#20cb68a790fe0fde2488ddfd8efbb7df6fe766f2"
 
-ember-cli-node-assets@0.2.2, ember-cli-node-assets@^0.2.2:
+ember-cli-node-assets@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/ember-cli-node-assets/-/ember-cli-node-assets-0.2.2.tgz#d2d55626e7cc6619f882d7fe55751f9266022708"
   dependencies:
@@ -3300,12 +3301,11 @@ ember-router-scroll@0.3.1:
     ember-cli-babel "^6.6.0"
     ember-getowner-polyfill "^2.0.1"
 
-ember-runtime-enumerable-includes-polyfill@^1.0.1:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/ember-runtime-enumerable-includes-polyfill/-/ember-runtime-enumerable-includes-polyfill-1.0.4.tgz#16a7612e347a2edf07da8b2f2f09dbfee70deba0"
+ember-router-service-polyfill@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ember-router-service-polyfill/-/ember-router-service-polyfill-1.0.1.tgz#a04d3d84c4bb6927e8438d367d9e40dfd40646f6"
   dependencies:
-    ember-cli-babel "^5.1.6"
-    ember-cli-version-checker "^1.1.6"
+    ember-cli-babel "^6.0.0"
 
 ember-runtime-enumerable-includes-polyfill@^2.0.0:
   version "2.0.0"
@@ -3314,9 +3314,9 @@ ember-runtime-enumerable-includes-polyfill@^2.0.0:
     ember-cli-babel "^6.0.0"
     ember-cli-version-checker "^1.1.6"
 
-ember-service-worker-asset-cache@0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/ember-service-worker-asset-cache/-/ember-service-worker-asset-cache-0.6.1.tgz#48faa17ec49fd2444b36dbb354b8cf44cca557a7"
+ember-service-worker-asset-cache@0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/ember-service-worker-asset-cache/-/ember-service-worker-asset-cache-0.6.2.tgz#6b0f790ce9588aed310686dd689c11302f2f76db"
   dependencies:
     broccoli-filter "^1.2.3"
     broccoli-merge-trees "1.1.1"
@@ -3462,15 +3462,6 @@ ember-validators@1.0.3:
   dependencies:
     ember-cli-babel "^5.1.6"
     ember-require-module "^0.1.2"
-
-ember-vivus@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/ember-vivus/-/ember-vivus-1.1.0.tgz#8b64e152421d098ce5738503bf5c3b264485bbc5"
-  dependencies:
-    ember-cli-babel "^6.0.0-beta.9"
-    ember-cli-node-assets "0.2.2"
-    fastboot-transform "^0.1.0"
-    vivus "^0.4.0"
 
 encodeurl@~1.0.1:
   version "1.0.1"
@@ -3921,7 +3912,7 @@ fastboot-express-middleware@^1.0.0:
     fastboot "^1.0.0"
     request "^2.81.0"
 
-fastboot-transform@^0.1.0, fastboot-transform@^0.1.2:
+fastboot-transform@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/fastboot-transform/-/fastboot-transform-0.1.2.tgz#f910d666ab93e75604492ea655270d1804bc8de7"
   dependencies:
@@ -7912,10 +7903,6 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
-
-vivus@^0.4.0:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/vivus/-/vivus-0.4.2.tgz#5d142437c47695258324d691512b747a1ad43f05"
 
 vlq@^0.2.1:
   version "0.2.2"

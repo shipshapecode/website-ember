@@ -1,24 +1,25 @@
 .process {
-  background-color: $background;
+  background-color: $offWhite;
+  color: $grey;
   padding: 20px;
 
   .heading {
+    color: $blue;
+    padding: 10px 0;
+    text-transform: uppercase;
     font: {
       size: 5rem;
       weight: bold;
     }
-
-    padding: 10px 0;
-    text-transform: uppercase;
   }
 
   .sub-heading {
+    color: $dark;
+    padding: 5px 0;
     font: {
       size: 2.5rem;
       weight: bold;
     }
-
-    padding: 5px 0;
   }
 
   .info {
@@ -32,37 +33,14 @@
   }
 
   .svg-icon {
-    height: 275px;
-    margin: 0 auto;
+    @media (min-width: 768px) {
+      margin-right: 50px;
+    }
+
     padding: 10px;
-    width: 275px;
-
-    // Hack to animate in the svg fills
-    * {
-      fill-opacity: 0;
-      transition: fill-opacity 0.25s;
-    }
-
-    &.finished {
-      * {
-        fill-opacity: 1;
-      }
-    }
   }
 
   &.build {
-    background-color: $light;
-
-    .heading {
-      color: $blue;
-    }
-  }
-
-  &.ship {
-    background-color: $bloodOrange;
-
-    .heading {
-      color: $lighter;
-    }
+    background-color: $white;
   }
 }

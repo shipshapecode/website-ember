@@ -1,9 +1,12 @@
 import { A } from '@ember/array';
 import Route from '@ember/routing/route';
 import SmoothScroll from 'smooth-scroll';
+import { get } from '@ember/object';
 import { scheduleOnce } from '@ember/runloop';
+import { inject as service } from '@ember/service';
 
 export default Route.extend({
+  fastboot: service(),
   model() {
     return {
       links: A([
@@ -40,30 +43,32 @@ export default Route.extend({
     this._super(...arguments);
 
     scheduleOnce('afterRender', this, function() {
-      const scroll = new SmoothScroll();
+      if (!get(this, 'fastboot.isFastBoot')) {
+        const scroll = new SmoothScroll();
 
-      const smoothScrollWithoutHash = function(selector, settings) {
-        /**
-         * If smooth scroll element clicked, animate scroll
-         */
-        const clickHandler = function(event) {
-          const toggle = event.target.closest(selector);
-          if (!toggle || toggle.tagName.toLowerCase() !== 'a') {
-            return;
-          }
-          const anchor = document.querySelector(toggle.hash);
-          if (!anchor) {
-            return;
-          }
+        const smoothScrollWithoutHash = function(selector, settings) {
+          /**
+           * If smooth scroll element clicked, animate scroll
+           */
+          const clickHandler = function(event) {
+            const toggle = event.target.closest(selector);
+            if (!toggle || toggle.tagName.toLowerCase() !== 'a') {
+              return;
+            }
+            const anchor = document.querySelector(toggle.hash);
+            if (!anchor) {
+              return;
+            }
 
-          event.preventDefault(); // Prevent default click event
-          scroll.animateScroll(anchor, toggle, settings || {}); // Animate scroll
+            event.preventDefault(); // Prevent default click event
+            scroll.animateScroll(anchor, toggle, settings || {}); // Animate scroll
+          };
+
+          window.addEventListener('click', clickHandler, false);
         };
 
-        window.addEventListener('click', clickHandler, false);
-      };
-
-      smoothScrollWithoutHash('a[href*="#"]');
+        smoothScrollWithoutHash('a[href*="#"]');
+      }
     });
   }
 });
