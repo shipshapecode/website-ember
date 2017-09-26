@@ -31,9 +31,9 @@ export default Route.extend({
           type: 'linkTo'
         },
         {
-          href: 'http://blog.shipshape.io',
+          linkTo: 'blog',
           text: 'Blog',
-          type: 'href'
+          type: 'linkTo'
         }
       ])
     };

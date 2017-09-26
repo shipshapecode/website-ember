@@ -63,6 +63,7 @@
   },
   "devDependencies": {
     "ember-cli-eslint": "^4.0.0",
+    "ember-cli-markdown-resolver": "^0.0.3",
     "ember-cli-qunit": "^4.0.0",
     "ember-cli-stylelint": "^0.15.0",
     "ember-debonair": "^0.4.2",

@@ -58,5 +58,11 @@ module.exports = function(environment) {
     ENV.host = 'https://shipshape-api.herokuapp.com/';
   }
 
+  ENV['ember-cli-markdown-resolver'] = {
+    folders: {
+      'blog': 'app/blog'
+    }
+  };
+
   return ENV;
 };

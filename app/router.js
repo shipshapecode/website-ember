@@ -30,9 +30,10 @@ const Router = EmberRouter.extend(RouterScroll, {
 
 Router.map(function() {
   this.route('home', { path: '/' });
-  this.route('contact');
   this.route('ember-consulting');
   this.route('open-source');
+  this.route('contact');
+  this.route('blog');
   this.route('lost-at-sea', { path: '/*path' });
 });
 
