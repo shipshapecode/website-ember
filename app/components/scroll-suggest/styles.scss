@@ -7,6 +7,9 @@
 
     svg {
       animation: slideUp 1.5s infinite;
+      g {
+        stroke: $dark;
+      }
     }
 
     @keyframes slideUp {

@@ -1,5 +1,13 @@
 & {
   [data-scroll] {
+    .mobile-scroll {
+      svg {
+        g {
+          stroke: $white;
+        }
+      }
+    }
+
     .mouse-icon {
       border: 2px solid $white;
 
