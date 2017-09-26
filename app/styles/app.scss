@@ -23,7 +23,9 @@ $ember-3d-folding-panel: (
   'color-1': darken($white, 2%),
   'color-2': darken($white, 4%),
   'color-3': darken($white, 6%),
-  'color-4': darken($white, 8%)
+  'color-4': darken($white, 8%),
+  'dark-color': $dark-green,
+  'light-color': $dark
 );
 
 $ecf: (
@@ -164,7 +166,7 @@ h6 {
 .hero-header,
 .hero-subheader {
   color: $white;
-  font-family: 'Pier Sans';
+  font-family: 'Pier Sans', sans-serif;
   margin: 20px 0 0;
 }
 
@@ -195,4 +197,10 @@ h6 {
 
 .folding-panel.is-open {
   z-index: 10;
+}
+
+@media only screen and (min-width: 600px) {
+  .cd-form .contact-item {
+    margin: 20px 0;
+  }
 }
