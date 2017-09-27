@@ -29,19 +29,6 @@
     {{content-for 'open-source'}}
     <!-- End inline css for above the fold -->
 
-    <script>
-      GretaOptions = {
-        accessToken: "b2061f73d02b2ccde201c5a5ee602f53"
-      }
-    </script>
-
-    <script>
-      setTimeout(function(){function t(){var t=window.GretaOptions||{};t.lazyLoad=t.lazyLoad||{};for(var e=t.lazyLoad.imgAttribute||"data-src",a=t.lazyLoad.bgImgAttribute||"data-bg-src",r=["DIV","SECTION","ARTICLE","ASIDE","B","BODY","FIGURE","HTML","I","LI","MAIN","MARK","NAV","P","SPAN","STRONG","SUMMARY","TABLE","TIME","UL","H1","H2","H3","H4","LABEL"],l=t.lazyLoad.addClassOnLoad||"",A=document.querySelectorAll("IMG["+e+"]"),o=0;o<A.length;o++){var n=A[o].getAttribute(e);n&&A[o].src!==n&&(A[o].src=n,l.length>0&&(A[o].className+=" "+l))}for(var o=0;o<r.length;o++)for(var I=document.querySelectorAll(r[o]+"["+a+"]"),L=0;L<I.length;L++){var n=I[L].getAttribute(a);n&&I[L].style.backgroundImage!=="url("+n+")"&&(I[L].style.backgroundImage="url("+n+")",l.length>0&&(I[L].className+=" "+l))}}window.greta||setInterval(t,1e3)},1e3);
-    </script>
-
-    <script src="https://cdn.greta.io/greta.min.js"></script>
-
-
     <link rel="preload" href="{{rootURL}}assets/vendor.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="{{rootURL}}assets/website.css" as="style" onload="this.rel='stylesheet'">
     <noscript>
