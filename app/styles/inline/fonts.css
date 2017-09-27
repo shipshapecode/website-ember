@@ -1,15 +1,5 @@
 @font-face {
   font-family: 'Pier Sans';
-  src: url('../../fonts/pier-sans/PierSans-BoldItalic.eot');
-  src: url('../../fonts/pier-sans/PierSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
-  url('../../fonts/pier-sans/PierSans-BoldItalic.woff') format('woff'),
-  url('../../fonts/pier-sans/PierSans-BoldItalic.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Pier Sans';
   src: url('../../fonts/pier-sans/PierSans-Italic.eot');
   src: url('../../fonts/pier-sans/PierSans-Italic.eot?#iefix') format('embedded-opentype'),
   url('../../fonts/pier-sans/PierSans-Italic.woff') format('woff'),
