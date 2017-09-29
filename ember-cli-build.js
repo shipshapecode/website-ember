@@ -12,14 +12,21 @@ module.exports = function(defaults) {
       extensions: ['js', 'css', 'map']
     },
     inlineContent: {
-      app: './app/styles/inline/app.css',
-      contact: './app/styles/inline/contact.css',
-      'ember-consulting': './app/styles/inline/ember-consulting.css',
-      fonts: './app/styles/inline/fonts.css',
-      home: './app/styles/inline/home.css',
-      loadCSS: './app/inline/loadCSS.js',
-      'loading-indicator': './app/templates/inline/loading-indicator.html',
-      'open-source': './app/styles/inline/open-source.css'
+      app: 'inline/styles/app.css',
+      contact: 'inline/styles/contact.css',
+      'ember-consulting': 'inline/styles/ember-consulting.css',
+      fonts: 'inline/styles/fonts.css',
+      'google-analytics': {
+        file: 'inline/ga.js',
+        enabled: process.env.EMBER_ENV === 'production'
+      },
+      home: 'inline/styles/home.css',
+      loadCSS: 'inline/loadCSS.js',
+      'loading-indicator': {
+        file: 'inline/loading-indicator.html',
+        enabled: false
+      },
+      'open-source': 'inline/styles/open-source.css'
     },
     SRI: {
       enabled: false

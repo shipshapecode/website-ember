@@ -1,7 +1,7 @@
 import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('controller:contact', 'Unit | Controller | contact', {
-  needs: ['service:fastboot', 'service:metrics', 'service:router-scroll', 'service:scheduler']
+  needs: ['service:fastboot', 'service:router-scroll', 'service:scheduler']
 });
 
 test('sendDisabled calculates correctly', function(assert) {

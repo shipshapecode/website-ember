@@ -12,6 +12,9 @@ module.exports = {
   env: {
     browser: true
   },
+  globals: {
+    ga: false
+  },
   rules: {
     'prefer-const': 'error',
 

@@ -9,7 +9,6 @@ const Router = EmberRouter.extend(RouterScroll, {
   location: config.locationType,
   rootURL: config.rootURL,
   fastboot: service(),
-  metrics: service(),
 
   didTransition() {
     this._super(...arguments);
@@ -22,7 +21,10 @@ const Router = EmberRouter.extend(RouterScroll, {
         const page = document.location.pathname;
         const title = getWithDefault(this, 'currentRouteName', 'unknown');
 
-        get(this, 'metrics').trackPage({ page, title });
+        if (typeof ga === 'undefined') {
+          return;
+        }
+        return ga('send', 'pageview', { page, title });
       });
     }
   }
