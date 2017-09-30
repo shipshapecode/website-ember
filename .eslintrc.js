@@ -18,6 +18,7 @@ module.exports = {
   rules: {
     'prefer-const': 'error',
 
+    'ember/alias-model-in-controller': 'off',
     'ember/no-old-shims': 'error',
     'ember/no-jquery': 'error',
     'ember-suave/no-const-outside-module-scope': 0

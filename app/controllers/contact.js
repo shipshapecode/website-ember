@@ -1,5 +1,4 @@
 import Controller from '@ember/controller';
-import { alias, not } from '@ember/object/computed';
 
 export default Controller.extend({
   projectTypes: [
@@ -18,8 +17,5 @@ export default Controller.extend({
       name: 'project-type',
       text: 'Ember Development'
     }
-  ],
-
-  contact: alias('model'),
-  sendDisabled: not('model.validations.isValid')
+  ]
 });

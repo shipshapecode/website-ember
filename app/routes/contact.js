@@ -1,5 +1,8 @@
 import { get, setProperties } from '@ember/object';
+import Changeset from 'ember-changeset';
+import ContactValidations from '../validations/contact';
 import Route from '@ember/routing/route';
+import lookupValidator from 'ember-changeset-validations';
 import { inject as service } from '@ember/service';
 
 export default Route.extend({
@@ -20,21 +23,34 @@ export default Route.extend({
     });
   },
 
+  setupController(controller, model) {
+    this._super(controller, model);
+    controller.contact = new Changeset(
+      model,
+      lookupValidator(ContactValidations),
+      ContactValidations
+    );
+  },
+
   actions: {
-    sendContactRequest(model) {
-      if (get(model, 'validations.isValid')) {
-        return model.save()
+    sendContactRequest(contact) {
+      if (get(contact, 'isValid')) {
+        return contact.save()
           .then(this._successMessage.bind(this))
           .catch(this._errorMessage.bind(this));
+      } else {
+        get(contact, 'errors').forEach((error) => {
+          get(this, 'flashMessages').danger(error.validation[0]);
+        });
       }
     }
   },
 
-  _errorMessage() {
+  _successMessage() {
     get(this, 'flashMessages').success('Thanks for contacting us! We\'ll be in touch shortly.');
   },
 
-  _successMessage() {
+  _errorMessage() {
     get(this, 'flashMessages').danger('Something went wrong :(. Please refresh and try again.');
   }
 });
