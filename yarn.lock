@@ -3063,9 +3063,9 @@ ember-component-css@0.3.5, ember-component-css@^0.3.4:
     rsvp "^4.0.1"
     walk-sync "^0.3.2"
 
-ember-contact-form@0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/ember-contact-form/-/ember-contact-form-0.0.10.tgz#929843d60c479c2a66b4b3595b2955ac029b26d0"
+ember-contact-form@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/ember-contact-form/-/ember-contact-form-0.0.11.tgz#a74982478e3fc4140f842daa0fd11f23f9048861"
   dependencies:
     ember-cli-babel "^6.8.2"
     ember-cli-htmlbars "^2.0.3"
