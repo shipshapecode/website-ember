@@ -1,7 +1,11 @@
 {
   "headers": {
-    "/**": {
+    "/": {
+      "Cache-Control": "no-store, no-cache"
+    },
+    "/assets/**": {
       "Cache-Control": "public, max-age=691200"
     }
-  }
+  },
+  "https_only": true
 }
