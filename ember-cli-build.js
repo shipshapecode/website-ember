@@ -16,6 +16,10 @@ module.exports = function(defaults) {
       contact: 'inline/styles/contact.css',
       'ember-consulting': 'inline/styles/ember-consulting.css',
       fonts: 'inline/styles/fonts.css',
+      'google-analytics': {
+        file: 'inline/ga.js',
+        enabled: process.env.EMBER_ENV === 'production'
+      },
       home: 'inline/styles/home.css',
       loadCSS: 'inline/loadCSS.js',
       'loading-indicator': {
@@ -28,10 +32,6 @@ module.exports = function(defaults) {
       enabled: false
     },
     vendorFiles: { 'jquery.js': null }
-  });
-
-  app.import('node_modules/ga-lite/dist/ga-lite.js', {
-    using: [{ transformation: 'amd', as: 'ga-lite' }]
   });
 
   return app.toTree();
