@@ -68,7 +68,7 @@
     "ember-cli-stylelint": "^0.15.0",
     "ember-debonair": "^0.4.2",
     "ember-native-dom-helpers": "^0.5.3",
-    "eslint-plugin-ember": "^4.3.0",
+    "eslint-plugin-ember": "^4.5.0",
     "eslint-plugin-ember-suave": "^1.0.0",
     "stylelint-config-ship-shape": "^0.1.0"
   },
