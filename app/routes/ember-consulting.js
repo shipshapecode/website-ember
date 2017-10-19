@@ -8,6 +8,25 @@ export default Route.extend({
   model() {
     return [
       {
+        heading: 'Mariana Tek',
+        imageURL: 'img/clients/mariana-tek.svg',
+        panelHeading: 'Mariana Tek',
+        panelSubheading: 'MVP app development and staff training',
+        panelInfo: htmlSafe(
+          `<p>
+            We worked on the Mentrs MVP from the ground up,
+            starting with running 'ember new', and adding all the addons, 
+            ESLint plugins, template lintings, and doing all the initial 
+            work required to create an Ember app, rooted in the latest Ember standards.
+          </p>
+
+          <p>
+            Features we implemented included everything from login and sign up, 
+            to class creation, and Stripe integration for paying to enroll in classes.
+          </p>`
+        )
+      },
+      {
         heading: 'Mentrs',
         imageURL: 'img/clients/mentrs-logo.png',
         panelHeading: 'Mentrs',
