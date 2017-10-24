@@ -14,8 +14,8 @@ export default Route.extend({
         panelSubheading: 'Staff augmentation for initial release',
         panelInfo: htmlSafe(
           `<p>
-            We worked hand in hand with the Mariana Tek dev team to develop several required features for their first
-            major client release. This included an initial scan of the codebase, the addition of several ESLint rules from
+            We worked hand in hand with the Mariana Tek dev team to develop several required features for a major
+            client release. This included an initial scan of the codebase, the addition of several ESLint rules from
             eslint-plugin-ember, and updates of various dependencies. We enforced best practices at every turn, and ensured the
             code looked very consistent, no matter who wrote it.
           </p>
