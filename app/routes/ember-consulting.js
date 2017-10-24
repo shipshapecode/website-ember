@@ -8,6 +8,38 @@ export default Route.extend({
   model() {
     return [
       {
+        heading: 'Mariana Tek',
+        imageURL: 'img/clients/mariana-tek.svg',
+        panelHeading: 'Mariana Tek',
+        panelSubheading: 'Staff augmentation for initial release',
+        panelInfo: htmlSafe(
+          `<p>
+            We worked hand in hand with the Mariana Tek dev team to develop several required features for a major
+            client release. This included an initial scan of the codebase, the addition of several ESLint rules from
+            eslint-plugin-ember, and updates of various dependencies. We enforced best practices at every turn, and ensured the
+            code looked very consistent, no matter who wrote it.
+          </p>
+
+          <p>
+            We worked heavily on implementing the promotions page, which allowed clients to choose items to put on sale,
+            add requirements for the sale to become active, such as having multiple items in their cart or a certain cart value,
+            and allowing custom product variants to be used.
+          </p>
+          
+          <p>
+            We also did a lot of work on the time clock features. This included adding a clock in/out modal that would allow
+            employees to clock in and out and add notes about their shifts, as well as a configuration page that showed a table
+            of all the most recent shifts, utilizing ember-light-table, and allowed sorting by shift time and employee name.
+            Admins were also able to manually edit or add shifts, if something needed to be tweaked from employee shifts.
+          </p>
+          
+          <p>
+            The rest of our work focused mainly on the permissions service and ensuring users could only access the parts
+            of the app they were allowed to, based on their roles.
+          </p>`
+        )
+      },
+      {
         heading: 'Mentrs',
         imageURL: 'img/clients/mentrs-logo.png',
         panelHeading: 'Mentrs',
