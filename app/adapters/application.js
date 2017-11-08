@@ -1,4 +1,4 @@
-import AdapterFetch from 'ember-fetch/mixins/adapter-fetch';
+import AdapterFetch from '../mixins/adapter-fetch';
 import JSONAPIAdapter from 'ember-data/adapters/json-api';
 import ENV from '../config/environment';
 
