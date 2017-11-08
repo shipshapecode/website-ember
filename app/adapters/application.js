@@ -7,7 +7,7 @@ export default JSONAPIAdapter.extend(AdapterFetch, {
 
   ajaxOptions() {
     const options = this._super(...arguments);
-    options.headers['content-type'] = 'application/vnd.api+json';
+    options.headers['Content-Type'] = 'application/vnd.api+json';
     return options;
   }
 });
