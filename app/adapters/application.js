@@ -6,7 +6,7 @@ export default JSONAPIAdapter.extend(AdapterFetch, {
   host: ENV.host,
 
   ajaxOptions() {
-    const options = this._super(...arguments);
+    const options = this._super(...arguments) || {};
     options.headers['Content-Type'] = 'application/vnd.api+json';
     return options;
   }
