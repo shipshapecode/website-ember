@@ -31,6 +31,9 @@ module.exports = function(defaults) {
     SRI: {
       enabled: false
     },
+    treeShaking: {
+      enabled: true
+    },
     vendorFiles: { 'jquery.js': null }
   });
 
