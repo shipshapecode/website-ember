@@ -1,10 +1,11 @@
-import { moduleFor, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupTest } from 'ember-qunit';
 
-moduleFor('route:open-source', 'Unit | Route | open source', {
-  needs: ['service:fastboot', 'service:headData', 'service:router-scroll', 'service:scheduler']
-});
+module('Unit | Route | open source', function(hooks) {
+  setupTest(hooks);
 
-test('it exists', function(assert) {
-  const route = this.subject();
-  assert.ok(route);
+  test('it exists', function(assert) {
+    const route = this.owner.lookup('route:open-source');
+    assert.ok(route);
+  });
 });
