@@ -32,7 +32,11 @@ module.exports = function(defaults) {
       enabled: false
     },
     treeShaking: {
-      enabled: true
+      enabled: true,
+      include: [
+        'ember-validators/format.js',
+        'ember-validators/presence.js'
+      ]
     },
     vendorFiles: { 'jquery.js': null }
   });
