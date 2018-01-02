@@ -4,8 +4,13 @@ module.exports = {
     ecmaVersion: 2017,
     sourceType: 'module'
   },
-  plugins: ['ember'],
-  extends: ['eslint:recommended', 'plugin:ember/recommended', 'plugin:ember-suave/recommended'],
+  plugins: [
+    'ember'
+  ],
+  extends: [
+    'eslint:recommended',
+    'plugin:ember/recommended'
+  ],
   env: {
     browser: true
   },
@@ -13,19 +18,18 @@ module.exports = {
     ga: false
   },
   rules: {
-    'prefer-const': 'error',
-
-    'ember-suave/no-const-outside-module-scope': 'off'
+    'ember/order-in-components': 'error',
+    'ember/order-in-controllers': 'error',
+    'ember/order-in-models': 'error',
+    'ember/order-in-routes': 'error',
   },
   overrides: [
     // node files
     {
       files: [
-        'index.js',
         'testem.js',
         'ember-cli-build.js',
-        'config/**/*.js',
-        'tests/dummy/config/**/*.js'
+        'config/**/*.js'
       ],
       parserOptions: {
         sourceType: 'script',
