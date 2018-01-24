@@ -55,7 +55,6 @@
     "ember-hammertime": "^1.2.5",
     "ember-load-initializers": "^1.0.0",
     "ember-native-dom-helpers": "^0.5.10",
-    "ember-noscript": "^2.5.0",
     "ember-resolver": "^4.4.0",
     "ember-route-action-helper": "2.0.6",
     "ember-router-scroll": "0.4.0",
