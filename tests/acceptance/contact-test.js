@@ -1,12 +1,13 @@
-import { test } from 'qunit';
-import moduleForAcceptance from 'website/tests/helpers/module-for-acceptance';
+import { module, test } from 'qunit';
+import { currentURL, visit } from '@ember/test-helpers';
+import { setupApplicationTest } from 'ember-qunit';
 
-moduleForAcceptance('Acceptance | contact');
+module('Acceptance | contact', function(hooks) {
+  setupApplicationTest(hooks);
 
-test('visiting /contact', function(assert) {
-  visit('/contact');
+  test('visiting /contact', async function(assert) {
+    await visit('/contact');
 
-  andThen(function() {
     assert.equal(currentURL(), '/contact');
   });
 });
