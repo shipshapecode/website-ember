@@ -7,6 +7,15 @@ shim(EmberApp);
 
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
+    emberCliConcat: {
+      js: {
+        concat: true,
+        useAsync: true
+      },
+      css: {
+        concat: false
+      }
+    },
     fingerprint: {
       extensions: ['js', 'css', 'map']
     },
