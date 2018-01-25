@@ -27,6 +27,14 @@ module.exports = function(defaults) {
       },
       'open-source': 'inline/styles/open-source.css'
     },
+    prember: {
+      urls: [
+        '/',
+        '/ember-consulting',
+        '/open-source',
+        '/contact'
+      ]
+    },
     SRI: {
       enabled: false
     },

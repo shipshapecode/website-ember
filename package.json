@@ -68,6 +68,8 @@
     "fastboot-app-server": "^1.1.0",
     "flexi": "^2.0.2",
     "loader.js": "^4.2.3",
+    "prember": "^0.2.2",
+    "prember-middleware": "^0.1.0",
     "stylelint-config-ship-shape": "^0.1.3"
   },
   "fastbootDependencies": [
