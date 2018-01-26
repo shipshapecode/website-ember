@@ -27,7 +27,6 @@ module.exports = function(defaults) {
       'asset-cache': {
         include: [
           'assets/**/*',
-          'index.html',
           'contact/index.html',
           'ember-consulting/index.html',
           'open-source/index.html'
