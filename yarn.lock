@@ -3540,6 +3540,13 @@ ember-service-worker-asset-cache@0.6.2:
     ember-cli-babel "^5.1.6"
     glob "^7.1.1"
 
+ember-service-worker-index@0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/ember-service-worker-index/-/ember-service-worker-index-0.6.3.tgz#c01ea350b13e54ea8555b33403f94549954fbc1b"
+  dependencies:
+    broccoli-merge-trees "^1.2.1"
+    broccoli-plugin "^1.3.0"
+
 ember-service-worker@^0.6.8:
   version "0.6.9"
   resolved "https://registry.yarnpkg.com/ember-service-worker/-/ember-service-worker-0.6.9.tgz#e8a03994ec183334a593633f44a234c5890a457d"

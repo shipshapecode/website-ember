@@ -16,6 +16,9 @@ module.exports = function(defaults) {
         concat: false
       }
     },
+    'esw-index': {
+      location: '_empty.html'
+    },
     fingerprint: {
       extensions: ['js', 'css', 'map']
     },
