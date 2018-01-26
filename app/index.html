@@ -30,14 +30,7 @@
     {{content-for 'open-source'}}
     <!-- End inline css for above the fold -->
 
-    <link rel="preload" href="{{rootURL}}assets/vendor.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="{{rootURL}}assets/website.css" as="style" onload="this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-      <link rel="stylesheet" href="{{rootURL}}assets/website.css">
-    </noscript>
-
-    {{content-for 'loadCSS'}}
+    {{content-for 'concat-css'}}
 
     {{content-for "head-footer"}}
   </head>
