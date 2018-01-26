@@ -29,6 +29,11 @@ module.exports = function(defaults) {
         enabled: process.env.EMBER_ENV === 'production'
       },
       home: 'inline/styles/home.css',
+      loadCSS: 'inline/loadCSS.js',
+      'loading-indicator': {
+        file: 'inline/loading-indicator.html',
+        enabled: false
+      },
       'open-source': 'inline/styles/open-source.css'
     },
     prember: {
