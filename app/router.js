@@ -4,11 +4,23 @@ import RouterScroll from 'ember-router-scroll';
 import { get, getWithDefault } from '@ember/object';
 import { run } from '@ember/runloop';
 import { inject as service } from '@ember/service';
+import galite from 'ga-lite';
 
 const Router = EmberRouter.extend(RouterScroll, {
   location: config.locationType,
   rootURL: config.rootURL,
   fastboot: service(),
+
+  init() {
+    this._super(...arguments);
+
+    if (!get(this, 'fastboot.isFastBoot')) {
+      run.scheduleOnce('afterRender', this, () => {
+        galite('create', 'UA-84561982-1', 'auto');
+        galite('send', 'pageview');
+      });
+    }
+  },
 
   didTransition() {
     this._super(...arguments);
@@ -20,11 +32,7 @@ const Router = EmberRouter.extend(RouterScroll, {
       run.scheduleOnce('afterRender', this, () => {
         const page = document.location.pathname;
         const title = getWithDefault(this, 'currentRouteName', 'unknown');
-
-        if (typeof ga === 'undefined') {
-          return;
-        }
-        return ga('send', 'pageview', { page, title });
+        return galite('send', 'pageview', { page, title });
       });
     }
   }
