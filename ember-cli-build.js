@@ -9,15 +9,12 @@ module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
     emberCliConcat: {
       js: {
-        concat: true,
-        useAsync: true
+        concat: process.env.EMBER_ENV === 'production',
+        useAsync: process.env.EMBER_ENV === 'production'
       },
       css: {
         concat: false
       }
-    },
-    'esw-index': {
-      location: '_empty.html'
     },
     fingerprint: {
       extensions: ['js', 'css', 'map']
@@ -59,7 +56,7 @@ module.exports = function(defaults) {
       enabled: false
     },
     treeShaking: {
-      enabled: true,
+      enabled: false,
       include: [
         'ember-validators/format.js',
         'ember-validators/presence.js'
