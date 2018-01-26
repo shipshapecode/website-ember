@@ -52,9 +52,5 @@ module.exports = function(defaults) {
     vendorFiles: { 'jquery.js': null }
   });
 
-  app.import('node_modules/ga-lite/dist/ga-lite.js', {
-    using: [{ transformation: 'amd', as: 'ga-lite' }]
-  });
-
   return app.toTree();
 };
