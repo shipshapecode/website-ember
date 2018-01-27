@@ -27,7 +27,10 @@
   {{#ember-3d-folding-panel}}
     {{#each model as |item|}}
       {{#item-square item=item}}
-        <img src="{{concat rootURL item.imageURL}}" alt="{{item.heading}}" style="height:100px; width:auto;">
+        {{img-lazy
+          alt=item.heading
+          height=100
+          src=(concat rootURL item.imageURL)}}
       {{/item-square}}
     {{/each}}
   {{/ember-3d-folding-panel}}

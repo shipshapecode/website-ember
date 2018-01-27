@@ -28,6 +28,9 @@ module.exports = function(defaults) {
         concat: false
       }
     },
+    'ember-img-lazy': {
+      lazyFastBoot: true
+    },
     fingerprint: {
       extensions: ['js', 'css', 'map']
     },

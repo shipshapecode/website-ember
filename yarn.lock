@@ -3243,6 +3243,13 @@ ember-component-css@^0.5.0:
     rsvp "^4.0.1"
     walk-sync "^0.3.2"
 
+ember-config-service@^0.1.6:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/ember-config-service/-/ember-config-service-0.1.7.tgz#f66906e0d9c2d988acc1c04ba978b5a3d2357994"
+  dependencies:
+    ember-cli-babel "^6.6.0"
+    ember-getowner-polyfill "2.0.1"
+
 ember-contact-form@^0.0.13:
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/ember-contact-form/-/ember-contact-form-0.0.13.tgz#5c04c2dc2c4aff3450bb614e1faa06e7725da8f3"
@@ -3335,7 +3342,7 @@ ember-get-config@^0.2.4:
     broccoli-file-creator "^1.1.1"
     ember-cli-babel "^6.3.0"
 
-ember-getowner-polyfill@^2.0.0, ember-getowner-polyfill@^2.0.1:
+ember-getowner-polyfill@2.0.1, ember-getowner-polyfill@^2.0.0, ember-getowner-polyfill@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/ember-getowner-polyfill/-/ember-getowner-polyfill-2.0.1.tgz#9bfe2b4d527ed174e76fef2c8f30937d77cb66fb"
   dependencies:
@@ -3360,6 +3367,13 @@ ember-headroom@^1.1.1:
     ember-cli-node-assets "^0.2.2"
     fastboot-transform "^0.1.2"
     headroom.js "^0.9.4"
+
+ember-img-lazy@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/ember-img-lazy/-/ember-img-lazy-2.0.2.tgz#7b96b5144e46390c613f785180e9016ac018a9c0"
+  dependencies:
+    ember-cli-babel "^6.3.0"
+    ember-config-service "^0.1.6"
 
 ember-inflector@^2.0.0:
   version "2.0.1"
