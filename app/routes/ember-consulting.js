@@ -8,6 +8,17 @@ export default Route.extend({
   model() {
     return [
       {
+        heading: 'SocialCode',
+        imageURL: 'img/clients/socialcode.png',
+        panelHeading: 'SocialCode',
+        panelSubheading: 'Staff augmentation, code audit, feature development',
+        panelInfo: htmlSafe(
+          `<p>
+            Description coming soon!
+          </p>`
+        )
+      },
+      {
         heading: 'Mariana Tek',
         imageURL: 'img/clients/mariana-tek.svg',
         panelHeading: 'Mariana Tek',

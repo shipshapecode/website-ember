@@ -29,7 +29,12 @@ module.exports = function(defaults) {
       }
     },
     'ember-img-lazy': {
-      lazyFastBoot: true
+      lazyFastBoot: true,
+      setSrcImmediately: true,
+      observerConfig: {
+        rootMargin: '100px 0px',
+        threshold: 0.01
+      }
     },
     fingerprint: {
       extensions: ['js', 'css', 'map']
