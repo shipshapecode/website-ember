@@ -5,15 +5,11 @@ import { inject as service } from '@ember/service';
 
 export default Route.extend({
   headData: service(),
-  router: service(),
-
   model() {
-    const rootURL = this.get('router.rootURL');
-
     return [
       {
         heading: 'Mariana Tek',
-        imageURL: `${rootURL}img/clients/mariana-tek.svg`,
+        imageURL: 'img/clients/mariana-tek.svg',
         panelHeading: 'Mariana Tek',
         panelSubheading: 'Staff augmentation for initial release',
         panelInfo: htmlSafe(
