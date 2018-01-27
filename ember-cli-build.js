@@ -7,6 +7,18 @@ shim(EmberApp);
 
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
+    'asset-cache': {
+      include: [
+        'assets/**/*',
+        'index.html',
+        'contact/index.html',
+        'ember-consulting/index.html',
+        'open-source/index.html'
+      ]
+    },
+    'esw-index': {
+      location: '_empty.html'
+    },
     emberCliConcat: {
       js: {
         concat: process.env.EMBER_ENV === 'production',
@@ -21,15 +33,6 @@ module.exports = function(defaults) {
     },
     inlineContent: {
       app: 'inline/styles/app.css',
-      'asset-cache': {
-        include: [
-          'assets/**/*',
-          'index.html',
-          'contact/index.html',
-          'ember-consulting/index.html',
-          'open-source/index.html'
-        ]
-      },
       contact: 'inline/styles/contact.css',
       'ember-consulting': 'inline/styles/ember-consulting.css',
       fonts: 'inline/styles/fonts.css',
