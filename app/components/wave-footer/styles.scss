@@ -1,11 +1,11 @@
 .footer {
-  background-color: $blue;
+  background-color: #162f3d;
   box-sizing: border-box;
   margin-top: 68px;
   min-height: 100px;
   padding: 25px;
 
-  @include jagged(6CA3BB, 40, top, fill, outside);
+  @include jagged(162f3d, 40, top, fill, outside);
 
   i {
     padding: 10px;
