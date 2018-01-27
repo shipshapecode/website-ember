@@ -47,6 +47,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.host = 'https://shipshape-api.herokuapp.com/';
+    ENV.rootURL = 'https://shipshape.io/';
   }
 
   return ENV;
