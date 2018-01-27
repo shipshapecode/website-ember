@@ -17,7 +17,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-index': {
-      location: '_empty.html'
+      location: (process.env.EMBER_ENV === 'production' || process.env.PREMBER) ? '_empty.html' : 'index.html'
     },
     emberCliConcat: {
       js: {
