@@ -9,7 +9,7 @@ export default Route.extend({
     return [
       {
         heading: 'Mariana Tek',
-        imageURL: 'img/clients/mariana-tek.svg',
+        imageURL: '/img/clients/mariana-tek.svg',
         panelHeading: 'Mariana Tek',
         panelSubheading: 'Staff augmentation for initial release',
         panelInfo: htmlSafe(
