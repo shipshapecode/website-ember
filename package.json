@@ -63,7 +63,6 @@
     "ember-router-scroll": "0.4.0",
     "ember-service-worker": "^0.6.8",
     "ember-service-worker-asset-cache": "0.6.2",
-    "ember-service-worker-index": "^0.6.3",
     "ember-smooth-scroll": "0.0.0",
     "ember-source": "~2.18.0",
     "ember-svg-jar": "^0.12.0",
