@@ -14,12 +14,16 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*',
         'svgs/**/*'
-      ]
+      ],
+      version: '2'
     },
     'esw-cache-fallback': {
       patterns: [
         '/github-repos'
       ],
+    },
+    'esw-prember': {
+      version: '2'
     },
     emberCliConcat: {
       js: {
