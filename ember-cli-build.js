@@ -17,6 +17,9 @@ module.exports = function(defaults) {
       ],
       version: '3'
     },
+    'ember-service-worker': {
+      enabled: false
+    },
     'esw-cache-fallback': {
       patterns: [
         '/github-repos'
