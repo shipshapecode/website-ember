@@ -1,11 +1,10 @@
 import config from './config/environment';
 import EmberRouter from '@ember/routing/router';
-import RouterScroll from 'ember-router-scroll';
 import { get, getWithDefault } from '@ember/object';
 import { run } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 
-const Router = EmberRouter.extend(RouterScroll, {
+const Router = EmberRouter.extend({
   location: config.locationType,
   rootURL: config.rootURL,
   fastboot: service(),
