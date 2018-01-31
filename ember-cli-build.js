@@ -16,6 +16,11 @@ module.exports = function(defaults) {
         'svgs/**/*'
       ]
     },
+    'esw-cache-fallback': {
+      patterns: [
+        '/github-repos'
+      ],
+    },
     emberCliConcat: {
       js: {
         concat: process.env.EMBER_ENV === 'production',
