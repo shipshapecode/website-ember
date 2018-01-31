@@ -10,6 +10,7 @@ module.exports = function(defaults) {
     'asset-cache': {
       include: [
         'assets/**/*',
+        'favicons/**/*',
         'fonts/**/*',
         'img/**/*',
         'svgs/**/*'
