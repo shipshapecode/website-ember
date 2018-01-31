@@ -10,7 +10,9 @@ module.exports = function(defaults) {
     'asset-cache': {
       include: [
         'assets/**/*',
-        'img/**/*'
+        'fonts/**/*',
+        'img/**/*',
+        'svgs/**/*'
       ]
     },
     emberCliConcat: {
