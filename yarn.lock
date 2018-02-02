@@ -7879,11 +7879,9 @@ simple-is@~0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/simple-is/-/simple-is-0.2.0.tgz#2abb75aade39deb5cc815ce10e6191164850baf0"
 
-sitemap-autogenerator@0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/sitemap-autogenerator/-/sitemap-autogenerator-0.0.9.tgz#f4601230076190eba5754b7af0968738cc0309de"
-  dependencies:
-    ember-cli-babel "^6.3.0"
+sitemap-autogenerator@rwwagner90/SitemapAutogenerator:
+  version "0.0.8"
+  resolved "https://codeload.github.com/rwwagner90/SitemapAutogenerator/tar.gz/403d5801740f2bd5795b939338e6c9bf8d3f3172"
 
 slash@^1.0.0:
   version "1.0.0"
