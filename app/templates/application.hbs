@@ -1,21 +1,22 @@
 {{head-layout}}
+<div itemscope itemtype="http://schema.org/Organization">
+  {{#nav-trigger-container headroomOffset="0" isFixed=true useHeadroom=true}}
+    <a href="/" class="logo">
+      {{svg-jar "logo" height="50px" itemprop="logo" width="50px"}}
+      <centered class="logoText" itemprop="name">SHIP SHAPE</centered>
+    </a>
+  {{/nav-trigger-container}}
 
-{{#nav-trigger-container headroomOffset="0" isFixed=true useHeadroom=true}}
-  <a href="/" class="logo">
-    {{svg-jar "logo" height="50px" width="50px"}}
-    <centered class="logoText">SHIP SHAPE</centered>
-  </a>
-{{/nav-trigger-container}}
+  <screen class="main">
+    {{outlet}}
+  </screen>
+  {{wave-footer}}
 
-<screen class="main">
-  {{outlet}}
-</screen>
-{{wave-footer}}
+  {{#nav-container}}
+    {{#each links as |link index|}}
+      {{nav-item index=index link=link}}
+    {{/each}}
+  {{/nav-container}}
 
-{{#nav-container}}
-  {{#each links as |link index|}}
-    {{nav-item index=index link=link}}
-  {{/each}}
-{{/nav-container}}
-
-{{folding-panel}}
+  {{folding-panel}}
+</div>
