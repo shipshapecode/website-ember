@@ -11,7 +11,8 @@
   },
   "repository": "https://github.com/shipshapecode/shipshape.io",
   "scripts": {
-    "build": "ember build",
+    "build": "ember build -e production",
+    "postbuild": "node -e \"require('./node_modules/sitemap-autogenerator/blueprints/sitemap-autogenerator/index').triggerSitemapBuilder('https://shipshape.io')\"",
     "lint:js": "eslint ./*.js app config lib server tests",
     "start": "ember serve",
     "test": "ember test"
@@ -72,6 +73,7 @@
     "loader.js": "^4.2.3",
     "prember": "^0.2.2",
     "prember-middleware": "^0.1.0",
+    "sitemap-autogenerator": "0.0.9",
     "stylelint-config-ship-shape": "^0.1.3"
   },
   "fastbootDependencies": [
