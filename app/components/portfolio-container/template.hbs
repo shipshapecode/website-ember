@@ -4,7 +4,7 @@
       <h2 class="heading">Ember Addons</h2>
     </centered>
     {{#each projects as |project|}}
-      <centered xs="12" sm="6" md="4">
+      <centered xs="12" sm="6" md="4" itemscope itemtype="http://schema.org/SoftwareSourceCode">
         <vbox>
           <hbox>
             <centered xs="12">
@@ -21,7 +21,7 @@
           <hbox>
             <centered xs="12">
               {{svg-jar "star" height="20px" width="20px"}} <span class="stars">{{project.stars}}</span>
-              <a href="https://github.com/shipshapecode/{{project.name}}" class="ssIcon github-icon">
+              <a href="https://github.com/shipshapecode/{{project.name}}" class="ssIcon github-icon" itemprop="codeRepository">
                 {{svg-jar "github-alt" height="24px" width="24px"}}
               </a>
             </centered>
