@@ -35,6 +35,9 @@ Router.map(function() {
   this.route('ember-consulting');
   this.route('open-source');
   this.route('lost-at-sea', { path: '/*path' });
+  this.route('blog', function() {
+    this.route('post');
+  });
 });
 
 export default Router;
