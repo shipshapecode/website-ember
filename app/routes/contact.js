@@ -16,10 +16,12 @@ export default Route.extend({
   afterModel() {
     return setProperties(get(this, 'headData'), {
       title: 'Contact Us - Ship Shape',
-      description: 'To get started on your Ember training or Ember consulting project, '
-      + 'shoot us an email or fill out the contact form.',
+      description:
+      'Let\'s create some amazing things together. We do Ember app development, Ember training, sponsored ' +
+      'open source work, and anything and everything Ember. To get started on your Ember training or Ember consulting project, ' +
+      'shoot us an email or fill out the contact form.',
       type: 'website',
-      url: 'https://shipshape.io/contact'
+      url: 'https://shipshape.io/contact/'
     });
   },
 

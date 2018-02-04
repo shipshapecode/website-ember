@@ -24,7 +24,7 @@ export default Route.extend({
       'We have written several Ember addons of our own, and we are maintainers for the html-next ' +
       'addons, including flexi and vertical-collection.',
       type: 'website',
-      url: 'https://shipshape.io/open-source'
+      url: 'https://shipshape.io/open-source/'
     });
   }
 });

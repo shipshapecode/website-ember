@@ -127,7 +127,7 @@ export default Route.extend({
       'full scale Ember apps for both large and small clients. We put a huge focus on leveling up your team\'s ' +
       'Ember skills, while also churning out bulletproof features for your Ember app.',
       type: 'website',
-      url: 'https://shipshape.io/ember-consulting'
+      url: 'https://shipshape.io/ember-consulting/'
     });
   }
 });
