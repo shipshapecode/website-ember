@@ -2,7 +2,7 @@
 author: Robert Wagner
 date: 2016-05-22
 slug: ember-data-passing-query-params-to-save
-title: Ember Data: Passing query params to .save()
+title: Ember Data | Passing query params to .save()
 ---
 
 I recently had a need to pass query params to an Ember Data `save()` call, and I found all of the StackOverflow answers, and blog posts lacking on how exactly to do this, especially for someone new to Ember Data.

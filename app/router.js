@@ -31,13 +31,13 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('home', { path: '/' });
+  this.route('blog', function() {
+    this.route('post', { path: '/:path' });
+  });
   this.route('contact');
   this.route('ember-consulting');
   this.route('open-source');
   this.route('lost-at-sea', { path: '/*path' });
-  this.route('blog', function() {
-    this.route('post');
-  });
 });
 
 export default Router;

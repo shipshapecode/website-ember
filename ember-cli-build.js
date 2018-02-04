@@ -34,11 +34,6 @@ module.exports = function(defaults) {
         concat: false
       }
     },
-    'ember-cli-markdown-resolver': {
-      folders: {
-        'blog': 'app/blog'
-      }
-    },
     'ember-img-lazy': {
       lazyFastBoot: true,
       setSrcImmediately: true,
