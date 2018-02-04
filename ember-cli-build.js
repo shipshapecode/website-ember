@@ -23,7 +23,7 @@ module.exports = function(defaults) {
       ],
     },
     'esw-prember': {
-      version: '4'
+      version: '5'
     },
     emberCliConcat: {
       js: {
