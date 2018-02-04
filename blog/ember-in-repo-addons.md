@@ -1,6 +1,6 @@
 ---
 author: Robert Wagner
-date: 2016-05-22
+date: 2016-07-19
 slug: ember-in-repo-addons
 title: Ember In-Repo Addons
 ---
