@@ -1,0 +1,11 @@
+.hero.blog {
+  background: url(../img/blog.jpg) no-repeat bottom center/cover;
+}
+
+.hero.blog .hero-header {
+  padding: 15px;
+}
+
+.hero.blog h2 {
+  color: #ffffff;
+}

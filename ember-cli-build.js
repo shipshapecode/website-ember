@@ -47,6 +47,7 @@ module.exports = function(defaults) {
     },
     inlineContent: {
       app: 'inline/styles/app.css',
+      blog: 'inline/styles/blog.css',
       contact: 'inline/styles/contact.css',
       'ember-consulting': 'inline/styles/ember-consulting.css',
       fonts: 'inline/styles/fonts.css',
