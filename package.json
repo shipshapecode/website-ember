@@ -44,6 +44,7 @@
     "ember-cli-qunit": "^4.3.0",
     "ember-cli-sass": "^7.1.4",
     "ember-cli-shims": "^1.2.0",
+    "ember-cli-showdown": "^4.1.1",
     "ember-cli-stylelint": "^1.1.0",
     "ember-cli-template-lint": "0.7.5",
     "ember-cli-tree-shaker": "^0.1.4",
@@ -78,6 +79,9 @@
     "sitemap-autogenerator": "rwwagner90/SitemapAutogenerator",
     "stylelint-config-ship-shape": "^0.1.3"
   },
+  "fastbootDependencies": [
+    "showdown"
+  ],
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   },

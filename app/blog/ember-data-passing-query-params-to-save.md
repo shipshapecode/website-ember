@@ -17,7 +17,7 @@ To create the adapter I simply ran `ember g adapter appointment`
 
 Then you have to override the `updateRecord` method, since that is what is called for a `save()`. The resulting adapter looks something like this:
 
-```language-javascript
+```javascript
 import ApplicationAdapter from './application';
 
 export default ApplicationAdapter.extend({
@@ -43,7 +43,7 @@ export default ApplicationAdapter.extend({
 For the most part, this is just a copy of the `updateRecord` method from the `DS.JSONAPIAdapter`, so you'll want to copy the `updateRecord` method from whatever adapter you are using by default.
 
 The important part, which adds the query params to the url is this:
-```language-javascript
+```javascript
 if (snapshot.adapterOptions && snapshot.adapterOptions.recurrenceStart) {
   url += '?recurrenceStart=' + snapshot.adapterOptions.recurrenceStart;
 }
@@ -51,7 +51,7 @@ if (snapshot.adapterOptions && snapshot.adapterOptions.recurrenceStart) {
 
 To execute a `save` and pass this query param, you'll want to do something like this:
 
-```language-javascript
+```javascript
 appointment.save(adapterOptions: {
   recurrenceStart: 'foo'
 });

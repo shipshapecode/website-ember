@@ -11,7 +11,7 @@ It seemed to me, that Ember Data would handle this for me, if I did a manual `re
 
 For anyone else who has the same problem, here is how I got around it and forced a reload:
 
-```js
+```javascript
 item.save().then(() => {
   const user = this.modelFor(this.routeName);
       const item = this.store.createRecord(type);
