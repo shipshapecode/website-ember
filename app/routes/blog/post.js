@@ -6,6 +6,7 @@ export default Route.extend({
   markdownResolver: inject(),
 
   model({ path }) {
-    return get(this, 'markdownResolver').file('blog', path);
+    const withoutSlash = !path.endsWith('/') ? path : path.slice(0, -1);
+    return get(this, 'markdownResolver').file('blog', withoutSlash);
   }
 });
