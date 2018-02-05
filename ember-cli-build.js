@@ -42,6 +42,10 @@ module.exports = function(defaults) {
         threshold: 0.01
       }
     },
+    'ember-prism': {
+      'components': ['scss', 'javascript', 'handlebars', 'http', 'json'],
+      'plugins': ['line-numbers', 'normalize-whitespace', 'show-language']
+    },
     fingerprint: {
       extensions: ['js', 'css', 'map']
     },

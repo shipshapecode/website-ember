@@ -15,7 +15,8 @@ module.exports = {
     browser: true
   },
   globals: {
-    galite: false
+    galite: false,
+    Prism: false
   },
   rules: {
     'ember/order-in-components': 'error',
