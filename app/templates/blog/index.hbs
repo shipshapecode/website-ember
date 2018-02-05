@@ -16,7 +16,9 @@
 {{/hero-block}}
 
 <page class="blog-posts" id="blog-posts">
-  <centered>
-    {{blog-post-menu posts=model.files}}
-  </centered>
+  <hbox justify="center">
+    <box fit xs="12" sm="8" md="6">
+      {{blog-post-menu posts=model.files}}
+    </box>
+  </hbox>
 </page>
