@@ -6,6 +6,8 @@ export default Route.extend({
   markdownResolver: inject(),
 
   model() {
-    return get(this, 'markdownResolver').tree('blog');
+    return get(this, 'markdownResolver').tree('blog').then((tree) => {
+      return tree.files.sortBy('attributes.date').reverse();
+    });
   }
 });
