@@ -1,8 +1,11 @@
-{{#each model.files as |post|}}
-  <h4>
-    {{link-to post.attributes.title 'blog.post' post.attributes.slug}}
-    <div>
-      By {{post.attributes.author}} {{moment-format post.attributes.date 'LL'}}
-    </div>
-  </h4>
-{{/each}}
+{{#hero-block
+  heroClasses='contact'
+  scrollToHref='#blog-posts'}}
+  <h1 class="hero-header">Blog</h1>
+{{/hero-block}}
+
+<page class="blog-posts" id="blog-posts">
+  <centered>
+    {{blog-post-menu posts=model.files}}
+  </centered>
+</page>
