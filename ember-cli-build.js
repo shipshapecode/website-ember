@@ -20,7 +20,7 @@ module.exports = function(defaults) {
     'esw-cache-fallback': {
       patterns: [
         '/github-repos'
-      ],
+      ]
     },
     'esw-prember': {
       version: '5'
@@ -64,12 +64,7 @@ module.exports = function(defaults) {
       'open-source': 'inline/styles/open-source.css'
     },
     prember: {
-      urls: [
-        '/',
-        '/ember-consulting',
-        '/open-source',
-        '/contact'
-      ]
+      urls: buildPremberUrls()
     },
     SRI: {
       enabled: false
@@ -86,3 +81,35 @@ module.exports = function(defaults) {
 
   return app.toTree();
 };
+
+/**
+ * Builds the prember urls for the blog and static pages
+ * @returns {string[]} The urls for prember
+ */
+function buildPremberUrls() {
+  // Build prember urls
+  const urls = [
+    '/',
+    '/ember-consulting',
+    '/open-source',
+    '/contact',
+    '/blog'
+  ];
+
+  const { extname } = require('path');
+  const walkSync = require('walk-sync');
+
+  const paths = walkSync('app/blog');
+
+  const mdFiles = paths.filter(path => extname(path) === '.md')
+    .map((path) => {
+      const stripMD = path.replace(/\.md/, '');
+      return `/blog/${stripMD}`;
+    });
+
+  mdFiles.forEach((file) => {
+    urls.push(file);
+  });
+
+  return urls;
+}
