@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'website',
     environment,
     rootURL: '/',
-    locationType: 'trailing-history',
+    locationType: 'router-scroll',
     historySupportMiddleware: true,
     EmberENV: {
       FEATURES: {
