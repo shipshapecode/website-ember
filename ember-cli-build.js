@@ -68,6 +68,7 @@ module.exports = function(defaults) {
       'open-source': 'inline/styles/open-source.css'
     },
     prember: {
+      baseRoot: 'https://shipshape.io',
       urls: buildPremberUrls()
     },
     SRI: {

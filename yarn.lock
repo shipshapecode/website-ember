@@ -7205,6 +7205,12 @@ prember-middleware@^0.1.0:
     ember-cli-babel "^6.6.0"
     prember "*"
 
+prember-sitemap-generator@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/prember-sitemap-generator/-/prember-sitemap-generator-0.0.1.tgz#fef70e0a6c885431cc9944123ac4a9816fd785d9"
+  dependencies:
+    chalk "^2.3.0"
+
 prember@*, prember@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/prember/-/prember-0.2.2.tgz#77e6c2984908165138b7c1538269e3a9e64d9377"
@@ -8017,10 +8023,6 @@ simple-html-tokenizer@^0.4.1:
 simple-is@~0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/simple-is/-/simple-is-0.2.0.tgz#2abb75aade39deb5cc815ce10e6191164850baf0"
-
-sitemap-autogenerator@rwwagner90/SitemapAutogenerator:
-  version "0.0.8"
-  resolved "https://codeload.github.com/rwwagner90/SitemapAutogenerator/tar.gz/403d5801740f2bd5795b939338e6c9bf8d3f3172"
 
 slash@^1.0.0:
   version "1.0.0"
