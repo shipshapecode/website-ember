@@ -7205,10 +7205,12 @@ prember-middleware@^0.1.0:
     ember-cli-babel "^6.6.0"
     prember "*"
 
-prember-sitemap-generator@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/prember-sitemap-generator/-/prember-sitemap-generator-0.0.1.tgz#fef70e0a6c885431cc9944123ac4a9816fd785d9"
+prember-sitemap-generator@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/prember-sitemap-generator/-/prember-sitemap-generator-0.0.3.tgz#7de73d5cb9b2d68f5d2f3c5d05746d4e9b98dbc2"
   dependencies:
+    broccoli-file-creator "^1.1.1"
+    broccoli-funnel "^2.0.1"
     chalk "^2.3.0"
 
 prember@*, prember@^0.2.2:

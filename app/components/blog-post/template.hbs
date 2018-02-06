@@ -1,3 +1,16 @@
-<h1 class="blog-post-title">{{title}}</h1>
-{{author}}
-{{markdown-to-html content}}
+{{#hero-block
+  heroClasses='blog-post'
+  scrollToHref='#post-content'}}
+  <centered xs="12">
+    <h1 class="hero-header blog-post-title">{{title}}</h1>
+  </centered>
+{{/hero-block}}
+
+
+<centered xs="12" id="post-content">
+  <box xs="8">
+    {{markdown-to-html content}}
+    By: {{author}}
+  </box>
+</centered>
+

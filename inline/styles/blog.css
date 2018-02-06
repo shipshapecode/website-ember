@@ -2,10 +2,16 @@
   background: url(../img/blog.jpg) no-repeat bottom center/cover;
 }
 
-.hero.blog .hero-header {
-  padding: 15px;
+.hero.blog-post {
+  background: url(../../img/blog.jpg) no-repeat bottom center/cover;
 }
 
-.hero.blog h2 {
+.hero.blog .hero-header,
+.hero.blog-post .hero-header {
+  padding: 30px;
+}
+
+.hero.blog h2,
+.hero.blog-post h2 {
   color: #ffffff;
 }
