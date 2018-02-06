@@ -1,7 +1,10 @@
 import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:blog/post', 'Unit | Route | blog/post', {
-  needs: ['service:fastboot', 'service:markdownResolver']
+  needs: [
+    'service:fastboot', 'service:markdownResolver',
+    'service:router-scroll', 'service:scheduler'
+  ]
 });
 
 test('it exists', function(assert) {

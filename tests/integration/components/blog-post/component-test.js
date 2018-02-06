@@ -12,5 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{blog-post}}`);
 
-  assert.equal(find('*').textContent.trim(), 'By:');
+  assert.equal(find('*').textContent.trim(), 'Read more posts by this author.');
 });
