@@ -35,6 +35,11 @@ export default Route.extend({
           text: 'Blog',
           type: 'href'
         }
+        // {
+        //   linkTo: 'blog.index',
+        //   text: 'Blog',
+        //   type: 'linkTo'
+        // }
       ])
     };
   },

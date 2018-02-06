@@ -1,0 +1,18 @@
+& {
+  padding: 1rem;
+
+  .blog-post {
+    padding: 4rem;
+
+    .attribution {
+      color: $darkerBlue;
+      padding-top: 1rem;
+    }
+
+    .title {
+      color: $dark;
+      font-size: 3.25rem;
+    }
+  }
+}
+

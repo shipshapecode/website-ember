@@ -5,12 +5,13 @@ export function initialize(/* application */) {
       activate() {
         const classes = this.genClasses();
 
-        if (classes !== 'application') {
-          document.body.classList.add(classes);
+        if (!classes.includes('application')) {
+          document.body.classList.add(...classes);
         }
       },
       deactivate() {
-        document.body.classList.remove(this.genClasses());
+        const classes = this.genClasses();
+        document.body.classList.remove(...classes);
       },
       genClasses() {
         const classes = this.routeName.split('.');
@@ -21,7 +22,7 @@ export function initialize(/* application */) {
           }
         }
 
-        return classes.join(' ');
+        return classes;
       }
     });
   }

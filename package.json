@@ -12,7 +12,6 @@
   "repository": "https://github.com/shipshapecode/shipshape.io",
   "scripts": {
     "build": "ember build -e production",
-    "postbuild": "node -e \"require('./node_modules/sitemap-autogenerator/blueprints/sitemap-autogenerator/index').triggerSitemapBuilder('https://shipshape.io')\"",
     "lint:js": "eslint ./*.js app config lib server tests",
     "start": "ember serve",
     "test": "ember test"
@@ -39,9 +38,12 @@
     "ember-cli-htmlbars-inline-precompile": "^1.0.2",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-inline-content": "^0.4.0",
+    "ember-cli-markdown-resolver": "^0.1.2",
+    "ember-cli-moment-shim": "^3.5.0",
     "ember-cli-qunit": "^4.3.0",
     "ember-cli-sass": "^7.1.4",
     "ember-cli-shims": "^1.2.0",
+    "ember-cli-showdown": "^4.1.1",
     "ember-cli-stylelint": "^1.1.0",
     "ember-cli-template-lint": "0.7.5",
     "ember-cli-tree-shaker": "^0.1.4",
@@ -56,8 +58,10 @@
     "ember-img-lazy": "^2.0.2",
     "ember-load-initializers": "^1.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
+    "ember-moment": "^7.6.0",
     "ember-native-dom-event-dispatcher": "^0.6.4",
     "ember-native-dom-helpers": "^0.5.10",
+    "ember-prism": "^0.2.0",
     "ember-resolver": "^4.5.0",
     "ember-route-action-helper": "2.0.6",
     "ember-service-worker": "^0.6.8",
@@ -72,9 +76,12 @@
     "loader.js": "^4.2.3",
     "prember": "^0.2.2",
     "prember-middleware": "^0.1.0",
-    "sitemap-autogenerator": "rwwagner90/SitemapAutogenerator",
+    "prember-sitemap-generator": "^0.0.3",
     "stylelint-config-ship-shape": "^0.1.3"
   },
+  "fastbootDependencies": [
+    "showdown"
+  ],
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   },
