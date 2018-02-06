@@ -1,9 +1,15 @@
 {{head-layout}}
-<div itemscope itemtype="http://schema.org/Organization" itemid="shipshapeorg">
+<div itemscope itemtype="https://schema.org/Organization" itemid="shipshapeorg">
   {{#nav-trigger-container headroomOffset="0" isFixed=true useHeadroom=true}}
     <a href="/" class="logo">
-      <img itemprop="logo" src="/svgs/logo.svg" height="50px" width="50px" alt="Ship Shape">
-      <centered class="logoText" itemprop="name">Ship Shape</centered>
+      <grid>
+        <box itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <img itemprop="url" src="/svgs/logo.svg" height="50px" width="50px" alt="Ship Shape">
+          <meta itemprop="height" content="256">
+          <meta itemprop="width" content="256">
+        </box>
+        <centered class="logoText" itemprop="name">Ship Shape</centered>
+      </grid>
     </a>
   {{/nav-trigger-container}}
 
