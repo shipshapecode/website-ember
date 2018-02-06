@@ -2,8 +2,12 @@
 <div itemscope itemtype="http://schema.org/Organization" itemid="shipshapeorg">
   {{#nav-trigger-container headroomOffset="0" isFixed=true useHeadroom=true}}
     <a href="/" class="logo">
-      {{svg-jar "logo" height="50px" itemprop="logo" width="50px"}}
-      <centered class="logoText" itemprop="name">Ship Shape</centered>
+      <grid>
+        <box itemprop="logo">
+          {{svg-jar "logo" height="50px" width="50px"}}
+        </box>
+        <centered class="logoText" itemprop="name">Ship Shape</centered>
+      </grid>
     </a>
   {{/nav-trigger-container}}
 
