@@ -1,9 +1,19 @@
 {{#hero-block
   heroClasses='blog-post'
   scrollToHref='#post-content'}}
-  <centered xs="12">
-    <h1 class="hero-header blog-post-title">{{title}}</h1>
-  </centered>
+  <grid>
+    <centered xs="12">
+      <h1 class="hero-header blog-post-title" itemprop="headline">{{title}}</h1>
+    </centered>
+    <centered xs="12">
+      <time class="post-date"
+            datetime="{{date}}"
+            itemprop="datePublished"
+            itemprop="dateModified">
+        {{moment-format date 'LL'}}
+      </time>
+    </centered>
+  </grid>
 {{/hero-block}}
 
 
