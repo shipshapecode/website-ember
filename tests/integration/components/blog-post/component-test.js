@@ -1,4 +1,5 @@
 import { moduleForComponent, test } from 'ember-qunit';
+import { find } from 'ember-native-dom-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 moduleForComponent('blog-post', 'Integration | Component | blog post', {
@@ -11,14 +12,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{blog-post}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#blog-post}}
-      template block text
-    {{/blog-post}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(find('*').textContent.trim(), '');
 });
