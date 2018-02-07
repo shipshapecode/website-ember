@@ -4,6 +4,11 @@
 <!-- AMP -->
 <link rel="canonical" href="{{model.url}}">
 
+<!-- Article -->
+{{#each model.tags as |tag|}}
+  <meta property="article:tag" content="{{tag}}">
+{{/each}}
+
 <!-- Facebook, Slack, etc -->
 <meta property="og:site_name" content="Ship Shape">
 <meta property="og:title" content={{model.title}}>

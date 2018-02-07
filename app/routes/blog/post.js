@@ -13,12 +13,13 @@ export default Route.extend({
 
   afterModel(model) {
     const description = `${model.content.substring(0, 260)}...`;
-    const { slug, title } = model.attributes;
+    const { slug, tags, title } = model.attributes;
 
     return setProperties(get(this, 'headData'), {
       title: `${title} - Ship Shape`,
       description,
-      type: 'website',
+      tags: tags.split(','),
+      type: 'article',
       url: `https://shipshape.io/blog/${slug}/`
     });
   }

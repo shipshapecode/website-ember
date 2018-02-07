@@ -2,6 +2,7 @@
 author: Robert Wagner
 date: 2017-07-31
 slug: reloading-hasmany-relationships
+tags: ember,ember data,ember.js,hasMany
 title: Reloading hasMany relationships
 ---
 

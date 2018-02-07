@@ -2,6 +2,7 @@
 author: Robert Wagner
 date: 2016-07-19
 slug: ember-in-repo-addons
+tags: ember,ember.js,in-repo addons
 title: Ember In-Repo Addons
 ---
 

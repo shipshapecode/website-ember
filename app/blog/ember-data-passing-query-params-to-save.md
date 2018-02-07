@@ -2,6 +2,7 @@
 author: Robert Wagner
 date: 2016-05-22
 slug: ember-data-passing-query-params-to-save
+tags: ember,ember data,ember.js,query params
 title: Ember Data | Passing query params to .save()
 ---
 

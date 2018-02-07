@@ -2,6 +2,7 @@
 author: Robert Wagner
 date: 2016-06-30
 slug: helpful-resources-for-new-ember-devs
+tags: ember,ember.js,ember resources,ember tutorials
 title: Helpful Resources for New Ember Devs
 ---
 
