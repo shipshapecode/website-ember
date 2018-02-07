@@ -14,7 +14,7 @@ I've recently been on a crusade to remove jQuery from all my apps and addons, in
 5. If you use `ember-data`, you will need to [tell it to use `ember-fetch`](https://github.com/ember-cli/ember-fetch#use-with-ember-data) as well.
 6. If you are using `ember-fastboot`, you must override the initializer. Create a new file `<your app name>/fastboot/initializers/ajax.js` and paste in the following contents:
 
-```
+```javascript
 export default {
   name: 'ajax-service',
   initialize() {
@@ -34,7 +34,7 @@ export default {
 2. Once all jQuery has been flagged, go through and replace things like `this.$` with `this.element` in app code, and things like `this.$('.foo')` in tests with the `ember-native-dom-helpers` equivalent, like `find('.foo')`. **Note:** There is a [codemod](https://github.com/simonihmig/ember-native-dom-helpers-codemod) that can help with migration of your tests. It is not perfect, but should work well for most cases.
 3. Finally, you need to tell `ember-cli-build.js` to not include jQuery, by doing something like:
 
-```
+```javascript
 const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
@@ -50,7 +50,7 @@ module.exports = function(defaults) {
 For addons using `ember-try`, for all scenarios where Ember `< 2.13`, you will need to set `'ember-native-dom-event-dispatcher': null` in `config/ember-try.js`.
 
 example:
-```
+```json
 {
   name: 'ember-lts-2.12',
     npm: {
@@ -63,7 +63,7 @@ example:
 ```
 
 You will also need to tweak your `ember-cli-build.js` to reflect these changes:
-```
+```javascript
 /* eslint-env node */
 'use strict';
 
