@@ -34,3 +34,11 @@
 <meta name="twitter:creator" content="@shipshapecode">
 <meta name="twitter:url" content={{model.url}}>
 <meta name="twitter:image:src" content="http://i.imgur.com/KVqNjgO.png">
+{{#if model.author}}
+  <meta name="twitter:label1" content="Written by">
+  <meta name="twitter:data1" content="{{model.author}}">
+{{/if}}
+{{#if model.keywords}}
+  <meta name="twitter:label2" content="Filed under">
+  <meta name="twitter:data2" content="{{model.keywords}}">
+{{/if}}
