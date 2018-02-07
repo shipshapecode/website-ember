@@ -31,15 +31,11 @@ export default Route.extend({
           type: 'linkTo'
         },
         {
-          href: 'http://blog.shipshape.io',
+          linkTo: 'blog',
+          matchParentRoute: true,
           text: 'Blog',
-          type: 'href'
+          type: 'linkTo'
         }
-        // {
-        //   linkTo: 'blog.index',
-        //   text: 'Blog',
-        //   type: 'linkTo'
-        // }
       ])
     };
   },
