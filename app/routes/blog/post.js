@@ -19,7 +19,7 @@ export default Route.extend({
       title: `${title} - Ship Shape`,
       description,
       date,
-      tags: tags.split(','),
+      tags: tags.split(', '),
       type: 'article',
       url: `https://shipshape.io/blog/${slug}/`
     });

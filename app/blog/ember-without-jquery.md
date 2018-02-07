@@ -2,7 +2,7 @@
 author: Robert Wagner
 date: 2017-09-08
 slug: ember-without-jquery
-tags: ember,ember data,ember.js,jQuery
+tags: ember, ember data, ember.js, jQuery
 title: Removing jQuery from Ember - For Dummies
 ---
 

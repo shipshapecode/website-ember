@@ -2,7 +2,7 @@
 author: Robert Wagner
 date: 2017-11-29
 slug: using-components-in-ember-mixin-unit-tests
-tags: ember,ember.js,unit tests,component rendering,container
+tags: ember, ember.js, unit tests, component rendering, container
 title: Using Components in Ember Mixin Unit Tests
 ---
 
