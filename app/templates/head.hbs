@@ -1,6 +1,10 @@
 <title>{{model.title}}</title>
 <meta name="description" content={{model.description}}>
 
+<!-- AMP -->
+<link rel="canonical" href="{{model.url}}">
+
+<!-- Facebook, Slack, etc -->
 <meta property="og:site_name" content="Ship Shape">
 <meta property="og:title" content={{model.title}}>
 <meta property="og:description" content={{model.description}}>
@@ -11,6 +15,7 @@
 <meta property="og:image:height" content="256">
 <meta property="og:url" content={{model.url}}>
 
+<!-- Twitter -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content={{model.title}}>
 <meta name="twitter:description" content={{model.description}}>
