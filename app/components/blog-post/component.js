@@ -2,9 +2,11 @@ import Component from '@ember/component';
 import { alias } from '@ember/object/computed';
 
 export default Component.extend({
+  classNameBindings: ['slug'],
   author: alias('post.attributes.author'),
   content: alias('post.content'),
   date: alias('post.attributes.date'),
+  slug: alias('post.attributes.slug'),
   title: alias('post.attributes.title'),
 
   didRender(){

@@ -2,10 +2,6 @@
   background: url(../img/blog.jpg) no-repeat bottom center/cover;
 }
 
-.hero.blog-post {
-  background: url(../../img/blog.jpg) no-repeat bottom center/cover;
-}
-
 .hero.blog .hero-header,
 .hero.blog-post .hero-header {
   padding: 30px;
@@ -17,6 +13,34 @@
 }
 
 .hero.blog-post time {
-  color: #e8e9ea;
+  color: #ffffff;
   font-size: 2.5rem;
+}
+
+.aiming-for-targets-with-ember .hero.blog-post {
+  background: url(../../img/blog/blog-post-1.jpg) no-repeat bottom center/cover;
+}
+
+.ember-data-passing-query-params-to-save .hero.blog-post {
+  background: url(../../img/blog/blog-post-2.jpg) no-repeat bottom center/cover;
+}
+
+.ember-in-repo-addons .hero.blog-post {
+  background: url(../../img/blog/blog-post-3.jpg) no-repeat bottom center/cover;
+}
+
+.ember-without-jquery .hero.blog-post {
+  background: url(../../img/blog/blog-post-4.jpg) no-repeat bottom center/cover;
+}
+
+.helpful-resources-for-new-ember-devs .hero.blog-post {
+  background: url(../../img/blog/blog-post-5.jpg) no-repeat bottom center/cover;
+}
+
+.reloading-hasmany-relationships .hero.blog-post {
+  background: url(../../img/blog/blog-post-6.jpg) no-repeat bottom center/cover;
+}
+
+.using-components-in-ember-mixin-unit-tests .hero.blog-post {
+  background: url(../../img/blog/blog-post-7.jpg) no-repeat bottom center/cover;
 }
