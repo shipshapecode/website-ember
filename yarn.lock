@@ -2736,18 +2736,18 @@ electron-to-chromium@^1.3.30:
   version "1.3.32"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.32.tgz#11d0684c0840e003c4be8928f8ac5f35dbc2b4e6"
 
-ember-3d-folding-panel@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/ember-3d-folding-panel/-/ember-3d-folding-panel-0.4.0.tgz#239dc3396dd943ad12558afb5fefe4f098fac336"
+ember-3d-folding-panel@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/ember-3d-folding-panel/-/ember-3d-folding-panel-0.5.0.tgz#fd1aaccbad2bf9671875423a409678b43fb56213"
   dependencies:
-    "@html-next/flexi-config" "^2.0.2"
-    "@html-next/flexi-default-styles" "^2.0.2"
+    "@html-next/flexi-config" "^2.1.0"
+    "@html-next/flexi-default-styles" "^2.1.0"
     "@html-next/flexi-dsl" "^2.0.3"
     "@html-next/flexi-layouts" "^2.0.3"
     ember-cli-babel "^6.6.0"
     ember-cli-htmlbars "^2.0.1"
     ember-cli-sass "^7.0.0"
-    ember-component-css "^0.5.0"
+    ember-component-css "^0.6.2"
     flexi "^2.0.2"
 
 ember-3d-nav@^1.8.0:
@@ -3312,9 +3312,9 @@ ember-cli@~2.18.1:
     walk-sync "^0.3.0"
     yam "0.0.22"
 
-ember-component-css@0.5.0, ember-component-css@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/ember-component-css/-/ember-component-css-0.5.0.tgz#5de2d70a951bf74a38c8cefeaa3f1a88ccd13393"
+ember-component-css@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/ember-component-css/-/ember-component-css-0.6.2.tgz#bcd7126bf771c52227744801b16bbf8b8ba18100"
   dependencies:
     broccoli-concat "^3.2.2"
     broccoli-funnel "^2.0.1"
@@ -3322,15 +3322,15 @@ ember-component-css@0.5.0, ember-component-css@^0.5.0:
     broccoli-persistent-filter "^1.4.2"
     broccoli-plugin "^1.3.0"
     broccoli-style-manifest "^1.4.0"
-    ember-cli-babel "^6.6.0"
-    ember-getowner-polyfill "^2.0.1"
+    ember-cli-babel "^6.11.0"
+    ember-getowner-polyfill "^2.2.0"
     fs-tree-diff "^0.5.6"
     md5 "^2.2.1"
-    postcss "^6.0.8"
-    postcss-less "^1.1.0"
-    postcss-scss "^1.0.2"
-    postcss-selector-namespace "^1.4.1"
-    rsvp "^4.0.1"
+    postcss "^6.0.16"
+    postcss-less "^1.1.3"
+    postcss-scss "^1.0.3"
+    postcss-selector-namespace "^1.5.0"
+    rsvp "^4.8.1"
     walk-sync "^0.3.2"
 
 ember-config-service@^0.1.6:
@@ -3414,6 +3414,12 @@ ember-factory-for-polyfill@^1.1.0:
   dependencies:
     ember-cli-version-checker "^1.2.0"
 
+ember-factory-for-polyfill@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/ember-factory-for-polyfill/-/ember-factory-for-polyfill-1.3.1.tgz#b446ed64916d293c847a4955240eb2c993b86eae"
+  dependencies:
+    ember-cli-version-checker "^2.1.0"
+
 ember-fetch@^3.4.4:
   version "3.4.4"
   resolved "https://registry.yarnpkg.com/ember-fetch/-/ember-fetch-3.4.4.tgz#926ffa1c4120324b298c44e9558b458e586eb504"
@@ -3438,6 +3444,13 @@ ember-getowner-polyfill@2.0.1, ember-getowner-polyfill@^2.0.0, ember-getowner-po
   dependencies:
     ember-cli-version-checker "^1.2.0"
     ember-factory-for-polyfill "^1.1.0"
+
+ember-getowner-polyfill@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/ember-getowner-polyfill/-/ember-getowner-polyfill-2.2.0.tgz#38e7dccbcac69d5ec694000329ec0b2be651d2b2"
+  dependencies:
+    ember-cli-version-checker "^2.1.0"
+    ember-factory-for-polyfill "^1.3.1"
 
 ember-hammertime@^1.3.0:
   version "1.3.0"
@@ -7120,6 +7133,12 @@ postcss-less@^1.1.0:
   dependencies:
     postcss "^5.2.16"
 
+postcss-less@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/postcss-less/-/postcss-less-1.1.3.tgz#6930525271bfe38d5793d33ac09c1a546b87bb51"
+  dependencies:
+    postcss "^5.2.16"
+
 postcss-media-query-parser@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/postcss-media-query-parser/-/postcss-media-query-parser-0.2.3.tgz#27b39c6f4d94f81b1a73b8f76351c609e5cef244"
@@ -7156,11 +7175,17 @@ postcss-scss@^1.0.2:
   dependencies:
     postcss "^6.0.3"
 
-postcss-selector-namespace@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/postcss-selector-namespace/-/postcss-selector-namespace-1.4.1.tgz#3f039182c64e3abb2a1b6e33a147639133e13db0"
+postcss-scss@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-scss/-/postcss-scss-1.0.3.tgz#4c00ab440fc1c994134e3d4e600c23341af6cd27"
   dependencies:
-    postcss "^5.2.15"
+    postcss "^6.0.15"
+
+postcss-selector-namespace@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/postcss-selector-namespace/-/postcss-selector-namespace-1.5.0.tgz#62335de8f1992eae989d1be33ba2298156ab458b"
+  dependencies:
+    postcss "^6.0.14"
 
 postcss-selector-parser@^2.0.0, postcss-selector-parser@^2.2.3:
   version "2.2.3"
@@ -7189,7 +7214,7 @@ postcss-value-parser@^3.2.3, postcss-value-parser@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz#87f38f9f18f774a4ab4c8a232f5c5ce8872a9d15"
 
-postcss@^5.2.15, postcss@^5.2.16:
+postcss@^5.2.16:
   version "5.2.17"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.17.tgz#cf4f597b864d65c8a492b2eabe9d706c879c388b"
   dependencies:
@@ -7205,6 +7230,14 @@ postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.11, postcss@^6.0.3, postcss@^6.0.6,
     chalk "^2.1.0"
     source-map "^0.5.7"
     supports-color "^4.4.0"
+
+postcss@^6.0.14, postcss@^6.0.15, postcss@^6.0.16:
+  version "6.0.17"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.17.tgz#e259a051ca513f81e9afd0c21f7f82eda50c65c5"
+  dependencies:
+    chalk "^2.3.0"
+    source-map "^0.6.1"
+    supports-color "^5.1.0"
 
 prelude-ls@~1.1.2:
   version "1.1.2"
@@ -7833,6 +7866,10 @@ rsvp@^4.6.1, rsvp@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-4.7.0.tgz#dc1b0b1a536f7dec9d2be45e0a12ad4197c9fd96"
 
+rsvp@^4.8.1:
+  version "4.8.1"
+  resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-4.8.1.tgz#168addb3963222de37ee351b70e3876bdb2ac285"
+
 rsvp@~3.0.6:
   version "3.0.21"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.0.21.tgz#49c588fe18ef293bcd0ab9f4e6756e6ac433359f"
@@ -8203,6 +8240,10 @@ source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7, sour
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 
+source-map@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+
 source-map@~0.1.x:
   version "0.1.43"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.1.43.tgz#c24bc146ca517c1471f5dacbe2571b2b7f9e3346"
@@ -8563,6 +8604,12 @@ supports-color@^3.2.3:
 supports-color@^4.0.0, supports-color@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-4.4.0.tgz#883f7ddabc165142b2a61427f3352ded195d1a3e"
+  dependencies:
+    has-flag "^2.0.0"
+
+supports-color@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.1.0.tgz#058a021d1b619f7ddf3980d712ea3590ce7de3d5"
   dependencies:
     has-flag "^2.0.0"
 
