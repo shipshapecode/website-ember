@@ -15,7 +15,10 @@ module.exports = function(defaults) {
         'img/**/*',
         'svgs/**/*'
       ],
-      version: '9'
+      version: '10'
+    },
+    'ember-service-worker': {
+      versionStrategy: 'every-build'
     },
     'esw-cache-fallback': {
       patterns: [
@@ -23,7 +26,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '9'
+      version: '10'
     },
     emberCliConcat: {
       js: {
