@@ -3530,6 +3530,13 @@ ember-native-dom-helpers@^0.5.10:
     broccoli-funnel "^1.1.0"
     ember-cli-babel "^6.6.0"
 
+ember-netlify@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/ember-netlify/-/ember-netlify-0.0.1.tgz#d7ec55833ca9dcaf2e209b800c5dc564b80478fa"
+  dependencies:
+    ember-cli-babel "^5.1.6"
+    fs-extra "^0.30.0"
+
 ember-prism@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/ember-prism/-/ember-prism-0.2.0.tgz#10e766620716fe15c525a010fb9a93d6a38e9260"
