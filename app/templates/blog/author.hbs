@@ -1,0 +1,24 @@
+{{#hero-block
+  heroClasses='blog-author'
+  scrollToHref='#blog-posts'}}
+  <grid>
+    <centered xs="12">
+      <h1 class="hero-header">{{model.firstObject.attributes.author}}</h1>
+    </centered>
+    <centered xs="12">
+      <centered xs="10" class="info">
+        <h2>
+          {{model.length}} posts
+        </h2>
+      </centered>
+    </centered>
+  </grid>
+{{/hero-block}}
+
+<box class="blog-posts" id="blog-posts">
+  <hbox justify="center">
+    <box fit xs="12" sm="8" md="6">
+      {{blog-post-menu posts=model}}
+    </box>
+  </hbox>
+</box>

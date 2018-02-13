@@ -2,13 +2,23 @@
   background: url(../img/blog.jpg) no-repeat bottom center/cover;
 }
 
+.hero.blog-author {
+  background: url(../../../img/blog.jpg) no-repeat bottom center/cover;
+}
+
 .hero.blog .hero-header,
-.hero.blog-post .hero-header {
+.hero.blog-post .hero-header,
+.hero.blog-author .hero-header {
   padding: 30px;
 }
 
+.hero.blog-author .hero-header {
+  font-size: 8vw;
+}
+
 .hero.blog h2,
-.hero.blog-post h2 {
+.hero.blog-post h2,
+.hero.blog-author h2 {
   color: #ffffff;
 }
 

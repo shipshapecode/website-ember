@@ -16,7 +16,8 @@ export default Route.extend({
     const { author, date, slug, tags, title } = model.attributes;
 
     return setProperties(get(this, 'headData'), {
-      title: `${title} - Ship Shape`,
+      title: `${title} - Blog - Ship Shape`,
+      articleTitle: title,
       author,
       description,
       date,
