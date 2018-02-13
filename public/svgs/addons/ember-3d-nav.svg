@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="56px" viewBox="0 0 48 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>95 -Cube- (geometry, shape, form, drawing)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-602.000000, -1412.000000)">
+            <g id="95--Cube--(geometry,-shape,-form,-drawing)" transform="translate(602.000000, 1412.000000)">
+                <path d="M44,40 L24,51 L4,40 L4,22 L24,33 L44,22 L44,40 Z M24,0 L0,14 L0,43 L24,56 L48,43 L48,14 L24,0 Z" id="Fill-80" fill="#35495E"></path>
+                <polygon id="Fill-568" fill="#1E2935" points="24 28 0 14 24 0 48 14"></polygon>
+                <polygon id="Fill-580" fill="#26B99A" points="24 33 4 22 4 40 24 51 44 40 44 22"></polygon>
+                <polygon id="Fill-581" fill="#283747" points="24 28 24 33 44 22 44 40 24 51 24 56 48 43 48 14"></polygon>
+                <polygon id="Fill-582" fill="#35495E" points="4 22 24 33 24 28 0 14 0 43 24 56 24 51 4 40"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

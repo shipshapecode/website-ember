@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="53px" viewBox="0 0 48 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>94 -Cube- (geometry, shape, form, drawing)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-481.000000, -1413.000000)">
+            <g id="94--Cube--(geometry,-shape,-form,-drawing)" transform="translate(481.000000, 1413.000000)">
+                <path d="M41,36 L24,44 L7,36 L7,15 L24,7 L41,15 L41,36 Z M24,0 L0,11 L0,40 L24,53 L48,40 L48,11 L24,0 Z" id="Fill-78" fill="#283747"></path>
+                <polygon id="Fill-79" fill="#F0C419" points="24 7 7 15 7 36 24 44 41 36 41 15"></polygon>
+                <polygon id="Fill-569" fill="#AC92BA" points="24 0 0 11 7 15 24 7 41 15 48 11"></polygon>
+                <polygon id="Fill-570" fill="#CDBED6" points="24 0 25.5 0.687 3 11 8.645 14.226 7 15 0 11"></polygon>
+                <polygon id="Fill-571" fill="#71597E" points="41 15 41 36 24 44 24 53 48 40 48 11"></polygon>
+                <polygon id="Fill-572" fill="#55435F" points="45 12.7148 45 41.6248 48 39.9998 48 10.9998"></polygon>
+                <polygon id="Fill-573" fill="#9777A8" points="7 15 0 11 0 40 24 53 24 44 7 36"></polygon>
+                <polygon id="Fill-578" fill="#BF3E00" points="32 16 24 21 16 16 12 21 24 28 36 21"></polygon>
+                <polygon id="Fill-579" fill="#E64C3C" points="24 28 12 21 12 32 24 38 36 32 36 21"></polygon>
+                <polygon id="Fill-969" fill="#AC92BA" points="3 12.7148 3 41.6248 0 39.9998 0 10.9998"></polygon>
+                <polygon id="Fill-973" fill="#816E8B" points="24 0 22.5 0.687 45 11 39.355 14.226 41 15 48 11"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

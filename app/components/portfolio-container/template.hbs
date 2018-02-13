@@ -1,36 +1,34 @@
-<centered>
-  <grid>
-    <centered xs="12" id="ember-addons">
-      <h2 class="heading">Ember Addons</h2>
+<grid>
+  <centered xs="12" id="ember-addons">
+    <h2 class="heading">Ember Addons</h2>
+  </centered>
+  {{#each projects as |project|}}
+    <centered xs="12" sm="6" md="4" itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project">
+      <a href="https://github.com/shipshapecode/{{project.name}}" class="repo" itemprop="codeRepository">
+        <grid>
+          <centered xs="12">
+            <centered xs="10">
+              {{svg-jar project.name height="150px" width="150px"}}
+            </centered>
+          </centered>
+          <centered xs="12" class="text-center">
+            <h3 class="repo-name">{{project.name}}</h3>
+          </centered>
+          <centered xs="12" class="text-center">
+            <h4 class="repo-description">{{project.description}}</h4>
+          </centered>
+          <centered xs="12" class="github-info">
+            <span class="star-icon">{{svg-jar "star" height="24px" width="24px"}}</span>
+            <span class="star-count">{{project.stars}}</span>
+            <a href="https://github.com/shipshapecode/{{project.name}}" class="github-icon">
+              {{svg-jar "github-alt" height="24px" width="24px"}}
+            </a>
+          </centered>
+        </grid>
+      </a>
     </centered>
-    {{#each projects as |project|}}
-      <centered xs="12" sm="6" md="4" itemscope itemtype="http://schema.org/SoftwareSourceCode">
-        <vbox>
-          <hbox>
-            <centered xs="12">
-              <centered xs="10">
-                {{svg-jar project.name height="150px" width="150px"}}
-              </centered>
-            </centered>
-          </hbox>
-          <hbox>
-            <centered xs="12">
-              <h2>{{project.name}}</h2>
-            </centered>
-          </hbox>
-          <hbox>
-            <centered xs="12">
-              {{svg-jar "star" height="20px" width="20px"}} <span class="stars">{{project.stars}}</span>
-              <a href="https://github.com/shipshapecode/{{project.name}}" class="ssIcon github-icon" itemprop="codeRepository">
-                {{svg-jar "github-alt" height="24px" width="24px"}}
-              </a>
-            </centered>
-          </hbox>
-        </vbox>
-      </centered>
-    {{/each}}
-  </grid>
-</centered>
+  {{/each}}
+</grid>
 
 <a data-scroll aria-hidden="true" href="#sponsored-oss">
   {{scroll-suggest}}
