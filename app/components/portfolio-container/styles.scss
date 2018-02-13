@@ -1,5 +1,6 @@
 & {
-  background-color: $dark;
+  max-width: 100vw;
+  overflow: hidden;
 
   .heading {
     text-align: center;
@@ -15,9 +16,44 @@
     left: auto !important;
   }
 
-  .stars {
-    font-size: 1.75rem;
-    margin-top: 5px;
-    padding: 10px;
+  .project {
+    padding: 3rem;
+
+    .repo {
+      transition: transform 0.2s ease-in;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
+
+    .repo-description {
+      padding: 1rem;
+    }
+
+    .repo-name {
+      color: $dark-green;
+      font-size: 2.5rem;
+      padding: 2rem 0 1rem;
+    }
+
+    .github-info {
+      color: $grey;
+      font-size: 1.75rem;
+
+      .github-icon,
+      .star-icon {
+        font-size: 1.75rem;
+        padding: 0.5rem;
+
+        path {
+          fill: $grey;
+        }
+      }
+
+      .star-icon {
+        padding-right: 0.25rem;
+      }
+    }
   }
 }

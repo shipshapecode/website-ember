@@ -35,7 +35,6 @@ $ecf: (
 );
 
 @import 'alerts';
-@import 'device-mocks';
 @import 'ember-3d-folding-panel';
 @import 'ember-3d-nav';
 @import 'ember-contact-form';
@@ -59,6 +58,7 @@ body {
   background-color: $white;
   color: $white;
   font-family: 'Pier Sans', sans-serif;
+  line-height: 1.2;
 }
 
 a {

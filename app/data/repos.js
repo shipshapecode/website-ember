@@ -68,5 +68,9 @@ export default [
     description: 'An Ember Service Worker plugin that caches the index.html files for each prember route',
     name: 'ember-service-worker-prember',
     stars: 4
+  },
+  {
+    name: 'ember-journal',
+    stars: 2
   }
 ];
