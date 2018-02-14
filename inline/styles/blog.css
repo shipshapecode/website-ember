@@ -54,3 +54,7 @@
 .using-components-in-ember-mixin-unit-tests .hero.blog-post {
   background: url(../../img/blog/blog-post-7.jpg) no-repeat bottom center/cover;
 }
+
+.testing-ember-addons-in-an-app .hero.blog-post {
+  background: url(../../img/blog/blog-post-8.jpg) no-repeat bottom center/cover;
+}
