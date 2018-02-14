@@ -22,7 +22,9 @@
   <centered xs="12" id="post-content">
     <box xs="8">
       {{markdown-to-html content}}
-      {{author-row author=author}}
+      {{author-row
+        author=author
+        authorId=authorId}}
     </box>
   </centered>
 </box>

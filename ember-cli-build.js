@@ -15,7 +15,7 @@ module.exports = function(defaults) {
         'img/**/*',
         'svgs/**/*'
       ],
-      version: '15'
+      version: '16'
     },
     'ember-service-worker': {
       registrationStrategy: 'inline',
@@ -27,7 +27,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '15'
+      version: '16'
     },
     emberCliConcat: {
       js: {
@@ -103,7 +103,7 @@ function buildPremberUrls() {
     '/open-source',
     '/contact',
     '/blog',
-    '/blog/author/Robert%20Wagner'
+    '/blog/author/rwwagner90'
   ];
 
   const { extname } = require('path');

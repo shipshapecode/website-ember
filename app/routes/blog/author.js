@@ -11,14 +11,14 @@ export default Route.extend({
   model({ author }) {
     return get(this, 'markdownResolver').tree('blog').then((tree) => {
       return new RSVP.Promise((resolve) => {
-        const authorsPosts = A(tree.files.filterBy('attributes.author', author));
+        const authorsPosts = A(tree.files.filterBy('attributes.authorId', author));
         resolve(authorsPosts.sortBy('attributes.date').reverse());
       });
     });
   },
 
   afterModel(model) {
-    const author = model.get('firstObject.attributes.author');
+    const author = model.get('firstObject.attributes.authorId');
     return setProperties(get(this, 'headData'), {
       title: `${author} - Blog - Ship Shape`,
       description: 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.',

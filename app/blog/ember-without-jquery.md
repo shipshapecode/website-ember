@@ -1,5 +1,6 @@
 ---
 author: Robert Wagner
+authorId: rwwagner90
 date: 2017-09-08
 slug: ember-without-jquery
 tags: ember, ember data, ember.js, jQuery

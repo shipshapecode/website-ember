@@ -1,5 +1,6 @@
 ---
 author: Robert Wagner
+authorId: rwwagner90
 date: 2018-02-13
 slug: testing-ember-addons-in-an-app
 tags: ember, ember addons, ember.js, testing ember addons, in-repo addon, in-repo engine
