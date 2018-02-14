@@ -15,7 +15,7 @@ module.exports = function(defaults) {
         'img/**/*',
         'svgs/**/*'
       ],
-      version: '14'
+      version: '15'
     },
     'ember-service-worker': {
       registrationStrategy: 'inline',
@@ -27,7 +27,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '14'
+      version: '15'
     },
     emberCliConcat: {
       js: {
