@@ -21,7 +21,7 @@ $ember-3d-nav: (
 
 $ember-3d-folding-panel: (
   'dark-color': $dark-green,
-  'itemSquareColors': $offWhite $offWhite $offWhite $offWhite $offWhite $offWhite,
+  'itemSquareColors': $off-white $off-white $off-white $off-white $off-white $off-white,
   'light-color': $dark
 );
 
@@ -31,7 +31,7 @@ $ecf: (
   'input-background': transparent,
   'input-border': darken($grey, 10%),
   'input-color': $grey,
-  'submit-color': $offWhite
+  'submit-color': $off-white
 );
 
 @import 'alerts';
@@ -183,11 +183,11 @@ h6 {
 .cd-form {
   input[type="submit"] {
     &:disabled {
-      background-color: $darkGrey;
+      background-color: $dark-grey;
       // pointer-events: none;
 
       /* Button disabled - CSS color class */
-      color: darken($offWhite, 20%);
+      color: darken($off-white, 20%);
       cursor: not-allowed;
     }
   }
