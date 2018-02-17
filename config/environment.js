@@ -52,7 +52,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.host = 'https://shipshape-api.herokuapp.com/';
+    ENV.host = 'https://shipshape-api.herokuapp.com';
   }
 
   return ENV;

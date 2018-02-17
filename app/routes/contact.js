@@ -27,11 +27,11 @@ export default Route.extend({
 
   setupController(controller, model) {
     this._super(controller, model);
-    controller.contact = new Changeset(
+    controller.set('contact', new Changeset(
       model,
       lookupValidator(ContactValidations),
       ContactValidations
-    );
+    ));
   },
 
   actions: {
