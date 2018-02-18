@@ -1,4 +1,4 @@
-import { setProperties } from '@ember/object';
+import { get, setProperties } from '@ember/object';
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
@@ -6,7 +6,7 @@ export default Route.extend({
   headData: service(),
 
   afterModel() {
-    return setProperties(this.headData, {
+    return setProperties(get(this, 'headData'), {
       title: '404 - Ship Shape',
       description: 'Oops!',
       type: 'website',
