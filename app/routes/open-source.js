@@ -1,4 +1,4 @@
-import { get, setProperties } from '@ember/object';
+import { setProperties } from '@ember/object';
 import ENV from 'website/config/environment';
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
@@ -16,7 +16,7 @@ export default Route.extend({
   },
 
   afterModel() {
-    return setProperties(get(this, 'headData'), {
+    return setProperties(this.headData, {
       title: 'Ember Addons and Open Source - Ship Shape',
       description:
       'We collaborate extensively with the Ember community on all facets of Ember. ' +

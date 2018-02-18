@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 import RSVP from 'rsvp';
-import { get, setProperties } from '@ember/object';
+import { setProperties } from '@ember/object';
 import { inject as service } from '@ember/service';
 
 export default Route.extend({
@@ -8,7 +8,7 @@ export default Route.extend({
   markdownResolver: service(),
 
   model() {
-    return get(this, 'markdownResolver').tree('blog').then((tree) => {
+    return this.markdownResolver.tree('blog').then((tree) => {
       return new RSVP.Promise((resolve) => {
         const sortedPosts = tree.files.sortBy('attributes.date').reverse();
         resolve(sortedPosts);
@@ -17,7 +17,7 @@ export default Route.extend({
   },
 
   afterModel() {
-    return setProperties(get(this, 'headData'), {
+    return setProperties(this.headData, {
       title: 'Blog - Ship Shape',
       description: 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.',
       type: 'website',
