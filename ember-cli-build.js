@@ -15,7 +15,7 @@ module.exports = function(defaults) {
         'img/**/*',
         'svgs/**/*'
       ],
-      version: '20'
+      version: '21'
     },
     'ember-service-worker': {
       registrationStrategy: 'inline',
@@ -27,7 +27,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '20'
+      version: '21'
     },
     emberCliConcat: {
       js: {
@@ -38,17 +38,9 @@ module.exports = function(defaults) {
         concat: false
       }
     },
-    'ember-img-lazy': {
-      lazyFastBoot: true,
-      setSrcImmediately: true,
-      observerConfig: {
-        rootMargin: '100px 0px',
-        threshold: 0.01
-      }
-    },
     'ember-prism': {
       'components': ['scss', 'javascript', 'handlebars', 'http', 'json'],
-      'plugins': ['line-numbers', 'normalize-whitespace', 'show-language']
+      'plugins': [/*'line-numbers',*/ 'normalize-whitespace', 'show-language']
     },
     fingerprint: {
       extensions: ['js', 'css', 'map']

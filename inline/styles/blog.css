@@ -58,3 +58,7 @@
 .testing-ember-addons-in-an-app .hero.blog-post {
   background: url(../../img/blog/blog-post-8.jpg) no-repeat bottom center/cover;
 }
+
+.ember-3-1-testing-and-optional-features .hero.blog-post {
+  background: url(../../img/blog/blog-post-9.jpg) no-repeat bottom center/cover;
+}
