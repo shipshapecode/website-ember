@@ -76,7 +76,8 @@ module.exports = function(defaults) {
         'ember-validators/format.js',
         'ember-validators/presence.js'
       ]
-    }
+    },
+    vendorFiles: { 'jquery.js': null }
   });
 
   return app.toTree();
