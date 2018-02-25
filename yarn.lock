@@ -76,12 +76,26 @@
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@html-next/flexi-config/-/flexi-config-2.1.0.tgz#9ea95f784c23df75ae3e58697b303c52581c7a17"
 
+"@html-next/flexi-config@2.1.1", "@html-next/flexi-config@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@html-next/flexi-config/-/flexi-config-2.1.1.tgz#9118b36b8b3d05ef553052580cc610965efc2bf9"
+
 "@html-next/flexi-default-styles@^2.0.2", "@html-next/flexi-default-styles@^2.1.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@html-next/flexi-default-styles/-/flexi-default-styles-2.1.0.tgz#ee73964e22f7f4e562b8d79cb8e55dd2886f02c5"
   dependencies:
     "@html-next/flexi-config" "2.1.0"
     broccoli-merge-trees "^2.0.0"
+    broccoli-plugin "^1.3.0"
+    ember-cli-babel "^6.6.0"
+    ember-cli-sass "^7.0.0"
+
+"@html-next/flexi-default-styles@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@html-next/flexi-default-styles/-/flexi-default-styles-2.1.1.tgz#07ec865961492480667386ea4ee164db87aaf4f8"
+  dependencies:
+    "@html-next/flexi-config" "2.1.1"
+    broccoli-merge-trees "^3.0.0"
     broccoli-plugin "^1.3.0"
     ember-cli-babel "^6.6.0"
     ember-cli-sass "^7.0.0"
@@ -93,6 +107,14 @@
     "@html-next/flexi-config" "2.0.2"
     ember-cli-preprocess-registry "^3.0.0"
     rsvp "^3.2.0"
+
+"@html-next/flexi-dsl@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@html-next/flexi-dsl/-/flexi-dsl-2.1.0.tgz#a320eb1bbd38b8849696c0e5ba1c2b69feda966e"
+  dependencies:
+    "@html-next/flexi-config" "2.1.1"
+    ember-cli-preprocess-registry "^3.0.0"
+    rsvp "^4.8.0"
 
 "@html-next/flexi-layouts@^2.0.3":
   version "2.0.3"
@@ -108,6 +130,21 @@
     ember-cli-htmlbars "^2.0.1"
     ember-cli-preprocess-registry "^3.0.0"
     rsvp "^4.0.1"
+
+"@html-next/flexi-layouts@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@html-next/flexi-layouts/-/flexi-layouts-2.1.0.tgz#6cfe98eba30a70088d74dcc8b85053c1f5400105"
+  dependencies:
+    "@html-next/flexi-config" "2.1.1"
+    broccoli-funnel "^2.0.1"
+    broccoli-merge-trees "^3.0.0"
+    broccoli-plugin "^1.2.1"
+    chalk "^2.1.0"
+    debug "^3.0.1"
+    ember-cli-babel "^6.6.0"
+    ember-cli-htmlbars "^2.0.1"
+    ember-cli-preprocess-registry "^3.0.0"
+    rsvp "^4.0.0"
 
 JSONStream@^0.8.4:
   version "0.8.4"
@@ -1577,6 +1614,13 @@ broccoli-merge-trees@^2.0.0:
     broccoli-plugin "^1.3.0"
     merge-trees "^1.0.1"
 
+broccoli-merge-trees@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/broccoli-merge-trees/-/broccoli-merge-trees-3.0.0.tgz#90e4959f9e3c57cf1f04fab35152f3d849468d8b"
+  dependencies:
+    broccoli-plugin "^1.3.0"
+    merge-trees "^2.0.0"
+
 broccoli-middleware@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/broccoli-middleware/-/broccoli-middleware-1.0.0.tgz#92f4e1fb9a791ea986245a7077f35cc648dab097"
@@ -1749,7 +1793,7 @@ broccoli-uglify-sourcemap@^1.5.1:
     uglify-js "^2.7.0"
     walk-sync "^0.1.3"
 
-broccoli-uglify-sourcemap@^2.0.0:
+broccoli-uglify-sourcemap@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/broccoli-uglify-sourcemap/-/broccoli-uglify-sourcemap-2.0.2.tgz#f4a73112f1f56b46043e2e89cba5ce7762cddeb3"
   dependencies:
@@ -2051,6 +2095,10 @@ clean-css@^3.4.5:
   dependencies:
     commander "2.8.x"
     source-map "0.4.x"
+
+clean-up-path@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/clean-up-path/-/clean-up-path-1.0.0.tgz#de9e8196519912e749c9eaf67c13d64fac72a3e5"
 
 cli-cursor@^1.0.1:
   version "1.0.2"
@@ -2929,9 +2977,9 @@ ember-cli-fastboot@1.1.3:
     md5-hex "^2.0.0"
     silent-error "^1.0.0"
 
-ember-cli-flash@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/ember-cli-flash/-/ember-cli-flash-1.6.2.tgz#7c3527aa6016039fc63265135fc21501d1c2bde0"
+ember-cli-flash@^1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/ember-cli-flash/-/ember-cli-flash-1.6.3.tgz#837951a3a2c3c70f17cdf553c0ab4e41da62a73d"
   dependencies:
     ember-cli-babel "^6.10.0"
     ember-cli-htmlbars "^2.0.1"
@@ -3068,18 +3116,18 @@ ember-cli-qunit@^4.3.2:
     ember-cli-babel "^6.11.0"
     ember-qunit "^3.3.2"
 
-ember-cli-sass@7.1.4:
-  version "7.1.4"
-  resolved "https://registry.yarnpkg.com/ember-cli-sass/-/ember-cli-sass-7.1.4.tgz#cbe823b5bd7d686b11ab61169fda4f3e993456fd"
+ember-cli-sass@^7.0.0, ember-cli-sass@^7.1.1:
+  version "7.1.5"
+  resolved "https://registry.yarnpkg.com/ember-cli-sass/-/ember-cli-sass-7.1.5.tgz#2e9d800d9dda299fbb4649576375447209469717"
   dependencies:
     broccoli-funnel "^1.0.0"
     broccoli-merge-trees "^1.1.0"
     broccoli-sass-source-maps "^2.1.0"
     ember-cli-version-checker "^2.1.0"
 
-ember-cli-sass@^7.0.0, ember-cli-sass@^7.1.1:
-  version "7.1.5"
-  resolved "https://registry.yarnpkg.com/ember-cli-sass/-/ember-cli-sass-7.1.5.tgz#2e9d800d9dda299fbb4649576375447209469717"
+ember-cli-sass@^7.1.7:
+  version "7.1.7"
+  resolved "https://registry.yarnpkg.com/ember-cli-sass/-/ember-cli-sass-7.1.7.tgz#66899134788ec8d2406a45f5346d4db47a2aa012"
   dependencies:
     broccoli-funnel "^1.0.0"
     broccoli-merge-trees "^1.1.0"
@@ -3159,11 +3207,11 @@ ember-cli-tree-shaker@rwwagner90/ember-cli-tree-shaker#patch-1:
     broccoli-merge-trees "^2.0.0"
     ember-cli-dependency-graph "^0.1.2"
 
-ember-cli-uglify@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-uglify/-/ember-cli-uglify-2.0.0.tgz#b096727d7d1718acc9bfe5d1bc81ce26cafdf6ca"
+ember-cli-uglify@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/ember-cli-uglify/-/ember-cli-uglify-2.0.2.tgz#12becdaf1a2e6f0cdbd386b1d5f5a2d0540347d3"
   dependencies:
-    broccoli-uglify-sourcemap "^2.0.0"
+    broccoli-uglify-sourcemap "^2.0.1"
     lodash.defaultsdeep "^4.6.0"
 
 ember-cli-valid-component-name@^1.0.0:
@@ -3440,9 +3488,9 @@ ember-moment@^7.6.0:
     ember-getowner-polyfill "^2.0.1"
     ember-macro-helpers "^0.17.0"
 
-ember-native-dom-helpers@^0.5.10:
-  version "0.5.10"
-  resolved "https://registry.yarnpkg.com/ember-native-dom-helpers/-/ember-native-dom-helpers-0.5.10.tgz#9c7172e4ddfa5dd86830c46a936e2f8eca3e5896"
+ember-native-dom-helpers@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/ember-native-dom-helpers/-/ember-native-dom-helpers-0.6.2.tgz#ad1f82d64ac9abdd612022f4f390bdb6653b3d39"
   dependencies:
     broccoli-funnel "^1.1.0"
     ember-cli-babel "^6.6.0"
@@ -3593,9 +3641,9 @@ ember-smooth-scroll@0.0.0:
     fastboot-transform "^0.1.2"
     smooth-scroll "^12.1.5"
 
-ember-source@~3.1.0-beta.1:
-  version "3.1.0-beta.1"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.1.0-beta.1.tgz#68e77c3938ec27e8b0a3a15881117520a1d284bf"
+ember-source@~3.1.0-beta.2:
+  version "3.1.0-beta.2"
+  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.1.0-beta.2.tgz#c6f7e81ac9e0d3a509879c2be22538751aee7b4a"
   dependencies:
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"
@@ -4309,6 +4357,13 @@ flexi@^2.0.2:
     chalk "^2.1.0"
     semver "^5.4.1"
 
+flexi@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/flexi/-/flexi-2.1.0.tgz#1f229c20975bcb99b481d7ac47fe9e9b5129380f"
+  dependencies:
+    chalk "^2.1.0"
+    semver "^5.4.1"
+
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -4440,6 +4495,16 @@ fs-tree-diff@^0.5.2, fs-tree-diff@^0.5.3, fs-tree-diff@^0.5.4, fs-tree-diff@^0.5
     object-assign "^4.1.0"
     path-posix "^1.0.0"
     symlink-or-copy "^1.1.8"
+
+fs-updater@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/fs-updater/-/fs-updater-1.0.4.tgz#2329980f99ae9176e9a0e84f7637538a182ce63b"
+  dependencies:
+    can-symlink "^1.0.0"
+    clean-up-path "^1.0.0"
+    heimdalljs "^0.2.5"
+    heimdalljs-logger "^0.1.9"
+    rimraf "^2.6.2"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -4870,7 +4935,7 @@ heimdalljs-logger@^0.1.7, heimdalljs-logger@^0.1.9:
     debug "^2.2.0"
     heimdalljs "^0.2.0"
 
-heimdalljs@^0.2.0, heimdalljs@^0.2.1, heimdalljs@^0.2.3:
+heimdalljs@^0.2.0, heimdalljs@^0.2.1, heimdalljs@^0.2.3, heimdalljs@^0.2.5:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/heimdalljs/-/heimdalljs-0.2.5.tgz#6aa54308eee793b642cff9cf94781445f37730ac"
   dependencies:
@@ -6278,6 +6343,13 @@ merge-trees@^1.0.1:
     heimdalljs-logger "^0.1.7"
     rimraf "^2.4.3"
     symlink-or-copy "^1.0.0"
+
+merge-trees@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/merge-trees/-/merge-trees-2.0.0.tgz#a560d796e566c5d9b2c40472a2967cca48d85161"
+  dependencies:
+    fs-updater "^1.0.4"
+    heimdalljs "^0.2.5"
 
 merge@^1.1.3, merge@~1.2.0:
   version "1.2.0"
@@ -7788,7 +7860,7 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@^2.2.8, rimraf@^2.3.4, rimraf@^2.4.3, rimraf@^2.4.4, rimraf@^2.5.1, rimraf@^2.5.3, rimraf@^2.5.4, rimraf@^2.6.1:
+rimraf@2, rimraf@^2.2.8, rimraf@^2.3.4, rimraf@^2.4.3, rimraf@^2.4.4, rimraf@^2.5.1, rimraf@^2.5.3, rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.2.tgz#2ed8150d24a16ea8651e6d6ef0f47c4158ce7a36"
   dependencies:
@@ -7831,7 +7903,7 @@ rsvp@^3.0.14, rsvp@^3.0.16, rsvp@^3.0.17, rsvp@^3.0.18, rsvp@^3.0.21, rsvp@^3.0.
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.6.2.tgz#2e96491599a96cde1b515d5674a8f7a91452926a"
 
-rsvp@^4.0.1, rsvp@^4.6.1, rsvp@^4.7.0, rsvp@^4.8.1:
+rsvp@^4.0.0, rsvp@^4.0.1, rsvp@^4.6.1, rsvp@^4.7.0, rsvp@^4.8.0, rsvp@^4.8.1:
   version "4.8.1"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-4.8.1.tgz#168addb3963222de37ee351b70e3876bdb2ac285"
 
