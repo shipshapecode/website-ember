@@ -1,4 +1,4 @@
-import { get, setProperties } from '@ember/object';
+import { setProperties } from '@ember/object';
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
 
@@ -12,7 +12,7 @@ export default Route.extend({
   },
 
   afterModel() {
-    return setProperties(get(this, 'headData'), {
+    return setProperties(this.headData, {
       title: 'Ship Shape - Ember.js Code That Won\'t Sink',
       description:
       'Ship Shape is a Washington D.C. based software consultancy specializing in all things Ember. ' +

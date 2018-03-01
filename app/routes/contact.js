@@ -14,7 +14,7 @@ export default Route.extend({
   },
 
   afterModel() {
-    return setProperties(get(this, 'headData'), {
+    return setProperties(this.headData, {
       title: 'Contact Us - Ship Shape',
       description:
       'Let\'s create some amazing things together. We do Ember app development, Ember training, sponsored ' +
@@ -42,17 +42,17 @@ export default Route.extend({
           .catch(this._errorMessage.bind(this));
       } else {
         get(contact, 'errors').forEach((error) => {
-          get(this, 'flashMessages').danger(error.validation[0]);
+          this.flashMessages.danger(error.validation[0]);
         });
       }
     }
   },
 
   _successMessage() {
-    get(this, 'flashMessages').success('Thanks for contacting us! We\'ll be in touch shortly.');
+    this.flashMessages.success('Thanks for contacting us! We\'ll be in touch shortly.');
   },
 
   _errorMessage() {
-    get(this, 'flashMessages').danger('Something went wrong :(. Please refresh and try again.');
+    this.flashMessages.danger('Something went wrong :(. Please refresh and try again.');
   }
 });
