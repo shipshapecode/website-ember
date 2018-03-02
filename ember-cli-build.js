@@ -7,6 +7,10 @@ shim(EmberApp);
 
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
+    brotli: {
+      appendSuffix: false,
+      extensions: ['js', 'css', 'svg']
+    },
     'asset-cache': {
       include: [
         'assets/**/*',
