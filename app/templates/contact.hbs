@@ -9,7 +9,7 @@
 <page class="contact-form" id="contact-form">
   <centered>
     <form class="cd-form floating-labels"
-      {{action (route-action 'sendContactRequest' contact) on="submit"}}>
+      {{action (route-action 'sendContactRequest' model) on="submit"}} netlify>
       <fieldset>
         <legend>Personal Info</legend>
         <centered xs="12">
@@ -18,7 +18,7 @@
             labelText="Name"
             required=true
             type="text"
-            value=contact.name
+            value=model.name
           }}
         </centered>
 
@@ -28,7 +28,7 @@
             labelText="Company"
             required=false
             type="text"
-            value=contact.company
+            value=model.company
           }}
         </centered>
 
@@ -38,7 +38,7 @@
             labelText="Email"
             required=true
             type="email"
-            value=contact.email
+            value=model.email
           }}
         </centered>
       </fieldset>
@@ -48,7 +48,7 @@
 
         <centered xs="12">
           {{form-list
-            groupValue=contact.projectType
+            groupValue=model.projectType
             options=projectTypes
             type="radio"}}
         </centered>
@@ -59,7 +59,7 @@
             labelText="Project description"
             required=true
             textarea=true
-            value=contact.description
+            value=model.description
           }}
         </centered>
 
@@ -67,6 +67,7 @@
 
       <div>
         {{input
+          disabled=(v-get model 'isTruelyInvalid')
           type="submit"
           value="Send Message"}}
       </div>

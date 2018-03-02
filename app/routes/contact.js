@@ -1,16 +1,25 @@
-import { get, setProperties } from '@ember/object';
-import Changeset from 'ember-changeset';
+import EmberObject, { get, setProperties } from '@ember/object';
 import ContactValidations from '../validations/contact';
 import Route from '@ember/routing/route';
-import lookupValidator from 'ember-changeset-validations';
+import { getOwner } from '@ember/application';
 import { inject as service } from '@ember/service';
+import fetch from 'fetch';
 
 export default Route.extend({
   flashMessages: service(),
   headData: service(),
 
   model() {
-    return this.store.createRecord('contact');
+    return EmberObject.extend(ContactValidations).create(
+      getOwner(this).ownerInjection(),
+      {
+        company: null,
+        description: null,
+        email: null,
+        name: null,
+        projectType: 'oss'
+      }
+    );
   },
 
   afterModel() {
@@ -25,24 +34,23 @@ export default Route.extend({
     });
   },
 
-  setupController(controller, model) {
-    this._super(controller, model);
-    controller.set('contact', new Changeset(
-      model,
-      lookupValidator(ContactValidations),
-      ContactValidations
-    ));
-  },
-
   actions: {
     sendContactRequest(contact) {
-      if (get(contact, 'isValid')) {
-        return contact.save()
+      if (get(contact, 'validations.isValid')) {
+        const data = contact.getProperties('name', 'company', 'email', 'projectType', 'description');
+        data['form-name'] = 'contact';
+        const body = this._encode(data);
+
+        return fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body
+        })
           .then(this._successMessage.bind(this))
           .catch(this._errorMessage.bind(this));
       } else {
-        get(contact, 'errors').forEach((error) => {
-          this.flashMessages.danger(error.validation[0]);
+        get(contact, 'validations.errors').forEach((error) => {
+          this.flashMessages.danger(error.message);
         });
       }
     }
@@ -54,5 +62,17 @@ export default Route.extend({
 
   _errorMessage() {
     this.flashMessages.danger('Something went wrong :(. Please refresh and try again.');
+  },
+
+  /**
+   * Util function to encode data for netify forms
+   * @param data
+   * @returns {string}
+   * @private
+   */
+  _encode(data) {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
   }
 });

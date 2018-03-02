@@ -1,13 +1,11 @@
-import {
-  validatePresence,
-  validateFormat
-} from 'ember-changeset-validations/validators';
+import { validator, buildValidations } from 'ember-cp-validations';
 
-export default {
-  description: validatePresence(true),
+export default buildValidations({
+  description: validator('presence', true),
   email: [
-    validatePresence(true),
-    validateFormat({ type: 'email' })
+    validator('presence', true),
+    validator('format', { type: 'email' })
   ],
-  name: validatePresence(true)
-};
+  name: validator('presence', true),
+  projectType: validator('presence', true)
+});
