@@ -3041,6 +3041,12 @@ ember-cli-moment-shim@^3.5.0:
     moment "^2.18.1"
     moment-timezone "^0.5.13"
 
+ember-cli-netlify@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-netlify/-/ember-cli-netlify-0.0.0.tgz#6c8942c7f56325a37677035863c9f48b50889841"
+  dependencies:
+    fs-extra "^5.0.0"
+
 ember-cli-node-assets@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/ember-cli-node-assets/-/ember-cli-node-assets-0.2.2.tgz#d2d55626e7cc6619f882d7fe55751f9266022708"
@@ -3406,13 +3412,6 @@ ember-native-dom-helpers@^0.6.2:
   dependencies:
     broccoli-funnel "^1.1.0"
     ember-cli-babel "^6.6.0"
-
-ember-netlify@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/ember-netlify/-/ember-netlify-0.0.1.tgz#d7ec55833ca9dcaf2e209b800c5dc564b80478fa"
-  dependencies:
-    ember-cli-babel "^5.1.6"
-    fs-extra "^0.30.0"
 
 ember-prism@^0.2.0:
   version "0.2.0"

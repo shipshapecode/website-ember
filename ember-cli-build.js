@@ -9,7 +9,7 @@ module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
     brotli: {
       extensions: ['js', 'css', 'svg'],
-      keepUncompressed: true
+      appendSuffix: false
     },
     'asset-cache': {
       include: [
@@ -19,7 +19,7 @@ module.exports = function(defaults) {
         'img/**/*',
         'svgs/**/*'
       ],
-      version: '33'
+      version: '34'
     },
     'ember-service-worker': {
       registrationStrategy: 'inline',
@@ -31,7 +31,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '33'
+      version: '34'
     },
     emberCliConcat: {
       js: {
