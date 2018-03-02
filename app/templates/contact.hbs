@@ -8,10 +8,14 @@
 
 <page class="contact-form" id="contact-form">
   <centered>
-    <form class="cd-form floating-labels" name="contact"
+    <form class="cd-form floating-labels" name="contact" netlify-honeypot="bot-field"
       {{action (route-action 'sendContactRequest' model) on="submit"}} netlify>
       <fieldset>
         <legend>Personal Info</legend>
+        <centered xs="12" class="bot-field">
+          <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+        </centered>
+
         <centered xs="12">
           {{contact-input
             fieldName="name"
