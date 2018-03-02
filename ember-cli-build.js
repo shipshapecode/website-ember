@@ -8,8 +8,8 @@ shim(EmberApp);
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
     brotli: {
-      appendSuffix: false,
-      extensions: ['js', 'css', 'svg']
+      extensions: ['js', 'css', 'svg'],
+      keepUncompressed: true
     },
     'asset-cache': {
       include: [
@@ -19,7 +19,7 @@ module.exports = function(defaults) {
         'img/**/*',
         'svgs/**/*'
       ],
-      version: '32'
+      version: '33'
     },
     'ember-service-worker': {
       registrationStrategy: 'inline',
@@ -31,7 +31,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '32'
+      version: '33'
     },
     emberCliConcat: {
       js: {
