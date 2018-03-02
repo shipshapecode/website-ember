@@ -18,7 +18,7 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*'
       ],
-      version: '35'
+      version: '36'
     },
     'ember-service-worker': {
       registrationStrategy: 'inline',
@@ -30,7 +30,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '35'
+      version: '36'
     },
     emberCliConcat: {
       js: {
@@ -59,7 +59,6 @@ module.exports = function(defaults) {
         enabled: process.env.EMBER_ENV === 'production'
       },
       home: 'inline/styles/home.css',
-      loadCSS: 'inline/loadCSS.js',
       'loading-indicator': {
         file: 'inline/loading-indicator.html',
         enabled: false
