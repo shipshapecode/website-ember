@@ -8,7 +8,7 @@
 
 <page class="contact-form" id="contact-form">
   <centered>
-    <form class="cd-form floating-labels" name="ss-contact-form" netlify-honeypot="bot-field"
+    <form class="cd-form floating-labels" name="contact-us" netlify-honeypot="bot-field"
       {{action (route-action 'sendContactRequest' model) on="submit"}} netlify>
       <fieldset>
         <legend>Personal Info</legend>
@@ -59,7 +59,7 @@
 
         <centered xs="12">
           {{contact-input
-            fieldName="textarea"
+            fieldName="description"
             labelText="Project description"
             required=true
             textarea=true

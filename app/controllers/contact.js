@@ -5,17 +5,17 @@ export default Controller.extend({
   projectTypes: [
     {
       fieldName: 'oss',
-      name: 'project-type',
+      name: 'projectType',
       text: 'OSS'
     },
     {
       fieldName: 'training',
-      name: 'project-type',
+      name: 'projectType',
       text: 'Ember Training'
     },
     {
       fieldName: 'dev',
-      name: 'project-type',
+      name: 'projectType',
       text: 'Ember Development'
     }
   ]
