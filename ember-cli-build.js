@@ -16,10 +16,9 @@ module.exports = function(defaults) {
         'assets/**/*',
         'favicons/**/*',
         'fonts/**/*',
-        'img/**/*',
-        'svgs/**/*'
+        'img/**/*'
       ],
-      version: '34'
+      version: '35'
     },
     'ember-service-worker': {
       registrationStrategy: 'inline',
@@ -31,7 +30,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '34'
+      version: '35'
     },
     emberCliConcat: {
       js: {

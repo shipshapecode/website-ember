@@ -1,2 +1,4 @@
 /assets/*
   Content-Encoding: br
+/sw.js
+  Content-Encoding: br
