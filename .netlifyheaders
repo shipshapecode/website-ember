@@ -1,4 +1,6 @@
-/assets/*
+/*.css
   Content-Encoding: br
-/sw.js
+/*.js
+  Content-Encoding: br
+/*.svg
   Content-Encoding: br
