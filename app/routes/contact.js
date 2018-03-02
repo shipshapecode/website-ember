@@ -38,7 +38,7 @@ export default Route.extend({
     sendContactRequest(contact) {
       if (get(contact, 'validations.isValid')) {
         const data = contact.getProperties('name', 'company', 'email', 'projectType', 'description');
-        data['form-name'] = 'contact-form';
+        data['form-name'] = 'ss-contact-form';
         const body = this._encode(data);
 
         return fetch('/', {
