@@ -18,7 +18,7 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*'
       ],
-      version: '36'
+      version: '37'
     },
     'ember-service-worker': {
       registrationStrategy: 'inline',
@@ -30,7 +30,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '36'
+      version: '37'
     },
     emberCliConcat: {
       js: {
@@ -93,11 +93,11 @@ function buildPremberUrls() {
   // Build prember urls
   const urls = [
     '/',
-    '/ember-consulting',
-    '/open-source',
-    '/contact',
-    '/blog',
-    '/blog/author/rwwagner90'
+    '/ember-consulting/',
+    '/open-source/',
+    '/contact/',
+    '/blog/',
+    '/blog/author/rwwagner90/'
   ];
 
   const { extname } = require('path');
@@ -108,7 +108,7 @@ function buildPremberUrls() {
   const mdFiles = paths.filter(path => extname(path) === '.md')
     .map((path) => {
       const stripMD = path.replace(/\.md/, '');
-      return `/blog/${stripMD}`;
+      return `/blog/${stripMD}/`;
     });
 
   mdFiles.forEach((file) => {
