@@ -9,3 +9,9 @@
 .hero-subheader {
   font-size: 5vw;
 }
+
+.nav-trigger-container {
+  backface-visibility: hidden;
+  left: 50%;
+  transform: translateX(-50%) translateZ(0);
+}
