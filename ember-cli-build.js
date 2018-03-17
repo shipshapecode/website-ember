@@ -21,7 +21,7 @@ module.exports = function(defaults) {
       version: '37'
     },
     'ember-service-worker': {
-      registrationStrategy: 'inline',
+      // registrationStrategy: 'inline',
       versionStrategy: 'every-build'
     },
     'esw-cache-fallback': {
