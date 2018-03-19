@@ -3524,9 +3524,9 @@ ember-service-worker-cache-fallback@^0.6.1:
     broccoli-merge-trees "^1.2.1"
     broccoli-plugin "^1.3.0"
 
-ember-service-worker-prember@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/ember-service-worker-prember/-/ember-service-worker-prember-0.1.1.tgz#544235a5299621738a72b3ed51546515d153559d"
+ember-service-worker-prember@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/ember-service-worker-prember/-/ember-service-worker-prember-0.2.0.tgz#6c372decde73befbc3548c18cbbb555b660b6b7d"
   dependencies:
     broccoli-merge-trees "^1.2.1"
     broccoli-plugin "^1.3.0"
@@ -7296,9 +7296,9 @@ prember@*:
     fastboot "^1.1.0"
     mkdirp "^0.5.1"
 
-prember@rwwagner90/prember#9f8db57273914960c5f20fd0ee1433c364e4f595:
+prember@^0.3.0:
   version "0.3.0"
-  resolved "https://codeload.github.com/rwwagner90/prember/tar.gz/9f8db57273914960c5f20fd0ee1433c364e4f595"
+  resolved "https://registry.yarnpkg.com/prember/-/prember-0.3.0.tgz#cc32a6a7f71535ebe7bee2351f8224cb4c1b2dd6"
   dependencies:
     broccoli-debug "^0.6.3"
     broccoli-merge-trees "^2.0.0"
