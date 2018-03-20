@@ -1,9 +1,8 @@
-import Component from '@ember/component';
+import { CompatComponent as Component } from 'ember-glimmer-component';
 import { map, sort } from '@ember/object/computed';
 
 export default Component.extend({
-  tagName: 'page',
-  classNames: ['portfolio-container'],
+  tagName: '',
 
   projects: sort('unsortedProjects', 'projectSorting'),
 

@@ -1,7 +1,4 @@
-import Component from '@ember/component';
+import { CompatComponent as Component } from 'ember-glimmer-component';
 
 export default Component.extend({
-  tagName: 'page',
-  classNames: ['hero'],
-  classNameBindings: ['heroClasses']
 });

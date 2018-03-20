@@ -1,6 +1,7 @@
-<centered>
-  {{yield}}
-</centered>
+<page class="{{this.styleNamespace}} hero {{@heroClasses}}">
+  <centered>
+    {{yield}}
+  </centered>
 
-{{scroll-suggest href=scrollToHref}}
-
+  {{scroll-suggest href=scrollToHref}}
+</page>

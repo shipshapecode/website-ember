@@ -18,11 +18,7 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*'
       ],
-      version: '37'
-    },
-    'ember-service-worker': {
-      // registrationStrategy: 'inline',
-      versionStrategy: 'every-build'
+      version: '38'
     },
     'esw-cache-fallback': {
       patterns: [
@@ -30,7 +26,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '37'
+      version: '38'
     },
     emberCliConcat: {
       js: {
@@ -43,7 +39,7 @@ module.exports = function(defaults) {
     },
     'ember-prism': {
       'components': ['scss', 'javascript', 'handlebars', 'http', 'json'],
-      'plugins': [/*'line-numbers',*/ 'normalize-whitespace', 'show-language']
+      'plugins': ['normalize-whitespace', 'show-language']
     },
     fingerprint: {
       extensions: ['js', 'css', 'map']

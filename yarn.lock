@@ -3355,6 +3355,13 @@ ember-getowner-polyfill@^2.0.0, ember-getowner-polyfill@^2.0.1, ember-getowner-p
     ember-cli-version-checker "^2.1.0"
     ember-factory-for-polyfill "^1.3.1"
 
+ember-glimmer-component@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/ember-glimmer-component/-/ember-glimmer-component-0.4.1.tgz#f79703da5e760a72ebbf2e8c14dc432260a66319"
+  dependencies:
+    ember-cli-babel "^6.3.0"
+    ember-cli-htmlbars "^2.0.1"
+
 ember-hammertime@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/ember-hammertime/-/ember-hammertime-1.3.0.tgz#8d709b8dac90a82fc1428c2a91010509cba82d01"
@@ -3558,9 +3565,9 @@ ember-smooth-scroll@0.0.0:
     fastboot-transform "^0.1.2"
     smooth-scroll "^12.1.5"
 
-ember-source@~3.1.0-beta.3:
-  version "3.1.0-beta.3"
-  resolved "https://registry.yarnpkg.com/ember-source/-/ember-source-3.1.0-beta.3.tgz#b798c36a23f42815e8fd56e26cb7224129d27912"
+"ember-source@https://s3.amazonaws.com/builds.emberjs.com/canary/shas/ba736db6872866c05cbe738f2ae5bc8c08bdfaeb.tgz":
+  version "3.2.0-canary"
+  resolved "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/ba736db6872866c05cbe738f2ae5bc8c08bdfaeb.tgz#c9ee29916c89f52158406c86e085235415646267"
   dependencies:
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"
