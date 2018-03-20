@@ -67,7 +67,7 @@
     "ember-service-worker": "^0.6.8",
     "ember-service-worker-asset-cache": "0.6.2",
     "ember-service-worker-cache-fallback": "^0.6.1",
-    "ember-service-worker-prember": "^0.2.0",
+    "ember-service-worker-prember": "^0.2.1",
     "ember-smooth-scroll": "0.0.0",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/ba736db6872866c05cbe738f2ae5bc8c08bdfaeb.tgz",
     "ember-svg-jar": "^0.12.0",
