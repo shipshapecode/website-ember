@@ -3348,6 +3348,13 @@ ember-fetch@^3.4.4:
     node-fetch "^2.0.0-alpha.9"
     whatwg-fetch "^2.0.3"
 
+ember-get-config@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/ember-get-config/-/ember-get-config-0.2.4.tgz#118492a2a03d73e46004ed777928942021fe1ecd"
+  dependencies:
+    broccoli-file-creator "^1.1.1"
+    ember-cli-babel "^6.3.0"
+
 ember-getowner-polyfill@^2.0.0, ember-getowner-polyfill@^2.0.1, ember-getowner-polyfill@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/ember-getowner-polyfill/-/ember-getowner-polyfill-2.2.0.tgz#38e7dccbcac69d5ec694000329ec0b2be651d2b2"
@@ -3362,14 +3369,15 @@ ember-glimmer-component@^0.4.1:
     ember-cli-babel "^6.3.0"
     ember-cli-htmlbars "^2.0.1"
 
-ember-hammertime@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/ember-hammertime/-/ember-hammertime-1.3.0.tgz#8d709b8dac90a82fc1428c2a91010509cba82d01"
+ember-hammertime@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/ember-hammertime/-/ember-hammertime-1.4.1.tgz#1c48078bccc9c0b346aebf443b5656ad101ed771"
   dependencies:
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"
     broccoli-stew "^1.5.0"
-    ember-cli-babel "^6.8.2"
+    ember-cli-babel "^6.6.0"
+    ember-get-config "^0.2.4"
     hammer-timejs "^1.1.0"
 
 ember-headroom@^1.1.1:
@@ -3538,9 +3546,9 @@ ember-service-worker-prember@^0.2.1:
     broccoli-merge-trees "^1.2.1"
     broccoli-plugin "^1.3.0"
 
-ember-service-worker@^0.6.8:
-  version "0.6.9"
-  resolved "https://registry.yarnpkg.com/ember-service-worker/-/ember-service-worker-0.6.9.tgz#e8a03994ec183334a593633f44a234c5890a457d"
+ember-service-worker@^0.6.11:
+  version "0.6.11"
+  resolved "https://registry.yarnpkg.com/ember-service-worker/-/ember-service-worker-0.6.11.tgz#c22037fe1e1557ad4f5f4763a3b06c753ff99987"
   dependencies:
     broccoli-babel-transpiler "^5.5.0"
     broccoli-caching-writer "^3.0.3"
@@ -3553,7 +3561,7 @@ ember-service-worker@^0.6.8:
     ember-cli-babel "^5.1.6"
     exists-sync "0.0.3"
     glob "^7.1.1"
-    hash-for-dep "^1.0.2"
+    hash-for-dep "^1.2.3"
     rollup-plugin-replace "^1.1.1"
 
 ember-smooth-scroll@0.0.0:
@@ -3744,9 +3752,9 @@ escodegen@^1.6.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-plugin-ember@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-5.0.3.tgz#9f5e2048ab3ddc1548d4d17bf318cf1bb5cf37f1"
+eslint-plugin-ember@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-5.1.0.tgz#fb96abd2d8bf105678a0aa81dadd99d7ca441ba1"
   dependencies:
     ember-rfc176-data "^0.2.7"
     require-folder-tree "^1.4.5"
@@ -4814,7 +4822,7 @@ has@^1.0.1:
   dependencies:
     function-bind "^1.0.2"
 
-hash-for-dep@^1.0.2:
+hash-for-dep@^1.0.2, hash-for-dep@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/hash-for-dep/-/hash-for-dep-1.2.3.tgz#5ec69fca32c23523972d52acb5bb65ffc3664cab"
   dependencies:
