@@ -73,6 +73,8 @@ module.exports = function(defaults) {
     ]
   });
 
+  app.import('node_modules/highlight.js/styles/ocean.css');
+
   return app.toTree();
 };
 
