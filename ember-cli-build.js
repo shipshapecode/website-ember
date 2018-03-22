@@ -37,10 +37,6 @@ module.exports = function(defaults) {
         concat: false
       }
     },
-    'ember-prism': {
-      'components': ['scss', 'javascript', 'handlebars', 'http', 'json'],
-      'plugins': ['normalize-whitespace', 'show-language']
-    },
     fingerprint: {
       extensions: ['js', 'css', 'map']
     },
@@ -69,6 +65,12 @@ module.exports = function(defaults) {
       enabled: false
     },
     vendorFiles: { 'jquery.js': null }
+  });
+
+  app.import('node_modules/showdown-highlight/lib/index.js', {
+    using: [
+      { transformation: 'cjs', as: 'showdown-highlight'}
+    ]
   });
 
   return app.toTree();
