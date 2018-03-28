@@ -68,13 +68,6 @@ module.exports = function(defaults) {
     SRI: {
       enabled: false
     },
-    treeShaking: {
-      enabled: true,
-      include: [
-        'ember-validators/format.js',
-        'ember-validators/presence.js'
-      ]
-    },
     vendorFiles: { 'jquery.js': null }
   });
 
