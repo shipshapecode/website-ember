@@ -154,7 +154,7 @@ acorn@^3.0.4:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-3.3.0.tgz#45e37fb39e8da3f25baee3ff5369e2bb5f22017a"
 
-acorn@^5.1.1, acorn@^5.2.1, acorn@^5.5.0:
+acorn@^5.2.1, acorn@^5.5.0:
   version "5.5.3"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.5.3.tgz#f473dd47e0277a08e28e9bec5aeeb04751f0b8c9"
 
@@ -212,12 +212,6 @@ alter@~0.2.0:
 amd-name-resolver@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/amd-name-resolver/-/amd-name-resolver-0.0.7.tgz#814301adfe8a2f109f6e84d5e935196efb669615"
-  dependencies:
-    ensure-posix-path "^1.0.1"
-
-amd-name-resolver@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/amd-name-resolver/-/amd-name-resolver-0.0.6.tgz#d3e4ba2dfcaab1d820c1be9de947c67828cfe595"
   dependencies:
     ensure-posix-path "^1.0.1"
 
@@ -1446,7 +1440,7 @@ broccoli-config-replace@^1.1.2:
     debug "^2.2.0"
     fs-extra "^0.24.0"
 
-broccoli-debug@^0.6.1, broccoli-debug@^0.6.2, broccoli-debug@^0.6.3, broccoli-debug@^0.6.4:
+broccoli-debug@^0.6.1, broccoli-debug@^0.6.2, broccoli-debug@^0.6.3:
   version "0.6.4"
   resolved "https://registry.yarnpkg.com/broccoli-debug/-/broccoli-debug-0.6.4.tgz#986eb3d2005e00e3bb91f9d0a10ab137210cd150"
   dependencies:
@@ -2949,15 +2943,6 @@ ember-cli-dependency-checker@^2.1.0:
     resolve "^1.5.0"
     semver "^5.3.0"
 
-ember-cli-dependency-graph@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/ember-cli-dependency-graph/-/ember-cli-dependency-graph-0.1.2.tgz#7a7a522fe9eee60f1f2e701db273838b89644acf"
-  dependencies:
-    debug "^3.1.0"
-    mr-dep-walk kellyselden/mr-dep-walk#sourceType
-    resolve "^1.5.0"
-    walk-sync "^0.3.2"
-
 ember-cli-eslint@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/ember-cli-eslint/-/ember-cli-eslint-4.2.3.tgz#2844d3f5e8184f19b2d7132ba99eb0b370b55598"
@@ -3197,16 +3182,6 @@ ember-cli-test-loader@^2.2.0:
   resolved "https://registry.yarnpkg.com/ember-cli-test-loader/-/ember-cli-test-loader-2.2.0.tgz#3fb8d5d1357e4460d3f0a092f5375e71b6f7c243"
   dependencies:
     ember-cli-babel "^6.8.1"
-
-ember-cli-tree-shaker@rwwagner90/ember-cli-tree-shaker#patch-1:
-  version "0.1.4"
-  resolved "https://codeload.github.com/rwwagner90/ember-cli-tree-shaker/tar.gz/98eb60996c5b930353bb6f4c9fff0e5cd44eb4ef"
-  dependencies:
-    broccoli-concat "^3.2.2"
-    broccoli-debug "^0.6.4"
-    broccoli-funnel "^2.0.1"
-    broccoli-merge-trees "^2.0.0"
-    ember-cli-dependency-graph "^0.1.2"
 
 ember-cli-uglify@^2.0.2:
   version "2.1.0"
@@ -3645,9 +3620,9 @@ ember-string-ishtmlsafe-polyfill@^2.0.0:
   dependencies:
     ember-cli-version-checker "^1.2.0"
 
-ember-svg-jar@rwwagner90/ember-svg-jar#d7cc7ff6fcfc52279661455df6b550855295cbd0:
+ember-svg-jar@ivanvotti/ember-svg-jar#79ea044c836ea63f53df04d445dc8bf67c57863e:
   version "1.0.0"
-  resolved "https://codeload.github.com/rwwagner90/ember-svg-jar/tar.gz/d7cc7ff6fcfc52279661455df6b550855295cbd0"
+  resolved "https://codeload.github.com/ivanvotti/ember-svg-jar/tar.gz/79ea044c836ea63f53df04d445dc8bf67c57863e"
   dependencies:
     broccoli-caching-writer "^2.3.1"
     broccoli-funnel "^1.0.1"
@@ -4391,14 +4366,6 @@ fs-extra@^2.0.0:
   dependencies:
     graceful-fs "^4.1.2"
     jsonfile "^2.1.0"
-
-fs-extra@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-3.0.1.tgz#3794f378c58b342ea7dbbb23095109c4b3b62291"
-  dependencies:
-    graceful-fs "^4.1.2"
-    jsonfile "^3.0.0"
-    universalify "^0.1.0"
 
 fs-extra@^4.0.2, fs-extra@^4.0.3:
   version "4.0.3"
@@ -5570,12 +5537,6 @@ jsonfile@^2.1.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonfile@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-3.0.1.tgz#a5ecc6f65f53f662c4415c7675a0331d0992ec66"
-  optionalDependencies:
-    graceful-fs "^4.1.6"
-
 jsonfile@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
@@ -6496,14 +6457,6 @@ morgan@^1.8.1:
 mout@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/mout/-/mout-1.1.0.tgz#0b29d41e6a80fa9e2d4a5be9d602e1d9d02177f6"
-
-mr-dep-walk@kellyselden/mr-dep-walk#sourceType:
-  version "1.3.1"
-  resolved "https://codeload.github.com/kellyselden/mr-dep-walk/tar.gz/ada8abb676597804b0dd659710b80dffd663b194"
-  dependencies:
-    acorn "^5.1.1"
-    amd-name-resolver "^0.0.6"
-    fs-extra "^3.0.1"
 
 ms@0.7.1:
   version "0.7.1"

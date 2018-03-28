@@ -69,7 +69,7 @@
     "ember-service-worker-prember": "^0.3.0",
     "ember-smooth-scroll": "0.0.0",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/ba736db6872866c05cbe738f2ae5bc8c08bdfaeb.tgz",
-    "ember-svg-jar": "rwwagner90/ember-svg-jar#d7cc7ff6fcfc52279661455df6b550855295cbd0",
+    "ember-svg-jar": "ivanvotti/ember-svg-jar#79ea044c836ea63f53df04d445dc8bf67c57863e",
     "eslint-plugin-ember": "^5.1.0",
     "flexi": "^2.1.0",
     "loader.js": "^4.2.3",
