@@ -76,8 +76,7 @@
     "prember": "^0.3.0",
     "prember-middleware": "^0.1.0",
     "prember-sitemap-generator": "^0.0.3",
-    "showdown-highlight": "^2.0.0",
-    "showdown-highlightjs-extension": "^0.1.2",
+    "showdown-highlight": "rwwagner90/showdown-highlight#08063bd94c3f184863e1296bf0baabc13e7cbeeb",
     "stylelint-config-ship-shape": "^0.4.0"
   },
   "fastbootDependencies": [
