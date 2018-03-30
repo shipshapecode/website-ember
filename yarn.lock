@@ -1298,12 +1298,13 @@ breakable@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/breakable/-/breakable-1.0.0.tgz#784a797915a38ead27bad456b5572cb4bbaa78c1"
 
-broccoli-asset-rev@^2.4.5:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/broccoli-asset-rev/-/broccoli-asset-rev-2.6.0.tgz#0633fc3a0b2ba0c2c1d56fa9feb7b331fc83be6d"
+broccoli-asset-rev@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/broccoli-asset-rev/-/broccoli-asset-rev-2.7.0.tgz#c73da1d97c4180366fa442a87624ca1b7fb99161"
   dependencies:
     broccoli-asset-rewrite "^1.1.0"
     broccoli-filter "^1.2.2"
+    broccoli-persistent-filter "^1.4.3"
     json-stable-stringify "^1.0.0"
     minimatch "^3.0.4"
     rsvp "^3.0.6"
@@ -2952,9 +2953,9 @@ ember-cli-eslint@^4.2.3:
     rsvp "^4.6.1"
     walk-sync "^0.3.0"
 
-ember-cli-fastboot@1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/ember-cli-fastboot/-/ember-cli-fastboot-1.1.3.tgz#2ca968beaefd6f45e021242b6fe9d74d213f5045"
+ember-cli-fastboot@ember-fastboot/ember-cli-fastboot#158af9ec00edf58db71524bea04d224705ef5d19:
+  version "1.1.4-beta.1"
+  resolved "https://codeload.github.com/ember-fastboot/ember-cli-fastboot/tar.gz/158af9ec00edf58db71524bea04d224705ef5d19"
   dependencies:
     broccoli-concat "^3.2.2"
     broccoli-funnel "^2.0.0"
@@ -2965,7 +2966,7 @@ ember-cli-fastboot@1.1.3:
     ember-cli-lodash-subset "2.0.1"
     ember-cli-preprocess-registry "^3.1.0"
     ember-cli-version-checker "^2.1.0"
-    fastboot "^1.1.3"
+    fastboot "^1.1.4-beta.1"
     fastboot-express-middleware "^1.1.0"
     fastboot-transform "^0.1.2"
     fs-extra "^4.0.2"
@@ -3460,8 +3461,8 @@ ember-prism@^0.2.0:
     prismjs "^1.8.3"
 
 ember-qunit@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-3.3.2.tgz#cb48e9deaffa3b4c90983f28c5cf8590894c8ea3"
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/ember-qunit/-/ember-qunit-3.4.0.tgz#47a60c2b889cd4b4a46380bf9da2b10115c0eae7"
   dependencies:
     "@ember/test-helpers" "^0.7.18"
     broccoli-funnel "^2.0.1"
@@ -3569,9 +3570,9 @@ ember-service-worker-prember@^0.3.0:
     broccoli-plugin "^1.3.0"
     rev-hash "^2.0.0"
 
-ember-service-worker@0.6.11:
-  version "0.6.11"
-  resolved "https://registry.yarnpkg.com/ember-service-worker/-/ember-service-worker-0.6.11.tgz#c22037fe1e1557ad4f5f4763a3b06c753ff99987"
+ember-service-worker@^0.6.12:
+  version "0.6.12"
+  resolved "https://registry.yarnpkg.com/ember-service-worker/-/ember-service-worker-0.6.12.tgz#28c89c3d47f85a77511406dfe4b790220e10b13c"
   dependencies:
     broccoli-babel-transpiler "^5.5.0"
     broccoli-caching-writer "^3.0.3"
@@ -3620,9 +3621,9 @@ ember-string-ishtmlsafe-polyfill@^2.0.0:
   dependencies:
     ember-cli-version-checker "^1.2.0"
 
-ember-svg-jar@ivanvotti/ember-svg-jar#79ea044c836ea63f53df04d445dc8bf67c57863e:
-  version "1.0.0"
-  resolved "https://codeload.github.com/ivanvotti/ember-svg-jar/tar.gz/79ea044c836ea63f53df04d445dc8bf67c57863e"
+ember-svg-jar@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ember-svg-jar/-/ember-svg-jar-1.1.1.tgz#d95d4c335ed98984ba4c5808280404a5968b78b3"
   dependencies:
     broccoli-caching-writer "^2.3.1"
     broccoli-funnel "^1.0.1"
@@ -4142,6 +4143,19 @@ fastboot-transform@^0.1.2:
 fastboot@^1.1.2, fastboot@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/fastboot/-/fastboot-1.1.3.tgz#56c5f56415c5ae8de2db539c0d3ecbcd65538f8b"
+  dependencies:
+    chalk "^2.0.1"
+    cookie "^0.3.1"
+    debug "^3.0.0"
+    exists-sync "0.0.4"
+    najax "^1.0.2"
+    rsvp "^4.7.0"
+    simple-dom "^1.0.0"
+    source-map-support "^0.5.0"
+
+fastboot@^1.1.4-beta.1:
+  version "1.1.4-beta.1"
+  resolved "https://registry.yarnpkg.com/fastboot/-/fastboot-1.1.4-beta.1.tgz#860f8af2bd032b3a7477fdf6e1a64b034a02829f"
   dependencies:
     chalk "^2.0.1"
     cookie "^0.3.1"
@@ -4909,7 +4923,7 @@ htmlparser2@~3.8.1:
     entities "1.0"
     readable-stream "1.1"
 
-http-errors@1.6.2, http-errors@~1.6.2:
+http-errors@1.6.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.6.2.tgz#0a002cc85707192a7e7946ceedc11155f60ec736"
   dependencies:
@@ -4917,6 +4931,15 @@ http-errors@1.6.2, http-errors@~1.6.2:
     inherits "2.0.3"
     setprototypeof "1.0.3"
     statuses ">= 1.3.1 < 2"
+
+http-errors@~1.6.2:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.6.3.tgz#8b55680bb4be283a0b5bf4ea2e38580be1d9320d"
+  dependencies:
+    depd "~1.1.2"
+    inherits "2.0.3"
+    setprototypeof "1.1.0"
+    statuses ">= 1.4.0 < 2"
 
 http-parser-js@>=0.4.0:
   version "0.4.11"
@@ -7259,9 +7282,23 @@ prember-sitemap-generator@^0.0.3:
     broccoli-funnel "^2.0.1"
     chalk "^2.3.0"
 
-prember@*, prember@^0.3.0:
+prember@*:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/prember/-/prember-0.3.0.tgz#cc32a6a7f71535ebe7bee2351f8224cb4c1b2dd6"
+  dependencies:
+    broccoli-debug "^0.6.3"
+    broccoli-merge-trees "^2.0.0"
+    broccoli-plugin "^1.3.0"
+    chalk "^2.3.0"
+    denodeify "^1.2.1"
+    ember-cli-babel "^6.6.0"
+    express "^4.16.2"
+    fastboot "^1.1.3"
+    mkdirp "^0.5.1"
+
+prember@^0.4.0-alpha.0:
+  version "0.4.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/prember/-/prember-0.4.0-alpha.0.tgz#6ddc166b3494eb40ded454b32d2f0aa2e04075de"
   dependencies:
     broccoli-debug "^0.6.3"
     broccoli-merge-trees "^2.0.0"
@@ -8452,7 +8489,7 @@ static-extend@^0.1.1:
     define-property "^0.2.5"
     object-copy "^0.1.0"
 
-"statuses@>= 1.3.1 < 2":
+"statuses@>= 1.3.1 < 2", "statuses@>= 1.4.0 < 2":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
 
