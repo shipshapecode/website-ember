@@ -59,3 +59,7 @@
 .ember-3-1-testing-and-optional-features .hero.blog-post {
   background: url(/img/blog/blog-post-9.jpg) no-repeat bottom center/cover;
 }
+
+.static-blogs-with-prember-and-markdown .hero.blog-post {
+  background: url(/img/blog/blog-post-10.jpg) no-repeat bottom center/cover;
+}
