@@ -7,6 +7,15 @@ tags: ember, ember.js, ember inspector
 title: Ember Inspector - The Journey so Far
 ---
 
+Did you know the Ember Inspector is actually an Ember app itself? I personally had no idea, but found this to be amazingly helpful,
+when trying to jump in and help with the development of new features. It is also very cool that you can work on an Ember app, that 
+literally benefits all Ember developers. Learn more about how it introspects your code, and the architecture behind that capability, 
+after the break.
+
+<centered>
+![Yo dawg, I heard you like inspecting Ember apps, so we made Ember Inspector an Ember app, so you can inspect your Ember app, with your Ember app.](/img/blog/inspector.jpg)
+</centered>
+
 ## Getting Started with Ember Inspector
 
 I'm always looking for new ways to help out the [Ember Teams](https://www.emberjs.com/team/), specifically
@@ -58,4 +67,11 @@ Some of the things we had to tackle were:
   * Writing our own custom setup and teardown test helpers
   * Updating from `smoke-and-mirrors` to standalone [vertical-collection](https://github.com/html-next/vertical-collection)
   * Fixing incompatibilities with newer glimmer private APIs
+  
+## The Future of Ember Inspector  
+
+The future is very bright for Ember Inspector, and I just merged in some nice style updates today. There is also a PR open to support 
+the DevTools dark theme, which has been a requested feature for a long time. The new component tree, which we teased in
+[The Ember.js Times](https://the-emberjs-times.ongoodbits.com/2018/03/30/issue-40), is also rapidly approaching completion of its 
+first iteration.
  
