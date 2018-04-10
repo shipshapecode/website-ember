@@ -64,7 +64,7 @@ on some of the inner workings of Ember, which ultimately culimated in one [massi
 Some of the things we had to tackle were:
   * Converting usages of `__container__` to use the `this.owner` API and make that function correctly with Ember 2.8+
   * Using more modern testing standards and using `@ember/test-helpers`, rather than `ember-native-dom-helpers`
-  * Writing our own custom setup and teardown test helpers
+  * Writing our own custom setup and tear down test helpers
   * Updating from `smoke-and-mirrors` to standalone [vertical-collection](https://github.com/html-next/vertical-collection)
   * Fixing incompatibilities with newer glimmer private APIs
   
