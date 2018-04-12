@@ -65,6 +65,7 @@ module.exports = function(defaults) {
       baseRoot: 'https://shipshape.io',
       urls: buildPremberUrls()
     },
+    rssFeed: require('./config/rss-feed'),
     SRI: {
       enabled: false
     },
