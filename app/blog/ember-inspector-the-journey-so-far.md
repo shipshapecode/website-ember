@@ -1,9 +1,12 @@
 ---
 author: Robert Wagner
 authorId: rwwagner90
-date: 2018-04-09
+categories: 
+  - ember
+  - ember.js
+  - ember inspector
+date: '2018-04-09'
 slug: ember-inspector-the-journey-so-far
-tags: ember, ember.js, ember inspector
 title: Ember Inspector - The Journey so Far
 ---
 

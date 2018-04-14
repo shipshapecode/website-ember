@@ -1,9 +1,15 @@
 ---
 author: Robert Wagner
 authorId: rwwagner90
-date: 2017-04-29
+categories: 
+  - babili
+  - ember
+  - ember.js
+  - ember-targets
+  - targets 
+  - uglify
+date: '2017-04-29'
 slug: aiming-for-targets-with-ember
-tags: ember, ember.js, targets, ember-targets, uglify, babili
 title: Aiming for Targets with Ember
 ---
 

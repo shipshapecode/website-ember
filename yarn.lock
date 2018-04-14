@@ -6379,6 +6379,10 @@ markdown-table@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.1.tgz#4b3dd3a133d1518b8ef0dbc709bf2a1b4824bc8c"
 
+marked@0.3.19:
+  version "0.3.19"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
+
 matcher-collection@^1.0.0, matcher-collection@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/matcher-collection/-/matcher-collection-1.0.5.tgz#2ee095438372cb8884f058234138c05c644ec339"
@@ -7444,15 +7448,16 @@ prember-middleware@^0.1.0:
     ember-cli-babel "^6.6.0"
     prember "*"
 
-prember-rss-feed@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/prember-rss-feed/-/prember-rss-feed-1.0.0.tgz#6370c33e3aa0a14577665846152f8a0d5ec9ad40"
+prember-rss-feed@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/prember-rss-feed/-/prember-rss-feed-1.1.0.tgz#cad8e99828808301893c5ef1cd0cb3147f68f51a"
   dependencies:
     broccoli-file-creator "1.1.1"
     broccoli-funnel "2.0.1"
     chalk "2.3.2"
     ember-cli-babel "^6.6.0"
     front-matter "2.3.0"
+    marked "0.3.19"
     moment "2.22.0"
     rss "^1.2.2"
 

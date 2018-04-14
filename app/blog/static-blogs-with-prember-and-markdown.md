@@ -1,9 +1,17 @@
 ---
 author: Robert Wagner
 authorId: rwwagner90
-date: 2018-04-04
+categories: 
+  - blog
+  - ember
+  - fastboot
+  - ghost
+  - markdown
+  - prember
+  - prerender
+  - static
+date: '2018-04-04'
 slug: static-blogs-with-prember-and-markdown
-tags: ember, fastboot, static, prember, prerender, blog, ghost, markdown
 title: Static Blogs with Prember and Markdown
 ---
 

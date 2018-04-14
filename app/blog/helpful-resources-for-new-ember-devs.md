@@ -1,9 +1,13 @@
 ---
 author: Robert Wagner
 authorId: rwwagner90
-date: 2016-06-30
+categories: 
+  - ember
+  - ember.js
+  - ember resources
+  - ember tutorials
+date: '2016-06-30'
 slug: helpful-resources-for-new-ember-devs
-tags: ember, ember.js, ember resources, ember tutorials
 title: Helpful Resources for New Ember Devs
 ---
 
