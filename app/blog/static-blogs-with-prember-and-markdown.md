@@ -227,7 +227,7 @@ things like:
   - Offline support with service workers
   - Forcing trailing slashes in routes
   - Maintaing scroll position with ember-router-scroll
-  - Defining meta and tags similar to Ghost
+  - [Defining meta and tags similar to Ghost](https://shipshape.io/blog/ember-meta-tags-seo-social/)
   - Further SEO and structured data tweaks
   
 Thanks for reading! I hope this helps, and stay tuned for the followup posts!
