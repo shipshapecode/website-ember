@@ -32,6 +32,12 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['prember-meta'] = {
+    description: 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.',
+    title: 'Blog - Ship Shape',
+    url: 'https://shipshape.io/blog/'
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
