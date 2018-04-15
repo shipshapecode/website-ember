@@ -28,7 +28,7 @@ module.exports = function(environment) {
 
   ENV['ember-cli-markdown-resolver'] = {
     folders: {
-      blog: 'app/blog'
+      blog: 'blog'
     }
   };
 

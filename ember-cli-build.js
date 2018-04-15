@@ -18,7 +18,7 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*'
       ],
-      version: '42'
+      version: '43'
     },
     'esw-cache-fallback': {
       patterns: [
@@ -26,7 +26,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '42'
+      version: '43'
     },
     emberCliConcat: {
       js: {
@@ -38,7 +38,7 @@ module.exports = function(defaults) {
       }
     },
     'ember-prism': {
-      'components': ['scss', 'javascript', 'handlebars', 'http', 'json'],
+      'components': ['markup-templating', 'scss', 'javascript', 'handlebars', 'http', 'json'],
       'plugins': ['normalize-whitespace', 'show-language']
     },
     fingerprint: {
@@ -93,7 +93,7 @@ function buildPremberUrls() {
   const { extname } = require('path');
   const walkSync = require('walk-sync');
 
-  const paths = walkSync('app/blog');
+  const paths = walkSync('blog');
 
   const mdFiles = paths.filter(path => extname(path) === '.md')
     .map((path) => {
