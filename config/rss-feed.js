@@ -6,7 +6,7 @@ module.exports = {
   feed: {
     title: 'Ship Shape Blog',
 
-    description: 'A blog on Ember.js, JavaScript, and anything and everything related to the web.',
+    description: 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.',
 
     site_url: siteURL,
 
