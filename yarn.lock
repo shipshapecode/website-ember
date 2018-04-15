@@ -3544,6 +3544,14 @@ ember-maybe-import-regenerator@^0.1.6:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
+ember-meta@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/ember-meta/-/ember-meta-0.0.6.tgz#40a08e3b6cfbd9588684266683387c4fd740d589"
+  dependencies:
+    ember-cli-babel "^6.6.0"
+    ember-get-config "^0.2.4"
+    ember-truth-helpers "^2.0.0"
+
 ember-moment@^7.6.0:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/ember-moment/-/ember-moment-7.6.0.tgz#f82beba81a6b9f4ea3bb0ac2463cc5d2c5cbd8e6"
@@ -7444,14 +7452,6 @@ prebuild-install@^2.3.0:
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
-
-prember-meta@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/prember-meta/-/prember-meta-0.0.4.tgz#0ced8e0ebcc51a959a788396a10f0f3d30fee823"
-  dependencies:
-    ember-cli-babel "^6.6.0"
-    ember-get-config "^0.2.4"
-    ember-truth-helpers "^2.0.0"
 
 prember-middleware@^0.1.0:
   version "0.1.0"

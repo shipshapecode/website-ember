@@ -32,7 +32,7 @@ module.exports = function(environment) {
     }
   };
 
-  ENV['prember-meta'] = {
+  ENV['ember-meta'] = {
     description: 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.',
     imgSrc: 'http://i.imgur.com/KVqNjgO.png',
     siteName: 'Ship Shape',
