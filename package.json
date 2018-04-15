@@ -74,7 +74,7 @@
     "flexi": "^2.1.0",
     "loader.js": "^4.2.3",
     "prember": "^0.4.0-alpha.0",
-    "prember-meta": "^0.0.2",
+    "prember-meta": "^0.0.4",
     "prember-middleware": "^0.1.0",
     "prember-rss-feed": "^1.2.0",
     "prember-sitemap-generator": "^0.0.3",

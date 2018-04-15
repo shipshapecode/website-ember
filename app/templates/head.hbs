@@ -1,10 +1,26 @@
 {{!-- General --}}
-<title>{{model.title}}</title>
-<meta name="description" content={{model.description}}>
+{{#if model.title}}
+  <title>{{model.title}}</title>
+{{/if}}
+
+{{#if (or model.articleTitle model.title)}}
+  <meta property="og:title" content={{if model.articleTitle model.articleTitle model.title}}>
+  <meta name="twitter:title" content={{if model.articleTitle model.articleTitle model.title}}>
+{{/if}}
+
+{{#if model.description}}
+  <meta name="description" content={{model.description}}>
+  <meta property="og:description" content={{model.description}}>
+  <meta name="twitter:description" content={{model.description}}>
+{{/if}}
+
 <meta name="referrer" content="unsafe-url">
 
-{{!-- AMP --}}
-<link rel="canonical" href="{{model.url}}">
+{{#if model.url}}
+  <link rel="canonical" href="{{model.url}}">
+  <meta property="og:url" content={{model.url}}>
+  <meta name="twitter:url" content={{model.url}}>
+{{/if}}
 
 {{!-- Article --}}
 {{#if model.date}}
@@ -16,28 +32,36 @@
 {{/each}}
 
 {{!-- Facebook, Slack, etc --}}
-<meta property="og:site_name" content="Ship Shape">
-<meta property="og:title" content={{if model.articleTitle model.articleTitle model.title}}>
-<meta property="og:description" content={{model.description}}>
-<meta property="og:type" content={{model.type}}>
-<meta property="og:image" content="http://i.imgur.com/KVqNjgO.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="256">
-<meta property="og:image:height" content="256">
-<meta property="og:url" content={{model.url}}>
+{{#if model.siteName}}
+  <meta property="og:site_name" content="{{model.siteName}}">
+{{/if}}
+
+{{#if model.type}}
+  <meta property="og:type" content={{model.type}}>
+{{/if}}
+
+{{#if model.imgSrc}}
+  <meta property="og:image" content="{{model.imgSrc}}">
+  <meta name="twitter:image:src" content="{{model.imgSrc}}">
+
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="256">
+  <meta property="og:image:height" content="256">
+{{/if}}
 
 {{!-- Twitter --}}
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content={{if model.articleTitle model.articleTitle model.title}}>
-<meta name="twitter:description" content={{model.description}}>
-<meta name="twitter:site" content="@shipshapecode">
-<meta name="twitter:creator" content="@shipshapecode">
-<meta name="twitter:url" content={{model.url}}>
-<meta name="twitter:image:src" content="http://i.imgur.com/KVqNjgO.png">
+
+{{#if model.twitterUsername}}
+  <meta name="twitter:site" content="{{model.twitterUsername}}">
+  <meta name="twitter:creator" content="{{model.twitterUsername}}">
+{{/if}}
+
 {{#if model.author}}
   <meta name="twitter:label1" content="Written by">
   <meta name="twitter:data1" content="{{model.author}}">
 {{/if}}
+
 {{#if model.keywords}}
   <meta name="twitter:label2" content="Filed under">
   <meta name="twitter:data2" content="{{model.keywords}}">
