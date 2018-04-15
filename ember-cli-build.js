@@ -38,7 +38,7 @@ module.exports = function(defaults) {
       }
     },
     'ember-prism': {
-      'components': ['scss', 'javascript', 'handlebars', 'http', 'json'],
+      'components': ['markup-templating', 'scss', 'javascript', 'handlebars', 'http', 'json'],
       'plugins': ['normalize-whitespace', 'show-language']
     },
     fingerprint: {
