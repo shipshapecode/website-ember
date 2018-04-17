@@ -11,8 +11,8 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-        "ember-metal-tracked-properties": true,
-        "glimmer-custom-component-manager": true
+        'ember-metal-tracked-properties': true,
+        'glimmer-custom-component-manager': true
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
@@ -41,6 +41,8 @@ module.exports = function(environment) {
     url: 'https://shipshape.io/blog/'
   };
 
+  ENV.fetchHost = 'http://localhost:4200';
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -65,6 +67,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.host = 'https://shipshape-api.herokuapp.com';
+    ENV.fetchHost = 'https://shipshape.io';
   }
 
   return ENV;
