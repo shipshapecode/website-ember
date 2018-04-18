@@ -23,6 +23,16 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    'responsive-image': {
+      sourceDir: 'img/original/hero',
+      destinationDir: 'img/responsive/hero',
+      quality: 100,
+      supportedWidths: [2048, 1536, 1080, 750, 640],
+      removeSourceDir: false,
+      justCopy: false,
+      extensions: ['jpg', 'jpeg', 'png', 'gif']
     }
   };
 
@@ -31,6 +41,7 @@ module.exports = function(environment) {
       blog: 'blog'
     }
   };
+
 
   ENV['ember-meta'] = {
     description: 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.',
