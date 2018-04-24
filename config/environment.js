@@ -32,7 +32,12 @@ module.exports = function(environment) {
       supportedWidths: [2048, 1536, 1080, 750, 640],
       removeSourceDir: false,
       justCopy: false,
-      extensions: ['jpg', 'jpeg', 'png', 'gif']
+      extensions: ['jpg', 'jpeg', 'png', 'gif'],
+      lqip: {
+        type: 'inline',
+        width: 100,
+        quality: 50
+      }
     }
   };
 

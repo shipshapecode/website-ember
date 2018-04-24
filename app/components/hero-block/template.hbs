@@ -1,10 +1,8 @@
-{{#responsive-background
-  classNames=(concat this.styleNamespace ' ' 'hero'  ' ' @heroClasses)
-  image=image
-  tagName="page"}}
+<page class="{{this.styleNamespace}} hero {{@heroClasses}}">
+  {{responsive-image image=image}}
   <centered>
     {{yield}}
   </centered>
 
   {{scroll-suggest href=scrollToHref}}
-{{/responsive-background}}
+</page>
