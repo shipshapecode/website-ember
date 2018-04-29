@@ -224,7 +224,7 @@ please refer to the most up to date instructions in the [Prember README](https:/
 This was just the initial implementation, but I will follow up with further posts to improve upon this functionality, by doing
 things like:
 
-  - Offline support with service workers
+  - [Offline support with service workers](https://shipshape.io/blog/offline-first-prember-and-service-workers/)
   - Forcing trailing slashes in routes
   - Maintaing scroll position with ember-router-scroll
   - [Defining meta and tags similar to Ghost](https://shipshape.io/blog/ember-meta-tags-seo-social/)

@@ -15,10 +15,14 @@ slug: offline-first-prember-and-service-workers
 title: Offline First Prember Apps with Service Workers
 ---
 
-[ember-service-worker](http://ember-service-worker.com/) is an amazing addon, that makes adding service workers, and offline first support, to your Ember app a breeze.
+## Offline First Prember Apps with Service Workers
+
+[ember-service-worker](http://ember-service-worker.com/) is an amazing Ember addon, that makes adding service workers, and offline first support, to your Ember app a breeze.
 It always "just worked" out of the box for my vanilla Ember apps, but once I started making static sites with Prember, I ran into some unique challenges. The main 
 difference is, a normal Ember app just has one `index.html`, but a Prember app has one per route. This makes caching the html, with service workers, much harder, and 
 it will be our next topic in the series on [Static Blogs with Prember and Markdown](https://shipshape.io/blog/static-blogs-with-prember-and-markdown/).
+
+### Installation
 
 Just like a normal app, you'll want to start by installing `ember-service-worker` itself.
 
@@ -38,3 +42,30 @@ on the html content, which is used as the key for the html file in the service w
 version will be loaded, but if the content changes, the hash will change, the cache will be busted, and the html will be loaded fresh again, and a new version will be cached. This 
 technique, and implementation are heavily based upon this [amazing article](https://www.voorhoede.nl/en/blog/instant-static-web-pages-with-service-worker/), which really helped me 
 wrap my head around these concepts.
+
+### Configuration
+
+Configuration *should* be entirely optional, but service workers are sometimes tricky, and you want to manually bust your cache, and be double sure everything pulls the latest version.
+If you want to do that, you can bump the `version` in your `ember-cli-build.js`. 
+
+ember-service-worker now defaults to `versionStrategy: 'every-build'`, which should bust your cache each time you build, and it also allows you to register your service worker inline.
+I typically configure it with both options explicitly.
+
+```javascript
+// ember-cli-build.js
+var app = new EmberApp(defaults, {
+    'esw-prember': {
+      // Changing this version number will bust the cache, but you probably do not
+      // want to be doing this manually, but rather using `versionStrategy` as
+      // explained here http://ember-service-worker.com/documentation/configuration/#versioning
+      version: '1'
+    },
+    'ember-service-worker': {
+      registrationStrategy: 'inline',
+      versionStrategy: 'every-build'
+    }
+  });
+```
+
+Hopefully, this will work out of the box, with a simple `ember install` for most people, and not need any configuration. Service workers are tricky though, 
+so please let me know if you encounter any issues. Stay tuned for the remainder of this blog series in the coming weeks!
