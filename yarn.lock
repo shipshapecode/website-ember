@@ -3543,11 +3543,12 @@ ember-maybe-import-regenerator@^0.1.6:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
-ember-meta@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/ember-meta/-/ember-meta-0.0.6.tgz#40a08e3b6cfbd9588684266683387c4fd740d589"
+ember-meta@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/ember-meta/-/ember-meta-0.1.2.tgz#0b66ce9930cbf8e5b0af43298d8bceb343899ed0"
   dependencies:
     ember-cli-babel "^6.6.0"
+    ember-cli-head "^0.4.0"
     ember-get-config "^0.2.4"
     ember-truth-helpers "^2.0.0"
 
@@ -3728,24 +3729,6 @@ ember-smooth-scroll@0.0.0:
     inflection "^1.12.0"
     jquery "^3.3.1"
     resolve "^1.6.0"
-
-"ember-source@https://s3.amazonaws.com/builds.emberjs.com/canary/shas/ba736db6872866c05cbe738f2ae5bc8c08bdfaeb.tgz":
-  version "3.2.0-canary"
-  resolved "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/ba736db6872866c05cbe738f2ae5bc8c08bdfaeb.tgz#c9ee29916c89f52158406c86e085235415646267"
-  dependencies:
-    broccoli-funnel "^2.0.1"
-    broccoli-merge-trees "^2.0.0"
-    ember-cli-get-component-path-option "^1.0.0"
-    ember-cli-is-package-missing "^1.0.0"
-    ember-cli-normalize-entity-name "^1.0.0"
-    ember-cli-path-utils "^1.0.0"
-    ember-cli-string-utils "^1.1.0"
-    ember-cli-valid-component-name "^1.0.0"
-    ember-cli-version-checker "^2.1.0"
-    ember-router-generator "^1.2.3"
-    inflection "^1.12.0"
-    jquery "^3.3.1"
-    resolve "^1.5.0"
 
 ember-string-ishtmlsafe-polyfill@^2.0.0:
   version "2.0.1"

@@ -30,7 +30,7 @@
       <h2 class="section-heading">Clients</h2>
     </centered>
     {{#ember-3d-folding-panel}}
-      {{#each model as |item|}}
+      {{#each model.clients as |item|}}
         {{#item-square item=item}}
           <img
             alt="{{item.heading}}"

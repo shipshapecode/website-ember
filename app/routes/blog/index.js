@@ -1,9 +1,8 @@
 import Route from '@ember/routing/route';
 import RSVP from 'rsvp';
 import { inject as service } from '@ember/service';
-import BlogMetaMixin from 'ember-meta/mixins/blog-meta';
 
-export default Route.extend(BlogMetaMixin, {
+export default Route.extend({
   markdownResolver: service(),
 
   model() {

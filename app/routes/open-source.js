@@ -1,19 +1,15 @@
-import { setProperties } from '@ember/object';
 import Route from '@ember/routing/route';
-import { inject as service } from '@ember/service';
 import fetch from 'fetch';
 
 export default Route.extend({
-  headData: service(),
-
   model() {
     return fetch('https://shipshape-api.herokuapp.com/github-repos').then((response) => {
       return response.json();
     });
   },
 
-  afterModel() {
-    return setProperties(this.headData, {
+  afterModel(model) {
+    model.attributes = {
       title: 'Ember Addons and Open Source - Ship Shape',
       description:
       'We collaborate extensively with the Ember community on all facets of Ember. ' +
@@ -22,6 +18,6 @@ export default Route.extend({
       'addons, including flexi and vertical-collection.',
       type: 'website',
       url: 'https://shipshape.io/open-source/'
-    });
+    };
   }
 });
