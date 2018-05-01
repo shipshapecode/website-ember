@@ -1,4 +1,4 @@
-import EmberObject, { get, setProperties } from '@ember/object';
+import EmberObject, { get } from '@ember/object';
 import ContactValidations from '../validations/contact';
 import Route from '@ember/routing/route';
 import { getOwner } from '@ember/application';
