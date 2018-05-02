@@ -34,7 +34,6 @@
     "ember-cli-fastboot": "ember-fastboot/ember-cli-fastboot#158af9ec00edf58db71524bea04d224705ef5d19",
     "ember-cli-flash": "^1.6.3",
     "ember-cli-gzip": "^1.1.3",
-    "ember-cli-head": "^0.4.0",
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.2",
     "ember-cli-inject-live-reload": "^1.4.1",
