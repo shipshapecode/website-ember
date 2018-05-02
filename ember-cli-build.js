@@ -8,8 +8,14 @@ shim(EmberApp);
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
     brotli: {
+      enabled: false,
       extensions: ['js', 'css', 'svg'],
-      appendSuffix: false
+      keepUncompressed: true
+    },
+    gzip: {
+      enabled: false,
+      extensions: ['js', 'css', 'svg'],
+      keepUncompressed: true
     },
     'asset-cache': {
       include: [
@@ -40,6 +46,10 @@ module.exports = function(defaults) {
     'ember-prism': {
       'components': ['markup-templating', 'scss', 'javascript', 'handlebars', 'http', 'json'],
       'plugins': ['normalize-whitespace', 'show-language']
+    },
+    'ember-service-worker': {
+      registrationStrategy: 'inline',
+      versionStrategy: 'every-build'
     },
     fingerprint: {
       extensions: ['js', 'css', 'map']
