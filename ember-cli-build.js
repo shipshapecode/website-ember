@@ -48,7 +48,6 @@ module.exports = function(defaults) {
       'plugins': ['normalize-whitespace', 'show-language']
     },
     'ember-service-worker': {
-      registrationStrategy: 'inline',
       versionStrategy: 'every-build'
     },
     fingerprint: {
