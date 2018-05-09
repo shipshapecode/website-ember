@@ -52,7 +52,7 @@
     "ember-cp-validations": "^3.5.2",
     "ember-debonair": "^0.4.2",
     "ember-export-application-global": "^2.0.0",
-    "ember-fetch": "^3.4.5",
+    "ember-fetch-adapter": "^0.3.0",
     "ember-glimmer-component": "^0.4.1",
     "ember-hammertime": "^1.5.0",
     "ember-load-initializers": "^1.1.0",
