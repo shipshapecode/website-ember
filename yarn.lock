@@ -247,6 +247,10 @@ abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
 
+abortcontroller-polyfill@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/abortcontroller-polyfill/-/abortcontroller-polyfill-1.1.9.tgz#9fefe359fda2e9e0932dc85e6106453ac393b2da"
+
 accepts@~1.3.4, accepts@~1.3.5:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.5.tgz#eb777df6011723a3b14e8a72c0805c8e86746bd2"
@@ -1660,7 +1664,7 @@ broccoli-funnel@2.0.1, broccoli-funnel@^2.0.0, broccoli-funnel@^2.0.1:
     symlink-or-copy "^1.0.0"
     walk-sync "^0.3.1"
 
-broccoli-funnel@^1.0.0, broccoli-funnel@^1.0.1, broccoli-funnel@^1.0.3, broccoli-funnel@^1.1.0, broccoli-funnel@^1.2.0:
+broccoli-funnel@^1.0.0, broccoli-funnel@^1.0.1, broccoli-funnel@^1.0.3, broccoli-funnel@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/broccoli-funnel/-/broccoli-funnel-1.2.0.tgz#cddc3afc5ff1685a8023488fff74ce6fb5a51296"
   dependencies:
@@ -3044,7 +3048,7 @@ ember-3d-nav@^1.9.0:
     ember-router-service-polyfill "^1.0.2"
     flexi "^2.1.0"
 
-ember-app-scheduler@^0.2.0:
+ember-app-scheduler@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/ember-app-scheduler/-/ember-app-scheduler-0.2.2.tgz#e4a66275d1789d1b054815ee230c6f759b4b75eb"
   dependencies:
@@ -3656,23 +3660,18 @@ ember-factory-for-polyfill@^1.3.1:
   dependencies:
     ember-cli-version-checker "^2.1.0"
 
-ember-fetch-adapter@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/ember-fetch-adapter/-/ember-fetch-adapter-0.3.0.tgz#391352454cde086220f8f4151809f8f02812ebb0"
+ember-fetch@ember-cli/ember-fetch#master:
+  version "4.0.1"
+  resolved "https://codeload.github.com/ember-cli/ember-fetch/tar.gz/78e269173ea53ae225b657399185352f8bd892dc"
   dependencies:
-    ember-cli-babel "^6.12.0"
-    ember-fetch "^3.4.5"
-
-ember-fetch@^3.4.5:
-  version "3.4.5"
-  resolved "https://registry.yarnpkg.com/ember-fetch/-/ember-fetch-3.4.5.tgz#2967df9cbdbe0993402588216332580be3950b92"
-  dependencies:
-    broccoli-funnel "^1.2.0"
+    abortcontroller-polyfill "^1.1.9"
+    broccoli-concat "^3.2.2"
+    broccoli-merge-trees "^2.0.0"
     broccoli-stew "^1.4.2"
     broccoli-templater "^1.0.0"
     ember-cli-babel "^6.8.2"
     node-fetch "^2.0.0-alpha.9"
-    whatwg-fetch "^2.0.3"
+    yetch "^0.0.1"
 
 ember-get-config@^0.2.4:
   version "0.2.4"
@@ -3830,11 +3829,11 @@ ember-router-generator@^1.0.0, ember-router-generator@^1.2.3:
   dependencies:
     recast "^0.11.3"
 
-ember-router-scroll@^0.6.0:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/ember-router-scroll/-/ember-router-scroll-0.6.1.tgz#a3a48112635d8da840a192ffe43adc3144e46a37"
+ember-router-scroll@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/ember-router-scroll/-/ember-router-scroll-0.7.0.tgz#3b56e70efc45ba90e74ee3eb729815489630196c"
   dependencies:
-    ember-app-scheduler "^0.2.0"
+    ember-app-scheduler "^0.2.2"
     ember-cli-babel "^6.6.0"
     ember-getowner-polyfill "^2.0.1"
 
@@ -10005,10 +10004,6 @@ websocket-extensions@>=0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
 
-whatwg-fetch@^2.0.3:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz#dde6a5df315f9d39991aa17621853d720b85566f"
-
 whatwg-url-compat@~0.6.5:
   version "0.6.5"
   resolved "https://registry.yarnpkg.com/whatwg-url-compat/-/whatwg-url-compat-0.6.5.tgz#00898111af689bb097541cd5a45ca6c8798445bf"
@@ -10246,3 +10241,7 @@ yargs@~3.27.0:
 yeast@0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/yeast/-/yeast-0.1.2.tgz#008e06d8094320c372dbc2f8ed76a0ca6c8ac419"
+
+yetch@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/yetch/-/yetch-0.0.1.tgz#76f1729b2c2c667e23c3c2da90472a4897eca004"
