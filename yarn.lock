@@ -3044,7 +3044,7 @@ ember-3d-nav@^1.9.0:
     ember-router-service-polyfill "^1.0.2"
     flexi "^2.1.0"
 
-ember-app-scheduler@^0.2.2:
+ember-app-scheduler@^0.2.0:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/ember-app-scheduler/-/ember-app-scheduler-0.2.2.tgz#e4a66275d1789d1b054815ee230c6f759b4b75eb"
   dependencies:
@@ -3830,11 +3830,11 @@ ember-router-generator@^1.0.0, ember-router-generator@^1.2.3:
   dependencies:
     recast "^0.11.3"
 
-ember-router-scroll@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/ember-router-scroll/-/ember-router-scroll-0.7.0.tgz#3b56e70efc45ba90e74ee3eb729815489630196c"
+ember-router-scroll@^0.6.0:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/ember-router-scroll/-/ember-router-scroll-0.6.1.tgz#a3a48112635d8da840a192ffe43adc3144e46a37"
   dependencies:
-    ember-app-scheduler "^0.2.2"
+    ember-app-scheduler "^0.2.0"
     ember-cli-babel "^6.6.0"
     ember-getowner-polyfill "^2.0.1"
 
