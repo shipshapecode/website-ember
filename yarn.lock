@@ -3661,9 +3661,16 @@ ember-factory-for-polyfill@^1.3.1:
   dependencies:
     ember-cli-version-checker "^2.1.0"
 
-ember-fetch@ember-cli/ember-fetch#master:
-  version "4.0.1"
-  resolved "https://codeload.github.com/ember-cli/ember-fetch/tar.gz/78e269173ea53ae225b657399185352f8bd892dc"
+ember-fetch-adapter@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/ember-fetch-adapter/-/ember-fetch-adapter-0.4.1.tgz#a38eeb024f133196d598645c8e9de8671b5d787f"
+  dependencies:
+    ember-cli-babel "^6.12.0"
+    ember-fetch "^4.0.2"
+
+ember-fetch@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ember-fetch/-/ember-fetch-4.0.2.tgz#865ca90d8aa63b9ebe5bce709aeaa44b35668b5a"
   dependencies:
     abortcontroller-polyfill "^1.1.9"
     broccoli-concat "^3.2.2"

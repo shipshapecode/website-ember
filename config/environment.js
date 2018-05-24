@@ -23,12 +23,10 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
-  };
+    },
 
-  ENV['ember-cli-markdown-resolver'] = {
-    folders: {
-      blog: 'blog'
+    fastboot: {
+      hostWhitelist: [/^localhost:\d+$/]
     }
   };
 
@@ -40,8 +38,6 @@ module.exports = function(environment) {
     twitterUsername: '@shipshapecode',
     url: 'https://shipshape.io/blog/'
   };
-
-  ENV.fetchHost = 'http://localhost:4200';
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
@@ -67,7 +63,6 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.host = 'https://shipshape-api.herokuapp.com';
-    ENV.fetchHost = 'https://shipshape.io';
   }
 
   return ENV;
