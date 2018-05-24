@@ -17,7 +17,7 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "@ember/optional-features": "^0.5.2",
+    "@ember/optional-features": "^0.6.1",
     "@html-next/flexi-config": "^2.1.1",
     "@html-next/flexi-default-styles": "^2.1.1",
     "@html-next/flexi-dsl": "^2.1.0",
@@ -43,8 +43,7 @@
     "ember-cli-moment-shim": "^3.7.1",
     "ember-cli-netlify": "^0.0.1",
     "ember-cli-qunit": "^4.3.2",
-    "ember-cli-sass": "^7.1.7",
-    "ember-cli-showdown": "^4.4.2",
+    "ember-cli-sass": "^7.2.0",
     "ember-cli-stylelint": "^2.1.0",
     "ember-cli-template-lint": "0.7.5",
     "ember-cli-uglify": "^2.0.2",
@@ -72,7 +71,7 @@
     "ember-service-worker-prember": "^0.3.0",
     "ember-smooth-scroll": "0.0.0",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/637d242c187b82de4111bc2a4d566b377a3ee62e.tgz",
-    "ember-svg-jar": "^1.1.1",
+    "ember-svg-jar": "^1.2.0",
     "eslint-plugin-ember": "^5.2.0",
     "flexi": "^2.1.0",
     "loader.js": "^4.2.3",
@@ -83,8 +82,7 @@
     "stylelint-config-ship-shape": "^0.4.0"
   },
   "fastbootDependencies": [
-    "prismjs",
-    "showdown"
+    "prismjs"
   ],
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"

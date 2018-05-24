@@ -1,11 +1,11 @@
 import Route from '@ember/routing/route';
-import fetch from 'fetch';
+import { inject as service } from '@ember/service';
 
 export default Route.extend({
+  adapter: service(),
+
   model() {
-    return fetch('https://shipshape-api.herokuapp.com/github-repos').then((response) => {
-      return response.json();
-    });
+    return this.adapter.fetch({ url: 'https://shipshape-api.herokuapp.com/github-repos' }).json();
   },
 
   afterModel(model) {
