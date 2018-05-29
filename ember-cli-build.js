@@ -1,7 +1,5 @@
 'use strict';
 
-const BroccoliMergeTrees = require('broccoli-merge-trees');
-const StaticSiteJson = require('broccoli-static-site-json');
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
 
@@ -27,6 +25,21 @@ module.exports = function(defaults) {
         'img/**/*'
       ],
       version: '46'
+    },
+    'ember-cli-markdown-to-json': {
+      attributes: [
+        'author',
+        'authorId',
+        'categories',
+        'date',
+        'slug',
+        'title'
+      ],
+      collections: [{
+        src: 'blog',
+        output: 'blog.json'
+      }],
+      folder: 'blog'
     },
     'esw-cache-fallback': {
       patterns: [
@@ -83,22 +96,7 @@ module.exports = function(defaults) {
     vendorFiles: { 'jquery.js': null }
   });
 
-  const blog = new StaticSiteJson('blog', {
-    attributes: [
-      'author',
-      'authorId',
-      'categories',
-      'date',
-      'slug',
-      'title'
-    ],
-    collections: [{
-      src: 'blog',
-      output: 'blog.json'
-    }]
-  });
-
-  return new BroccoliMergeTrees([app.toTree(), blog]);
+  return app.toTree();
 };
 
 /**

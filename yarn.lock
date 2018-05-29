@@ -3166,6 +3166,14 @@ ember-cli-lodash-subset@^1.0.7:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/ember-cli-lodash-subset/-/ember-cli-lodash-subset-1.0.12.tgz#af2e77eba5dcb0d77f3308d3a6fd7d3450f6e537"
 
+ember-cli-markdown-to-json@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/ember-cli-markdown-to-json/-/ember-cli-markdown-to-json-0.0.2.tgz#d696fcbdc73ef0481d897d298834c570ed2aabda"
+  dependencies:
+    broccoli-merge-trees "^3.0.0"
+    broccoli-static-site-json "^2.0.1"
+    ember-cli-babel "^6.6.0"
+
 ember-cli-moment-shim@^3.7.1:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/ember-cli-moment-shim/-/ember-cli-moment-shim-3.7.1.tgz#3ad691c5027c1f38a4890fe47d74b5224cc98e32"
@@ -3464,9 +3472,9 @@ ember-factory-for-polyfill@^1.3.1:
   dependencies:
     ember-cli-version-checker "^2.1.0"
 
-ember-fetch-adapter@^0.4.1:
+ember-fetch-adapter@rwwagner90/ember-fetch-adapter:
   version "0.4.1"
-  resolved "https://registry.yarnpkg.com/ember-fetch-adapter/-/ember-fetch-adapter-0.4.1.tgz#a38eeb024f133196d598645c8e9de8671b5d787f"
+  resolved "https://codeload.github.com/rwwagner90/ember-fetch-adapter/tar.gz/7203205ac6825d7e0c0b0b986afc64e96537cd9f"
   dependencies:
     ember-cli-babel "^6.12.0"
     ember-fetch "^4.0.2"
@@ -7497,9 +7505,9 @@ prember@*:
     fastboot "^1.1.3"
     mkdirp "^0.5.1"
 
-prember@^0.4.0-alpha.0:
-  version "0.4.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/prember/-/prember-0.4.0-alpha.0.tgz#6ddc166b3494eb40ded454b32d2f0aa2e04075de"
+prember@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/prember/-/prember-0.4.0.tgz#55607d74babe74958e0c08d78da66e002dc02bea"
   dependencies:
     broccoli-debug "^0.6.3"
     broccoli-merge-trees "^2.0.0"
