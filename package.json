@@ -17,7 +17,7 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "@ember/optional-features": "^0.5.2",
+    "@ember/optional-features": "^0.6.1",
     "@html-next/flexi-config": "^2.1.1",
     "@html-next/flexi-default-styles": "^2.1.1",
     "@html-next/flexi-dsl": "^2.1.0",
@@ -38,12 +38,11 @@
     "ember-cli-htmlbars-inline-precompile": "^1.0.2",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-inline-content": "^0.4.0",
-    "ember-cli-markdown-resolver": "^0.1.2",
+    "ember-cli-markdown-to-json": "^0.0.2",
     "ember-cli-moment-shim": "^3.7.1",
     "ember-cli-netlify": "^0.0.1",
     "ember-cli-qunit": "^4.3.2",
-    "ember-cli-sass": "^7.1.7",
-    "ember-cli-showdown": "^4.4.2",
+    "ember-cli-sass": "^7.2.0",
     "ember-cli-stylelint": "^2.1.0",
     "ember-cli-template-lint": "0.7.5",
     "ember-cli-uglify": "^2.0.2",
@@ -52,7 +51,8 @@
     "ember-cp-validations": "^3.5.3",
     "ember-debonair": "^0.4.2",
     "ember-export-application-global": "^2.0.0",
-    "ember-fetch": "ember-cli/ember-fetch#master",
+    "ember-fetch": "^4.0.2",
+    "ember-fetch-adapter": "rwwagner90/ember-fetch-adapter",
     "ember-glimmer-component": "^0.4.1",
     "ember-hammertime": "^1.5.0",
     "ember-load-initializers": "^1.1.0",
@@ -70,19 +70,18 @@
     "ember-service-worker-prember": "^0.3.0",
     "ember-smooth-scroll": "0.0.0",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/637d242c187b82de4111bc2a4d566b377a3ee62e.tgz",
-    "ember-svg-jar": "^1.1.1",
+    "ember-svg-jar": "^1.2.0",
     "eslint-plugin-ember": "^5.2.0",
     "flexi": "^2.1.0",
     "loader.js": "^4.2.3",
-    "prember": "^0.4.0-alpha.0",
+    "prember": "^0.4.0",
     "prember-middleware": "^0.1.0",
     "prember-rss-feed": "^1.2.0",
     "prember-sitemap-generator": "^0.0.3",
     "stylelint-config-ship-shape": "^0.4.0"
   },
   "fastbootDependencies": [
-    "prismjs",
-    "showdown"
+    "prismjs"
   ],
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"

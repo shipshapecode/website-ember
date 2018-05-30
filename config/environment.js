@@ -11,8 +11,8 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
-        "ember-metal-tracked-properties": true,
-        "glimmer-custom-component-manager": true
+        'ember-metal-tracked-properties': true,
+        'glimmer-custom-component-manager': true
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
@@ -23,12 +23,10 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
-  };
+    },
 
-  ENV['ember-cli-markdown-resolver'] = {
-    folders: {
-      blog: 'blog'
+    fastboot: {
+      hostWhitelist: [/^localhost:\d+$/]
     }
   };
 

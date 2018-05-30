@@ -26,6 +26,21 @@ module.exports = function(defaults) {
       ],
       version: '46'
     },
+    'ember-cli-markdown-to-json': {
+      attributes: [
+        'author',
+        'authorId',
+        'categories',
+        'date',
+        'slug',
+        'title'
+      ],
+      collections: [{
+        src: 'blog',
+        output: 'blog.json'
+      }],
+      folder: 'blog'
+    },
     'esw-cache-fallback': {
       patterns: [
         '/github-repos'

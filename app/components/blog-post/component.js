@@ -1,5 +1,6 @@
 import Component from '@ember/component';
 import { alias } from '@ember/object/computed';
+import { htmlSafe } from '@ember/template';
 
 export default Component.extend({
   classNameBindings: ['slug'],
@@ -7,10 +8,14 @@ export default Component.extend({
 
   author: alias('post.attributes.author'),
   authorId: alias('post.attributes.authorId'),
-  content: alias('post.content'),
   date: alias('post.attributes.date'),
   slug: alias('post.attributes.slug'),
   title: alias('post.attributes.title'),
+
+  init() {
+    this._super(...arguments);
+    this.content = htmlSafe(this.post.content);
+  },
 
   didRender() {
     this._super(...arguments);
