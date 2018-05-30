@@ -1,0 +1,70 @@
+<hbox class="{{this.styleNamespace}} footer" justify="center">
+  <hbox xs="10">
+    <hbox class="links">
+      <hbox xs="6">
+        <vbox fit>
+          <hbox class="logo" fit>
+            {{svg-jar "logo" height="6rem" width="6rem"}}
+          </hbox>
+        </vbox>
+      </hbox>
+      <hbox xs="6" justify="end">
+        <vbox fit class="section">
+          <box fit>
+            <h3 class="heading">Company</h3>
+          </box>
+
+          <box fit class="link">
+            {{link-to "Ember Consulting" "ember-consulting"}}
+          </box>
+
+          <box fit class="link">
+            {{link-to "Open Source" "open-source"}}
+          </box>
+
+          <box fit class="link">
+            {{link-to "Contact" "contact"}}
+          </box>
+
+          <box fit class="link">
+            {{link-to "Blog" "blog"}}
+          </box>
+        </vbox>
+
+        <vbox fit class="section">
+          <box fit>
+            <h3 class="heading">Connect</h3>
+          </box>
+
+          <box fit class="link">
+            <a href="https://github.com/shipshapecode" aria-label="Ship Shape on GitHub">
+              GitHub
+            </a>
+          </box>
+
+          <box fit class="link">
+            <a href="https://twitter.com/shipshapecode" aria-label="Ship Shape on Twitter">
+              Twitter
+            </a>
+          </box>
+
+          <box fit class="link">
+            <a href="https://www.linkedin.com/company/ship-shape" aria-label="Ship Shape on LinkedIn">
+              LinkedIn
+            </a>
+          </box>
+
+          <box fit class="link">
+            <a href="mailto:ahoy@shipshape.io" itemprop="email">ahoy@shipshape.io</a>
+          </box>
+        </vbox>
+      </hbox>
+    </hbox>
+
+    <hbox class="copyright" xs="12">
+      <div>
+        {{svg-jar "copyright" height="1rem" width="1rem"}} {{this.year}} <span itemprop="legalName">Ship Shape Consulting LLC</span>
+      </div>
+    </hbox>
+  </hbox>
+</hbox>

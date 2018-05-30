@@ -1,0 +1,69 @@
+<grid class="{{this.styleNamespace}} footer">
+  <centered class="links" xs="12">
+    <grid>
+      <centered class="logo" xs="12">
+        {{svg-jar "logo" height="6rem" width="6rem"}}
+      </centered>
+
+      <centered xs="12" class="section">
+        <grid>
+          <centered xs="12">
+            <h3 class="heading">Company</h3>
+          </centered>
+
+          <centered xs="12" class="link">
+            {{link-to "Ember Consulting" "ember-consulting"}}
+          </centered>
+
+          <centered xs="12" class="link">
+            {{link-to "Open Source" "open-source"}}
+          </centered>
+
+          <centered xs="12" class="link">
+            {{link-to "Contact" "contact"}}
+          </centered>
+
+          <centered xs="12" class="link">
+            {{link-to "Blog" "blog"}}
+          </centered>
+        </grid>
+      </centered>
+
+      <centered xs="12" class="section">
+        <grid>
+          <centered xs="12">
+            <h3 class="heading">Connect</h3>
+          </centered>
+
+          <centered xs="12" class="link">
+            <a href="https://github.com/shipshapecode" aria-label="Ship Shape on GitHub">
+              GitHub
+            </a>
+          </centered>
+
+          <centered xs="12" class="link">
+            <a href="https://twitter.com/shipshapecode" aria-label="Ship Shape on Twitter">
+              Twitter
+            </a>
+          </centered>
+
+          <centered xs="12" class="link">
+            <a href="https://www.linkedin.com/company/ship-shape" aria-label="Ship Shape on LinkedIn">
+              LinkedIn
+            </a>
+          </centered>
+
+          <centered xs="12" class="link">
+            <a href="mailto:ahoy@shipshape.io" itemprop="email">ahoy@shipshape.io</a>
+          </centered>
+        </grid>
+      </centered>
+    </grid>
+  </centered>
+
+  <centered class="copyright" xs="12">
+    <div>
+      {{svg-jar "copyright" height="1rem" width="1rem"}} {{this.year}} <span itemprop="legalName">Ship Shape Consulting LLC</span>
+    </div>
+  </centered>
+</grid>

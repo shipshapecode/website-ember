@@ -3,23 +3,43 @@
   box-sizing: border-box;
   margin-top: 68px;
   min-height: 100px;
-  padding: 25px;
 
   i {
     padding: 10px;
   }
 
   .copyright {
+    border-top: 1px solid $secondary;
     color: $off-white;
     font-size: 1rem;
+    padding: 2rem 0;
 
     svg {
-      padding-top: 1.25rem;
+      margin-bottom: -0.1rem;
 
       path {
         fill: $off-white;
       }
     }
+  }
+
+  .heading {
+    color: $secondary;
+    font-weight: bolder;
+  }
+
+  .heading,
+  .link {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .link {
+    font-weight: lighter;
+  }
+
+  .links {
+    padding: 4rem 0;
   }
 
   .logo {
@@ -27,11 +47,12 @@
       path {
         fill: $off-white;
         stroke: $off-white;
+        stroke-width: 3rem;
       }
     }
   }
 
-  .ssIcon {
-    padding: 5px;
+  .section {
+    padding: 2rem;
   }
 }
