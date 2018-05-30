@@ -1,4 +1,10 @@
 <vbox class="{{this.styleNamespace}}">
+  <box class="rss-button" fit align="end" justify="center">
+    <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fshipshape.io%2Ffeed.xml" target="_blank" rel="noopener">
+      {{svg-jar "rss"}}
+    </a>
+  </box>
+
   {{#each posts as |post|}}
     <box fit class="blog-post">
       {{link-to post.attributes.title 'blog.post' post.attributes.slug class="title"}}

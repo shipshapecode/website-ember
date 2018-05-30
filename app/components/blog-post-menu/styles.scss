@@ -14,5 +14,17 @@
       font-size: 3.25rem;
     }
   }
+
+  .rss-button {
+    padding: 1rem 4rem;
+    svg {
+      path {
+        fill: $primary;
+        &:hover {
+          fill: $dark;
+        }
+      }
+    }
+  }
 }
 
