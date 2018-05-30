@@ -3472,9 +3472,9 @@ ember-factory-for-polyfill@^1.3.1:
   dependencies:
     ember-cli-version-checker "^2.1.0"
 
-ember-fetch-adapter@rwwagner90/ember-fetch-adapter:
-  version "0.4.1"
-  resolved "https://codeload.github.com/rwwagner90/ember-fetch-adapter/tar.gz/7203205ac6825d7e0c0b0b986afc64e96537cd9f"
+ember-fetch-adapter@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/ember-fetch-adapter/-/ember-fetch-adapter-0.4.2.tgz#2a5ad58863ce95d695ca87f0383cf8e5f327cbe5"
   dependencies:
     ember-cli-babel "^6.12.0"
     ember-fetch "^4.0.2"
