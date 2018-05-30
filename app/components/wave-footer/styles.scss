@@ -5,32 +5,28 @@
   min-height: 100px;
   padding: 25px;
 
-  @include jagged(4d6a78, 40, top, fill, outside);
-
   i {
     padding: 10px;
   }
 
-  &:before {
-    animation: wave 30s linear infinite;
+  .copyright {
+    color: $off-white;
+    font-size: 1rem;
 
-    @keyframes wave {
-      0% {
-        background-position: 0;
-      }
+    svg {
+      padding-top: 1.25rem;
 
-      100% {
-        background-position: 1000px;
+      path {
+        fill: $off-white;
       }
     }
   }
 
-  .copyright {
+  .logo {
     svg {
-      padding-bottom: 4px;
-
       path {
-        fill: $white;
+        fill: $off-white;
+        stroke: $off-white;
       }
     }
   }
