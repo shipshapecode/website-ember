@@ -39,10 +39,12 @@
   }
 
   .links {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 
   .logo {
+    padding: 1rem 0;
+
     svg {
       path {
         fill: $off-white;
@@ -53,6 +55,6 @@
   }
 
   .section {
-    padding: 2rem;
+    padding: 1rem 2rem;
   }
 }
