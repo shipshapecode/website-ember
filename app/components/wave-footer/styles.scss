@@ -3,39 +3,58 @@
   box-sizing: border-box;
   margin-top: 68px;
   min-height: 100px;
-  padding: 25px;
-
-  @include jagged(4d6a78, 40, top, fill, outside);
 
   i {
     padding: 10px;
   }
 
-  &:before {
-    animation: wave 30s linear infinite;
-
-    @keyframes wave {
-      0% {
-        background-position: 0;
-      }
-
-      100% {
-        background-position: 1000px;
-      }
-    }
-  }
-
   .copyright {
+    border-top: 1px solid $secondary;
+    color: $off-white;
+    font-size: 1rem;
+    padding: 2rem 0;
+
     svg {
-      padding-bottom: 4px;
+      margin-bottom: -0.1rem;
 
       path {
-        fill: $white;
+        fill: $off-white;
       }
     }
   }
 
-  .ssIcon {
-    padding: 5px;
+  .heading {
+    color: $secondary;
+    font-weight: bolder;
+  }
+
+  .heading,
+  .link {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .link {
+    font-weight: lighter;
+  }
+
+  .links {
+    padding: 2rem 0;
+  }
+
+  .logo {
+    padding: 1rem 0;
+
+    svg {
+      path {
+        fill: $off-white;
+        stroke: $off-white;
+        stroke-width: 3rem;
+      }
+    }
+  }
+
+  .section {
+    padding: 1rem 2rem;
   }
 }

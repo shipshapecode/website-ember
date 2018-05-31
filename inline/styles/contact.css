@@ -2,13 +2,9 @@
   background: url(/img/contact.jpg) no-repeat bottom center/cover;
 }
 
-.contact vbox {
-  margin-top: 150px;
-  text-align: center;
-}
-
 .contact .alerts {
   margin-top: 11rem;
+  text-align: center;
 }
 
 .contact .cd-form {

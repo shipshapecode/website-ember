@@ -63,6 +63,7 @@ module.exports = function(defaults) {
       'plugins': ['normalize-whitespace', 'show-language']
     },
     'ember-service-worker': {
+      enabled: process.env.EMBER_ENV === 'production',
       versionStrategy: 'every-build'
     },
     fingerprint: {

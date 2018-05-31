@@ -1,5 +1,4 @@
 @import 'variables';
-@import 'mixins';
 //Pages
 @import 'blog';
 @import 'contact';
@@ -66,7 +65,8 @@ a {
   color: $white;
   text-decoration: none;
 
-  &:active {
+  &:active,
+  &:visited {
     color: $white;
   }
 
@@ -74,10 +74,6 @@ a {
   & > i:hover {
     color: $pink;
     cursor: pointer;
-  }
-
-  &:visited {
-    color: $white;
   }
 }
 
@@ -167,18 +163,6 @@ h6 {
   color: $white;
   font-family: 'Pier Sans', sans-serif;
   margin: 20px 0 0;
-}
-
-.ssIcon {
-  path {
-    fill: $white;
-  }
-
-  &:hover {
-    path {
-      fill: $pink;
-    }
-  }
 }
 
 .cd-form {
