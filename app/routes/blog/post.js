@@ -10,8 +10,7 @@ export default Route.extend({
     return this.adapter.fetch({ url: `content/${withoutSlash}.json` }).json()
       .then(({ data }) => {
         return {
-          attributes: data.attributes,
-          content: data.attributes.html
+          attributes: data.attributes
         };
       });
   }

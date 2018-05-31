@@ -39,6 +39,7 @@ module.exports = function(defaults) {
         src: 'blog',
         output: 'blog.json'
       }],
+      contentTypes: ['description', 'html'],
       folder: 'blog'
     },
     'esw-cache-fallback': {

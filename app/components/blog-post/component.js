@@ -14,7 +14,7 @@ export default Component.extend({
 
   init() {
     this._super(...arguments);
-    this.content = htmlSafe(this.post.content);
+    this.content = htmlSafe(this.post.attributes.html);
   },
 
   didRender() {
