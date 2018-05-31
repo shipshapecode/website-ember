@@ -23,7 +23,7 @@
     "@html-next/flexi-dsl": "^2.1.0",
     "@html-next/flexi-layouts": "^2.2.1",
     "broccoli-asset-rev": "^2.7.0",
-    "ember-3d-folding-panel": "^0.5.1",
+    "ember-3d-folding-panel": "^0.6.0",
     "ember-3d-nav": "^1.9.0",
     "ember-cli": "~3.1.4",
     "ember-cli-babel": "^6.12.0",
