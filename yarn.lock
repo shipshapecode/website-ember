@@ -3719,9 +3719,9 @@ ember-smooth-scroll@0.0.0:
     fastboot-transform "^0.1.2"
     smooth-scroll "^12.1.5"
 
-"ember-source@https://s3.amazonaws.com/builds.emberjs.com/canary/shas/637d242c187b82de4111bc2a4d566b377a3ee62e.tgz":
+"ember-source@https://s3.amazonaws.com/builds.emberjs.com/canary/shas/4382687f368fb82bed873b4c4b72371236c873df.tgz":
   version "3.3.0-canary"
-  resolved "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/637d242c187b82de4111bc2a4d566b377a3ee62e.tgz#3e3d542d2a3108fa34b122e0887032c9027a780c"
+  resolved "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/4382687f368fb82bed873b4c4b72371236c873df.tgz#a8f0dd5f44804b531160d7889422c8a87d615b8b"
   dependencies:
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"

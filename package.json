@@ -69,7 +69,7 @@
     "ember-service-worker-cache-fallback": "^0.6.1",
     "ember-service-worker-prember": "^0.3.0",
     "ember-smooth-scroll": "0.0.0",
-    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/637d242c187b82de4111bc2a4d566b377a3ee62e.tgz",
+    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/4382687f368fb82bed873b4c4b72371236c873df.tgz",
     "ember-svg-jar": "^1.2.0",
     "eslint-plugin-ember": "^5.2.0",
     "flexi": "^2.1.0",
