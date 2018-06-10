@@ -32,22 +32,25 @@
     }
 
     .repo-name {
-      color: $dark-green;
-      font-size: 2.5rem;
-      padding: 2rem 0 1rem;
+      color: $dark;
+      font: {
+        size: 1.5rem;
+        weight: lighter;
+      }
+      padding: 0.5rem 0 0.25rem;
     }
 
     .github-info {
-      color: $grey;
-      font-size: 1.75rem;
+      color: $secondary;
+      font-size: 1.5rem;
 
       .github-icon,
       .star-icon {
-        font-size: 1.75rem;
-        padding: 0.5rem;
+        font-size: 1.5rem;
+        padding: 0.25rem;
 
         path {
-          fill: $grey;
+          fill: $secondary;
         }
       }
 

@@ -46,24 +46,17 @@ $ecf: (
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font: {
-    size: 1.6rem;
-  }
-
   background-color: $white;
   color: $white;
   font-family: 'Pier Sans', sans-serif;
-  line-height: 1.2;
 }
 
 a {
   color: $white;
   text-decoration: none;
+  transition-duration: 0.25s;
+  transition-property: color;
 
   &:active,
   &:visited {
@@ -88,13 +81,22 @@ a {
 }
 
 .ember-3d-nav {
-  a:before {
-    background-size: 40px;
-    height: 60px;
-    width: 58px;
+  a {
+    font: {
+      size: 0.75rem;
+      weight: bolder;
+    }
 
-    @media only screen and (min-width: 768px) {
-      top: 4.4rem;
+    line-height: 4rem;
+
+    &:before {
+      background-size: 40px;
+      height: 60px;
+      width: 58px;
+
+      @media only screen and (min-width: 768px) {
+        top: 3rem;
+      }
     }
   }
 
@@ -138,9 +140,11 @@ a {
   .logoText {
     color: $dark;
     float: right;
-    font-size: 30px;
-    height: 35px;
-    margin-top: 14px;
+    font: {
+      size: 2rem;
+      weight: lighter;
+    }
+    margin-top: 5px;
     text-transform: uppercase;
   }
 }
