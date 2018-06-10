@@ -30,8 +30,10 @@ module.exports = function(defaults) {
       attributes: [
         'author',
         'authorId',
+        'birthtime',
         'categories',
         'date',
+        'mtime',
         'slug',
         'title'
       ],
