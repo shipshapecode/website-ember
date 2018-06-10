@@ -1,8 +1,10 @@
 &.footer {
   background-color: $grey;
-  box-sizing: border-box;
-  margin-top: 68px;
-  min-height: 100px;
+
+  h6 {
+    color: $secondary;
+    font-weight: bold;
+  }
 
   i {
     padding: 10px;
@@ -11,11 +13,11 @@
   .copyright {
     border-top: 1px solid $secondary;
     color: $off-white;
-    font-size: 1rem;
-    padding: 2rem 0;
+    font-size: 0.5rem;
+    padding: 1rem 0;
 
     svg {
-      margin-bottom: -0.1rem;
+      margin-bottom: -0.0323rem;
 
       path {
         fill: $off-white;
@@ -23,33 +25,17 @@
     }
   }
 
-  .heading {
-    color: $secondary;
-    font-weight: bolder;
-  }
-
-  .heading,
-  .link {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-
-  .link {
-    font-weight: lighter;
-  }
-
-  .links {
-    padding: 2rem 0;
+  .links,
+  .logo {
+    padding: 1rem 0;
   }
 
   .logo {
-    padding: 1rem 0;
-
     svg {
       path {
         fill: $off-white;
         stroke: $off-white;
-        stroke-width: 3rem;
+        stroke-width: 1.25rem;
       }
     }
   }

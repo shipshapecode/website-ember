@@ -5,31 +5,13 @@
 
   .heading {
     color: $darker-blue;
-    padding: 10px 0;
+    font-weight: 900;
     text-transform: uppercase;
-    font: {
-      size: 5rem;
-      weight: bold;
-    }
   }
 
   .sub-heading {
     color: $dark;
-    padding: 5px 0;
-    font: {
-      size: 2.5rem;
-      weight: bold;
-    }
-  }
-
-  .info {
-    font: {
-      size: 2rem;
-      weight: normal;
-    }
-
-    line-height: 2.5rem;
-    padding: 20px 0;
+    font-weight: bold;
   }
 
   .svg-icon {

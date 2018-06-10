@@ -20,22 +20,22 @@
 {{portfolio-container model=model}}
 
 <page id="sponsored-oss" class="sponsored-oss">
-  <centered>
-    <grid>
+  <hbox justify="center">
+    <hbox xs="10">
       <centered xs="12">
-        <h2 class="heading">Sponsored Open Source Development</h2>
+        <vbox xs="12">
+          <h2 class="heading">Sponsored Open Source Development</h2>
+          <p>
+            Ember could not be the incredible framework it is, without companies helping fund
+            its progress. Whether you need an Ember addon to implement your favorite
+            library in native Ember, a custom Ember data adapter for your API setup,
+            or changes to Ember itself, sponsored open source development can help
+            give back to the community, while also solving your business needs.
+          </p>
+        </vbox>
       </centered>
-      <centered xs="12" class="info">
-        <p>
-          Ember could not be the incredible framework it is, without companies helping fund
-          its progress. Whether you need an Ember addon to implement your favorite
-          library in native Ember, a custom Ember data adapter for your API setup,
-          or changes to Ember itself, sponsored open source development can help
-          give back to the community, while also solving your business needs.
-        </p>
-      </centered>
-    </grid>
-  </centered>
+    </hbox>
+  </hbox>
 </page>
 
 {{contact-footer}}

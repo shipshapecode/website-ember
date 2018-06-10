@@ -1,3 +1,4 @@
+@import 'shevy/shevy';
 @import 'variables';
 //Pages
 @import 'blog';
@@ -39,6 +40,18 @@ $ecf: (
 @import 'ember-3d-nav';
 @import 'ember-contact-form';
 @import 'reset';
+
+// Shevy
+
+$shevy: (
+  base-font-size: 1rem,
+  proximity: true,
+  proximity-factor: 0.75
+);
+
+@include headings;
+@include body;
+@include content;
 
 *,
 *:after,
@@ -87,16 +100,12 @@ a {
       weight: bolder;
     }
 
-    line-height: 4rem;
+    line-height: 3rem;
 
     &:before {
       background-size: 40px;
       height: 60px;
       width: 58px;
-
-      @media only screen and (min-width: 768px) {
-        top: 3rem;
-      }
     }
   }
 
@@ -144,6 +153,7 @@ a {
       size: 2rem;
       weight: lighter;
     }
+
     margin-top: 5px;
     text-transform: uppercase;
   }
@@ -188,9 +198,7 @@ h6 {
 
 .section-heading {
   color: $dark-green;
-  font-size: 48px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin: 2rem 0;
 }
 
 @media only screen and (min-width: 600px) {
