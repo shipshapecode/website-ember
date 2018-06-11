@@ -1,28 +1,37 @@
-&.process {
-  background-color: $off-white;
-  color: $grey;
-  padding: 20px;
+& {
+  $shevy-process-section: (
+    base-font-size: 1.25rem
+  );
 
-  .heading {
-    color: $darker-blue;
-    font-weight: 900;
-    text-transform: uppercase;
-  }
+  @include headings($shevy-process-section);
+  @include content($shevy-process-section);
 
-  .sub-heading {
-    color: $dark;
-    font-weight: bold;
-  }
+  &.process {
+    background-color: $off-white;
+    color: $grey;
+    padding: 20px;
 
-  .svg-icon {
-    @media (min-width: 768px) {
-      margin-right: 50px;
+    .heading {
+      color: $darker-blue;
+      font-weight: 900;
+      text-transform: uppercase;
     }
 
-    padding: 10px;
-  }
+    .sub-heading {
+      color: $dark;
+      font-weight: bold;
+    }
 
-  &.build {
-    background-color: $white;
+    .svg-icon {
+      @media (min-width: 768px) {
+        margin-right: 50px;
+      }
+
+      padding: 10px;
+    }
+
+    &.build {
+      background-color: $white;
+    }
   }
 }
