@@ -27,27 +27,21 @@
       }
     }
 
-    .repo-description {
-      padding: 1rem;
-    }
-
     .repo-name {
-      color: $dark-green;
-      font-size: 2.5rem;
-      padding: 2rem 0 1rem;
+      color: $dark;
+      font-weight: lighter;
     }
 
     .github-info {
-      color: $grey;
-      font-size: 1.75rem;
+      color: $secondary;
+      font-size: 1.3rem;
 
       .github-icon,
       .star-icon {
-        font-size: 1.75rem;
-        padding: 0.5rem;
+        padding: 0.25rem;
 
         path {
-          fill: $grey;
+          fill: $secondary;
         }
       }
 

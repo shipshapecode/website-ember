@@ -1,69 +1,81 @@
 <hbox class="{{this.styleNamespace}} footer" justify="center">
   <hbox xs="10">
     <hbox class="links">
-      <hbox xs="6">
+      <hbox xs="4">
         <vbox fit>
           <hbox class="logo" fit>
-            {{svg-jar "logo" height="6rem" width="6rem"}}
+            {{svg-jar "logo" height="4rem" width="4rem"}}
           </hbox>
         </vbox>
       </hbox>
-      <hbox xs="6" justify="end">
-        <vbox fit class="section">
-          <box fit>
-            <h3 class="heading">Company</h3>
-          </box>
+      <hbox xs="8" justify="end">
+        <hbox fit class="section" justify="end">
+          <ul>
+            <li>
+              <h6>Specialties</h6>
+            </li>
 
-          <box fit class="link">
-            {{link-to "Ember Consulting" "ember-consulting"}}
-          </box>
+            <li>
+              {{link-to "Ember" "ember-consulting"}}
+            </li>
+          </ul>
+        </hbox>
 
-          <box fit class="link">
-            {{link-to "Open Source" "open-source"}}
-          </box>
+        <hbox fit class="section" justify="end">
+          <ul>
+            <li>
+              <h6>Company</h6>
+            </li>
 
-          <box fit class="link">
-            {{link-to "Contact" "contact"}}
-          </box>
+            <li>
+              {{link-to "Open Source" "open-source"}}
+            </li>
 
-          <box fit class="link">
-            {{link-to "Blog" "blog"}}
-          </box>
-        </vbox>
+            <li>
+              {{link-to "Contact" "contact"}}
+            </li>
 
-        <vbox fit class="section">
-          <box fit>
-            <h3 class="heading">Connect</h3>
-          </box>
+            <li>
+              {{link-to "Blog" "blog"}}
+            </li>
+          </ul>
+        </hbox>
 
-          <box fit class="link">
-            <a href="https://github.com/shipshapecode" aria-label="Ship Shape on GitHub">
-              GitHub
-            </a>
-          </box>
+        <hbox fit class="section" justify="end">
+          <ul>
+            <li>
+              <h6>Connect</h6>
+            </li>
 
-          <box fit class="link">
-            <a href="https://twitter.com/shipshapecode" aria-label="Ship Shape on Twitter">
-              Twitter
-            </a>
-          </box>
+            <li>
+              <a href="https://github.com/shipshapecode" aria-label="Ship Shape on GitHub">
+                GitHub
+              </a>
+            </li>
 
-          <box fit class="link">
-            <a href="https://www.linkedin.com/company/ship-shape" aria-label="Ship Shape on LinkedIn">
-              LinkedIn
-            </a>
-          </box>
+            <li>
+              <a href="https://twitter.com/shipshapecode" aria-label="Ship Shape on Twitter">
+                Twitter
+              </a>
+            </li>
 
-          <box fit class="link">
-            <a href="mailto:ahoy@shipshape.io" itemprop="email">ahoy@shipshape.io</a>
-          </box>
-        </vbox>
+            <li>
+              <a href="https://www.linkedin.com/company/ship-shape" aria-label="Ship Shape on LinkedIn">
+                LinkedIn
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:ahoy@shipshape.io" itemprop="email">ahoy@shipshape.io</a>
+            </li>
+          </ul>
+        </hbox>
       </hbox>
     </hbox>
 
     <hbox class="copyright" xs="12">
       <div>
-        {{svg-jar "copyright" height="1rem" width="1rem"}} {{this.year}} <span itemprop="legalName">Ship Shape Consulting LLC</span>
+        {{svg-jar "copyright" height="0.5rem" width="0.5rem"}} {{this.year}} <span itemprop="legalName">Ship Shape Consulting LLC</span>
       </div>
     </hbox>
   </hbox>

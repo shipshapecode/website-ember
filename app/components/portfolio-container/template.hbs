@@ -1,35 +1,39 @@
 <page class="{{this.styleNamespace}} portfolio-container">
-  <grid>
-    <centered xs="12" id="ember-addons">
-      <h2 class="section-heading">Ember Addons</h2>
+  <hbox justify="center">
+    <centered xs="11">
+      <grid>
+        <centered xs="12" id="ember-addons">
+          <h2 class="section-heading">Ember Addons</h2>
+        </centered>
+        {{#each projects as |project|}}
+          <centered xs="12" sm="6" md="4" itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project">
+            <a href="https://github.com/shipshapecode/{{project.name}}" class="repo" itemprop="codeRepository">
+              <grid>
+                <centered xs="12">
+                  <centered xs="10">
+                    {{svg-jar project.name height="150px" width="150px"}}
+                  </centered>
+                </centered>
+                <centered xs="12" class="text-center">
+                  <h3 class="repo-name">{{project.name}}</h3>
+                </centered>
+                <centered xs="12" class="text-center">
+                  <h5 class="repo-description">{{project.description}}</h5>
+                </centered>
+                <centered xs="12" class="github-info">
+                  <span class="star-icon">{{svg-jar "star" height="1.1rem" width="1.1rem"}}</span>
+                  <span class="star-count">{{project.stars}}</span>
+                  <span class="github-icon">
+                    {{svg-jar "github-alt" height="1.1rem" width="1.1rem"}}
+                  </span>
+                </centered>
+              </grid>
+            </a>
+          </centered>
+        {{/each}}
+      </grid>
     </centered>
-    {{#each projects as |project|}}
-      <centered xs="12" sm="6" md="4" itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project">
-        <a href="https://github.com/shipshapecode/{{project.name}}" class="repo" itemprop="codeRepository">
-          <grid>
-            <centered xs="12">
-              <centered xs="10">
-                {{svg-jar project.name height="150px" width="150px"}}
-              </centered>
-            </centered>
-            <centered xs="12" class="text-center">
-              <h3 class="repo-name">{{project.name}}</h3>
-            </centered>
-            <centered xs="12" class="text-center">
-              <h4 class="repo-description">{{project.description}}</h4>
-            </centered>
-            <centered xs="12" class="github-info">
-              <span class="star-icon">{{svg-jar "star" height="24px" width="24px"}}</span>
-              <span class="star-count">{{project.stars}}</span>
-              <span class="github-icon">
-                {{svg-jar "github-alt" height="24px" width="24px"}}
-              </span>
-            </centered>
-          </grid>
-        </a>
-      </centered>
-    {{/each}}
-  </grid>
+  </hbox>
 
   {{scroll-suggest href="#sponsored-oss"}}
 </page>

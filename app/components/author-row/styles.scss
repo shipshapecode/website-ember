@@ -1,9 +1,10 @@
 & {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
 
-  img {
+  img.authorImage {
     border-radius: 50%;
-    height: 15rem;
-    width: 15rem;
+    height: auto;
+    max-width: 100%;
+    width: 10rem;
   }
 }

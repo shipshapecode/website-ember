@@ -4,10 +4,12 @@
 
 .hero-header {
   font-size: 12vw;
+  line-height: normal;
 }
 
 .hero-subheader {
   font-size: 5vw;
+  line-height: normal;
 }
 
 .nav-trigger-container {

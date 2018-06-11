@@ -2,68 +2,76 @@
   <centered class="links" xs="12">
     <grid>
       <centered class="logo" xs="12">
-        {{svg-jar "logo" height="6rem" width="6rem"}}
+        {{svg-jar "logo" height="4rem" width="4rem"}}
       </centered>
 
-      <centered xs="12" class="section">
-        <grid>
-          <centered xs="12">
-            <h3 class="heading">Company</h3>
-          </centered>
+      <centered xs="12" class="section text-center">
+        <ul>
+          <li>
+            <h6>Specialties</h6>
+          </li>
 
-          <centered xs="12" class="link">
-            {{link-to "Ember Consulting" "ember-consulting"}}
-          </centered>
+          <li>
+            {{link-to "Ember" "ember-consulting"}}
+          </li>
+        </ul>
+      </centered>
 
-          <centered xs="12" class="link">
+      <centered xs="12" class="section text-center">
+        <ul>
+          <li>
+            <h6>Company</h6>
+          </li>
+
+          <li>
             {{link-to "Open Source" "open-source"}}
-          </centered>
+          </li>
 
-          <centered xs="12" class="link">
+          <li>
             {{link-to "Contact" "contact"}}
-          </centered>
+          </li>
 
-          <centered xs="12" class="link">
+          <li>
             {{link-to "Blog" "blog"}}
-          </centered>
-        </grid>
+          </li>
+        </ul>
       </centered>
 
-      <centered xs="12" class="section">
-        <grid>
-          <centered xs="12">
-            <h3 class="heading">Connect</h3>
-          </centered>
+      <centered xs="12" class="section text-center">
+        <ul>
+          <li>
+            <h6>Connect</h6>
+          </li>
 
-          <centered xs="12" class="link">
+          <li>
             <a href="https://github.com/shipshapecode" aria-label="Ship Shape on GitHub">
               GitHub
             </a>
-          </centered>
+          </li>
 
-          <centered xs="12" class="link">
+          <li>
             <a href="https://twitter.com/shipshapecode" aria-label="Ship Shape on Twitter">
               Twitter
             </a>
-          </centered>
+          </li>
 
-          <centered xs="12" class="link">
+          <li>
             <a href="https://www.linkedin.com/company/ship-shape" aria-label="Ship Shape on LinkedIn">
               LinkedIn
             </a>
-          </centered>
+          </li>
 
-          <centered xs="12" class="link">
+          <li>
             <a href="mailto:ahoy@shipshape.io" itemprop="email">ahoy@shipshape.io</a>
-          </centered>
-        </grid>
+          </li>
+        </ul>
       </centered>
     </grid>
   </centered>
 
   <centered class="copyright" xs="12">
     <div>
-      {{svg-jar "copyright" height="1rem" width="1rem"}} {{this.year}} <span itemprop="legalName">Ship Shape Consulting LLC</span>
+      {{svg-jar "copyright" height="0.5rem" width="0.5rem"}} {{this.year}} <span itemprop="legalName">Ship Shape Consulting LLC</span>
     </div>
   </centered>
 </grid>
