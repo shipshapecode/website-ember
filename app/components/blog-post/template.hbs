@@ -6,7 +6,7 @@
     scrollToHref='#post-content'}}
     <grid>
       <centered xs="12">
-        <h1 class="hero-header blog-post-title" itemprop="headline">{{title}}</h1>
+        <h1 class="blog-post-title" itemprop="headline">{{title}}</h1>
       </centered>
       <centered xs="12">
         <time class="post-date"
@@ -19,8 +19,8 @@
   {{/hero-block}}
 
 
-  <centered xs="12" id="post-content">
-    <box xs="8">
+  <centered xs="12" class="post-content" id="post-content">
+    <box xs="10" md="8">
       {{content}}
       {{author-row
         author=author

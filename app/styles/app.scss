@@ -46,7 +46,7 @@ $ecf: (
 $shevy: (
   base-font-size: 1rem,
   proximity: true,
-  proximity-factor: 0.75
+  proximity-factor: 0.5
 );
 
 @include headings;

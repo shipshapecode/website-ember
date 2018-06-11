@@ -17,4 +17,6 @@
 
 .hero.open-source h2 {
   color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.25;
 }

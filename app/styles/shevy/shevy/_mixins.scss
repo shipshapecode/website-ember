@@ -96,13 +96,14 @@
   $base-spacing: base-spacing(1, $settings);
   $margin-bottom: 0;
   $margin-bottom-bool: map-get($settings, 'margin-bottom');
-  $font-unit-ems-bool: if($base-font-unit == 'em', true, false);;
+  $font-unit-ems-bool: if($base-font-unit == 'em', true, false);
 
   // Margin Bottom
   @if $margin-bottom-bool {
     @if $font-unit-ems-bool {
       $margin-bottom: $base-spacing / $base-font-size * $base-unit-multiplier;
-    } @else {
+    }
+    @else {
       $margin-bottom: $base-spacing;
     }
   }
@@ -132,5 +133,5 @@
 
   @content;
 
-  $shevy: $old !global
+  $shevy: $old !global;
 }
