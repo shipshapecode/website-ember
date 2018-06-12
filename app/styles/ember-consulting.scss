@@ -11,6 +11,43 @@
     background-color: $off-white;
   }
 
+  .community {
+    padding: 1rem;
+
+    a {
+      color: $secondary;
+      fill: $secondary;
+
+      &:active,
+      &:visited {
+        color: $secondary;
+      }
+
+      &:hover {
+        color: $pink;
+        cursor: pointer;
+        fill: $pink;
+      }
+    }
+
+    svg {
+      margin-bottom: -0.2rem;
+    }
+
+    .emberDC {
+      height: auto;
+      width: 100%;
+    }
+
+    .heading {
+      color: $dark-green;
+    }
+
+    .info {
+      padding: 1rem;
+    }
+  }
+
   .quote {
     text-align: center;
 

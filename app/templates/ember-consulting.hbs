@@ -40,7 +40,41 @@
             src="{{concat rootURL item.imageURL}}">
         {{/item-square}}
       {{/each}}
+
+      {{scroll-suggest href="#community"}}
     {{/ember-3d-folding-panel}}
+  </div>
+
+  <div class="community" id="community">
+    <hbox justify="center">
+      <hbox xs="10">
+        <centered xs="12">
+          <h2 class="section-heading text-center">Community Involvement</h2>
+        </centered>
+
+        <grid>
+          <centered xs="12" md="6">
+            <vbox xs="12" class="info">
+              <h2 class="heading">Ember.JS DC</h2>
+
+              <p>
+                We organize the Ember.JS DC meetup, and we try to spread the love throughout Virginia and Maryland as well,
+                alternating meeting spots. If you are an Ember enthusiast, of any level, we would love to have you come
+                learn with us!
+              </p>
+
+              <a href="https://www.meetup.com/Ember-JS-DC/">
+                Learn More {{svg-jar "angle-right" height="1rem" width="1rem"}}
+              </a>
+
+            </vbox>
+          </centered>
+          <centered xs="12" md="6" class="info">
+            <img class="emberDC" src="/img/ember-dc.png">
+          </centered>
+        </grid>
+      </hbox>
+    </hbox>
   </div>
 
   {{contact-footer}}
