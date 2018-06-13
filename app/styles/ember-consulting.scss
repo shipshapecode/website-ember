@@ -34,13 +34,27 @@
       margin-bottom: -0.2rem;
     }
 
-    .emberDC {
+    .ember-cares-images,
+    .ember-image {
       height: auto;
+      padding: 1rem;
+      max-width: 300px;
       width: 100%;
+    }
+
+    .ember-cares-images {
+      img {
+        height: auto;
+        width: 100%;
+      }
     }
 
     .heading {
       color: $dark-green;
+    }
+
+    .image-container {
+      display: inline-grid;
     }
 
     .info {
