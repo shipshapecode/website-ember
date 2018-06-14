@@ -1,8 +1,22 @@
 <div itemscope itemtype="http://schema.org/Service">
-  {{#hero-block heroClasses='ember-consulting' scrollToHref='#quote' }}
+  {{#hero-block heroClasses='ember-consulting' scrollToHref='#clients' }}
     <h1 class="hero-header" itemprop="name">Ember Consulting</h1>
   {{/hero-block}}
 
+  <div class="clients" id="clients">
+    <centered xs="12">
+      <h2 class="section-heading">Clients</h2>
+    </centered>
+    {{#ember-3d-folding-panel}}
+      {{#each model.clients as |item|}}
+        {{#item-square item=item}}
+          <img alt="{{item.heading}}" height="100px" src="{{concat rootURL item.imageURL}}">
+        {{/item-square}}
+      {{/each}}
+
+      {{scroll-suggest href="#quote"}}
+    {{/ember-3d-folding-panel}}
+  </div>
 
   <page class="quote" id="quote">
     <centered>
@@ -21,130 +35,10 @@
       </centered>
     </centered>
 
-    {{scroll-suggest href="#clients"}}
+    {{scroll-suggest href="#community"}}
   </page>
 
-  <div class="clients" id="clients">
-    <centered xs="12">
-      <h2 class="section-heading">Clients</h2>
-    </centered>
-    {{#ember-3d-folding-panel}}
-      {{#each model.clients as |item|}}
-        {{#item-square item=item}}
-          <img alt="{{item.heading}}" height="100px" src="{{concat rootURL item.imageURL}}">
-        {{/item-square}}
-      {{/each}}
-
-      {{scroll-suggest href="#community"}}
-    {{/ember-3d-folding-panel}}
-  </div>
-
-  <div class="community" id="community">
-    <hbox justify="center">
-      <hbox xs="12">
-        <centered xs="12">
-          <hbox xs="12" md="11" lg="8">
-            <grid>
-              <hbox xs="12">
-                <vbox xs="12" class="info">
-                  <h2 class="heading">Community Involvement</h2>
-
-                  <p>
-                    We've been using Ember since 2012, and have been very active in the community. We maintain countless Ember addons, contribute
-                    to Ember, Ember-CLI, and the Ember docs sites, run the Ember.JS DC meetup, sponsor and run workshops
-                    at EmberConf, and anything and everything we can possibly do to help further Ember as a framework and
-                    as a community.
-                  </p>
-                </vbox>
-              </hbox>
-            </grid>
-          </hbox>
-        </centered>
-
-        <centered xs="12">
-          <hbox xs="12" md="11" lg="8">
-            <hbox xs="12">
-              <vbox xs="12" class="info">
-                <h3 class="heading">EmberConf</h3>
-
-                <p>
-                  We ran the Improving Ember App Performance workshop at EmberConf 2018, where we explored techniques to reduce your bundle
-                  size, improving your rendering performance, and cache your assets to make reloads blazing fast.
-                </p>
-
-                <a href="https://emberconf.com/schedule.html#e-improving-ember-app-performance">
-                  Learn More {{svg-jar "angle-right" height="1rem" width="1rem"}}
-                </a>
-
-              </vbox>
-            </hbox>
-            {{#if showImages}}
-              <box xs="12" md="4">
-                <img class="ember-image" src="/img/emberconf-2018.png" alt="EmberConf 2018 Tomster and Zoey">
-              </box>
-            {{/if}}
-          </hbox>
-        </centered>
-
-        <centered xs="12">
-          <hbox xs="12" md="11" lg="8">
-            <hbox xs="12">
-              <vbox xs="12" class="info">
-                <h3 class="heading">Ember Cares</h3>
-
-                <p>
-                  We spearheaded the efforts behind Ember Cares in 2017, where we created a cancer awareness Tomster and Zoey and sold merch
-                  to raise money for cancer research.
-                </p>
-
-                <a href="https://embercares.com/">
-                  Learn More {{svg-jar "angle-right" height="1rem" width="1rem"}}
-                </a>
-
-              </vbox>
-            </hbox>
-            {{#if showImages}}
-              <hbox xs="12" md="4" class="ember-cares-images">
-                <box>
-                  <img class="ember-cares-image" src="/img/cancer-tomster.png" alt="No Shave November Tomster">
-                </box>
-
-                <box>
-                  <img class="ember-cares-image" src="/img/cancer-zoey.png" alt="Breast Cancer Awareness Zoey">
-                </box>
-              </hbox>
-            {{/if}}
-          </hbox>
-        </centered>
-
-
-        <centered xs="12">
-          <hbox xs="12" md="11" lg="8">
-            <hbox xs="12">
-              <vbox xs="12" class="info">
-                <h3 class="heading">Ember.JS DC</h3>
-
-                <p>
-                  We organize the Ember.JS DC meetup, and we try to spread the love throughout Virginia and Maryland as well, alternating meeting
-                  spots. If you are an Ember enthusiast, of any level, we would love to have you come learn with us!
-                </p>
-
-                <a href="https://www.meetup.com/Ember-JS-DC/">
-                  Learn More {{svg-jar "angle-right" height="1rem" width="1rem"}}
-                </a>
-
-              </vbox>
-            </hbox>
-            {{#if showImages}}
-              <box xs="12" md="4">
-                <img class="ember-image" src="/img/ember-dc.png" alt="Ember.JS DC Tomster in front of the White House">
-              </box>
-            {{/if}}
-          </hbox>
-        </centered>
-      </hbox>
-    </hbox>
-  </div>
-
+  {{community-involvement}} 
+  
   {{contact-footer}}
 </div>

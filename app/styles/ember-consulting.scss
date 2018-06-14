@@ -11,63 +11,10 @@
     background-color: $off-white;
   }
 
-  .community {
-    padding: 1rem;
-
-    a {
-      color: $secondary;
-      fill: $secondary;
-
-      &:active,
-      &:visited {
-        color: $secondary;
-      }
-
-      &:hover {
-        color: $pink;
-        cursor: pointer;
-        fill: $pink;
-      }
-    }
-
-    svg {
-      margin-bottom: -0.2rem;
-    }
-
-    .ember-cares-images,
-    .ember-image {
-      height: auto;
-      padding: 1rem;
-      max-width: 300px;
-      width: 100%;
-    }
-
-    .ember-cares-images {
-      img {
-        height: auto;
-        width: 100%;
-      }
-    }
-
-    .heading {
-      color: $dark-green;
-    }
-
-    .image-container {
-      display: inline-grid;
-    }
-
-    .info {
-      padding: 1rem;
-    }
-  }
-
   .quote {
     text-align: center;
 
     .quoteContent {
-      color: $color4;
-      padding: 10px 5vw;
       // Mobile
       @media (max-width: 992px) {
         font-size: 30px;
@@ -78,6 +25,9 @@
         font-size: 40px;
         line-height: 50px;
       }
+
+      color: $color4;
+      padding: 10px 5vw;
     }
 
     .quoteInfo {

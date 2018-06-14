@@ -1,0 +1,51 @@
+& {
+  padding: 1rem;
+
+  a {
+    color: $secondary;
+
+    svg {
+      fill: $secondary;
+      transition-duration: 0.25s;
+      transition-property: margin-left;
+    }
+
+    &:active,
+    &:visited {
+      color: $secondary;
+    }
+
+    &:hover {
+      color: $pink;
+      cursor: pointer;
+
+      svg {
+        fill: $pink;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  svg {
+    margin-bottom: -0.2rem;
+  }
+
+  .ember-image {
+    height: auto;
+    max-width: 300px;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .heading {
+    color: $dark-green;
+  }
+
+  .image-container {
+    display: inline-grid;
+  }
+
+  .info {
+    padding: 1rem;
+  }
+}
