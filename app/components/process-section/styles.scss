@@ -28,6 +28,18 @@
       }
 
       padding: 10px;
+
+      &.logo {
+        max-width: 200px;
+
+        @media (min-width: 1200px) {
+          max-width: 300px;
+        }
+
+        path {
+          stroke-width: 1.25rem;
+        }
+      }
     }
 
     &.build {

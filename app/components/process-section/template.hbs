@@ -1,3 +1,24 @@
+<page class="{{this.styleNamespace}} process about" id="about">
+  <centered>
+    <hbox xs="12" sm="10" md="8" justify="between">
+      <centered xs="12" sm="6">
+        {{svg-jar "logo" class="svg-icon logo" height="100%" max-width="300px" width="auto"}}
+      </centered>
+
+      <box xs="12" sm="6" justify="center">
+        <h3 class="heading">About Us</h3>
+
+        <p class="info">
+          Ship Shape is a Washington D.C. based software consultancy specializing in all things Ember.
+          We leverage Ember.js, and all the latest Ember addons and technologies, to create truly ambitious,
+          state of the art applications that are future-proof and easily maintainable.
+        </p>
+      </box>
+    </hbox>
+  </centered>
+  {{scroll-suggest href="#design"}}
+</page>
+
 <page class="{{this.styleNamespace}} process design" id="design">
   <centered>
     <hbox xs="12" sm="10" md="8" justify="between">
@@ -8,6 +29,7 @@
       <box xs="12" sm="6" justify="center">
         <h3 class="heading">Design</h3>
         <h4 class="sub-heading">Measure twice, cut once</h4>
+
         <p class="info">
           We put a great deal of time into developing a sound architecture and ensuring we
           have a solid understanding of your wants and needs. We'll work with you to
@@ -18,6 +40,7 @@
   </centered>
   {{scroll-suggest href="#build"}}
 </page>
+
 <page class="{{this.styleNamespace}} process build" id="build">
   <centered>
     <hbox xs="12" sm="10" md="8" justify="between">
@@ -28,6 +51,7 @@
       <box xs="12" sm="6" justify="center">
         <h3 class="heading">Build</h3>
         <h4 class="sub-heading">Convention over configuration</h4>
+
         <p class="info">
           We use the latest versions of Ember.js and Ember-CLI in all of our products, and
           we strive to stay up to date with new releases. We leverage the amazing Ember
@@ -39,6 +63,7 @@
   </centered>
   {{scroll-suggest href="#ship"}}
 </page>
+
 <page class="{{this.styleNamespace}} process ship" id="ship">
   <centered>
     <hbox xs="12" sm="10" md="8" justify="between">
@@ -49,6 +74,7 @@
       <box xs="12" sm="6" justify="center">
         <h3 class="heading">Ship</h3>
         <h4 class="sub-heading">Real artists ship</h4>
+
         <p class="info">
           We'll keep you in the loop with regular demos, frequent calls, chats, dinners, drinks,
           whatever floats your boat. We won't just develop huge chunks of the app and
