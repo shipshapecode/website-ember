@@ -7,30 +7,54 @@ export default Route.extend({
       attributes: {
         title: 'Ember.js Consulting and Training - Ship Shape',
         description: 'Ember consulting is our specialty at Ship Shape. We have worked on several ambitious, ' +
-        'full scale Ember apps for both large and small clients. We put a huge focus on leveling up your team\'s ' +
-        'Ember skills, while also churning out bulletproof features for your Ember app.',
+          'full scale Ember apps for both large and small clients. We put a huge focus on leveling up your team\'s ' +
+          'Ember skills, while also churning out bulletproof features for your Ember app.',
         type: 'website',
         url: 'https://shipshape.io/ember-consulting/'
       },
       clients: [
         {
+          heading: 'Netflix',
+          imageURL: '/img/clients/netflix.png',
+          panelHeading: 'Netflix',
+          panelSubheading: 'Staff augmentation, feature development, test coverage',
+          panelInfo: htmlSafe(`
+          <p>
+            We were integrated with the Studio Finance UI team at Netflix, working primarily on Gravity, which is a 
+            financial app that allows users to upload and edit large amounts of data about shows and movies. It was a
+            mostly unmaintained app when we started, and we were tasked with whipping it into shape and increasing the
+            code coverage from tests.
+          </p>
+          `)
+        },
+        {
           heading: 'SocialCode',
-          imageURL: 'img/clients/socialcode.png',
+          imageURL: '/img/clients/socialcode.png',
           panelHeading: 'SocialCode',
           panelSubheading: 'Staff augmentation, code audit, feature development',
-          panelInfo: htmlSafe(
-            `<p>
-            Description coming soon!
-          </p>`
-          )
+          panelInfo: htmlSafe(`
+          <p>
+            SocialCode has a unique "micro apps" setup, which we helped streamline, by moving common dependencies to a
+            common addon, and ensuring all apps adhered to the same standards by enforcing the latest eslint-plugin-ember
+            rules. We also migrated all the code to use the new modules syntax, and new testing syntax, and updated apps
+            to the latest Ember version to make sure we were on the latest and greatest of everything.
+          </p>
+
+          <p>
+            There was quite a lot of custom code hanging around, in the SocialCode apps, that could be replaced with some
+            addons that did not exist when the apps were created. We refactored large chunks of code to use these addons,
+            such as a refactor from a custom select to ember-power-select, and other similar refactors, to reduce the
+            amount of in house code that needed to be maintained, and improve the stability of the apps going forward.
+          </p>
+          `)
         },
         {
           heading: 'Mariana Tek',
-          imageURL: 'img/clients/mariana-tek.svg',
+          imageURL: '/img/clients/mariana-tek.svg',
           panelHeading: 'Mariana Tek',
           panelSubheading: 'Staff augmentation for initial release',
-          panelInfo: htmlSafe(
-            `<p>
+          panelInfo: htmlSafe(`
+          <p>
             We worked hand in hand with the Mariana Tek dev team to develop several required features for a major
             client release. This included an initial scan of the codebase, the addition of several ESLint rules from
             eslint-plugin-ember, and updates of various dependencies. We enforced best practices at every turn, and ensured the
@@ -53,12 +77,12 @@ export default Route.extend({
           <p>
             The rest of our work focused mainly on the permissions service and ensuring users could only access the parts
             of the app they were allowed to, based on their roles.
-          </p>`
-          )
+          </p>
+          `)
         },
         {
           heading: 'Mentrs',
-          imageURL: 'img/clients/mentrs-logo.png',
+          imageURL: '/img/clients/mentrs-logo.png',
           panelHeading: 'Mentrs',
           panelSubheading: 'MVP app development and staff training',
           panelInfo: htmlSafe(
@@ -77,11 +101,11 @@ export default Route.extend({
         },
         {
           heading: 'Scout',
-          imageURL: 'img/clients/scout-logo.png',
+          imageURL: '/img/clients/scout-logo.png',
           panelHeading: 'Scout',
           panelSubheading: 'Code audit, app feature development',
-          panelInfo: htmlSafe(
-            `<p>
+          panelInfo: htmlSafe(`
+          <p>
             We did several months of work with Scout,
             starting with updating to the latest versions of
             Ember and Ember CLI, adding Ember Suave, and adhering
@@ -94,12 +118,12 @@ export default Route.extend({
             using Ember Flatpickr, Ember Paper and Ember Power Select,
             to allow a customer or staff member to create or edit an
             appointment.
-          </p>`
-          )
+          </p>
+          `)
         },
         {
           heading: 'Williamson Wagner',
-          imageURL: 'img/clients/WW.png',
+          imageURL: '/img/clients/WW.png',
           panelHeading: 'Williamson Wagner',
           panelSubheading: 'Logo design, web design, and website',
           panelInfo: htmlSafe(
@@ -112,7 +136,7 @@ export default Route.extend({
         },
         {
           heading: 'greenlight.guru',
-          imageURL: 'img/clients/greenlight-logo.png',
+          imageURL: '/img/clients/greenlight-logo.png',
           panelHeading: 'greenlight.guru',
           panelSubheading: '1.10 - 1.13 update and deprecation fixes, grunt to ember-cli',
           panelInfo: htmlSafe(
