@@ -24,7 +24,7 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*'
       ],
-      version: '47'
+      version: '48'
     },
     'ember-cli-markdown-to-json': {
       attributes: [
@@ -48,7 +48,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '47'
+      version: '48'
     },
     emberCliConcat: {
       js: {
