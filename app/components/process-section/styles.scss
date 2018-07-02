@@ -30,6 +30,8 @@
       padding: 10px;
 
       &.logo {
+        display: flex;
+        flex: 1 0 auto;
         max-width: 200px;
 
         @media (min-width: 1200px) {

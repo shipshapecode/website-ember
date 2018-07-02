@@ -24,7 +24,7 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*'
       ],
-      version: '48'
+      version: '49'
     },
     'ember-cli-markdown-to-json': {
       attributes: [
@@ -48,7 +48,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '48'
+      version: '49'
     },
     emberCliConcat: {
       js: {
@@ -65,6 +65,7 @@ module.exports = function(defaults) {
     },
     'ember-service-worker': {
       enabled: process.env.EMBER_ENV === 'production',
+      registrationStrategy: 'inline',
       versionStrategy: 'every-build'
     },
     fingerprint: {
