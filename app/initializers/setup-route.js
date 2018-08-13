@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-export function initialize(/* application */) {
+export function initialize() {
   if (typeof FastBoot === 'undefined') {
     Route.reopen({
       activate() {
