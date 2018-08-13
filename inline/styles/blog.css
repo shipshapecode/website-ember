@@ -79,3 +79,7 @@
 .ad-hoc-relationships-with-ember-data .hero.blog-post {
   background: url(/img/blog/blog-post-14.jpg) no-repeat bottom center/cover;
 }
+
+.forcing-trailing-slashes-for-routes .hero.blog-post {
+  background: url(/img/blog/blog-post-15.jpg) no-repeat bottom center/cover;
+}
