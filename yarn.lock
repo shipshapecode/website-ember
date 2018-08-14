@@ -1858,9 +1858,9 @@ broccoli-source@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/broccoli-source/-/broccoli-source-1.1.0.tgz#54f0e82c8b73f46580cbbc4f578f0b32fca8f809"
 
-broccoli-static-site-json@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/broccoli-static-site-json/-/broccoli-static-site-json-2.1.1.tgz#bba3c55e715ea81e70eb1b265c32edfd9a1d00de"
+broccoli-static-site-json@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/broccoli-static-site-json/-/broccoli-static-site-json-2.1.2.tgz#eb126df5bdcd2e487796756c3499eeaaecc74b26"
   dependencies:
     broccoli-plugin "^1.3.0"
     debug "^3.1.0"
@@ -3310,11 +3310,11 @@ ember-cli-lodash-subset@^1.0.7:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/ember-cli-lodash-subset/-/ember-cli-lodash-subset-1.0.12.tgz#af2e77eba5dcb0d77f3308d3a6fd7d3450f6e537"
 
-ember-cli-markdown-to-json@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/ember-cli-markdown-to-json/-/ember-cli-markdown-to-json-0.0.5.tgz#80cf53ae1406f540a0acd537ccf27e780470952c"
+ember-cli-markdown-to-json@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-markdown-to-json/-/ember-cli-markdown-to-json-0.1.0.tgz#c8ab08a337945290ad4c81f1460d8343e345f82b"
   dependencies:
-    broccoli-static-site-json "^2.1.1"
+    broccoli-static-site-json "^2.1.2"
     ember-cli-babel "^6.6.0"
 
 ember-cli-moment-shim@^3.7.1:
