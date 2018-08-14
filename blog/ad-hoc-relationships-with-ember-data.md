@@ -21,7 +21,10 @@ However, when things do not conform, as they should, and you have to customize t
 I recently had a particular situation that was giving me a lot of trouble, so I reached out to the Ember Data 
 Master himself, [@runspired](https://twitter.com/Runspired), for help.
 
-We had a relationship like website -> page -> pageViewStats, where each website could have multiple pages and each page would have a single pageViewStats object. However, we had an endpoint of the form `/api/v3/websites/{websiteId}/pageViewStats`, and this endpoint would return an array of objects of type `pageViewStat`. 
+We had a relationship like `website -> page -> pageViewStats`, where each website could have multiple pages and each
+page would have a single `pageViewStats` object. However, we had an endpoint of the form 
+`/api/v3/websites/{websiteId}/pageViewStats`, and this endpoint would return an array of objects 
+of type `pageViewStat`. 
 
 This array would need to live on the `website` model as a `hasMany` relationship.
 
@@ -75,7 +78,7 @@ never called `get` on them, we had to make sure they were loaded in the model ho
 
 ```js
 model(params) {
-  return this.store.find('website', params.id)
+  return this.store.findRecord('website', params.id)
     .then(website => {
       return website.hasMany('pageViewStats').load().then(() => {
         return website;
@@ -136,8 +139,8 @@ This allowed us to have one aggregated data set sent down from one API call, whi
 and also allowed us to access the specific `pageViewStat` records associated with each `page` record by 
 just checking `page.pageViewStats`, which accomplished our ultimate goal of displaying a table of `page`
 records, and listing the `pageViewStat` values for each. Keep in mind our endpoints were not correctly 
-REST or JSONAPI formatted, and neither of these relationships existed from our API, we manually forced 
+REST or JSONAPI formatted, and neither of these relationships existed from our API, so we manually forced 
 them in.
 
-Hopefully this helps someone struggling, as I did, with how to setup relationships for something that is not
-related at all from the back end!
+Hopefully this helps someone struggling, as I did, with how to setup relationships for something that is
+not related at all from the back end!
