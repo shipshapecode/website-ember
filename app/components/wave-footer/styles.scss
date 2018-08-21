@@ -17,7 +17,9 @@
     padding: 1rem 0;
 
     svg {
+      height: 0.5rem;
       margin-bottom: -0.0323rem;
+      width: 0.5rem;
 
       path {
         fill: $off-white;
@@ -32,6 +34,9 @@
 
   .logo {
     svg {
+      height: 4rem;
+      width: 4rem;
+
       path {
         fill: $off-white;
         stroke: $off-white;
