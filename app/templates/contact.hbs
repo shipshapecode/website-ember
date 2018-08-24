@@ -1,15 +1,13 @@
 {{#hero-block
-  heroClasses='contact'
-  scrollToHref='#contact-form'}}
+  heroClasses="contact"
+  scrollToHref="#contact-form"}}
   <h1 class="hero-header">Contact</h1>
 {{/hero-block}}
-
-
 
 <page class="contact-form" id="contact-form">
   <centered>
     <form class="cd-form floating-labels" name="contact-us" netlify-honeypot="bot-field"
-      {{action (route-action 'sendContactRequest' model) on="submit"}} netlify>
+      {{action (route-action "sendContactRequest" model) on="submit"}} netlify>
       <fieldset>
         <legend>Personal Info</legend>
         <centered xs="12" class="bot-field">
@@ -71,7 +69,7 @@
 
       <div>
         {{input
-          disabled=(v-get model 'isTruelyInvalid')
+          disabled=(v-get model "isTruelyInvalid")
           type="submit"
           value="Send Message"}}
       </div>
