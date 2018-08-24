@@ -17,6 +17,15 @@ module.exports = function(defaults) {
       extensions: ['js', 'css', 'svg'],
       keepUncompressed: true
     },
+    imagemin: {
+      enabled: false,
+      plugins: [
+        require('imagemin-jpegtran')({ progressive: true }),
+        require('imagemin-optipng')(),
+        require('imagemin-webp')(),
+        require('imagemin-svgo')()
+      ]
+    },
     'asset-cache': {
       include: [
         'assets/**/*',
