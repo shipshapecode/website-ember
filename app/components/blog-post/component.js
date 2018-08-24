@@ -6,15 +6,15 @@ export default Component.extend({
   classNameBindings: ['slug'],
   tagName: 'article',
 
-  author: alias('post.attributes.author'),
-  authorId: alias('post.attributes.authorId'),
-  date: alias('post.attributes.date'),
-  slug: alias('post.attributes.slug'),
-  title: alias('post.attributes.title'),
+  author: alias('post.author'),
+  authorId: alias('post.authorId'),
+  date: alias('post.date'),
+  slug: alias('post.slug'),
+  title: alias('post.title'),
 
   init() {
     this._super(...arguments);
-    this.content = htmlSafe(this.post.attributes.html);
+    this.content = htmlSafe(this.post.html);
   },
 
   didRender() {

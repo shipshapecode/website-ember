@@ -35,22 +35,45 @@ module.exports = function(defaults) {
       ],
       version: '52'
     },
-    'ember-cli-markdown-to-json': {
-      attributes: [
-        'author',
-        'authorId',
-        'categories',
-        'date',
-        'slug',
-        'title'
-      ],
-      collections: [{
-        src: 'blog',
-        output: 'blog.json'
-      }],
-      contentTypes: ['description', 'html'],
-      folder: 'blog'
-    },
+    'ember-cli-markdown-to-json': [
+      {
+        attributes: [
+          'categories',
+          'date',
+          'slug',
+          'title'
+        ],
+        collections: [{
+          src: 'blog/posts',
+          output: 'posts.json'
+        }],
+        contentFolder: 'posts',
+        contentTypes: ['description', 'html'],
+        folder: 'blog/posts',
+        references: ['author'],
+        type: 'post'
+      },
+      {
+        attributes: [
+          'name',
+          'image',
+          'coverImage',
+          'coverMeta',
+          'bio',
+          'website',
+          'twitter',
+          'facebook',
+          'location'
+        ],
+        contentFolder: 'authors',
+        collections: [{
+          src: 'blog/authors',
+          output: 'authors.json'
+        }],
+        folder: 'blog/authors',
+        type: 'author'
+      }
+    ],
     'esw-cache-fallback': {
       patterns: [
         '/github-repos'
@@ -104,8 +127,7 @@ module.exports = function(defaults) {
     rssFeed: require('./config/rss-feed'),
     SRI: {
       enabled: false
-    },
-    vendorFiles: { 'jquery.js': null }
+    }
   });
 
   return app.toTree();
