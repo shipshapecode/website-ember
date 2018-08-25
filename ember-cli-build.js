@@ -151,7 +151,7 @@ function buildPremberUrls() {
   const { extname } = require('path');
   const walkSync = require('walk-sync');
 
-  const paths = walkSync('blog');
+  const paths = walkSync('blog/posts');
 
   const mdFiles = paths.filter(path => extname(path) === '.md')
     .map((path) => {
