@@ -7,7 +7,6 @@ export default Component.extend({
   tagName: 'article',
 
   author: alias('post.author'),
-  authorId: alias('post.authorId'),
   date: alias('post.date'),
   slug: alias('post.slug'),
   title: alias('post.title'),

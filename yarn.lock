@@ -3182,9 +3182,9 @@ ember-cli-eslint@^4.2.3:
     rsvp "^4.6.1"
     walk-sync "^0.3.0"
 
-ember-cli-fastboot@ember-fastboot/ember-cli-fastboot#158af9ec00edf58db71524bea04d224705ef5d19:
+ember-cli-fastboot@ember-fastboot/ember-cli-fastboot#master:
   version "1.1.4-beta.1"
-  resolved "https://codeload.github.com/ember-fastboot/ember-cli-fastboot/tar.gz/158af9ec00edf58db71524bea04d224705ef5d19"
+  resolved "https://codeload.github.com/ember-fastboot/ember-cli-fastboot/tar.gz/c47e2d44d31b4159280d385df45d17d258d77fbf"
   dependencies:
     broccoli-concat "^3.2.2"
     broccoli-funnel "^2.0.0"
@@ -3665,9 +3665,9 @@ ember-fetch-adapter@^0.4.3:
   dependencies:
     ember-cli-babel "^6.12.0"
 
-ember-fetch@^5.1.2:
+ember-fetch@rwwagner90/ember-fetch#server-side:
   version "5.1.2"
-  resolved "https://registry.yarnpkg.com/ember-fetch/-/ember-fetch-5.1.2.tgz#084b206d285e1ee19ee2260262c0635eeed4e52a"
+  resolved "https://codeload.github.com/rwwagner90/ember-fetch/tar.gz/873ac31171f997bba37e778d18973ddfd06d0676"
   dependencies:
     "@xg-wang/whatwg-fetch" "^3.0.0"
     abortcontroller-polyfill "^1.1.9"
