@@ -3,6 +3,6 @@ import { sort } from '@ember/object/computed';
 
 export default Controller.extend({
   // eslint-disable-next-line
-  dateSort: ['attributes.date:desc'],
+  dateSort: ['date:desc'],
   blogPostsSortedByDate: sort('model', 'dateSort')
 });

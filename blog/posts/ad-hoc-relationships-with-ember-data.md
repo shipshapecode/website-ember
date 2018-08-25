@@ -1,6 +1,5 @@
 ---
-author: Robert Wagner
-authorId: rwwagner90
+author: robert
 categories: 
   - ember
   - ember.js

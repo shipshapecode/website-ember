@@ -21,7 +21,7 @@ module.exports = {
   },
 
   //Glob style patterns (https://github.com/isaacs/node-glob#glob-primer)
-  articles: './blog/*.md',
+  articles: './blog/posts/*.md',
 
   /** Actual URL of individual blog post */
   urlForPost(postMeta) {

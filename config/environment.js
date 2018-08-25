@@ -46,7 +46,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
     // ENV.host = 'http://localhost:3000';
-    ENV.host = 'https://shipshape-api.herokuapp.com';
+    // ENV.host = 'https://shipshape-api.herokuapp.com';
   }
 
   if (environment === 'test') {
