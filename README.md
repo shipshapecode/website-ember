@@ -1,4 +1,7 @@
 # Ship Shape's Website (shipshape.io)
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/shipshapecode/shipshape.io.svg)](https://greenkeeper.io/)
+
 <a href="https://shipshape.io/"><img src="http://i.imgur.com/KVqNjgO.png" alt="Ship Shape" width="100" height="100"/></a>
 
 This website is made possible by the following Ember addons:
