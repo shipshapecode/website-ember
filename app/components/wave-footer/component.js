@@ -1,4 +1,4 @@
-import { CompatComponent as Component } from 'ember-glimmer-component';
+import Component from '@ember/component';
 
 export default Component.extend({
   year: new Date().getFullYear()
