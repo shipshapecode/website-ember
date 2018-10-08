@@ -5,7 +5,7 @@
     </a>
   </box>
 
-  {{#each posts as |post|}}
+  {{#each @posts as |post|}}
     <box fit class="blog-post">
       {{link-to post.title "blog.post" post.slug class="title"}}
 

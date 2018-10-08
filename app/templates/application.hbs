@@ -18,11 +18,11 @@
   </screen>
   {{wave-footer}}
 
-  {{#nav-container}}
+  <NavContainer>
     {{#each links as |link index|}}
       {{nav-item index=index link=link}}
     {{/each}}
-  {{/nav-container}}
+  </NavContainer>
 
-  {{folding-panel}}
+  <FoldingPanel/>
 </div>
