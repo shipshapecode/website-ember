@@ -10,7 +10,7 @@
       {{link-to post.title "blog.post" post.slug class="title"}}
 
       <div class="attribution">
-        By {{post.author.name}} {{moment-format post.date "LL"}}
+        By {{post.author.name}} {{date-format post.date "MM/DD/YYYY"}}
       </div>
     </box>
   {{/each}}

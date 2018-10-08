@@ -10,6 +10,7 @@
 
 # misc
 /.sass-cache
+/concat-stats-for/
 /connect.lock
 /coverage/
 /libpeerconnection.log
