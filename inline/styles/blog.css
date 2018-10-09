@@ -83,3 +83,7 @@
 .forcing-trailing-slashes-for-routes .hero.blog-post {
   background: url(/img/blog/blog-post-15.jpg) no-repeat bottom center/cover;
 }
+
+.ember-data-belongs-to-find-or-create .hero.blog-post {
+  background: url(/img/blog/blog-post-16.jpg) no-repeat bottom center/cover;
+}
