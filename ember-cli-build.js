@@ -1,7 +1,6 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-const rollupPackager = require('ember-cli-rollup-packager');
 const shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
 
 shim(EmberApp);
@@ -27,9 +26,6 @@ module.exports = function(defaults) {
         require('imagemin-svgo')()
       ]
     },
-    package: rollupPackager({
-
-    }),
     'asset-cache': {
       include: [
         'assets/**/*',
@@ -37,7 +33,7 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*'
       ],
-      version: '57'
+      version: '58'
     },
     'ember-cli-markdown-to-json': [
       {
@@ -84,7 +80,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '57'
+      version: '58'
     },
     emberCliConcat: {
       js: {
