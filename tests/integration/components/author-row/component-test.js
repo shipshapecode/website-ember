@@ -1,5 +1,5 @@
 import { moduleForComponent, skip } from 'ember-qunit';
-import { find } from 'ember-native-dom-helpers';
+import { find } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 moduleForComponent('author-row', 'Integration | Component | author row', {
