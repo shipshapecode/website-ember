@@ -1,6 +1,7 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+const rollupPackager = require('ember-cli-rollup-packager');
 const shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
 
 shim(EmberApp);
@@ -26,6 +27,19 @@ module.exports = function(defaults) {
         require('imagemin-svgo')()
       ]
     },
+    package: rollupPackager({
+      additionalEntryPoints: [
+        'addon-tree-output/ember-validators/format.js',
+        'addon-tree-output/ember-validators/presence.js'
+      ],
+      externalImports: ['htmlbars-inline-precompile'],
+      additionalRollupInputOptions: {
+        treeshake: {
+          pureExternalModules: true,
+          propertyReadSideEffects: false
+        }
+      }
+    }),
     'asset-cache': {
       include: [
         'assets/**/*',
