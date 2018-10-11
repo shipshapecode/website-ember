@@ -109,7 +109,7 @@ a {
     }
   }
 
-  centered {
+  .flexi-centered {
     a:before,
     &.is-selected a:before {
       background-position: center;
