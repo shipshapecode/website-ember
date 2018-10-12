@@ -8,10 +8,10 @@ categories:
   - get or create
 date: '2018-10-8'
 slug: ember-data-belongs-to-find-or-create
-title: Find or Create with ember-data belongsTo 404
+title: Creating a Default Record When a belongsTo Request Errors
 ---
 
-## Find or Create with ember-data belongsTo 404
+## Creating a Default Record When a belongsTo Request Errors
 
 Today I had an interesting need in ember-data, which was to create an empty record,
 when the API returned a 404 for a `belongsTo`. Typically an `AdapterError` would be thrown,
@@ -26,27 +26,32 @@ as he always does. The solution was to catch the error in the `findBelongsTo` me
 
 ### Models
 
-The models simply setup the relationships between themselves.
+The models simply setup the relationships between themselves. For the sake of illustration, we will use a person -> address relationship.
 
 ```js
-// app/models/foo.js
+// app/models/person.js
 import Model from 'ember-data/model';
 import { belongsTo } from 'ember-data/relationships';
 
 export default Model.extend({
-  bar: belongsTo('bar', { async: true })
+  address: belongsTo('address', { async: true })
 });
 ```
 
 ```js
-// app/models/bar.js
+// app/models/address.js
 import Model from 'ember-data/model';
 import attr from 'ember-data/attr';
 import { belongsTo } from 'ember-data/relationships';
 
 export default Model.extend({
-  baz: attr('string'),
-  foo: belongsTo('foo', { async: false })
+  line1: attr('string'),
+  line2: attr('string'),
+  city: attr('string'),
+  state: attr('string'),
+  zip: attr('string'),
+  
+  person: belongsTo('person', { async: false })
 });
 ```
 
@@ -56,16 +61,20 @@ The adapter is going to catch the 404, and return an object with a default value
 serialized as the "value from the server", and treated just like a normal server response would be.
 
 ```js
-// app/adapters/foo.js
+// app/adapters/person.js
 import ApplicationAdapter from './application';
 
 export default ApplicationAdapter.extend({
   async findBelongsTo(store, snapshot, url, relationship) {
     const response = await this._super(store, snapshot, url, relationship).catch((error) => {
-      // If the relationship is of type `bar` and the error status is 404, return an empty object
-      if (relationship.key === 'bar' && error.errors[0].status === '404') {
+      // If the relationship is of type `address` and the error status is 404, return an empty object
+      if (relationship.key === 'address' && error.errors[0].status === '404') {
         return {
-          baz: 'Yay, default values!'
+          line1: null,
+          line2: null,
+          city: null,
+          state: null,
+          zip: null
         };
       }
 
