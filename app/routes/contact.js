@@ -23,7 +23,7 @@ export default Route.extend({
   },
 
   afterModel(model) {
-    model.attributes = {
+    model.metaTags = {
       title: 'Contact Us - Ship Shape',
       description:
       'Let\'s create some amazing things together. We do Ember app development, Ember training, sponsored ' +

@@ -12,5 +12,5 @@ export default Model.extend({
   twitter: attr('string'),
   website: attr('string'),
 
-  posts: hasMany('content')
+  posts: hasMany('post', { inverse: 'author' })
 });

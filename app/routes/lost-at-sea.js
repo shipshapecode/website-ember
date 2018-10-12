@@ -3,7 +3,7 @@ import Route from '@ember/routing/route';
 export default Route.extend({
   model() {
     return {
-      attributes: {
+      metaTags: {
         title: '404 - Ship Shape',
         description: 'Oops!',
         type: 'website',

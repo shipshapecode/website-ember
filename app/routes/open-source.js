@@ -9,7 +9,7 @@ export default Route.extend({
   },
 
   afterModel(model) {
-    model.attributes = {
+    model.metaTags = {
       title: 'Ember Addons and Open Source - Ship Shape',
       description:
       'We collaborate extensively with the Ember community on all facets of Ember. ' +

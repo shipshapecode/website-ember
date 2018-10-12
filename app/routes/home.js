@@ -3,7 +3,7 @@ import Route from '@ember/routing/route';
 export default Route.extend({
   model() {
     return {
-      attributes: {
+      metaTags: {
         title: 'Ship Shape - Ember.js Code That Won\'t Sink',
         description:
         'Ship Shape is a Washington D.C. based software consultancy specializing in all things Ember. ' +
