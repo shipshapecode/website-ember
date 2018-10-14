@@ -4720,20 +4720,21 @@ elliptic@^6.0.0:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
-ember-3d-folding-panel@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/ember-3d-folding-panel/-/ember-3d-folding-panel-0.8.1.tgz#630e533b14c8531622169245324dae462fbb0908"
-  integrity sha512-tNTcMKmzzIGwBiqXhwrUzKPbxdvKif/W2clld9fBGwBuzRIFIkJbtJOmTzzu8CvK2Q2VG/TByIAdnIbEMa29Jw==
+ember-3d-folding-panel@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/ember-3d-folding-panel/-/ember-3d-folding-panel-0.9.1.tgz#970ce55348506fa457fb6341c0d609fd963d0b51"
+  integrity sha512-1mlPApWIHk4WLtTAlvHBbQfY0Yy4qM/98oypDKflNxVbrfxreRP4iHrpP8S88KuorTWce0VgDH2CCYDKpQwWUg==
   dependencies:
     "@html-next/flexi-config" "^2.1.1"
     "@html-next/flexi-default-styles" "^2.1.1"
     "@html-next/flexi-dsl" "^2.1.0"
     "@html-next/flexi-layouts" "^2.2.2"
-    ember-cli-babel "^6.6.0"
-    ember-cli-htmlbars "^2.0.1"
-    ember-cli-sass "^7.0.0"
+    ember-cli-babel "^6.16.0"
+    ember-cli-htmlbars "^3.0.0"
+    ember-cli-sass "^8.0.1"
     ember-component-css "^0.6.4"
     flexi "^2.1.0"
+    sass "^1.14.2"
 
 ember-3d-nav@^1.12.1:
   version "1.12.1"
@@ -11964,6 +11965,13 @@ sass@^1.14.1:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/sass/-/sass-1.14.1.tgz#6f7b083b880104caa19e45841cdb0889d9bdadbf"
   integrity sha512-XjTTos0ocxN4R2vdOoo083PXUt1XZkOO+ynAl4auomOSAbLr4/aGg19cSpR7w90nUtP6cIRysytboJRUGfw03A==
+  dependencies:
+    chokidar "^2.0.0"
+
+sass@^1.14.2:
+  version "1.14.2"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.14.2.tgz#6fabdb10939a3f6848cda59b7d91d6a3103923c0"
+  integrity sha512-2tv+ROdMomDr9+uc+LCSUPFTZwOZ0MB7BbidrRZ5s3pbg1qKTKS7pL71dVvkOUjrSicHuk7fnqEVG73oa9FJtg==
   dependencies:
     chokidar "^2.0.0"
 
