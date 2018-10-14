@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="56px" height="58px" viewBox="0 0 56 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
-    <title>Packing and Shipping - Flat - 009 - Carboard Box</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Packing-and-Shipping---Flat---009---Carboard-Box" fill-rule="nonzero">
-            <polygon id="Shape" fill="#FDD7AD" points="28 0 18 5 14 7 10 9 0 14 0 44 28 58 56 44 56 14"></polygon>
-            <polygon id="Shape" fill="#CBB292" points="42 21 38 23 10 9 14 7"></polygon>
-            <polygon id="Shape" fill="#CBB292" points="28 28 28 58 0 44 0 14"></polygon>
-            <polygon id="Shape" fill="#7F6E5D" points="56 14 56 44 28 58 28 28 38 23 38 27 46 23 46 19"></polygon>
-            <polygon id="Shape" fill="#7F5B53" points="46 19 46 23 38 27 38 23"></polygon>
-            <polygon id="Shape" fill="#CBB292" points="46 19 42 21 14 7 18 5"></polygon>
-            <path d="M37.65836,31.17082 L46.55279,26.72361 C46.8627722,26.5686205 47.230903,26.5851815 47.5257162,26.767379 C47.8205294,26.9495764 47.9999865,27.27143 48,27.618 L48,28.14587 C47.9999993,29.2821858 47.3579919,30.3209744 46.34164,30.82915 L37.44721,35.27636 C37.1372326,35.4313472 36.7691079,35.4147891 36.4742965,35.2325989 C36.1794851,35.0504087 36.0000239,34.7285646 36,34.382 L36,33.8541 C36.0000007,32.7177842 36.6420081,31.6789956 37.65836,31.17082 L37.65836,31.17082 Z" id="Shape" fill="#2C3E50"></path>
-        </g>
-    </g>
-</svg>
+<svg height="58" viewBox="0 0 56 58" width="56" xmlns="http://www.w3.org/2000/svg"><g fill="none"><path d="m28 0-10 5-4 2-4 2-10 5v30l28 14 28-14v-30z" fill="#fdd7ad"/><path d="m42 21-4 2-28-14 4-2z" fill="#cbb292"/><path d="m28 28v30l-28-14v-30z" fill="#cbb292"/><path d="m56 14v30l-28 14v-30l10-5v4l8-4v-4z" fill="#7f6e5d"/><path d="m46 19v4l-8 4v-4z" fill="#7f5b53"/><path d="m46 19-4 2-28-14 4-2z" fill="#cbb292"/><path d="m37.65836 31.17082 8.89443-4.44721c.3099822-.1549895.678113-.1384285.9729262.043769.2948132.1821974.4742703.504051.4742838.850621v.52787c-.0000007 1.1363158-.6420081 2.1751044-1.65836 2.68328l-8.89443 4.44721c-.3099774.1549872-.6781021.1384291-.9729135-.0437611s-.4742726-.5040343-.4742965-.8505989v-.5279c.0000007-1.1363158.6420081-2.1751044 1.65836-2.68328z" fill="#2c3e50"/></g></svg>

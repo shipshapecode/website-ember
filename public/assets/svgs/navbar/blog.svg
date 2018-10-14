@@ -1,17 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
-  <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
-    <polygon fill="#FFF" points="0 0 18 0 18 54 0 54"/>
-    <polygon stroke="#99A3A4" stroke-linejoin="round" stroke-width="2" points="0 0 18 0 18 54 0 54"/>
-    <polygon fill="#FFF" points="18 0 36 0 36 54 18 54"/>
-    <polygon stroke="#99A3A4" stroke-linejoin="round" stroke-width="2" points="18 0 36 0 36 54 18 54"/>
-    <polygon fill="#FFF" points="36 0 54 0 54 54 36 54"/>
-    <polygon stroke="#99A3A4" stroke-linejoin="round" stroke-width="2" points="36 0 54 0 54 54 36 54"/>
-    <polygon fill="#D4E7F0" points="4 31 14 31 14 41 4 41"/>
-    <polygon stroke="#99A3A4" stroke-linejoin="round" stroke-width="2" points="4 31 14 31 14 41 4 41"/>
-    <polygon fill="#D4E7F0" points="22 31 32 31 32 41 22 41"/>
-    <polygon stroke="#99A3A4" stroke-linejoin="round" stroke-width="2" points="22 31 32 31 32 41 22 41"/>
-    <polygon fill="#D4E7F0" points="40 31 50 31 50 41 40 41"/>
-    <polygon stroke="#99A3A4" stroke-linejoin="round" stroke-width="2" points="40 31 50 31 50 41 40 41"/>
-    <path stroke="#99A3A4" stroke-linejoin="round" stroke-width="2" d="M0,45 L54,45"/>
-  </g>
-</svg>
+<svg height="56" viewBox="0 0 56 56" width="56" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(1 1)"><path d="m0 0h18v54h-18z" fill="#fff"/><path d="m0 0h18v54h-18z" stroke="#99a3a4" stroke-linejoin="round" stroke-width="2"/><path d="m18 0h18v54h-18z" fill="#fff"/><path d="m18 0h18v54h-18z" stroke="#99a3a4" stroke-linejoin="round" stroke-width="2"/><path d="m36 0h18v54h-18z" fill="#fff"/><path d="m36 0h18v54h-18z" stroke="#99a3a4" stroke-linejoin="round" stroke-width="2"/><path d="m4 31h10v10h-10z" fill="#d4e7f0"/><path d="m4 31h10v10h-10z" stroke="#99a3a4" stroke-linejoin="round" stroke-width="2"/><path d="m22 31h10v10h-10z" fill="#d4e7f0"/><path d="m22 31h10v10h-10z" stroke="#99a3a4" stroke-linejoin="round" stroke-width="2"/><path d="m40 31h10v10h-10z" fill="#d4e7f0"/><g stroke="#99a3a4" stroke-linejoin="round" stroke-width="2"><path d="m40 31h10v10h-10z"/><path d="m0 45h54"/></g></g></svg>
