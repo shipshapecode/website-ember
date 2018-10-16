@@ -5248,18 +5248,6 @@ ember-getowner-polyfill@^2.0.0, ember-getowner-polyfill@^2.0.1, ember-getowner-p
     ember-cli-version-checker "^2.1.0"
     ember-factory-for-polyfill "^1.3.1"
 
-ember-hammertime@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/ember-hammertime/-/ember-hammertime-1.5.0.tgz#205a9b4afd83e580b37e86b69cd79ebfa34b3bfa"
-  integrity sha512-esuIjOtVLtCOVmrfCu9IgpwKbBITg84XSKoli+Sz+H76Z7+fY/7Fp7sHk80XeAflz/tganK/gYOvyD1iSsH3lA==
-  dependencies:
-    broccoli-funnel "^2.0.1"
-    broccoli-merge-trees "^2.0.0"
-    broccoli-stew "^1.5.0"
-    ember-cli-babel "^6.6.0"
-    ember-get-config "^0.2.4"
-    hammer-timejs "^1.1.0"
-
 ember-headroom@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/ember-headroom/-/ember-headroom-1.1.2.tgz#6af60b6259f0358dcef03b52f7cfde06d40e42e9"
@@ -7004,11 +6992,6 @@ gulplog@^1.0.0:
   integrity sha1-4oxNRdBey77YGDY86PnFkmIp/+U=
   dependencies:
     glogg "^1.0.0"
-
-hammer-timejs@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/hammer-timejs/-/hammer-timejs-1.1.0.tgz#fc07ec1e4012228fe51b6a51218ec12661a32a42"
-  integrity sha1-/AfsHkASIo/lG2pRIY7BJmGjKkI=
 
 handlebars@^4.0.11, handlebars@^4.0.4, handlebars@^4.0.6:
   version "4.0.12"
