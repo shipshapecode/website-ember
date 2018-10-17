@@ -7,15 +7,10 @@ shim(EmberApp);
 
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
-    brotli: {
-      enabled: false,
-      extensions: ['js', 'css', 'svg'],
-      keepUncompressed: true
-    },
     gzip: {
-      enabled: false,
+      appendSuffix: false,
       extensions: ['js', 'css', 'svg'],
-      keepUncompressed: true
+      keepUncompressed: false
     },
     imagemin: {
       enabled: false,
@@ -33,7 +28,7 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*'
       ],
-      version: '66'
+      version: '67'
     },
     'ember-cli-markdown-to-json': [
       {
@@ -80,7 +75,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '66'
+      version: '67'
     },
     emberCliConcat: {
       js: {
