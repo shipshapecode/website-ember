@@ -1,86 +1,86 @@
 {{#if layoutService.isAtLeastDesktop}}
-<hbox class="{{this.styleNamespace}} footer" justify="center">
-  <hbox xs="10">
-    <hbox class="links">
-      <hbox xs="4">
-        <vbox fit>
-          <hbox class="logo" fit>
-            {{svg-jar "logo"}}
+  <hbox class="{{this.styleNamespace}} footer" justify="center">
+    <hbox xs="10">
+      <hbox class="links">
+        <hbox xs="4">
+          <vbox fit>
+            <hbox class="logo" fit>
+              {{svg-jar "logo"}}
+            </hbox>
+          </vbox>
+        </hbox>
+        <hbox xs="8" justify="end">
+          <hbox fit class="section" justify="end">
+            <ul>
+              <li>
+                <h6>Specialties</h6>
+              </li>
+
+              <li>
+                {{link-to "Ember" "ember-consulting"}}
+              </li>
+            </ul>
           </hbox>
-        </vbox>
-      </hbox>
-      <hbox xs="8" justify="end">
-        <hbox fit class="section" justify="end">
-          <ul>
-            <li>
-              <h6>Specialties</h6>
-            </li>
 
-            <li>
-              {{link-to "Ember" "ember-consulting"}}
-            </li>
-          </ul>
-        </hbox>
+          <hbox fit class="section" justify="end">
+            <ul>
+              <li>
+                <h6>Company</h6>
+              </li>
 
-        <hbox fit class="section" justify="end">
-          <ul>
-            <li>
-              <h6>Company</h6>
-            </li>
+              <li>
+                {{link-to "Open Source" "open-source"}}
+              </li>
 
-            <li>
-              {{link-to "Open Source" "open-source"}}
-            </li>
+              <li>
+                {{link-to "Contact" "contact"}}
+              </li>
 
-            <li>
-              {{link-to "Contact" "contact"}}
-            </li>
+              <li>
+                {{link-to "Blog" "blog"}}
+              </li>
+            </ul>
+          </hbox>
 
-            <li>
-              {{link-to "Blog" "blog"}}
-            </li>
-          </ul>
-        </hbox>
+          <hbox fit class="section" justify="end">
+            <ul>
+              <li>
+                <h6>Connect</h6>
+              </li>
 
-        <hbox fit class="section" justify="end">
-          <ul>
-            <li>
-              <h6>Connect</h6>
-            </li>
+              <li>
+                <a href="https://github.com/shipshapecode" aria-label="Ship Shape on GitHub">
+                  GitHub
+                </a>
+              </li>
 
-            <li>
-              <a href="https://github.com/shipshapecode" aria-label="Ship Shape on GitHub">
-                GitHub
-              </a>
-            </li>
+              <li>
+                <a href="https://twitter.com/shipshapecode" aria-label="Ship Shape on Twitter">
+                  Twitter
+                </a>
+              </li>
 
-            <li>
-              <a href="https://twitter.com/shipshapecode" aria-label="Ship Shape on Twitter">
-                Twitter
-              </a>
-            </li>
+              <li>
+                <a href="https://www.linkedin.com/company/ship-shape" aria-label="Ship Shape on LinkedIn">
+                  LinkedIn
+                </a>
+              </li>
 
-            <li>
-              <a href="https://www.linkedin.com/company/ship-shape" aria-label="Ship Shape on LinkedIn">
-                LinkedIn
-              </a>
-            </li>
-
-            <li>
-              <a href="mailto:ahoy@shipshape.io" itemprop="email">ahoy@shipshape.io</a>
-            </li>
-          </ul>
+              <li>
+                <a href="mailto:ahoy@shipshape.io" itemprop="email">ahoy@shipshape.io</a>
+              </li>
+            </ul>
+          </hbox>
         </hbox>
       </hbox>
-    </hbox>
 
-    <hbox class="copyright" xs="12">
-      <div>
-        {{svg-jar "copyright"}} {{this.year}} <span itemprop="legalName">Ship Shape Consulting LLC</span>
-      </div>
+      <hbox class="copyright" xs="12">
+        <div>
+          {{svg-jar "copyright"}} {{this.year}} <span itemprop="legalName">Ship Shape Consulting LLC</span>
+        </div>
+      </hbox>
     </hbox>
   </hbox>
-</hbox>
 {{else}}
   <grid class="{{this.styleNamespace}} footer">
     <centered class="links" xs="12">
