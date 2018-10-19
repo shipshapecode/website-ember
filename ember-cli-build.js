@@ -13,7 +13,7 @@ module.exports = function(defaults) {
       keepUncompressed: false
     },
     imagemin: {
-      enabled: false,
+      enabled: true,
       plugins: [
         require('imagemin-jpegtran')({ progressive: true }),
         require('imagemin-optipng')(),
@@ -28,7 +28,7 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*'
       ],
-      version: '67'
+      version: '68'
     },
     'ember-cli-markdown-to-json': [
       {
@@ -75,7 +75,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '67'
+      version: '68'
     },
     emberCliConcat: {
       js: {
