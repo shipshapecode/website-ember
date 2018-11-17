@@ -9,6 +9,22 @@
       padding-top: 1rem;
     }
 
+    .tag {
+      background-color: $off-white;
+      border-radius: 2px;
+      color: $grey;
+      display: inline-block;
+      padding: 2.5px;
+      transition-duration: 0.25s;
+      transition-property: background-color, color, fill;
+
+      &:hover {
+        background-color: $grey;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+
     .title {
       color: $dark;
       font-size: 2rem;

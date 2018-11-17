@@ -2,8 +2,7 @@ import { moduleFor, test } from 'ember-qunit';
 
 moduleFor('route:blog/index', 'Unit | Route | blog/index', {
   needs: [
-    'service:adapter', 'service:fastboot', 'service:headData',
-    'service:router-scroll'
+    'service:fastboot', 'service:headData', 'service:router-scroll'
   ]
 });
 

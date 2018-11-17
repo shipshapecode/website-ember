@@ -5,7 +5,7 @@
         <centered xs="12" id="ember-addons">
           <h2 class="section-heading">Ember Addons</h2>
         </centered>
-        {{#each projects as |project|}}
+        {{#each model as |project|}}
           <centered xs="12" sm="6" md="4" itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project">
             <a href="https://github.com/shipshapecode/{{project.name}}" class="repo" itemprop="codeRepository">
               <grid>
