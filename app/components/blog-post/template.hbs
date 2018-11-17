@@ -21,10 +21,7 @@
   <centered xs="12" class="post-content" id="post-content">
     <box xs="10" md="8">
       {{content}}
-      <AuthorRow
-        @author={{this.author}}
-        @authorId={{this.authorId}}>
-      </AuthorRow>
+      <AuthorRow @author={{this.author}}></AuthorRow>
     </box>
   </centered>
 </box>
