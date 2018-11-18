@@ -161,7 +161,7 @@ function buildPremberUrls() {
 function _getAuthorURLs() {
   return walkSync('blog/authors')
     .map(file => file.replace(/\.md$/, ''))
-    .map(id => `/blog/author/${id}/`);
+    .map(id => `/blog/authors/${id}/`);
 }
 
 function _getCategoryURLs(postPaths) {
