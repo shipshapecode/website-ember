@@ -13,14 +13,22 @@ export default Route.extend({
   },
 
   async afterModel(model) {
-    const authorId = this.paramsFor('blog.author').author;
+    const authorId = this.paramsFor('blog.authors.author').author;
     const author = await this.store.findRecord('author', authorId);
     const authorName = author.name;
     return setProperties(this.headData, {
       title: `Posts by ${authorName} - Blog - Ship Shape`,
       description: `${authorName} has written ${model.length} posts for Ship Shape.`,
       type: 'website',
-      url: `https://shipshape.io/blog/author/${encodeURIComponent(authorId)}/`
+      url: `https://shipshape.io/blog/authors/${encodeURIComponent(authorId)}/`
     });
+  },
+
+  async setupController(controller) {
+    this._super(...arguments);
+
+    const authorId = this.paramsFor('blog.authors.author').author;
+    const author = await this.store.findRecord('author', authorId);
+    controller.set('author', author);
   }
 });
