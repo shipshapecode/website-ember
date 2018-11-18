@@ -15,7 +15,7 @@
 
       <div class="tags">
         {{#each post.categories as |tag|}}
-          <div class="tag">{{link-to tag "blog.category" tag}}</div>
+          <div class="tag">{{link-to tag "blog.categories" (space-to-dash tag)}}</div>
         {{/each}}
       </div>
     </box>

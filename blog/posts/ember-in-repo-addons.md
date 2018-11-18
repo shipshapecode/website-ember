@@ -1,7 +1,6 @@
 ---
-author: robert
+author: rwwagner90
 categories: 
-  - ember
   - ember.js
   - in-repo addons
 date: '2016-07-19'

@@ -13,8 +13,8 @@ export default Route.extend({
   },
 
   async afterModel(model) {
-    const author = await model.get('firstObject.author');
-    const authorId = author.id;
+    const authorId = this.paramsFor('blog.author').author;
+    const author = await this.store.findRecord('author', authorId);
     const authorName = author.name;
     return setProperties(this.headData, {
       title: `Posts by ${authorName} - Blog - Ship Shape`,

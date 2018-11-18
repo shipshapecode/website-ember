@@ -1,9 +1,8 @@
 ---
-author: robert
+author: rwwagner90
 categories: 
-  - ember
-  - ember data
   - ember.js
+  - ember-data
   - hasMany
 date: '2017-07-31'
 slug: reloading-hasmany-relationships

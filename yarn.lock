@@ -999,6 +999,15 @@ ajv@^6.0.1, ajv@^6.1.0, ajv@^6.5.3, ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+align-text@^0.1.1, align-text@^0.1.3:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/align-text/-/align-text-0.1.4.tgz#0cd90a561093f35d0a99256c22b7069433fad117"
+  integrity sha1-DNkKVhCT810KmSVsIrcGlDP60Rc=
+  dependencies:
+    kind-of "^3.0.2"
+    longest "^1.0.1"
+    repeat-string "^1.5.2"
+
 amd-name-resolver@1.2.0, amd-name-resolver@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/amd-name-resolver/-/amd-name-resolver-1.2.0.tgz#fc41b3848824b557313897d71f8d5a0184fbe679"
@@ -2246,6 +2255,18 @@ broccoli-builder@^0.18.14:
     rsvp "^3.0.17"
     silent-error "^1.0.1"
 
+broccoli-caching-writer@^2.2.0:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/broccoli-caching-writer/-/broccoli-caching-writer-2.3.1.tgz#b93cf58f9264f003075868db05774f4e7f25bd07"
+  integrity sha1-uTz1j5Jk8AMHWGjbBXdPTn8lvQc=
+  dependencies:
+    broccoli-kitchen-sink-helpers "^0.2.5"
+    broccoli-plugin "1.1.0"
+    debug "^2.1.1"
+    rimraf "^2.2.8"
+    rsvp "^3.0.17"
+    walk-sync "^0.2.5"
+
 broccoli-caching-writer@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/broccoli-caching-writer/-/broccoli-caching-writer-3.0.3.tgz#0bd2c96a9738d6a6ab590f07ba35c5157d7db476"
@@ -2315,30 +2336,18 @@ broccoli-debug@^0.6.1, broccoli-debug@^0.6.3, broccoli-debug@^0.6.4, broccoli-de
     symlink-or-copy "^1.1.8"
     tree-sync "^1.2.2"
 
-broccoli-file-creator@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/broccoli-file-creator/-/broccoli-file-creator-1.1.1.tgz#1b35b67d215abdfadd8d49eeb69493c39e6c3450"
-  integrity sha1-GzW2fSFavfrdjUnutpSTw55sNFA=
+broccoli-file-creator@2.1.1, broccoli-file-creator@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/broccoli-file-creator/-/broccoli-file-creator-2.1.1.tgz#7351dd2496c762cfce7736ce9b49e3fce0c7b7db"
+  integrity sha512-YpjOExWr92C5vhnK0kmD81kM7U09kdIRZk9w4ZDCDHuHXW+VE/x6AGEOQQW3loBQQ6Jk+k+TSm8dESy4uZsnjw==
   dependencies:
-    broccoli-kitchen-sink-helpers "~0.2.0"
     broccoli-plugin "^1.1.0"
-    broccoli-writer "~0.1.1"
     mkdirp "^0.5.1"
-    rsvp "~3.0.6"
-    symlink-or-copy "^1.0.1"
 
 broccoli-file-creator@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/broccoli-file-creator/-/broccoli-file-creator-1.2.0.tgz#27f1b25b1b00e7bb7bf3d5d7abed5f4d5388df4d"
   integrity sha512-l9zthHg6bAtnOfRr/ieZ1srRQEsufMZID7xGYRW3aBDv3u/3Eux+Iawl10tAGYE5pL9YB4n5X4vxkp6iNOoZ9g==
-  dependencies:
-    broccoli-plugin "^1.1.0"
-    mkdirp "^0.5.1"
-
-broccoli-file-creator@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/broccoli-file-creator/-/broccoli-file-creator-2.1.1.tgz#7351dd2496c762cfce7736ce9b49e3fce0c7b7db"
-  integrity sha512-YpjOExWr92C5vhnK0kmD81kM7U09kdIRZk9w4ZDCDHuHXW+VE/x6AGEOQQW3loBQQ6Jk+k+TSm8dESy4uZsnjw==
   dependencies:
     broccoli-plugin "^1.1.0"
     mkdirp "^0.5.1"
@@ -2422,18 +2431,18 @@ broccoli-imagemin@^1.0.1:
     joi "^12.0.0"
     promise.pipe "^3.0.0"
 
-broccoli-kitchen-sink-helpers@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/broccoli-kitchen-sink-helpers/-/broccoli-kitchen-sink-helpers-0.3.1.tgz#77c7c18194b9664163ec4fcee2793444926e0c06"
-  integrity sha1-d8fBgZS5ZkFj7E/O4nk0RJJuDAY=
+broccoli-kitchen-sink-helpers@^0.2.5:
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/broccoli-kitchen-sink-helpers/-/broccoli-kitchen-sink-helpers-0.2.9.tgz#a5e0986ed8d76fb5984b68c3f0450d3a96e36ecc"
+  integrity sha1-peCYbtjXb7WYS2jD8EUNOpbjbsw=
   dependencies:
     glob "^5.0.10"
     mkdirp "^0.5.1"
 
-broccoli-kitchen-sink-helpers@~0.2.0:
-  version "0.2.9"
-  resolved "https://registry.yarnpkg.com/broccoli-kitchen-sink-helpers/-/broccoli-kitchen-sink-helpers-0.2.9.tgz#a5e0986ed8d76fb5984b68c3f0450d3a96e36ecc"
-  integrity sha1-peCYbtjXb7WYS2jD8EUNOpbjbsw=
+broccoli-kitchen-sink-helpers@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/broccoli-kitchen-sink-helpers/-/broccoli-kitchen-sink-helpers-0.3.1.tgz#77c7c18194b9664163ec4fcee2793444926e0c06"
+  integrity sha1-d8fBgZS5ZkFj7E/O4nk0RJJuDAY=
   dependencies:
     glob "^5.0.10"
     mkdirp "^0.5.1"
@@ -2464,7 +2473,7 @@ broccoli-merge-trees@1.1.1:
     rimraf "^2.4.3"
     symlink-or-copy "^1.0.0"
 
-broccoli-merge-trees@^1.0.0, broccoli-merge-trees@^1.1.0, broccoli-merge-trees@^1.1.1, broccoli-merge-trees@^1.1.4, broccoli-merge-trees@^1.2.1:
+broccoli-merge-trees@1.2.4, broccoli-merge-trees@^1.0.0, broccoli-merge-trees@^1.1.0, broccoli-merge-trees@^1.1.1, broccoli-merge-trees@^1.1.4, broccoli-merge-trees@^1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/broccoli-merge-trees/-/broccoli-merge-trees-1.2.4.tgz#a001519bb5067f06589d91afa2942445a2d0fdb5"
   integrity sha1-oAFRm7UGfwZYnZGvopQkRaLQ/bU=
@@ -2564,6 +2573,16 @@ broccoli-persistent-filter@^2.0.0, broccoli-persistent-filter@^2.1.1:
     symlink-or-copy "^1.0.1"
     walk-sync "^0.3.1"
 
+broccoli-plugin@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/broccoli-plugin/-/broccoli-plugin-1.1.0.tgz#73e2cfa05f8ea1e3fc1420c40c3d9e7dc724bf02"
+  integrity sha1-c+LPoF+OoeP8FCDEDD2efcckvwI=
+  dependencies:
+    promise-map-series "^0.2.1"
+    quick-temp "^0.1.3"
+    rimraf "^2.3.4"
+    symlink-or-copy "^1.0.1"
+
 broccoli-plugin@^1.0.0, broccoli-plugin@^1.1.0, broccoli-plugin@^1.2.0, broccoli-plugin@^1.2.1, broccoli-plugin@^1.3.0, broccoli-plugin@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/broccoli-plugin/-/broccoli-plugin-1.3.1.tgz#a26315732fb99ed2d9fb58f12a1e14e986b4fabd"
@@ -2582,6 +2601,14 @@ broccoli-replace@^0.12.0:
     applause "1.2.2"
     broccoli-persistent-filter "^1.2.0"
     minimatch "^3.0.0"
+
+broccoli-rollup@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/broccoli-rollup/-/broccoli-rollup-0.0.4.tgz#d23b2ef8fbd80e85dbb47d350fdab72902cd17c4"
+  integrity sha1-0jsu+PvYDoXbtH01D9q3KQLNF8Q=
+  dependencies:
+    broccoli-caching-writer "^2.2.0"
+    rollup "^0.26.2"
 
 broccoli-rollup@^2.1.1:
   version "2.1.1"
@@ -2757,7 +2784,22 @@ broccoli-templater@^2.0.1:
     rimraf "^2.6.2"
     walk-sync "^0.3.3"
 
-broccoli-uglify-sourcemap@^2.1.1, broccoli-uglify-sourcemap@^2.2.0:
+broccoli-uglify-sourcemap@^1.5.1:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/broccoli-uglify-sourcemap/-/broccoli-uglify-sourcemap-1.5.2.tgz#04f84ab0db539031fa868ccfa563c9932d50cedb"
+  integrity sha1-BPhKsNtTkDH6hozPpWPJky1Qzts=
+  dependencies:
+    broccoli-plugin "^1.2.1"
+    debug "^2.2.0"
+    lodash.merge "^4.5.1"
+    matcher-collection "^1.0.0"
+    mkdirp "^0.5.0"
+    source-map-url "^0.3.0"
+    symlink-or-copy "^1.0.1"
+    uglify-js "^2.7.0"
+    walk-sync "^0.1.3"
+
+broccoli-uglify-sourcemap@^2.1.1:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/broccoli-uglify-sourcemap/-/broccoli-uglify-sourcemap-2.2.0.tgz#2ff49389bdf342a550c3596750ba2dde95a8f7d4"
   integrity sha1-L/STib3zQqVQw1lnULot3pWo99Q=
@@ -3083,6 +3125,11 @@ camelcase-keys@^4.0.0:
     map-obj "^2.0.0"
     quick-lru "^1.0.0"
 
+camelcase@^1.0.2:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-1.2.1.tgz#9bb5304d2e0b56698b2c758b08a3eaa9daa58a39"
+  integrity sha1-m7UwTS4LVmmLLHWLCKPqqdqlijk=
+
 camelcase@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-2.1.1.tgz#7c1d16d679a1bbe59ca02cacecfb011e201f5a1f"
@@ -3150,10 +3197,18 @@ ccount@^1.0.0:
   resolved "https://registry.yarnpkg.com/ccount/-/ccount-1.0.3.tgz#f1cec43f332e2ea5a569fd46f9f5bde4e6102aff"
   integrity sha512-Jt9tIBkRc9POUof7QA/VwWd+58fKkEEfI+/t1/eOlxKM7ZhrczNzMFefge7Ai+39y1pR/pP6cI19guHy3FSLmw==
 
-chalk@2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.3.2.tgz#250dc96b07491bfd601e648d66ddf5f60c7a5c65"
-  integrity sha512-ZM4j2/ld/YZDc3Ma8PgN7gyAk+kHMMMyzLNryCPGhWrsfAuDVeuid5bpRFTDgMH9JBK2lA4dyyAkkZYF/WcqDQ==
+center-align@^0.1.1:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/center-align/-/center-align-0.1.3.tgz#aa0d32629b6ee972200411cbd4461c907bc2b7ad"
+  integrity sha1-qg0yYptu6XIgBBHL1EYckHvCt60=
+  dependencies:
+    align-text "^0.1.3"
+    lazy-cache "^1.0.3"
+
+chalk@2.4.1, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.3.1, chalk@^2.4.1, chalk@~2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e"
+  integrity sha512-ObN6h1v2fTJSmUXoS3nMQ92LbDK9be4TV+6G+omQlGJFdcUX5heKi1LZ1YnRMIgwTLEj3E24bT6tYni50rlCfQ==
   dependencies:
     ansi-styles "^3.2.1"
     escape-string-regexp "^1.0.5"
@@ -3169,15 +3224,6 @@ chalk@^1.0.0, chalk@^1.1.1, chalk@^1.1.3:
     has-ansi "^2.0.0"
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
-
-chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.0, chalk@^2.3.1, chalk@^2.4.1, chalk@~2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.1.tgz#18c49ab16a037b6eb0152cc83e3471338215b66e"
-  integrity sha512-ObN6h1v2fTJSmUXoS3nMQ92LbDK9be4TV+6G+omQlGJFdcUX5heKi1LZ1YnRMIgwTLEj3E24bT6tYni50rlCfQ==
-  dependencies:
-    ansi-styles "^3.2.1"
-    escape-string-regexp "^1.0.5"
-    supports-color "^5.3.0"
 
 character-entities-html4@^1.0.0:
   version "1.1.2"
@@ -3371,6 +3417,15 @@ clipboard@^2.0.0:
     good-listener "^1.2.2"
     select "^1.1.2"
     tiny-emitter "^2.0.0"
+
+cliui@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
+  integrity sha1-S0dXYP+AJkx2LDoXGQMukcf+oNE=
+  dependencies:
+    center-align "^0.1.1"
+    right-align "^0.1.1"
+    wordwrap "0.0.2"
 
 cliui@^3.2.0:
   version "3.2.0"
@@ -4002,7 +4057,7 @@ decamelize-keys@^1.0.0:
     decamelize "^1.1.0"
     map-obj "^1.0.0"
 
-decamelize@^1.1.0, decamelize@^1.1.1, decamelize@^1.1.2:
+decamelize@^1.0.0, decamelize@^1.1.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
@@ -5238,14 +5293,15 @@ ember-service-worker@DockYard/ember-service-worker#master:
     broccoli-caching-writer "^3.0.3"
     broccoli-file-creator "^2.1.1"
     broccoli-funnel "^2.0.1"
-    broccoli-merge-trees "^3.0.1"
-    broccoli-rollup "^2.1.1"
-    broccoli-uglify-sourcemap "^2.2.0"
-    clone "^2.1.2"
+    broccoli-merge-trees "1.2.4"
+    broccoli-rollup "0.0.4"
+    broccoli-uglify-sourcemap "^1.5.1"
+    clone "^1.0.2"
     ember-cli-babel "^6.16.0"
-    glob "^7.1.3"
+    exists-sync "0.0.3"
+    glob "^7.1.1"
     hash-for-dep "^1.2.3"
-    rollup-plugin-replace "^2.1.0"
+    rollup-plugin-replace "^1.1.1"
 
 ember-smooth-scroll@0.0.0:
   version "0.0.0"
@@ -5720,6 +5776,11 @@ exists-stat@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/exists-stat/-/exists-stat-1.0.0.tgz#0660e3525a2e89d9e446129440c272edfa24b529"
   integrity sha1-BmDjUlouidnkRhKUQMJy7foktSk=
+
+exists-sync@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/exists-sync/-/exists-sync-0.0.3.tgz#b910000bedbb113b378b82f5f5a7638107622dcf"
+  integrity sha1-uRAAC+27ETs3i4L19adjgQdiLc8=
 
 exists-sync@0.0.4:
   version "0.0.4"
@@ -6557,10 +6618,10 @@ glob-to-regexp@^0.3.0:
   resolved "https://registry.yarnpkg.com/glob-to-regexp/-/glob-to-regexp-0.3.0.tgz#8c5a1494d2066c570cc3bfe4496175acc4d502ab"
   integrity sha1-jFoUlNIGbFcMw7/kSWF1rMTVAqs=
 
-glob@7.1.2:
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
-  integrity sha512-MJTUg1kjuLeQCJ+ccE4Vpa6kKVXkPYJ2mOCQyUuKLcLQsdrMCpBPUi8qVE6+YuaJkozeA9NusTAw3hLr8Xe5EQ==
+glob@7.1.3, glob@^7.0.0, glob@^7.0.3, glob@^7.0.4, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@~7.1.1:
+  version "7.1.3"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
+  integrity sha512-vcfuiIxogLV4DlGBHIUOwI0IbrJ8HWPc4MU7HzviGeNho/UJDfi6B5p3sHeWIQ0KGIU0Jpxi5ZHxemQfLkkAwQ==
   dependencies:
     fs.realpath "^1.0.0"
     inflight "^1.0.4"
@@ -6577,18 +6638,6 @@ glob@^5.0.10, glob@^5.0.3:
     inflight "^1.0.4"
     inherits "2"
     minimatch "2 || 3"
-    once "^1.3.0"
-    path-is-absolute "^1.0.0"
-
-glob@^7.0.0, glob@^7.0.3, glob@^7.0.4, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2, glob@^7.1.3, glob@~7.1.1:
-  version "7.1.3"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.3.tgz#3960832d3f1574108342dafd3a67b332c0969df1"
-  integrity sha512-vcfuiIxogLV4DlGBHIUOwI0IbrJ8HWPc4MU7HzviGeNho/UJDfi6B5p3sHeWIQ0KGIU0Jpxi5ZHxemQfLkkAwQ==
-  dependencies:
-    fs.realpath "^1.0.0"
-    inflight "^1.0.4"
-    inherits "2"
-    minimatch "^3.0.4"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
@@ -8007,6 +8056,11 @@ known-css-properties@^0.9.0:
   resolved "https://registry.yarnpkg.com/known-css-properties/-/known-css-properties-0.9.0.tgz#28f8a7134cfa3b0aa08b1e5edf64a57f64fc23af"
   integrity sha512-2G/A/8XPhH6MmuVgl079wYsgdqfXE3cfm62txk/ajS4wvRWo6tEHcgQCJCHOOy12Fse1Sxlbf7/IJBpR9hnVew==
 
+lazy-cache@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
+  integrity sha1-odePw6UEdMuAhF07O24dpJpEbo4=
+
 lazy-req@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/lazy-req/-/lazy-req-1.1.0.tgz#bdaebead30f8d824039ce0ce149d4daa07ba1fac"
@@ -8492,7 +8546,7 @@ lodash.map@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
   integrity sha1-dx7Hg540c9nEzeKLGTlMNWL09tM=
 
-lodash.merge@^4.3.1, lodash.merge@^4.4.0, lodash.merge@^4.6.0:
+lodash.merge@^4.3.1, lodash.merge@^4.4.0, lodash.merge@^4.5.1, lodash.merge@^4.6.0:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
   integrity sha512-AOYza4+Hf5z1/0Hztxpm2/xiPZgi/cjMqdnKTUWTBSKchJlxXXuUSxCCl8rJlf4g6yww/j6mA8nC8Hw/EZWxKQ==
@@ -8650,7 +8704,7 @@ longest-streak@^2.0.1:
   resolved "https://registry.yarnpkg.com/longest-streak/-/longest-streak-2.0.2.tgz#2421b6ba939a443bb9ffebf596585a50b4c38e2e"
   integrity sha512-TmYTeEYxiAmSVdpbnQDXGtvYOIRsCMg89CVZzwzc2o7GFL1CjoiRPjH5ec0NFAVlAx3fVof9dX/t6KKRAo2OWA==
 
-longest@^1.0.0:
+longest@^1.0.0, longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
   integrity sha1-MKCy2jj3N3DoKUoNIuZiXtd9AJc=
@@ -8698,17 +8752,17 @@ lru-cache@^4.0.1, lru-cache@^4.1.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
+magic-string@^0.22.4:
+  version "0.22.5"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.22.5.tgz#8e9cf5afddf44385c1da5bc2a6a0dbd10b03657e"
+  integrity sha512-oreip9rJZkzvA8Qzk9HFs8fZGF/u7H/gtrE8EN6RjKJ9kh2HlC+yQ2QezifqTZfGyiuAV0dRv5a+y/8gBb1m9w==
+  dependencies:
+    vlq "^0.2.2"
+
 magic-string@^0.24.0:
   version "0.24.1"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.24.1.tgz#7e38e5f126cae9f15e71f0cf8e450818ca7d5a8f"
   integrity sha512-YBfNxbJiixMzxW40XqJEIldzHyh5f7CZKalo1uZffevyrPEX8Qgo9s0dmcORLHdV47UyvJg8/zD+6hQG3qvJrA==
-  dependencies:
-    sourcemap-codec "^1.4.1"
-
-magic-string@^0.25.1:
-  version "0.25.1"
-  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.1.tgz#b1c248b399cd7485da0fe7385c2fc7011843266e"
-  integrity sha512-sCuTz6pYom8Rlt4ISPFn6wuFodbKMIHUMv4Qko9P17dpxb7s52KJTmRuZZqHdGmLCK9AOcDare039nRIcfdkEg==
   dependencies:
     sourcemap-codec "^1.4.1"
 
@@ -8780,10 +8834,10 @@ markdown-table@^1.1.0:
   resolved "https://registry.yarnpkg.com/markdown-table/-/markdown-table-1.1.2.tgz#c78db948fa879903a41bce522e3b96f801c63786"
   integrity sha512-NcWuJFHDA8V3wkDgR/j4+gZx+YQwstPgfQDV8ndUeWWzta3dnDTBxpVzqS9lkmJAuV5YX35lmyojl6HO5JXAgw==
 
-marked@0.3.19:
-  version "0.3.19"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
-  integrity sha512-ea2eGWOqNxPcXv8dyERdSr/6FmzvWwzjMxpfGB/sbMccXoct+xY+YukPD+QTUZwyvK7BZwcr4m21WBOW41pAkg==
+marked@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.5.0.tgz#9e590bad31584a48ff405b33ab1c0dd25172288e"
+  integrity sha512-UhjmkCWKu1SS/BIePL2a59BMJ7V42EYtTfksodPRXzPEGEph3Inp5dylseqt+KbU9Jglsx8xcMKmlumfJMBXAA==
 
 matcher-collection@^1.0.0, matcher-collection@^1.0.4, matcher-collection@^1.0.5:
   version "1.0.5"
@@ -9149,11 +9203,6 @@ mktemp@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/mktemp/-/mktemp-0.4.0.tgz#6d0515611c8a8c84e484aa2000129b98e981ff0b"
   integrity sha1-bQUVYRyKjITkhKogABKbmOmB/ws=
-
-moment@2.22.0:
-  version "2.22.0"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.0.tgz#7921ade01017dd45186e7fee5f424f0b8663a730"
-  integrity sha512-1muXCh8jb1N/gHRbn9VDUBr0GYb8A/aVcHlII9QSB68a50spqEVLIGN6KVmCOnSvJrUhC0edGgKU5ofnGXdYdg==
 
 morgan@^1.9.0:
   version "1.9.1"
@@ -10241,19 +10290,19 @@ prember-middleware@^0.1.0:
     ember-cli-babel "^6.6.0"
     prember "*"
 
-prember-rss-feed@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/prember-rss-feed/-/prember-rss-feed-1.3.0.tgz#4e232c035560e69c974bd9945fbb7f6efe20196c"
-  integrity sha512-+L6lSxltB2JZvuQxdU9vgVrl9uH2Ou8mWs9kxJJK//R7VUCIdxSTU/SkzEsr++ELFhcRgDPyWRN+ImeyCqf7+w==
+prember-rss-feed@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/prember-rss-feed/-/prember-rss-feed-1.5.0.tgz#f00181234240b4482e56b2814283b2bbfa0e35e3"
+  integrity sha512-PGAhqCNI+20KqxqwzjwFfBT1Mie/SSmrgLEB96jF//3uUHCplkEk6BRmzUCLg3Q063RW22CnmOGGiSmzxPPBfg==
   dependencies:
-    broccoli-file-creator "1.1.1"
+    broccoli-file-creator "2.1.1"
     broccoli-funnel "2.0.1"
-    chalk "2.3.2"
-    ember-cli-babel "^6.6.0"
+    chalk "2.4.1"
+    date-fns "^1.29.0"
+    ember-cli-babel "^6.16.0"
     front-matter "2.3.0"
-    glob "7.1.2"
-    marked "0.3.19"
-    moment "2.22.0"
+    glob "7.1.3"
+    marked "0.5.0"
     rss "^1.2.2"
 
 prember-sitemap-generator@^0.1.1:
@@ -11070,6 +11119,13 @@ rev-hash@^2.0.0:
   resolved "https://registry.yarnpkg.com/rev-hash/-/rev-hash-2.0.0.tgz#7720a236ed0c258df3e64bec03ec048b05b924c4"
   integrity sha1-dyCiNu0MJY3z5kvsA+wEiwW5JMQ=
 
+right-align@^0.1.1:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/right-align/-/right-align-0.1.3.tgz#61339b722fe6a3515689210d24e14c96148613ef"
+  integrity sha1-YTObci/mo1FWiSENJOFMlhSGE+8=
+  dependencies:
+    align-text "^0.1.1"
+
 rimraf@2, rimraf@^2.2.6, rimraf@^2.2.8, rimraf@^2.3.4, rimraf@^2.4.3, rimraf@^2.4.4, rimraf@^2.5.3, rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2, rimraf@~2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.2.tgz#2ed8150d24a16ea8651e6d6ef0f47c4158ce7a36"
@@ -11090,12 +11146,12 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rollup-plugin-replace@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-replace/-/rollup-plugin-replace-2.1.0.tgz#f9c07a4a89a2f8be912ee54b3f0f68d91e9ed0ae"
-  integrity sha512-SxrAIgpH/B5/W4SeULgreOemxcpEgKs2gcD42zXw50bhqGWmcnlXneVInQpAqzA/cIly4bJrOpeelmB9p4YXSQ==
+rollup-plugin-replace@^1.1.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-replace/-/rollup-plugin-replace-1.2.1.tgz#6307ee15f223aa1fd3207cd3c08052468f180daf"
+  integrity sha512-l9Pgb7bh5Wx18+qM9iOWZ/CKcwyKJETLAwCh6bjKwTOgTzNH3KmKDWI/X/ToNA7fA/68chhFyvISvreRxWFVtw==
   dependencies:
-    magic-string "^0.25.1"
+    magic-string "^0.22.4"
     minimatch "^3.0.2"
     rollup-pluginutils "^2.0.1"
 
@@ -11106,6 +11162,15 @@ rollup-pluginutils@^2.0.1:
   dependencies:
     estree-walker "^0.5.2"
     micromatch "^2.3.11"
+
+rollup@^0.26.2:
+  version "0.26.7"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.26.7.tgz#12875bc83a0ee8ddcf4b3bcf30f2b77d60652dd7"
+  integrity sha1-EodbyDoO6N3PSzvPMPK3fWBlLdc=
+  dependencies:
+    chalk "^1.1.1"
+    minimist "^1.2.0"
+    source-map-support "^0.4.0"
 
 rollup@^0.57.1:
   version "0.57.1"
@@ -11141,11 +11206,6 @@ rsvp@^4.0.0, rsvp@^4.6.1, rsvp@^4.7.0, rsvp@^4.8.0, rsvp@^4.8.1, rsvp@^4.8.2, rs
   version "4.8.4"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-4.8.4.tgz#b50e6b34583f3dd89329a2f23a8a2be072845911"
   integrity sha512-6FomvYPfs+Jy9TfXmBpBuMWNH94SgCsZmJKcanySzgNNP6LjWxBvyLTa9KaMfDDM5oxRfrKDB0r/qeRsLwnBfA==
-
-rsvp@~3.0.6:
-  version "3.0.21"
-  resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.0.21.tgz#49c588fe18ef293bcd0ab9f4e6756e6ac433359f"
-  integrity sha1-ScWI/hjvKTvNCrn05nVuasQzNZ8=
 
 rsvp@~3.2.1:
   version "3.2.1"
@@ -11582,7 +11642,7 @@ source-map-resolve@^0.5.0:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
-source-map-support@^0.4.15:
+source-map-support@^0.4.0, source-map-support@^0.4.15:
   version "0.4.18"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.18.tgz#0286a6de8be42641338594e97ccea75f0a2c585f"
   integrity sha512-try0/JqxPLF9nOjvSta7tVondkP5dwgyLDjVoyMDlmjugT2lRZ1OfsrYTkCd2hkDnJTKRbO/Rl3orm8vlsUzbA==
@@ -11614,7 +11674,7 @@ source-map@0.4.x, source-map@^0.4.2:
   dependencies:
     amdefine ">=0.0.4"
 
-source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7, source-map@~0.5.0:
+source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7, source-map@~0.5.0, source-map@~0.5.1:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
@@ -12638,6 +12698,16 @@ uglify-es@^3.3.4:
     commander "~2.13.0"
     source-map "~0.6.1"
 
+uglify-js@^2.7.0:
+  version "2.8.29"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.29.tgz#29c5733148057bb4e1f75df35b7a9cb72e6a59dd"
+  integrity sha1-KcVzMUgFe7Th913zW3qcty5qWd0=
+  dependencies:
+    source-map "~0.5.1"
+    yargs "~3.10.0"
+  optionalDependencies:
+    uglify-to-browserify "~1.0.0"
+
 uglify-js@^3.1.4:
   version "3.4.9"
   resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.4.9.tgz#af02f180c1207d76432e473ed24a28f4a782bae3"
@@ -12645,6 +12715,11 @@ uglify-js@^3.1.4:
   dependencies:
     commander "~2.17.1"
     source-map "~0.6.1"
+
+uglify-to-browserify@~1.0.0:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
+  integrity sha1-bgkk1r2mta/jSeOabWMoUKD4grc=
 
 uglifyjs-webpack-plugin@^1.2.4:
   version "1.3.0"
@@ -13058,6 +13133,11 @@ vinyl@^1.0.0:
     clone-stats "^0.0.1"
     replace-ext "0.0.1"
 
+vlq@^0.2.2:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/vlq/-/vlq-0.2.3.tgz#8f3e4328cf63b1540c0d67e1b2778386f8975b26"
+  integrity sha512-DRibZL6DsNhIgYQ+wNdWDL2SL3bKPlVrRiBqV5yuMm++op8W4kGFtaQfCs4KEJn0wBZcHVHJ3eoywX8983k1ow==
+
 vm-browserify@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
@@ -13078,7 +13158,7 @@ walk-sync@^0.1.3:
   resolved "https://registry.yarnpkg.com/walk-sync/-/walk-sync-0.1.3.tgz#8a07261a00bda6cfb1be25e9f100fad57546f583"
   integrity sha1-igcmGgC9ps+xviXp8QD61XVG9YM=
 
-walk-sync@^0.2.7:
+walk-sync@^0.2.5, walk-sync@^0.2.7:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/walk-sync/-/walk-sync-0.2.7.tgz#b49be4ee6867657aeb736978b56a29d10fa39969"
   integrity sha1-tJvk7mhnZXrrc2l4tWop0Q+jmWk=
@@ -13228,6 +13308,16 @@ wide-align@^1.1.0:
   dependencies:
     string-width "^1.0.2 || 2"
 
+window-size@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.1.0.tgz#5438cd2ea93b202efa3a19fe8887aee7c94f9c9d"
+  integrity sha1-VDjNLqk7IC76Ohn+iIeu58lPnJ0=
+
+wordwrap@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.2.tgz#b79669bb42ecb409f83d583cad52ca17eaa1643f"
+  integrity sha1-t5Zpu0LstAn4PVg8rVLKF+qhZD8=
+
 wordwrap@~0.0.2:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/wordwrap/-/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
@@ -13363,6 +13453,14 @@ yaml-front-matter@^3.4.0:
     commander "1.0.0"
     js-yaml "^3.5.2"
 
+yaml-front-matter@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/yaml-front-matter/-/yaml-front-matter-4.0.0.tgz#11c378c54eac3061a82cbaf693a69b4e4c44f484"
+  integrity sha1-EcN4xU6sMGGoLLr2k6abTkxE9IQ=
+  dependencies:
+    commander "1.0.0"
+    js-yaml "^3.10.0"
+
 yargs-parser@^10.0.0:
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-10.1.0.tgz#7202265b89f7e9e9f2e5765e0fe735a905edbaa8"
@@ -13420,6 +13518,16 @@ yargs@^7.0.0:
     which-module "^1.0.0"
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
+
+yargs@~3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-3.10.0.tgz#f7ee7bd857dd7c1d2d38c0e74efbd681d1431fd1"
+  integrity sha1-9+572FfdfB0tOMDnTvvWgdFDH9E=
+  dependencies:
+    camelcase "^1.0.2"
+    cliui "^2.1.0"
+    decamelize "^1.0.0"
+    window-size "0.1.0"
 
 yauzl@^2.2.1:
   version "2.10.0"

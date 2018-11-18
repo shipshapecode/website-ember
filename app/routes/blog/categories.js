@@ -8,7 +8,11 @@ export default Route.extend({
   async model({ category }) {
     const posts = await this.store.findAll('post', { reload: true });
     return posts.filter((post) => {
-      return post.get('categories').includes(category);
+      const dasherizedCategories = post.get('categories').map((category) => {
+        return category.replace(' ', '-');
+      });
+
+      return dasherizedCategories.includes(category);
     });
   },
 

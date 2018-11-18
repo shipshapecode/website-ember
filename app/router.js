@@ -34,7 +34,7 @@ Router.map(function() {
   this.route('home', { path: '/' });
   this.route('blog', function() {
     this.route('author', { path: '/author/:author/' });
-    this.route('category', { path: '/category/:category/' });
+    this.route('categories', { path: '/categories/:category/' });
     this.route('post', { path: '/*path/' });
   });
   this.route('contact');

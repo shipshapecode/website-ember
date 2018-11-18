@@ -1,9 +1,8 @@
 ---
-author: robert
+author: rwwagner90
 categories: 
-  - ember
+  - ember.js
   - ember addons
-  - ember.js, 
   - testing ember addons
   - in-repo addon
   - in-repo engine
