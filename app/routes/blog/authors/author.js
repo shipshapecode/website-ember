@@ -13,6 +13,8 @@ export default Route.extend({
   },
 
   async afterModel(model) {
+    this._super(...arguments);
+
     const authorId = this.paramsFor('blog.authors.author').author;
     const author = await this.store.findRecord('author', authorId);
     const authorName = author.name;

@@ -18,6 +18,8 @@ export default Route.extend({
   },
 
   async afterModel(model) {
+    this._super(...arguments);
+
     const category = this.paramsFor('blog.categories.category').category;
     const capitalizedCategory = capitalize(category);
     return setProperties(this.headData, {
