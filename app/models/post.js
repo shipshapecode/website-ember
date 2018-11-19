@@ -3,8 +3,6 @@ import attr from 'ember-data/attr';
 import { belongsTo } from 'ember-data/relationships';
 
 export default Model.extend({
-  // Markdown content
-  content: attr('string'),
   // Markdown converted to html
   html: attr('string'),
 

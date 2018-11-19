@@ -1,9 +1,8 @@
 ---
-author: robert
+author: rwwagner90
 categories: 
-  - ember
-  - ember data
   - ember.js
+  - ember-data
   - query params
 date: '2016-05-22'
 slug: ember-data-passing-query-params-to-save

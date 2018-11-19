@@ -2,6 +2,10 @@
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
+const { readFileSync } = require('fs');
+const { extname } = require('path');
+const yamlFront = require('yaml-front-matter');
+const walkSync = require('walk-sync');
 
 shim(EmberApp);
 
@@ -134,29 +138,45 @@ module.exports = function(defaults) {
  */
 function buildPremberUrls() {
   // Build prember urls
-  const urls = [
+  const staticURLs = [
     '/',
     '/ember-consulting/',
     '/open-source/',
     '/contact/',
-    '/blog/',
-    '/blog/author/rwwagner90/'
+    '/blog/'
   ];
 
-  const { extname } = require('path');
-  const walkSync = require('walk-sync');
-
   const paths = walkSync('blog/posts');
-
-  const mdFiles = paths.filter(path => extname(path) === '.md')
-    .map((path) => {
-      const stripMD = path.replace(/\.md/, '');
-      return `/blog/${stripMD}/`;
-    });
-
-  mdFiles.forEach((file) => {
-    urls.push(file);
+  const postPaths = paths.filter(path => extname(path) === '.md');
+  const authorURLs = _getAuthorURLs();
+  const categoryURLs = _getCategoryURLs(postPaths);
+  const postURLs = postPaths.map((path) => {
+    const stripMD = path.replace(/\.md/, '');
+    return `/blog/${stripMD}/`;
   });
 
-  return urls;
+  return [...staticURLs, ...authorURLs, ...categoryURLs, ...postURLs];
+}
+
+function _getAuthorURLs() {
+  return walkSync('blog/authors')
+    .map(file => file.replace(/\.md$/, ''))
+    .map(id => `/blog/authors/${id}/`);
+}
+
+function _getCategoryURLs(postPaths) {
+  const postsFrontmatter = postPaths.map((path) => {
+    return yamlFront.loadFront(readFileSync(`blog/posts/${path}`));
+  });
+
+  let categories = postsFrontmatter
+    .map(post => post.categories)
+    .reduce((a, b) => a.concat(b), [])
+    .filter(x => !!x)
+    .map(category => category.replace(' ', '-'));
+
+  // Get only unique categories
+  categories = [...new Set(categories)];
+
+  return categories.map(category => `/blog/categories/${category}/`);
 }

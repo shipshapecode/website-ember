@@ -1,8 +1,7 @@
 ---
-author: robert
+author: rwwagner90
 categories: 
   - babili
-  - ember
   - ember.js
   - ember-targets
   - targets 

@@ -1,8 +1,8 @@
 ---
 name: Robert Wagner
-id: robert
+id: rwwagner90
 image: /img/blog/authors/robert.jpg
-bio: Test
+bio:
 website:
 twitter: robbiecore
 location: Alexandria, VA

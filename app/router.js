@@ -33,7 +33,12 @@ const Router = EmberRouter.extend(RouterScroll, {
 Router.map(function() {
   this.route('home', { path: '/' });
   this.route('blog', function() {
-    this.route('author', { path: '/author/:author/'});
+    this.route('authors', function() {
+      this.route('author', { path: '/:author/' });
+    });
+    this.route('categories', function() {
+      this.route('category', { path: '/:category/' });
+    });
     this.route('post', { path: '/*path/' });
   });
   this.route('contact');

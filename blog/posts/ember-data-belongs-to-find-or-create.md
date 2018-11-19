@@ -1,8 +1,7 @@
 ---
-author: robert
+author: rwwagner90
 categories: 
   - catch belongsTo 404
-  - ember
   - ember.js
   - ember-data
   - get or create

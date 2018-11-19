@@ -12,6 +12,12 @@
       <div class="attribution">
         By {{post.author.name}} {{date-format post.date "MM/DD/YYYY"}}
       </div>
+
+      <div class="tags">
+        {{#each post.categories as |tag|}}
+          <div class="tag">{{link-to tag "blog.categories.category" (space-to-dash tag)}}</div>
+        {{/each}}
+      </div>
     </box>
   {{/each}}
 </vbox>

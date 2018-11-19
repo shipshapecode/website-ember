@@ -1,9 +1,8 @@
 ---
-author: robert
+author: rwwagner90
 categories: 
-  - ember
-  - ember data
   - ember.js
+  - ember-data
   - jQuery
 date: '2017-09-08'
 slug: ember-without-jquery

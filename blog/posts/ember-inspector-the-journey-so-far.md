@@ -1,7 +1,6 @@
 ---
-author: robert
+author: rwwagner90
 categories: 
-  - ember
   - ember.js
   - ember inspector
 date: '2018-04-09'

@@ -1,8 +1,8 @@
 ---
-author: robert
+author: rwwagner90
 categories: 
   - blog
-  - ember
+  - ember.js
   - fastboot
   - offline first
   - prember

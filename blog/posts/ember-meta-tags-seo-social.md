@@ -1,8 +1,7 @@
 ---
-author: robert
+author: rwwagner90
 categories: 
   - blog
-  - ember
   - ember.js
   - ember-meta
   - fastboot

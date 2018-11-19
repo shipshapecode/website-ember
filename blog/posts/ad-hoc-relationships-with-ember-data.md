@@ -1,9 +1,7 @@
 ---
-author: robert
+author: rwwagner90
 categories: 
-  - ember
   - ember.js
-  - ember data
   - ember-data
   - relationships
 date: '2018-08-07'
