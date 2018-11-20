@@ -1,20 +1,21 @@
-{{#hero-block
-  heroClasses="home"
-  scrollToHref="#about"}}
-  <grid class="inner">
-    <centered xs="12">
-      <h1 class="hero-header">SHIP SHAPE</h1>
-    </centered>
-    <centered xs="12">
-      <h2 class="hero-subheader">Code that won't sink</h2>
-    </centered>
-  </grid>
-{{/hero-block}}
+<HeroBlock @heroClasses="home">
+  <h1>Code that won't sink</h1>
+  <p>
+    Ship Shape is a software consultancy specializing in all things Ember.
+    We leverage Ember.js, and all the latest Ember addons and technologies,
+    to create truly ambitious, state of the art applications that are future-proof and easily maintainable.
+  </p>
+  <div>
+    {{#link-to "contact"}}
+      Learn how we work
+    {{/link-to}}
+  </div>
+</HeroBlock>
 
-{{process-section}}
+<ProcessSection></ProcessSection>
 
-{{technologies-section}}
+<TechnologiesSection></TechnologiesSection>
 
-{{worked-with}}
+<WorkedWith></WorkedWith>
 
-{{contact-footer}}
+<ContactFooter></ContactFooter>

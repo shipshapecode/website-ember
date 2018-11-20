@@ -1,22 +1,3 @@
 .hero.open-source {
-  background: url(/img/open-source.jpg) no-repeat bottom center/cover;
-}
-
-.hero.open-source .hero-header {
-  padding: 15px;
-}
-
-.hero.open-source .hero-header .heartIcon {
-  position: relative;
-  top: 1vw;
-}
-
-.hero.open-source .hero-header .heartIcon path {
-  fill: #ffffff;
-}
-
-.hero.open-source h2 {
-  color: #ffffff;
-  font-size: 1.5rem;
-  line-height: 1.25;
+  /*background: url(/img/open-source.jpg) no-repeat bottom center/cover;*/
 }

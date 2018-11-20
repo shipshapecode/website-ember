@@ -1,25 +1,28 @@
 & {
-  [data-scroll] {
-    .mobile-scroll {
-      svg {
-        g {
-          stroke: $white;
-        }
-      }
+  $shevy-hero-block: (
+    base-font-size: 1.25rem
+  );
+
+  @include headings($shevy-hero-block);
+  @include content($shevy-hero-block);
+
+  a {
+    background-color: $transparent;
+    border: 2px solid $dark;
+    color: $dark;
+    padding: 15px 20px 10px;
+    text-decoration: none;
+    transition-duration: 0.25s;
+    transition-property: background-color, color, fill;
+
+    &:active,
+    &:visited {
+      color: $dark;
     }
 
-    .mouse-icon {
-      border: 2px solid $white;
-
-      .wheelContainer {
-        .wheel {
-          background: $white;
-        }
-
-        .wheelSecond {
-          background: $white;
-        }
-      }
+    &:hover {
+      background-color: $dark;
+      color: $white;
     }
   }
 }

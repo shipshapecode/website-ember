@@ -1,9 +1,13 @@
 <div itemscope itemtype="http://schema.org/Service">
-  {{#hero-block
-    heroClasses="ember-consulting"
-    scrollToHref="#clients"}}
-    <h1 class="hero-header" itemprop="name">Ember Consulting</h1>
-  {{/hero-block}}
+  <HeroBlock @heroClasses="ember-consulting">
+    <h1 itemprop="name">Ember Consulting</h1>
+    <p>Other text</p>
+    <div>
+      {{#link-to "contact"}}
+        CONTACT US
+      {{/link-to}}
+    </div>
+  </HeroBlock>
 
   <div class="clients" id="clients">
     <centered xs="12">
@@ -15,8 +19,6 @@
           <img alt="{{item.heading}}" height="100px" src="{{item.imageURL}}">
         {{/item-square}}
       {{/each}}
-
-      {{scroll-suggest href="#quote"}}
     {{/ember-3d-folding-panel}}
   </div>
 
@@ -36,8 +38,6 @@
         </box>
       </centered>
     </centered>
-
-    {{scroll-suggest href="#community"}}
   </page>
 
   {{community-involvement}}

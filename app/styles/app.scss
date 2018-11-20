@@ -1,7 +1,6 @@
 @import 'shevy/shevy';
 @import 'variables';
 //Pages
-@import 'blog';
 @import 'contact';
 @import 'ember-consulting';
 @import 'open-source';
@@ -169,13 +168,6 @@ h4,
 h5,
 h6 {
   color: $grey;
-}
-
-.hero-header,
-.hero-subheader {
-  color: $white;
-  font-family: 'Pier Sans', sans-serif;
-  margin: 20px 0 0;
 }
 
 .cd-form {

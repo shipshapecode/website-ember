@@ -21,7 +21,6 @@ module.exports = function(defaults) {
       plugins: [
         require('imagemin-jpegtran')({ progressive: true }),
         require('imagemin-optipng')(),
-        require('imagemin-webp')(),
         require('imagemin-svgo')()
       ]
     },

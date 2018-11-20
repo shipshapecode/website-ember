@@ -1,7 +1,12 @@
 <page class="{{this.styleNamespace}} hero {{@heroClasses}}">
-  <centered>
-    {{yield}}
-  </centered>
+  <centered xs="12">
+    <grid>
+      <vbox xs="12" md="6">
+        {{yield}}
+      </vbox>
 
-  {{scroll-suggest href=@scrollToHref}}
+      <vbox xs="12" md="6">
+      </vbox>
+    </grid>
+  </centered>
 </page>
