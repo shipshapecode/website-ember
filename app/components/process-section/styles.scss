@@ -1,15 +1,8 @@
 & {
-  $shevy-process-section: (
-    base-font-size: 1.25rem
-  );
-
-  @include headings($shevy-process-section);
-  @include content($shevy-process-section);
-
   &.process {
     background-color: $off-white;
     color: $grey;
-    padding: 20px;
+    padding: 5vw;
 
     .heading {
       color: $darker-blue;
@@ -23,11 +16,7 @@
     }
 
     .svg-icon {
-      @media (min-width: 768px) {
-        margin-right: 50px;
-      }
-
-      padding: 10px;
+      padding: 2rem;
 
       &.logo {
         display: flex;

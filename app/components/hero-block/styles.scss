@@ -6,6 +6,8 @@
   @include headings($shevy-hero-block);
   @include content($shevy-hero-block);
 
+  margin: 3rem 0;
+
   a {
     background-color: $transparent;
     border: 2px solid $dark;
@@ -23,6 +25,17 @@
     &:hover {
       background-color: $dark;
       color: $white;
+    }
+  }
+
+  svg {
+    height: auto;
+    padding: 2rem;
+    width: 90%;
+
+    g {
+      stroke: $dark;
+      stroke-width: 1px;
     }
   }
 }

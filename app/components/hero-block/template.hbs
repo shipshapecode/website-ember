@@ -1,12 +1,13 @@
-<page class="{{this.styleNamespace}} hero {{@heroClasses}}">
+<div class="{{this.styleNamespace}} hero {{@heroClasses}}">
   <centered xs="12">
-    <grid>
-      <vbox xs="12" md="6">
+    <grid xs="12">
+      <vbox xs="12" md="6" justify="center">
         {{yield}}
       </vbox>
 
-      <vbox xs="12" md="6">
+      <vbox xs="12" md="6" align="center" justify="center">
+        {{svg-jar icon}}
       </vbox>
     </grid>
   </centered>
-</page>
+</div>
