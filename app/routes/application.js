@@ -13,6 +13,11 @@ export default Route.extend({
           type: 'linkTo'
         },
         {
+          linkTo: 'work',
+          text: 'Work',
+          type: 'linkTo'
+        },
+        {
           linkTo: 'ember-consulting',
           text: 'Ember Consulting',
           type: 'linkTo'

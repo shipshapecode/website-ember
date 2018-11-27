@@ -2,6 +2,16 @@
   max-width: 100vw;
   overflow: hidden;
 
+  .addon-icon {
+    > g {
+      stroke: $dark;
+    }
+
+    > path {
+      fill: $dark;
+    }
+  }
+
   .heading {
     text-align: center;
   }

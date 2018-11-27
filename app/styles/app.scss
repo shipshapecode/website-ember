@@ -11,7 +11,7 @@
 $ember-3d-nav: (
   'is-fixed-nav-bg': $white,
   'nav-bg': $white,
-  'nav-items': 5,
+  'nav-items': 6,
   'nav-item-hover': darken($white, 5%),
   'nav-item-selected': darken($white, 5%),
   'nav-marker-color': #6ca3bb,
@@ -123,14 +123,18 @@ a {
     }
 
     &:nth-of-type(3) a:before {
-      background-image: url(../assets/svgs/navbar/open-source.svg);
+      background-image: url(../assets/svgs/navbar/ember-consulting.svg);
     }
 
     &:nth-of-type(4) a:before {
-      background-image: url(../assets/svgs/navbar/contact.svg);
+      background-image: url(../assets/svgs/navbar/open-source.svg);
     }
 
     &:nth-of-type(5) a:before {
+      background-image: url(../assets/svgs/navbar/contact.svg);
+    }
+
+    &:nth-of-type(6) a:before {
       background-image: url(../assets/svgs/navbar/blog.svg);
     }
   }

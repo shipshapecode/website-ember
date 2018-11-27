@@ -1,4 +1,12 @@
-<page class="contact-form" id="contact-form">
+<div class="contact-form" id="contact-form">
+  <HeroBlock @heroClasses="contact">
+    <h1>We can help streamline your Ember.js project</h1>
+    <p>
+      Whether you need staff augmentation to increase the velocity on your ambitious project,
+      mentoring for your team, or anything else Ember.js related, we've got you covered.
+    </p>
+  </HeroBlock>
+
   <centered>
     <form class="cd-form floating-labels" name="contact-us" netlify-honeypot="bot-field"
       {{action (route-action "sendContactRequest" model) on="submit"}} netlify>
@@ -77,4 +85,4 @@
       </vbox>
     </form>
   </centered>
-</page>
+</div>

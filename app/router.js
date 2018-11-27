@@ -44,6 +44,10 @@ Router.map(function() {
   this.route('contact');
   this.route('ember-consulting');
   this.route('open-source');
+  this.route('team');
+  this.route('work', function() {
+    this.route('client');
+  });
   this.route('lost-at-sea', { path: '/*path' });
 });
 

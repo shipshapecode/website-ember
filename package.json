@@ -30,6 +30,7 @@
     "ember-auto-import": "^1.2.13",
     "ember-cli": "~3.5.1",
     "ember-cli-babel": "^7.1.0",
+    "ember-cli-bundle-analyzer": "^0.0.4",
     "ember-cli-concat": "^2.0.1",
     "ember-cli-dependency-checker": "^3.0.0",
     "ember-cli-eslint": "^5.0.0",
