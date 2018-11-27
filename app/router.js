@@ -46,7 +46,8 @@ Router.map(function() {
   this.route('open-source');
   this.route('team');
   this.route('work', function() {
-    this.route('client');
+    this.route('brokermate');
+    this.route('netflix');
   });
   this.route('lost-at-sea', { path: '/*path' });
 });
