@@ -12,19 +12,6 @@
     </div>
   </HeroBlock>
 
-  <div class="clients" id="clients">
-    <centered xs="12">
-      <h2 class="section-heading">Clients</h2>
-    </centered>
-    {{#ember-3d-folding-panel}}
-      {{#each model.clients as |item|}}
-        {{#item-square item=item}}
-          <img alt="{{item.heading}}" height="100px" src="{{item.imageURL}}">
-        {{/item-square}}
-      {{/each}}
-    {{/ember-3d-folding-panel}}
-  </div>
-
   <page class="quote" id="quote">
     <centered>
       <centered xs="10">
