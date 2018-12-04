@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 import { htmlSafe } from '@ember/string';
 
 export default Route.extend({
-  model(){
+  model() {
     return {
       clients: [
         {
@@ -139,7 +139,14 @@ export default Route.extend({
           </p>`
           )
         }
-      ]
+      ],
+
+      metaTags: {
+        title: 'Case Studies - Ship Shape',
+        description: '',
+        type: 'website',
+        url: 'https://shipshape.io/work/'
+      }
     };
   }
 });

@@ -1,1 +1,13 @@
-{{outlet}}
+<HeroBlock @heroClasses="team">
+  <h1>Team</h1>
+  <p>
+    Ship Shape is a small, but mighty team dedicated to shipping the highest quality apps possible.
+  </p>
+  <div>
+    {{#link-to "work.index"}}
+      See what we've helped create
+    {{/link-to}}
+  </div>
+</HeroBlock>
+
+{{team-members}}

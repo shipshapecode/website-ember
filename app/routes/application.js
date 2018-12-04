@@ -14,7 +14,7 @@ export default Route.extend({
         },
         {
           linkTo: 'work',
-          text: 'Work',
+          text: 'Case Studies',
           type: 'linkTo'
         },
         {

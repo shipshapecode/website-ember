@@ -8,6 +8,7 @@
   }
 
   .quote {
+    background-color: $off-white;
     text-align: center;
 
     .quoteContent {
@@ -16,7 +17,7 @@
         font-size: 30px;
         line-height: 35px;
       }
-      // Dektop
+      // Desktop
       @media (min-width: 992px) {
         font-size: 40px;
         line-height: 50px;

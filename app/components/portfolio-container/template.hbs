@@ -2,9 +2,14 @@
   <hbox justify="center">
     <centered xs="11">
       <grid>
-        <centered xs="12" id="ember-addons">
-          <h2 class="section-heading">Ember Addons</h2>
-        </centered>
+        <vbox xs="12">
+          <h2>Ember Addons</h2>
+          <p>
+            The addons Ship Shape has created have been downloaded millions of times, and are used in
+            production apps of Fortune 100 companies.
+          </p>
+        </vbox>
+
         {{#each model as |project|}}
           <centered xs="12" md="6" lg="3" itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project">
             <a href="https://github.com/shipshapecode/{{project.name}}" class="repo" itemprop="codeRepository">

@@ -139,10 +139,14 @@ function buildPremberUrls() {
   // Build prember urls
   const staticURLs = [
     '/',
+    '/blog/',
+    '/contact/',
     '/ember-consulting/',
     '/open-source/',
-    '/contact/',
-    '/blog/'
+    '/team/',
+    '/work/',
+    '/work/brokermate',
+    '/work/netflix'
   ];
 
   const paths = walkSync('blog/posts');
