@@ -1,13 +1,9 @@
-<div class="{{this.styleNamespace}} hero {{@heroClasses}} bg-grey-transparent">
-  <centered xs="12">
-    <grid xs="12">
-      <vbox xs="12" md="6" justify="center">
-        {{yield}}
-      </vbox>
+<div class="{{this.styleNamespace}} hero {{@heroClasses}} bg-grey-transparent flex items-center">
+  <div class="w-full md:w-1/2">
+    {{yield}}
+  </div>
 
-      <vbox xs="12" md="6" align="center" justify="center">
-        {{svg-jar icon class="hero-svg"}}
-      </vbox>
-    </grid>
-  </centered>
+  <div class="w-full md:w-1/2 text-center">
+    {{svg-jar icon class="hero-svg"}}
+  </div>
 </div>
