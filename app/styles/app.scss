@@ -28,7 +28,6 @@ $ecf: (
 @import 'alerts';
 @import 'ember-3d-folding-panel';
 @import 'ember-contact-form';
-@import 'reset';
 
 // Shevy
 
@@ -50,18 +49,21 @@ $shevy: (
 
 body {
   background-color: $white;
-  color: $dark;
+  color: $grey-light;
   font-family: 'Pier Sans', sans-serif;
-  font-weight: light;
+  font-weight: lighter;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   color: $grey;
+}
+
+h1 {
+  @extend .heading;
 }
 
 .cd-form {

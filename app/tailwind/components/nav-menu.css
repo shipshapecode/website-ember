@@ -1,3 +1,21 @@
 .nav-link {
-  @apply .font-bold .p-4 .text-grey;
+  @apply .block .font-bold .p-4 .text-grey;
+}
+
+.nav-link:hover {
+  @apply .text-navy;
+}
+
+@screen lg {
+  .nav-link {
+    @apply .inline-block .mt-0;
+  }
+
+  .contact-link {
+    @apply .bg-navy .-mt-12 .pt-16 .text-white;
+  }
+
+  .contact-link:hover {
+    @apply .text-gold;
+  }
 }
