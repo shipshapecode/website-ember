@@ -6,28 +6,6 @@
   @include headings($shevy-hero-block);
   @include content($shevy-hero-block);
 
-  margin: 3rem 0;
-
-  a {
-    background-color: $transparent;
-    border: 2px solid $dark;
-    color: $dark;
-    padding: 15px 20px 10px;
-    text-decoration: none;
-    transition-duration: 0.25s;
-    transition-property: background-color, color, fill;
-
-    &:active,
-    &:visited {
-      color: $dark;
-    }
-
-    &:hover {
-      background-color: $dark;
-      color: $white;
-    }
-  }
-
   .hero-svg {
     height: auto;
     padding: 2rem;
