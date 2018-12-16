@@ -1,6 +1,4 @@
 & {
-  @extend .pb-8;
-
   .footer-logo {
     path {
       fill: $gold;
@@ -11,6 +9,21 @@
 
   .footer-bottom {
     background: #142636;
+
+    a {
+      color: $grey;
+      font-weight: bold;
+
+      &:hover {
+        color: $gold;
+      }
+    }
+
+    svg {
+      path {
+        fill: $gold;
+      }
+    }
   }
 
   .footer-top {

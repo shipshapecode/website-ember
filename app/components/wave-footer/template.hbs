@@ -15,15 +15,45 @@
     </div>
   </div>
 
-  <div class="flex flex-wrap footer-bottom justify-center">
-    <div class="w-full flex justify-center">
+  <div class="footer-bottom flex flex-wrap p-24">
+    <div class="w-full flex justify-center lg:justify-start lg:w-auto">
       {{svg-jar "logo" class="footer-logo h-16 w-16"}}
     </div>
-    <div class="w-full flex justify-center">
-      Case Studies
+
+    <div class="flex flex-wrap items-center justify-center flex-1">
+      <div class="w-full lg:w-auto flex justify-center p-4">
+        {{#link-to "work"}}
+          Case Studies
+        {{/link-to}}
+      </div>
+      <div class="w-full lg:w-auto flex justify-center p-4">
+        {{#link-to "ember-consulting"}}
+          Ember Consulting
+        {{/link-to}}
+      </div>
+      <div class="w-full lg:w-auto flex justify-center p-4">
+        {{#link-to "open-source"}}
+          Open Source
+        {{/link-to}}
+      </div>
+      <div class="w-full lg:w-auto flex justify-center p-4">
+        {{#link-to "open-source"}}
+          Blog
+        {{/link-to}}
+      </div>
     </div>
-    <div class="w-full flex justify-center">
-      Ember Consulting
+
+    <div class="flex items-center justify-center w-full lg:justify-start lg:w-auto">
+      <a href="https://github.com/shipshapecode" class="p-2">
+        {{svg-jar "github" height="22px" width="23px"}}
+      </a>
+      <a href="https://twitter.com/shipshapecode" class="p-2">
+        {{svg-jar "twitter" height="19px" width="23px"}}
+      </a>
+      <a href="https://www.linkedin.com/company/ship-shape/" class="p-2">
+        {{svg-jar "linkedin" height="20px" width="19px"}}
+      </a>
     </div>
+
   </div>
 </div>
