@@ -1,9 +1,7 @@
-.hero {
-  padding: 5vw;
+a {
+  text-decoration: none;
 }
 
-.nav-trigger-container {
-  backface-visibility: hidden;
-  left: 50%;
-  transform: translateX(-50%) translateZ(0);
+.hero {
+  padding: 5vw;
 }

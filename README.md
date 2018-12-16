@@ -5,8 +5,6 @@ This website is made possible by the following Ember addons:
 
 ### Ship Shape Addons
 
-- [ember-3d-folding-panel](https://github.com/shipshapecode/ember-3d-folding-panel)
-- [ember-3d-nav](https://github.com/shipshapecode/ember-3d-nav)
 - [ember-contact-form](https://github.com/shipshapecode/ember-contact-form)
 - [ember-headroom](https://github.com/shipshapecode/ember-headroom)
 - [ember-service-worker-prember](https://github.com/shipshapecode/ember-service-worker-prember)

@@ -105,18 +105,15 @@ module.exports = function(defaults) {
       app: 'inline/styles/app.css',
       blog: 'inline/styles/blog.css',
       contact: 'inline/styles/contact.css',
-      'ember-consulting': 'inline/styles/ember-consulting.css',
       fonts: 'inline/styles/fonts.css',
       'google-analytics': {
         file: 'inline/ga.js',
         enabled: process.env.EMBER_ENV === 'production'
       },
-      home: 'inline/styles/home.css',
       'loading-indicator': {
         file: 'inline/loading-indicator.html',
         enabled: false
-      },
-      'open-source': 'inline/styles/open-source.css'
+      }
     },
     prember: {
       baseRoot: 'https://shipshape.io',
