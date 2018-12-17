@@ -1,6 +1,8 @@
 <div class="{{this.styleNamespace}}">
   <div class="footer-top">
-    <div class="sea text-center">
+    <div class="sea-footer text-center pb-32">
+      {{svg-jar "compass" height="30px" width="30px" class="m-8"}}
+
       <h3 class="font-bold p-4 text-5xl text-white">
         Set a course for success
       </h3>
@@ -9,13 +11,13 @@
         Ember.js consulting, development, and training for your project.
       </p>
 
-      {{#link-to "contact" class="btn-gold inline-block mt-4"}}
+      {{#link-to "contact" class="btn-gold inline-block m-12"}}
         Let's talk
       {{/link-to}}
     </div>
   </div>
 
-  <div class="footer-bottom flex flex-wrap p-24">
+  <div class="footer-bottom flex flex-wrap pl-24 pr-24 pt-12 pb-12">
     <div class="w-full flex justify-center lg:justify-start lg:w-auto">
       {{svg-jar "logo" class="footer-logo h-16 w-16"}}
     </div>
