@@ -5385,10 +5385,10 @@ ember-maybe-import-regenerator@^0.1.6:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
-ember-meta@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/ember-meta/-/ember-meta-0.4.2.tgz#36ac4430185e693db23d19dc82d443692f4a8875"
-  integrity sha512-1Sixg8sFpSiRsHvlLakQeBXGR396ZTO0UyxxcyLmLH4ALMGzgYi8fFr+XrGNXhIjl58JbHFmIjxs+81Mj1k5Sg==
+ember-meta@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/ember-meta/-/ember-meta-0.5.0.tgz#8158d082c486854add9fb3510041e6710058c9f6"
+  integrity sha512-DsuXLd9U6szSDAEXHpx4W27VY+FWDE385dW5uQhZe+mGBfWDPdy+f9emrTjUPhp0FMKC+w18mmdrmQcCN8+8/g==
   dependencies:
     ember-cli-babel "^6.16.0"
     ember-cli-head "^0.4.0"

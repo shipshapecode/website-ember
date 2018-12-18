@@ -1,42 +1,38 @@
-<div itemscope itemtype="http://schema.org/Service">
-  <HeroBlock @heroClasses="ember-consulting" @icon="landing">
-    <h1 itemprop="name" class="heading">Ambitious Apps with Ember.js</h1>
-    <p>
-      We've been using Ember since 2012, and have helped countless clients, from startups
-      to large corporations, build scalable and maintainable apps that stand the test of time.
-    </p>
-    <div>
-      {{#link-to "contact" class="btn-navy"}}
-        Let's build together
-      {{/link-to}}
-    </div>
-  </HeroBlock>
-
-  <div class="section quote bg-grey-transparent text-center">
-    <div itemprop="review" itemscope itemtype="http://schema.org/Review">
-      <h2 class="quoteContent text-navy" itemprop="reviewBody">
-        “Ship Shape knows what they’re doing. A thoughtful approach, pristine code and a 200% effort in everything they do, makes
-        recommending them a no-brainer.”
-      </h2>
-      <br>
-      <div itemprop="author" itemscope itemtype="http://schema.org/Person">
-        <p class="quoteInfo" itemprop="name">James Dixon</p>
-        <p class="quoteInfo" itemprop="jobTitle">Founder of Scout</p>
-      </div>
-    </div>
+<HeroBlock @heroClasses="ember-consulting" @icon="landing">
+  <h1 class="heading">Ambitious Apps with Ember.js</h1>
+  <p>
+    We've been using Ember since 2012, and have helped countless clients, from startups
+    to large corporations, build scalable and maintainable apps that stand the test of time.
+  </p>
+  <div>
+    {{#link-to "contact" class="btn-navy"}}
+      Let's build together
+    {{/link-to}}
   </div>
+</HeroBlock>
 
-  <div class="section">
-    <h2 class="heading">Why use Ember?</h2>
-
-    <p>
-      Ember is our JavaScript framework of choice for building ambitious web apps.
-      Ember is strongly opinionated and strives for convention over configuration, and
-      these strong conventions allow developers to be productive from day one. Ember also
-      has a strong addon ecosystem, and using popular JavaScript libraries is usually just a simple
-      install command.
-    </p>
+<div class="section quote bg-grey-transparent text-center">
+  <h2 class="quoteContent text-navy">
+    “Ship Shape knows what they’re doing. A thoughtful approach, pristine code and a 200% effort in everything they do, makes
+    recommending them a no-brainer.”
+  </h2>
+  <br>
+  <div>
+    <p class="quoteInfo">James Dixon</p>
+    <p class="quoteInfo">Founder of Scout</p>
   </div>
-
-  {{community-involvement}}
 </div>
+
+<div class="section">
+  <h2 class="heading">Why use Ember?</h2>
+
+  <p>
+    Ember is our JavaScript framework of choice for building ambitious web apps.
+    Ember is strongly opinionated and strives for convention over configuration, and
+    these strong conventions allow developers to be productive from day one. Ember also
+    has a strong addon ecosystem, and using popular JavaScript libraries is usually just a simple
+    install command.
+  </p>
+</div>
+
+{{community-involvement}}

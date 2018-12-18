@@ -56,7 +56,7 @@
     "ember-fetch": "^6.3.1",
     "ember-load-initializers": "^1.1.0",
     "ember-maybe-import-regenerator": "^0.1.6",
-    "ember-meta": "^0.4.2",
+    "ember-meta": "^0.5.0",
     "ember-prism": "^0.3.0",
     "ember-qunit": "^3.4.1",
     "ember-resolver": "^5.0.1",
