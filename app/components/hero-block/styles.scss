@@ -5,4 +5,6 @@
 
   @include headings($shevy-hero-block);
   @include content($shevy-hero-block);
+
+  padding: 1rem 5vw;
 }
