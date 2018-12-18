@@ -22,12 +22,6 @@ export default {
   grey: '#5F6976',
   'grey-light': '#909BA0',
   'grey-transparent': 'rgba(236, 243, 246, 50)',
-  white: '#FFFFFF',
-
-  black: '#22292f',
-  'grey-darkest': '#3d4852',
-  'grey-darker': '#606f7b',
-  'grey-dark': '#8795a1',
-  'grey-lighter': '#f1f5f8',
-  'grey-lightest': '#f8fafc'
+  red: '#EF898B',
+  white: '#FFFFFF'
 };

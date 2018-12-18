@@ -1,6 +1,4 @@
 & {
-  padding: 1rem;
-
   a {
     color: $secondary;
 
@@ -16,11 +14,11 @@
     }
 
     &:hover {
-      color: $pink;
+      color: $red;
       cursor: pointer;
 
       svg {
-        fill: $pink;
+        fill: $red;
         margin-left: 0.5rem;
       }
     }
@@ -37,15 +35,7 @@
     width: 100%;
   }
 
-  .heading {
-    color: $dark-green;
-  }
-
   .image-container {
     display: inline-grid;
-  }
-
-  .info {
-    padding: 2rem;
   }
 }
