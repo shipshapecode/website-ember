@@ -1,9 +1,11 @@
-<div class="{{this.styleNamespace}} hero {{@heroClasses}} bg-grey-transparent flex flex-wrap items-center">
-  <div class="w-full md:w-1/2">
+<div
+  class="{{this.styleNamespace}} hero {{@heroClasses}} section flex flex-wrap items-center flex-col-reverse lg:flex-row"
+>
+  <div class="w-full lg:w-1/2">
     {{yield}}
   </div>
 
-  <div class="w-full md:w-1/2 text-center">
-    {{svg-jar icon class="hero-svg"}}
+  <div class="w-full lg:w-1/2 lg:p-12 text-center">
+    {{svg-jar icon class="max-w-md"}}
   </div>
 </div>

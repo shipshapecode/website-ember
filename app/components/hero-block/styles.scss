@@ -5,10 +5,4 @@
 
   @include headings($shevy-hero-block);
   @include content($shevy-hero-block);
-
-  .hero-svg {
-    height: auto;
-    padding: 2rem;
-    width: 80%;
-  }
 }
