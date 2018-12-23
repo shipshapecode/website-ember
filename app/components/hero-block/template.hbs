@@ -1,11 +1,17 @@
 <div
-  class="{{this.styleNamespace}} hero {{@heroClasses}} flex flex-wrap items-center flex-col-reverse lg:flex-row"
+  class="hero {{@heroClasses}} section flex flex-wrap justify-center"
 >
-  <div class="w-full lg:w-1/2">
-    {{yield}}
-  </div>
+  <div class="section-content">
+    <div class="flex flex-wrap items-center flex-col-reverse justify-between lg:flex-row">
+      <div class="w-full lg:w-1/2">
+        <div class="max-w-md">
+          {{yield}}
+        </div>
+      </div>
 
-  <div class="w-full lg:w-1/2 lg:p-12 text-center">
-    {{svg-jar icon class="max-w-md"}}
+      <div class="w-full text-center lg:w-1/2 lg:p-12">
+        {{svg-jar @icon class="max-w-md"}}
+      </div>
+    </div>
   </div>
 </div>

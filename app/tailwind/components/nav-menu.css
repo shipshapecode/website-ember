@@ -1,5 +1,5 @@
 .nav-link {
-  @apply .block .font-bold .p-4 .text-grey;
+  @apply .block .font-bold .p-4 .text-base .text-grey;
 }
 
 .nav-link:hover {

@@ -4,7 +4,6 @@
 //Pages
 @import 'contact';
 @import 'ember-consulting';
-@import 'open-source';
 @import 'pod-styles';
 
 //3rd party
@@ -24,7 +23,9 @@ $ecf: (
 // Shevy
 
 $shevy: (
-  base-font-size: 1rem,
+  base-font-scale: (3.5, 2.5, 2, 1.5, 1.25, 1),
+  base-font-size: 18px,
+  base-line-height: 2,
   proximity: true,
   proximity-factor: 0.5
 );
@@ -37,6 +38,10 @@ $shevy: (
 *:after,
 *:before {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -75,4 +80,12 @@ h1 {
   .cd-form .contact-item {
     margin: 20px 0;
   }
+}
+
+.section {
+  padding: 1rem 5vw;
+}
+
+.section-content {
+  @extend .max-w-4xl, .w-full;
 }

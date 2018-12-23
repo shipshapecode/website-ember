@@ -102,7 +102,6 @@ module.exports = function(defaults) {
       extensions: ['js', 'css', 'map']
     },
     inlineContent: {
-      app: 'inline/styles/app.css',
       blog: 'inline/styles/blog.css',
       contact: 'inline/styles/contact.css',
       fonts: 'inline/styles/fonts.css',
