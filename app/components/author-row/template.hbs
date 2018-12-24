@@ -1,4 +1,4 @@
-<hbox class="{{this.styleNamespace}}" justify="center" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<div class="{{this.styleNamespace}} flex flex-wrap justify-center" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <centered xs="12" sm="4" md="3" lg="2">
     <img class="authorImage" src="{{@author.image}}" alt="Author image" itemprop="image">
   </centered>
@@ -10,4 +10,4 @@
       Read {{link-to "more posts" "blog.authors.author" author.id}} by this author.
     </p>
   </box>
-</hbox>
+</div>

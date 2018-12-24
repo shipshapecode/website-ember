@@ -13,9 +13,9 @@ when trying to jump in and help with the development of new features. It is also
 literally benefits all Ember developers. Learn more about how it introspects your code, and the architecture behind that capability, 
 after the break.
 
-<centered>
+<div class="text-center">
 ![Yo dawg, I heard you like inspecting Ember apps, so we made Ember Inspector an Ember app, so you can inspect your Ember app, with your Ember app.](/img/blog/inspector/inspector.jpg)
-</centered>
+</div>
 
 ## Getting Started with Ember Inspector
 
@@ -76,16 +76,16 @@ The future is very bright for Ember Inspector, and I just merged in some nice st
 feature for a long time. [@pbishop16](https://github.com/pbishop16) has put a lot of amazing work into the dark theme, and
 provided us with a gif to see the switch from light to dark.
 
-<centered>
+<div class="text-center">
 ![Ember Inspector Dark Theme Gif](/img/blog/inspector/ember-inspector-dark.gif)
-</centered>
+</div>
 
 The new component tree, which we teased in
 [The Ember.js Times](https://the-emberjs-times.ongoodbits.com/2018/03/30/issue-40), is also rapidly approaching completion of its 
 first iteration, thanks to the hard work of [@Bestra](https://github.com/Bestra).
 
-<centered>
+<div class="text-center">
 ![Ember Inspector Component Tree](/img/blog/inspector/component-tree.png)
-</centered>
+</div>
 
 Expect to see all of these updates dropping in an Ember Inspector version very soon, and look forward to all the further updates in the works! 

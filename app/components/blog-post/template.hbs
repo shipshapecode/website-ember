@@ -10,10 +10,10 @@
     </time>
   </HeroBlock>
 
-  <centered xs="12" class="post-content" id="post-content">
-    <box xs="10" md="8">
+  <div class="post-content section flex flex-wrap justify-center">
+    <div class="section-content">
       {{content}}
       <AuthorRow @author={{this.author}}></AuthorRow>
-    </box>
-  </centered>
+    </div>
+  </div>
 </box>

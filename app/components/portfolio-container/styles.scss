@@ -12,12 +12,7 @@
     }
   }
 
-  .heading {
-    text-align: center;
-  }
-
   .project {
-    padding: 3rem;
 
     .repo {
       transition: transform 0.2s ease-in;
@@ -27,21 +22,15 @@
       }
     }
 
-    .repo-name {
-      color: $dark;
-      font-weight: lighter;
-    }
-
     .github-info {
-      color: $secondary;
-      font-size: 1.3rem;
+      color: $grey-light;
 
       .github-icon,
       .star-icon {
         padding: 0.25rem;
 
         path {
-          fill: $secondary;
+          fill: $grey-light;
         }
       }
 
