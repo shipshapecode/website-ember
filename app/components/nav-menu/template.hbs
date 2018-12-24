@@ -1,6 +1,6 @@
 <nav class="flex items-center justify-between flex-wrap p-6">
   <div class="flex flex-no-shrink items-center pl-2 pr-2 pt-2">
-    <a href="/" class="logo flex">
+    <a href="/" class="logo inline-flex">
       <div
         class="inline-block"
         itemprop="logo"
@@ -8,12 +8,13 @@
         itemtype="https://schema.org/ImageObject"
         itemid="shipshapelogo"
       >
-        <img itemprop="url" src="/img/logo.png" height="50px" width="50px" alt="Ship Shape">
+        {{svg-jar "logo" height="50px" width="50px"}}
+        <!--img itemprop="url" src="/img/logo.png" height="50px" width="50px" alt="Ship Shape">
         <meta itemprop="height" content="128">
-        <meta itemprop="width" content="128">
+        <meta itemprop="width" content="128"-->
       </div>
       <div
-        class="inline-flex items-center text-navy text-3xl"
+        class="-mt-1 text-navy text-3xl"
         itemprop="name"
       >
         Ship Shape
@@ -22,12 +23,15 @@
   </div>
 
   <div class="block lg:hidden">
-    <button class="flex items-center px-3 py-2 text-grey hover:text-navy text-xl">
+    <button
+      class="flex items-center px-3 py-2 text-grey hover:text-navy text-xl"
+      {{action "toggleNavMenu"}}
+    >
       {{svg-jar "menu" height="36px" width="36px"}}
     </button>
   </div>
 
-  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:pl-2 lg:pr-2 lg:pt-2">
+  <div class="nav-links flex-grow hidden w-full lg:flex lg:items-center lg:w-auto lg:pl-2 lg:pr-2 lg:pt-2">
     <div class="lg:flex lg:flex-grow lg:justify-end">
       {{link-to "Case Studies" "work" class="nav-link"}}
       {{link-to "Ember Consulting" "ember-consulting" class="nav-link"}}

@@ -82,10 +82,15 @@ h1 {
   }
 }
 
+.hero {
+  padding: 0 5vw;
+}
+
 .section {
-  padding: 1rem 5vw;
+  padding: 5rem 5vw;
 }
 
 .section-content {
   @extend .max-w-4xl, .w-full;
 }
+

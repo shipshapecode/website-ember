@@ -1,15 +1,15 @@
 <div
-  class="hero {{@heroClasses}} section flex flex-wrap justify-center"
+  class="hero {{@heroClasses}} flex flex-wrap justify-center"
 >
   <div class="section-content">
     <div class="flex flex-wrap items-center flex-col-reverse justify-between lg:flex-row">
-      <div class="w-full lg:w-1/2">
+      <div class="w-full lg:pr-12 lg:w-1/2">
         <div class="max-w-md">
           {{yield}}
         </div>
       </div>
 
-      <div class="w-full text-center lg:w-1/2 lg:p-12">
+      <div class="w-full text-center lg:pr-12 lg:w-1/2 lg:p-12">
         {{svg-jar @icon class="max-w-md"}}
       </div>
     </div>
