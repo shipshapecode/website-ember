@@ -769,49 +769,6 @@
   dependencies:
     "@glimmer/util" "^0.36.5"
 
-"@html-next/flexi-config@2.1.1", "@html-next/flexi-config@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@html-next/flexi-config/-/flexi-config-2.1.1.tgz#9118b36b8b3d05ef553052580cc610965efc2bf9"
-  integrity sha512-4S9GNIw3rQtqEitVV+Xtt92a6cifE0LCMo7nKPxYL+dB/yHKk5p1VBRuMV2JJNE8Bq+TahEo+otkvdCoqpc08A==
-
-"@html-next/flexi-default-styles@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@html-next/flexi-default-styles/-/flexi-default-styles-2.1.1.tgz#07ec865961492480667386ea4ee164db87aaf4f8"
-  integrity sha512-4u7CWXExsn9Eme/Pq8o+coD8w1VsSh0esw0tG/QxOIVmrt7t9mjBIco4yMKR4gYAA/gSjgtHiE+Tz6ZUgCs1bQ==
-  dependencies:
-    "@html-next/flexi-config" "2.1.1"
-    broccoli-merge-trees "^3.0.0"
-    broccoli-plugin "^1.3.0"
-    ember-cli-babel "^6.6.0"
-    ember-cli-sass "^7.0.0"
-
-"@html-next/flexi-dsl@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@html-next/flexi-dsl/-/flexi-dsl-2.1.0.tgz#a320eb1bbd38b8849696c0e5ba1c2b69feda966e"
-  integrity sha512-k+5h4LCJnTIZL1pp/tFSMjLIro+yN2fsaiKcdPdF7GK8khNDCKDo+7fg8GaLi/Dqz3MJy4OdTIMo51tbIz1K7Q==
-  dependencies:
-    "@html-next/flexi-config" "2.1.1"
-    ember-cli-preprocess-registry "^3.0.0"
-    rsvp "^4.8.0"
-
-"@html-next/flexi-layouts@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@html-next/flexi-layouts/-/flexi-layouts-2.2.2.tgz#750da44b5b36aefbabbd735bb2cec23cb91beddd"
-  integrity sha512-lz+ANajjveV7iZuZrWbnP/lfeCclrITrDp12Ii9jwwTiNU6vnFI9hyQRz8ayqldbe9Il2/pumeS8uBJ1IZPoJg==
-  dependencies:
-    "@html-next/flexi-config" "2.1.1"
-    broccoli-funnel "^2.0.1"
-    broccoli-merge-trees "^3.0.0"
-    broccoli-plugin "^1.2.1"
-    chalk "^2.1.0"
-    debug "^3.0.1"
-    ember-cli-babel "^6.6.0"
-    ember-cli-htmlbars "^2.0.1"
-    ember-cli-preprocess-registry "^3.0.0"
-    ember-copy "^1.0.0"
-    ember-window-mock "^0.4.0"
-    rsvp "^4.0.0"
-
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -4137,7 +4094,7 @@ debug@=3.1.0, debug@~3.1.0:
   dependencies:
     ms "2.0.0"
 
-debug@^3.0.0, debug@^3.0.1, debug@^3.1.0:
+debug@^3.0.0, debug@^3.1.0:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
@@ -4968,7 +4925,7 @@ ember-cli-path-utils@^1.0.0:
   resolved "https://registry.yarnpkg.com/ember-cli-path-utils/-/ember-cli-path-utils-1.0.0.tgz#4e39af8b55301cddc5017739b77a804fba2071ed"
   integrity sha1-Tjmvi1UwHN3FAXc5t3qAT7ogce0=
 
-ember-cli-preprocess-registry@^3.0.0, ember-cli-preprocess-registry@^3.1.2:
+ember-cli-preprocess-registry@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/ember-cli-preprocess-registry/-/ember-cli-preprocess-registry-3.1.2.tgz#083efb21fd922c021ceba9e08f4d9278249fc4db"
   integrity sha512-YJfcDHMBEjtD505CIhM8dtu5FO2Ku+0OTs/0kdLlj9mhXlbzC+k0JAS5c/0AQ+Nh2f+qZZJ8G19ySdzWwTLSCQ==
@@ -5252,13 +5209,6 @@ ember-contact-form@^0.2.1:
     ember-cli-htmlbars "^2.0.3"
     ember-cli-sass "^7.0.0"
     ember-radio-button "1.2.3"
-
-ember-copy@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ember-copy/-/ember-copy-1.0.0.tgz#426554ba6cf65920f31d24d0a3ca2cb1be16e4aa"
-  integrity sha512-aiZNAvOmdemHdvZNn0b5b/0d9g3JFpcOsrDgfhYEbfd7SzE0b69YiaVK2y3wjqfjuuiA54vOllGN4pjSzECNSw==
-  dependencies:
-    ember-cli-babel "^6.6.0"
 
 ember-cp-validations@^3.5.3:
   version "3.5.4"
@@ -5602,14 +5552,6 @@ ember-validators@1.0.4:
   dependencies:
     ember-cli-babel "^6.9.2"
     ember-require-module "^0.1.2"
-
-ember-window-mock@^0.4.0:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/ember-window-mock/-/ember-window-mock-0.4.1.tgz#f294030c4574d42dabb740c31cef929fa8c5c9fb"
-  integrity sha1-8pQDDEV01C2rt0DDHO+Sn6jFyfs=
-  dependencies:
-    broccoli-funnel "^2.0.1"
-    ember-cli-babel "^6.6.0"
 
 emojis-list@^2.0.0:
   version "2.1.0"
@@ -6553,14 +6495,6 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     rimraf "~2.6.2"
     write "^0.2.1"
-
-flexi@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/flexi/-/flexi-2.1.0.tgz#1f229c20975bcb99b481d7ac47fe9e9b5129380f"
-  integrity sha512-N0lcRbXAjFjxE3qL29W4Df3/8dU2W2aGf9+H+HVqKxp2V/0BkNZ9jK2ZhRYKUQJ+6NyxEJVCHiv4CsF9YeC78Q==
-  dependencies:
-    chalk "^2.1.0"
-    semver "^5.4.1"
 
 flush-write-stream@^1.0.0:
   version "1.0.3"
@@ -11933,7 +11867,7 @@ rsvp@^3.0.14, rsvp@^3.0.17, rsvp@^3.0.18, rsvp@^3.0.21, rsvp@^3.0.6, rsvp@^3.3.3
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.6.2.tgz#2e96491599a96cde1b515d5674a8f7a91452926a"
   integrity sha512-OfWGQTb9vnwRjwtA2QwpG2ICclHC3pgXZO5xt8H2EfgDquO0qVdSb5T88L4qJVAEugbS56pAuV4XZM58UX8ulw==
 
-rsvp@^4.0.0, rsvp@^4.6.1, rsvp@^4.7.0, rsvp@^4.8.0, rsvp@^4.8.1, rsvp@^4.8.2, rsvp@^4.8.3, rsvp@^4.8.4:
+rsvp@^4.6.1, rsvp@^4.7.0, rsvp@^4.8.1, rsvp@^4.8.2, rsvp@^4.8.3, rsvp@^4.8.4:
   version "4.8.4"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-4.8.4.tgz#b50e6b34583f3dd89329a2f23a8a2be072845911"
   integrity sha512-6FomvYPfs+Jy9TfXmBpBuMWNH94SgCsZmJKcanySzgNNP6LjWxBvyLTa9KaMfDDM5oxRfrKDB0r/qeRsLwnBfA==

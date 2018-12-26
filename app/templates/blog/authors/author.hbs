@@ -1,14 +1,12 @@
 <HeroBlock @heroClasses="blog-author">
-  <h1>{{author.name}}</h1>
+  <h1 class="heading">{{author.name}}</h1>
   <h2>
     {{model.length}} posts
   </h2>
 </HeroBlock>
 
-<box class="blog-posts" id="blog-posts">
-  <hbox justify="center">
-    <box fit xs="12" sm="8" md="6">
-      {{blog-post-menu posts=model}}
-    </box>
-  </hbox>
-</box>
+<div class="blog-posts section">
+  <div class="section-content">
+    {{blog-post-menu posts=model}}
+  </div>
+</div>

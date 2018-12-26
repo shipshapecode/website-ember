@@ -1,13 +1,13 @@
-<div class="{{this.styleNamespace}} flex flex-wrap justify-center" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <centered xs="12" sm="4" md="3" lg="2">
+<div class="{{this.styleNamespace}} flex flex-wrap justify-center lg:justify-start" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <div class="items-center justify-center">
     <img class="authorImage" src="{{@author.image}}" alt="Author image" itemprop="image">
-  </centered>
-  <box xs="12" sm="8" md="9" lg="10">
+  </div>
+  <div>
     <h3 itemprop="name">
       {{@author.name}}
     </h3>
     <p>
       Read {{link-to "more posts" "blog.authors.author" author.id}} by this author.
     </p>
-  </box>
+  </div>
 </div>

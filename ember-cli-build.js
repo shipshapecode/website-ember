@@ -1,13 +1,10 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-const shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
 const { readFileSync } = require('fs');
 const { extname } = require('path');
 const yamlFront = require('yaml-front-matter');
 const walkSync = require('walk-sync');
-
-shim(EmberApp);
 
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
