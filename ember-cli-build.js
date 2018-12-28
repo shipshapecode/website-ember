@@ -138,8 +138,10 @@ function buildPremberUrls() {
     '/open-source/',
     '/team/',
     '/work/',
-    '/work/brokermate',
-    '/work/netflix'
+    '/work/acquia/',
+    '/work/brokermate/',
+    '/work/netflix/',
+    '/work/socialcode/'
   ];
 
   const paths = walkSync('blog/posts');

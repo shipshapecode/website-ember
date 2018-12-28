@@ -14,8 +14,8 @@
 
     code {
       &:not([class*="language-"]) {
-        background-color: $off-white;
-        border: 1px solid $secondary;
+        background-color: $grey-transparent;
+        border: none;
         border-radius: 2px;
         font-size: 0.8em;
         line-height: 1rem;
@@ -55,14 +55,14 @@
   }
 
   a {
-    color: $blue;
+    color: $red;
 
     &:visited {
-      color: $blue;
+      color: $red;
     }
 
     &:hover {
-      color: $red;
+      color: $navy;
     }
   }
 }

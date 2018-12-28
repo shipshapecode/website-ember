@@ -48,6 +48,8 @@ Router.map(function() {
   this.route('work', function() {
     this.route('brokermate');
     this.route('netflix');
+    this.route('acquia');
+    this.route('socialcode');
   });
   this.route('lost-at-sea', { path: '/*path' });
 });

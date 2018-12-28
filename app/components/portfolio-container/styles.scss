@@ -13,29 +13,10 @@
   }
 
   .project {
-    .repo {
-      transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
 
-      &:hover {
-        transform: translateY(-10px);
-      }
-    }
-
-    .github-info {
-      color: $grey-light;
-
-      .github-icon,
-      .star-icon {
-        padding: 0.25rem;
-
-        path {
-          fill: $grey-light;
-        }
-      }
-
-      .star-icon {
-        padding-right: 0.25rem;
-      }
+    &:hover {
+      transform: translateY(-10px);
     }
   }
 }

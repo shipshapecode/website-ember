@@ -1,0 +1,13 @@
+& {
+  a {
+    color: $grey;
+
+    &:visited {
+      color: $grey;
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+}

@@ -26,8 +26,8 @@ $shevy: (
   base-font-scale: (3.5, 2.5, 2, 1.5, 1.25, 1),
   base-font-size: 18px,
   base-line-height: 2,
-  proximity: true,
-  proximity-factor: 0.5
+  proximity: true
+  // proximity-factor: 0.5
 );
 
 @include headings;
