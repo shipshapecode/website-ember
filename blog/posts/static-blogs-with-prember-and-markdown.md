@@ -1,5 +1,5 @@
 ---
-author: rwwagner90
+authorId: rwwagner90
 categories: 
   - blog
   - ember.js
@@ -135,7 +135,7 @@ I also supply titles, authors, and any other data that makes sense. For example 
 
 ```md
 ---
-author: Robert Wagner
+authorId: Robert Wagner
 authorId: rwwagner90
 date: 2018-04-04
 slug: static-blogs-with-prember-and-markdown

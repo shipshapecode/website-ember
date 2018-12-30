@@ -1,5 +1,5 @@
 .btn {
-  @apply .font-bold .pb-4 .pl-8 .pr-8 .pt-4 .rounded .text-white;
+  @apply .font-bold .inline-block .pb-2 .pl-8 .pr-8 .pt-2 .rounded .text-white;
 
 }
 

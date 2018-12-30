@@ -7,14 +7,14 @@
 
   {{#each @posts as |post|}}
     <div class="blog-post">
-      {{link-to post.title "blog.post" post.slug class="title"}}
+      {{link-to post.attributes.title "blog.post" post.attributes.slug class="title"}}
 
       <div class="attribution">
-        By {{post.author.name}} {{date-format post.date "MM/DD/YYYY"}}
+        By {{post.author.attributes.name}} {{date-format post.attributes.date "MM/DD/YYYY"}}
       </div>
 
       <div class="tags">
-        {{#each post.categories as |tag|}}
+        {{#each post.attributes.categories as |tag|}}
           <div class="tag">{{link-to tag "blog.categories.category" (space-to-dash tag)}}</div>
         {{/each}}
       </div>

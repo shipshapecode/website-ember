@@ -2,15 +2,19 @@ import Route from '@ember/routing/route';
 import { capitalize } from '@ember/string';
 import { setProperties } from '@ember/object';
 import { inject as service } from '@ember/service';
+import fetch from 'fetch';
 
 export default Route.extend({
   headData: service(),
 
   async model({ category }) {
-    const posts = await this.store.findAll('post', { reload: true });
+    let posts = await fetch('/posts/posts.json');
+    posts = await posts.json();
+    posts = posts.data;
+
     return posts.filter((post) => {
-      const dasherizedCategories = post.get('categories').map((category) => {
-        return category.replace(' ', '-');
+      const dasherizedCategories = post.attributes.categories.map((category) => {
+        return category.replace(/ /g, '-');
       });
 
       return dasherizedCategories.includes(category);
@@ -26,7 +30,7 @@ export default Route.extend({
       title: `${capitalizedCategory} - Blog Category - Ship Shape`,
       description: `See our ${model.length} blog posts we've written about ${category}`,
       type: 'website',
-      url: `https://shipshape.io/blog/categories/${category.replace(' ', '-')}/`
+      url: `https://shipshape.io/blog/categories/${category.replace(/ /g, '-')}/`
     });
   },
 

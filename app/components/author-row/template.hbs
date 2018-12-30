@@ -1,10 +1,10 @@
 <div class="{{this.styleNamespace}} flex flex-wrap justify-center lg:justify-start" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <div class="items-center justify-center">
-    <img class="authorImage" src="{{@author.image}}" alt="Author image" itemprop="image">
+    <img class="authorImage" src="{{@author.attributes.image}}" alt="Author image" itemprop="image">
   </div>
   <div>
     <h3 itemprop="name">
-      {{@author.name}}
+      {{@author.attributes.name}}
     </h3>
     <p>
       Read {{link-to "more posts" "blog.authors.author" author.id}} by this author.

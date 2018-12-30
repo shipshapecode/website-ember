@@ -33,6 +33,7 @@ module.exports = function(defaults) {
     'ember-cli-markdown-to-json': [
       {
         attributes: [
+          'authorId',
           'categories',
           'date',
           'slug',
@@ -45,7 +46,7 @@ module.exports = function(defaults) {
         contentFolder: 'posts',
         contentTypes: ['description', 'html'],
         folder: 'blog/posts',
-        references: ['author'],
+        // references: ['author'],
         type: 'post'
       },
       {

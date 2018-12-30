@@ -1,5 +1,5 @@
 ---
-author: rwwagner90
+authorId: rwwagner90
 categories: 
   - blog
   - ember.js
@@ -99,7 +99,7 @@ The values in my `.md` files look something like this:
 
 ```md
 ---
-author: Robert Wagner
+authorId: Robert Wagner
 authorId: rwwagner90
 categories: 
   - ember
