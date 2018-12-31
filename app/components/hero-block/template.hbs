@@ -10,7 +10,9 @@
       </div>
 
       <div class="w-full text-center lg:pr-12 lg:w-1/2 lg:p-12">
-        {{svg-jar @icon class="max-w-md"}}
+        {{#if @icon}}
+          {{svg-jar @icon class="max-w-md"}}
+        {{/if}}
       </div>
     </div>
   </div>

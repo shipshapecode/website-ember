@@ -39,7 +39,11 @@ module('Acceptance | ember consulting', function(hooks) {
     await visit('/ember-consulting');
 
     assert.equal(currentURL(), '/ember-consulting');
+    assert.equal(document.head.querySelector('meta[name="twitter:description"]').content,
+      'Ember consulting is our specialty at Ship Shape. We have worked on several ambitious, full scale Ember apps for both large and small clients. We put a huge focus on leveling up your team\'s Ember skills, while also churning out bulletproof features for your Ember app.',
+      'twitter description is correct');
     assert.equal(document.head.querySelector('meta[name="twitter:title"]').content,
-      'Ember.js Consulting and Training - Ship Shape', 'twitter title is correct');
+      'Ember.js Consulting and Training - Ship Shape',
+      'twitter title is correct');
   });
 });
