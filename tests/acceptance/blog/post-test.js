@@ -44,5 +44,16 @@ module('Acceptance | blog/post', function(hooks) {
     assert.equal(currentURL(), '/blog/ember-data-belongs-to-find-or-create/');
     assert.equal(document.head.querySelector('meta[name="twitter:title"]').content,
       'Creating a Default Record When a belongsTo Request Errors', 'twitter title is correct');
+
+    assert.equal(document.head.querySelector('meta[name="twitter:label1"]').content,
+      'Written by', 'twitter label1 is correct');
+    assert.equal(document.head.querySelector('meta[name="twitter:data1"]').content,
+      'Robert Wagner', 'twitter author is correct');
+
+    assert.equal(document.head.querySelector('meta[name="twitter:label2"]').content,
+      'Filed under', 'twitter label2 is correct');
+    assert.equal(document.head.querySelector('meta[name="twitter:data2"]').content,
+      'catch belongsTo 404, ember.js, ember-data, get or create',
+      'twitter filed under is correct');
   });
 });
