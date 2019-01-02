@@ -6,7 +6,7 @@
   </div>
 
   {{#each @posts as |post|}}
-    <div class="blog-post">
+    <div class="blog-post pt-2 pb-2">
       {{link-to post.attributes.title "blog.post" post.attributes.slug class="title"}}
 
       <div class="attribution">
