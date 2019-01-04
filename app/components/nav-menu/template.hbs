@@ -31,8 +31,11 @@
     </button>
   </div>
 
-  <div class="nav-links flex-grow hidden w-full lg:flex lg:items-center lg:w-auto lg:pl-2 lg:pr-2 lg:pt-2">
+  <div class="nav-links hidden lg:flex">
     <div class="lg:flex lg:flex-grow lg:justify-end">
+      <div class="cursor-pointer flex lg:hidden justify-end m-4" {{action 'toggleNavMenu'}}>
+        {{svg-jar "close" class="h-10 m-2 p-2 w-10"}}
+      </div>
       {{link-to "Case Studies" "work" class="nav-link" invokeAction=(action 'toggleNavMenu')}}
       {{link-to "Ember Consulting" "ember-consulting" class="nav-link" invokeAction=(action 'toggleNavMenu')}}
       {{link-to "Open Source" "open-source" class="nav-link" invokeAction=(action 'toggleNavMenu')}}
