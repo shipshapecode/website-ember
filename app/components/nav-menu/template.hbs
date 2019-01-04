@@ -33,14 +33,19 @@
 
   <div class="nav-links hidden lg:flex">
     <div class="lg:flex lg:flex-grow lg:justify-end">
-      <div class="cursor-pointer flex lg:hidden justify-end m-4" {{action 'toggleNavMenu'}}>
-        {{svg-jar "close" class="h-10 m-2 p-2 w-10"}}
+      <div class="flex lg:hidden justify-end m-4">
+        <button
+          class="cursor-pointer"
+          {{action "toggleNavMenu"}}
+        >
+          {{svg-jar "close" class="h-10 m-2 p-2 w-10"}}
+        </button>
       </div>
-      {{link-to "Case Studies" "work" class="nav-link" invokeAction=(action 'toggleNavMenu')}}
-      {{link-to "Ember Consulting" "ember-consulting" class="nav-link" invokeAction=(action 'toggleNavMenu')}}
-      {{link-to "Open Source" "open-source" class="nav-link" invokeAction=(action 'toggleNavMenu')}}
-      {{link-to "Blog" "blog" class="nav-link" invokeAction=(action 'toggleNavMenu')}}
-      {{link-to "Contact" "contact" class="nav-link contact-link" invokeAction=(action 'toggleNavMenu')}}
+      {{link-to "Case Studies" "work" class="nav-link" invokeAction=(action "toggleNavMenu")}}
+      {{link-to "Ember Consulting" "ember-consulting" class="nav-link" invokeAction=(action "toggleNavMenu")}}
+      {{link-to "Open Source" "open-source" class="nav-link" invokeAction=(action "toggleNavMenu")}}
+      {{link-to "Blog" "blog" class="nav-link" invokeAction=(action "toggleNavMenu")}}
+      {{link-to "Contact" "contact" class="nav-link contact-link" invokeAction=(action "toggleNavMenu")}}
     </div>
   </div>
 </nav>
