@@ -33,11 +33,11 @@
 
   <div class="nav-links flex-grow hidden w-full lg:flex lg:items-center lg:w-auto lg:pl-2 lg:pr-2 lg:pt-2">
     <div class="lg:flex lg:flex-grow lg:justify-end">
-      {{link-to "Case Studies" "work" class="nav-link"}}
-      {{link-to "Ember Consulting" "ember-consulting" class="nav-link"}}
-      {{link-to "Open Source" "open-source" class="nav-link"}}
-      {{link-to "Blog" "blog" class="nav-link"}}
-      {{link-to "Contact" "contact" class="nav-link contact-link"}}
+      {{link-to "Case Studies" "work" class="nav-link" invokeAction=(action 'toggleNavMenu')}}
+      {{link-to "Ember Consulting" "ember-consulting" class="nav-link" invokeAction=(action 'toggleNavMenu')}}
+      {{link-to "Open Source" "open-source" class="nav-link" invokeAction=(action 'toggleNavMenu')}}
+      {{link-to "Blog" "blog" class="nav-link" invokeAction=(action 'toggleNavMenu')}}
+      {{link-to "Contact" "contact" class="nav-link contact-link" invokeAction=(action 'toggleNavMenu')}}
     </div>
   </div>
 </nav>
