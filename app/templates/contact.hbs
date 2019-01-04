@@ -1,5 +1,5 @@
-<div class="contact-form" id="contact-form">
-  <HeroBlock @heroClasses="contact" @icon="landing">
+<div class="contact-form section flex flex-wrap justify-center" id="contact-form">
+  <div class="section-content">
     <h1 class="heading">
       We can help streamline your Ember.js project
     </h1>
@@ -7,72 +7,72 @@
       Whether you need staff augmentation to increase the velocity on your ambitious project,
       mentoring for your team, or anything else Ember.js related, we've got you covered.
     </p>
-  </HeroBlock>
 
-  <div class="flex flex-wrap justify-center items-center">
-    <form class="cd-form floating-labels" name="contact-us" netlify-honeypot="bot-field"
-      {{action (route-action "sendContactRequest" model) on="submit"}} netlify>
-      <fieldset>
-        <legend>Personal Info</legend>
-        <div class="bot-field">
-          <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+    <div class="flex flex-wrap justify-center items-center">
+      <form class="cd-form floating-labels" name="contact-us" netlify-honeypot="bot-field"
+        {{action (route-action "sendContactRequest" model) on="submit"}} netlify>
+        <fieldset>
+          <legend>Personal Info</legend>
+          <div class="bot-field">
+            <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+          </div>
+
+          {{contact-input
+            fieldName="name"
+            labelText="Name"
+            required=true
+            type="text"
+            value=model.name
+          }}
+
+          {{contact-input
+            fieldName="company"
+            labelText="Company"
+            required=false
+            type="text"
+            value=model.company
+          }}
+
+          {{contact-input
+            fieldName="email"
+            labelText="Email"
+            required=true
+            type="email"
+            value=model.email
+          }}
+        </fieldset>
+
+        <fieldset>
+          <legend>Project Info</legend>
+
+          {{form-list
+            groupValue=model.projectType
+            options=projectTypes
+            type="radio"}}
+
+          {{contact-input
+            fieldName="description"
+            labelText="Project description"
+            required=true
+            textarea=true
+            value=model.description
+          }}
+
+        </fieldset>
+
+        <div>
+          {{input
+            disabled=(v-get model "isTruelyInvalid")
+            type="submit"
+            value="Send Message"}}
         </div>
 
-        {{contact-input
-          fieldName="name"
-          labelText="Name"
-          required=true
-          type="text"
-          value=model.name
-        }}
-
-        {{contact-input
-          fieldName="company"
-          labelText="Company"
-          required=false
-          type="text"
-          value=model.company
-        }}
-
-        {{contact-input
-          fieldName="email"
-          labelText="Email"
-          required=true
-          type="email"
-          value=model.email
-        }}
-      </fieldset>
-
-      <fieldset>
-        <legend>Project Info</legend>
-
-        {{form-list
-          groupValue=model.projectType
-          options=projectTypes
-          type="radio"}}
-
-        {{contact-input
-          fieldName="description"
-          labelText="Project description"
-          required=true
-          textarea=true
-          value=model.description
-        }}
-
-      </fieldset>
-
-      <div>
-        {{input
-          disabled=(v-get model "isTruelyInvalid")
-          type="submit"
-          value="Send Message"}}
-      </div>
-
-      <div class="alerts text-center">
-        {{#each flashMessages.queue as |flash|}}
-          {{flash-message flash=flash}}
-        {{/each}}
-      </div>
-    </form>
+        <div class="alerts text-center">
+          {{#each flashMessages.queue as |flash|}}
+            {{flash-message flash=flash}}
+          {{/each}}
+        </div>
+      </form>
+    </div>
   </div>
 </div>
