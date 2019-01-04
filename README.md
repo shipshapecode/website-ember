@@ -1,5 +1,5 @@
 # Ship Shape's Website (shipshape.io)
-<a href="https://shipshape.io/"><img src="http://i.imgur.com/KVqNjgO.png" alt="Ship Shape" width="100" height="100"/></a>
+<a href="https://shipshape.io/"><img src="http://i.imgur.com/DWHQjA5.png" alt="Ship Shape" width="100" height="100"/></a>
 
 This website is made possible by the following Ember addons:
 
