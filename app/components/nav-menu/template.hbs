@@ -24,6 +24,7 @@
 
   <div class="block lg:hidden">
     <button
+      aria-label="Open navigation menu"
       class="flex items-center px-3 py-2 text-grey hover:text-navy text-xl"
       {{action "toggleNavMenu"}}
     >
@@ -35,6 +36,7 @@
     <div class="lg:flex lg:flex-grow lg:justify-end">
       <div class="flex lg:hidden justify-end m-4">
         <button
+          aria-label="Close navigation menu"
           class="cursor-pointer"
           {{action "toggleNavMenu"}}
         >
