@@ -1,4 +1,4 @@
-<HeroBlock @heroClasses="open-source" @icon="landing">
+<HeroBlock @heroClasses="open-source" @icon="open-source">
   <h1 class="heading">We {{svg-jar "heart1" class="heartIcon"}} Open Source</h1>
   <p>
     At Ship Shape, contributing to open source software is an addiction. We maintain
@@ -12,7 +12,7 @@
   </div>
 </HeroBlock>
 
-{{portfolio-container model=model}}
+<PortfolioContainer @model={{model}}></PortfolioContainer>
 
 <div class="section bg-grey-transparent flex flex-wrap justify-center">
   <div class="section-content">
