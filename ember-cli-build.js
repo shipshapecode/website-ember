@@ -136,6 +136,7 @@ function buildPremberUrls() {
     '/blog/',
     '/contact/',
     '/ember-consulting/',
+    '/lost-at-sea/',
     '/open-source/',
     '/team/',
     '/work/',
