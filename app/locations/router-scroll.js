@@ -6,12 +6,11 @@ export default EmberRouterScroll.extend({
 
     if (url.includes('#')) {
       return url.replace(/([^/])#(.*)/, '$1/#$2');
+    } else if (url.includes('?')) {
+      const replacementPattern = url.includes('/?') ? '$1$2' : '$1/$2';
+      return url.replace(/([^?]+)(\?.*)?/g, replacementPattern);
     } else {
-      if (url.includes('?')) {
-        return url;
-      } else {
-        return url.replace(/\/?$/, '/');
-      }
+      return url.replace(/\/?$/, '/');
     }
   }
 });

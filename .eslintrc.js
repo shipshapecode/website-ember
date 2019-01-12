@@ -23,6 +23,7 @@ module.exports = {
     'ember/order-in-controllers': 'error',
     'ember/order-in-models': 'error',
     'ember/order-in-routes': 'error',
+    'no-useless-escape': 'off'
   },
   overrides: [
     // node files
