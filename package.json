@@ -65,6 +65,7 @@
     "ember-service-worker-prember": "^0.4.0",
     "ember-source": "~3.6.0",
     "ember-svg-jar": "^1.2.2",
+    "ember-truth-helpers": "^2.1.0",
     "eslint-plugin-ember": "^6.0.1",
     "imagemin-jpegtran": "^6.0.0",
     "imagemin-optipng": "^6.0.0",

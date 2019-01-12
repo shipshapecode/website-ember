@@ -1,23 +1,17 @@
 & {
-  $shevy-blog-post: (
-    base-font-size: 1.25rem,
-    base-font-scale: (3, 1.75, 1.5, 1.25, 1, 0.8)
-  );
-
-  @include headings($shevy-blog-post);
-  @include content($shevy-blog-post);
-
   color: $grey;
 
   .post-content {
-    padding: 2rem 0;
-
     code {
+      &[class*="language-"] {
+        font-size: 16px;
+      }
+
       &:not([class*="language-"]) {
         background-color: $grey-transparent;
         border: none;
         border-radius: 2px;
-        font-size: 0.8em;
+        font-size: 0.8rem;
         line-height: 1rem;
         padding: 0.1rem 0.2rem;
         vertical-align: middle;

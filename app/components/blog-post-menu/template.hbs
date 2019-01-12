@@ -5,7 +5,7 @@
     </a>
   </div>
 
-  {{#each @posts as |post|}}
+  {{#each this.paginatedPosts as |post|}}
     <div class="blog-post pt-2 pb-2">
       {{link-to post.attributes.title "blog.post" post.attributes.slug class="title"}}
 
@@ -21,3 +21,10 @@
     </div>
   {{/each}}
 </div>
+
+<Pagination
+  @navigatePages={{@navigatePages}}
+  @page={{@page}}
+  @totalPosts={{@totalPosts}}
+>
+</Pagination>

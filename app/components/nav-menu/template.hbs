@@ -26,7 +26,7 @@
     <button
       aria-label="Open navigation menu"
       class="flex items-center px-3 py-2 text-grey hover:text-navy text-xl"
-      {{action "toggleNavMenu"}}
+      {{action "toggleNavMenu" true}}
     >
       {{svg-jar "menu" height="36px" width="36px"}}
     </button>
@@ -38,16 +38,16 @@
         <button
           aria-label="Close navigation menu"
           class="cursor-pointer"
-          {{action "toggleNavMenu"}}
+          {{action "toggleNavMenu" false}}
         >
           {{svg-jar "close" class="h-10 m-2 p-2 w-10"}}
         </button>
       </div>
-      {{link-to "Case Studies" "work" class="nav-link" invokeAction=(action "toggleNavMenu")}}
-      {{link-to "Ember Consulting" "ember-consulting" class="nav-link" invokeAction=(action "toggleNavMenu")}}
-      {{link-to "Open Source" "open-source" class="nav-link" invokeAction=(action "toggleNavMenu")}}
-      {{link-to "Blog" "blog" class="nav-link" invokeAction=(action "toggleNavMenu")}}
-      {{link-to "Contact" "contact" class="nav-link contact-link" invokeAction=(action "toggleNavMenu")}}
+      {{link-to "Case Studies" "work" class="nav-link" invokeAction=(action "toggleNavMenu" false)}}
+      {{link-to "Ember Consulting" "ember-consulting" class="nav-link" invokeAction=(action "toggleNavMenu" false)}}
+      {{link-to "Open Source" "open-source" class="nav-link" invokeAction=(action "toggleNavMenu" false)}}
+      {{link-to "Blog" "blog" class="nav-link" invokeAction=(action "toggleNavMenu" false)}}
+      {{link-to "Contact" "contact" class="nav-link contact-link" invokeAction=(action "toggleNavMenu" false)}}
     </div>
   </div>
 </nav>

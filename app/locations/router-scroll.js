@@ -7,7 +7,11 @@ export default EmberRouterScroll.extend({
     if (url.includes('#')) {
       return url.replace(/([^/])#(.*)/, '$1/#$2');
     } else {
-      return url.replace(/\/?$/, '/');
+      if (url.includes('?')) {
+        return url;
+      } else {
+        return url.replace(/\/?$/, '/');
+      }
     }
   }
 });

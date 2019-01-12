@@ -3,6 +3,12 @@ import asyncForEach from 'ember-async-await-for-each';
 import fetch from 'fetch';
 
 export default Route.extend({
+  queryParams: {
+    page: {
+      refreshModel: true
+    }
+  },
+
   async model() {
     let authors = await fetch('/authors/authors.json');
     authors = await authors.json();
