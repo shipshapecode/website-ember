@@ -1,0 +1,53 @@
+<nav class="flex items-center justify-between flex-wrap p-6">
+  <div class="flex flex-no-shrink items-center pl-2 pr-2 pt-2">
+    <a href="/" class="logo inline-flex">
+      <div
+        class="inline-block"
+        itemprop="logo"
+        itemscope
+        itemtype="https://schema.org/ImageObject"
+        itemid="shipshapelogo"
+      >
+        {{svg-jar "logo" height="50px" width="50px"}}
+        {{!--<img itemprop="url" src="/img/logo.png" height="50px" width="50px" alt="Ship Shape">
+        <meta itemprop="height" content="128">
+        <meta itemprop="width" content="128">--}}
+      </div>
+      <div
+        class="-mt-1 text-navy text-3xl"
+        itemprop="name"
+      >
+        Ship Shape
+      </div>
+    </a>
+  </div>
+
+  <div class="block lg:hidden">
+    <button
+      aria-label="Open navigation menu"
+      class="flex items-center px-3 py-2 text-grey hover:text-navy text-xl"
+      {{action "toggleNavMenu"}}
+    >
+      {{svg-jar "menu" height="36px" width="36px"}}
+    </button>
+  </div>
+
+  <div class="nav-links hidden lg:flex">
+    <div class="lg:flex lg:flex-grow lg:justify-end">
+      <div class="flex lg:hidden justify-end m-4">
+        <button
+          aria-label="Close navigation menu"
+          class="cursor-pointer"
+          {{action "toggleNavMenu"}}
+        >
+          {{svg-jar "close" class="h-10 m-2 p-2 w-10"}}
+        </button>
+      </div>
+      {{link-to "Case Studies" "work" class="nav-link" invokeAction=(action "toggleNavMenu")}}
+      {{link-to "Ember Consulting" "ember-consulting" class="nav-link" invokeAction=(action "toggleNavMenu")}}
+      {{link-to "Open Source" "open-source" class="nav-link" invokeAction=(action "toggleNavMenu")}}
+      {{link-to "Blog" "blog" class="nav-link" invokeAction=(action "toggleNavMenu")}}
+      {{link-to "Contact" "contact" class="nav-link contact-link" invokeAction=(action "toggleNavMenu")}}
+    </div>
+  </div>
+</nav>

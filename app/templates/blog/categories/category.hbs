@@ -1,19 +1,9 @@
-{{#hero-block
-  heroClasses="blog"
-  scrollToHref="#blog-posts"}}
-  <grid>
-    <centered xs="12">
-      <h1 class="hero-header">{{category}}</h1>
-    </centered>
-  </grid>
-{{/hero-block}}
+<HeroBlock @heroClasses="blog" @icon="landing">
+  <h1>{{category}}</h1>
+</HeroBlock>
 
-<box class="blog-posts" id="blog-posts">
-  <hbox justify="center">
-    <box fit xs="12" sm="8" md="6">
-      {{blog-post-menu posts=blogPostsSortedByDate}}
-    </box>
-  </hbox>
-</box>
-
-{{contact-footer}}
+<div class="blog-posts section flex flex-wrap justify-center">
+  <div class="section-content">
+    <BlogPostMenu @posts={{blogPostsSortedByDate}}></BlogPostMenu>
+  </div>
+</div>

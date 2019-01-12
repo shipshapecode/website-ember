@@ -1,27 +1,33 @@
 & {
-  padding: 1rem;
-
   .blog-post {
-    padding: 2rem;
-
     .attribution {
       color: $darker-blue;
       padding-top: 1rem;
     }
 
     .tag {
-      background-color: $off-white;
-      border-radius: 2px;
-      color: $grey;
       display: inline-block;
-      padding: 2.5px;
-      transition-duration: 0.25s;
-      transition-property: background-color, color, fill;
+      margin-right: 0.25rem;
+      margin-top: 1rem;
 
-      &:hover {
-        background-color: $grey;
-        color: $white;
-        cursor: pointer;
+      a {
+        background-color: $transparent;
+        border: 2px solid $dark;
+        color: $dark;
+        padding: 5px;
+        text-decoration: none;
+        transition-duration: 0.25s;
+        transition-property: background-color, color, fill;
+
+        &:active,
+        &:visited {
+          color: $dark;
+        }
+
+        &:hover {
+          background-color: $dark;
+          color: $white;
+        }
       }
     }
 
@@ -32,14 +38,14 @@
   }
 
   .rss-button {
-    padding: 1rem 2rem;
+    padding: 1rem 0;
 
     svg {
       path {
-        fill: $primary;
+        fill: $grey;
 
         &:hover {
-          fill: $dark;
+          fill: $navy;
         }
       }
     }

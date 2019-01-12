@@ -1,20 +1,22 @@
-{{#hero-block
-  heroClasses="contact"
-  scrollToHref="#contact-form"}}
-  <h1 class="hero-header">Contact</h1>
-{{/hero-block}}
+<div class="contact-form section flex flex-wrap justify-center" id="contact-form">
+  <div class="section-content">
+    <h1 class="heading">
+      We can help streamline your Ember.js project
+    </h1>
+    <p>
+      Whether you need staff augmentation to increase the velocity on your ambitious project,
+      mentoring for your team, or anything else Ember.js related, we've got you covered.
+    </p>
 
-<page class="contact-form" id="contact-form">
-  <centered>
-    <form class="cd-form floating-labels" name="contact-us" netlify-honeypot="bot-field"
-      {{action (route-action "sendContactRequest" model) on="submit"}} netlify>
-      <fieldset>
-        <legend>Personal Info</legend>
-        <centered xs="12" class="bot-field">
-          <label>Don’t fill this out if you're human: <input name="bot-field"></label>
-        </centered>
+    <div class="flex flex-wrap justify-center items-center">
+      <form class="cd-form floating-labels" name="contact-us" netlify-honeypot="bot-field"
+        {{action (route-action "sendContactRequest" model) on="submit"}} netlify>
+        <fieldset>
+          <legend>Personal Info</legend>
+          <div class="bot-field">
+            <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+          </div>
 
-        <centered xs="12">
           {{contact-input
             fieldName="name"
             labelText="Name"
@@ -22,9 +24,7 @@
             type="text"
             value=model.name
           }}
-        </centered>
 
-        <centered xs="12">
           {{contact-input
             fieldName="company"
             labelText="Company"
@@ -32,9 +32,7 @@
             type="text"
             value=model.company
           }}
-        </centered>
 
-        <centered xs="12">
           {{contact-input
             fieldName="email"
             labelText="Email"
@@ -42,20 +40,16 @@
             type="email"
             value=model.email
           }}
-        </centered>
-      </fieldset>
+        </fieldset>
 
-      <fieldset>
-        <legend>Project Info</legend>
+        <fieldset>
+          <legend>Project Info</legend>
 
-        <centered xs="12">
           {{form-list
             groupValue=model.projectType
             options=projectTypes
             type="radio"}}
-        </centered>
 
-        <centered xs="12">
           {{contact-input
             fieldName="description"
             labelText="Project description"
@@ -63,24 +57,22 @@
             textarea=true
             value=model.description
           }}
-        </centered>
 
-      </fieldset>
+        </fieldset>
 
-      <div>
-        {{input
-          disabled=(v-get model "isTruelyInvalid")
-          type="submit"
-          value="Send Message"}}
-      </div>
+        <div>
+          {{input
+            disabled=(v-get model "isTruelyInvalid")
+            type="submit"
+            value="Send Message"}}
+        </div>
 
-      <vbox class="alerts">
-        <centered>
+        <div class="alerts text-center">
           {{#each flashMessages.queue as |flash|}}
             {{flash-message flash=flash}}
           {{/each}}
-        </centered>
-      </vbox>
-    </form>
-  </centered>
-</page>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

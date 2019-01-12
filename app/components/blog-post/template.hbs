@@ -1,27 +1,18 @@
-<box itemscope itemtype="http://schema.org/BlogPosting">
+<div itemscope itemtype="http://schema.org/BlogPosting">
   <link itemprop="publisher" href="shipshapeorg">
   <link itemprop="image" href="shipshapelogo">
-  <HeroBlock
-    @heroClasses="blog-post"
-    @scrollToHref="#post-content">
-    <grid>
-      <centered xs="12">
-        <h1 class="blog-post-title" itemprop="headline">{{this.title}}</h1>
-      </centered>
-      <centered xs="12">
-        <time class="post-date"
-              datetime="{{this.date}}"
-              itemprop="datePublished dateModified">
-          {{date-format this.date "MM/DD/YYYY"}}
-        </time>
-      </centered>
-    </grid>
-  </HeroBlock>
 
-  <centered xs="12" class="post-content" id="post-content">
-    <box xs="10" md="8">
+  <div class="post-content section flex flex-wrap justify-center">
+    <div class="section-content">
+      <h1 class="blog-post-title" itemprop="headline">{{this.title}}</h1>
+      <time class="post-date"
+            datetime="{{this.date}}"
+            itemprop="datePublished dateModified">
+        {{date-format this.date "MM/DD/YYYY"}}
+      </time>
+
       {{content}}
       <AuthorRow @author={{this.author}}></AuthorRow>
-    </box>
-  </centered>
-</box>
+    </div>
+  </div>
+</div>

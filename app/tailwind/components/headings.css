@@ -1,0 +1,7 @@
+.heading {
+  @apply .text-navy .font-bold;
+}
+
+.sub-heading {
+  @apply .text-grey-light .font-light;
+}

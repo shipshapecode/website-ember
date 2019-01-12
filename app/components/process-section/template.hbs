@@ -1,88 +1,62 @@
-<page class="{{this.styleNamespace}} process about" id="about">
-  <centered>
-    <hbox xs="12" sm="10" md="8" justify="between">
-      <centered xs="12" sm="6">
-        {{svg-jar "logo" class="svg-icon logo" height="500px" width="500px"}}
-      </centered>
+<div class="section flex flex-wrap justify-center">
+  <div class="section-content">
+    <div class="flex flex-wrap items-center pt-6 pb-6">
+      <div class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2">
+        {{svg-jar "design" class="max-w-md"}}
+      </div>
 
-      <box xs="12" sm="6" justify="center">
-        <h3 class="heading">About Us</h3>
+      <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
+        <div class="lg:max-w-md">
+          <h3 class="heading">Design</h3>
+          <h3 class="sub-heading">Measure twice, cut once</h3>
 
-        <p class="info">
-          Ship Shape is a Washington D.C. based software consultancy specializing in all things Ember.
-          We leverage Ember.js, and all the latest Ember addons and technologies, to create truly ambitious,
-          state of the art applications that are future-proof and easily maintainable.
-        </p>
-      </box>
-    </hbox>
-  </centered>
-  {{scroll-suggest href="#design"}}
-</page>
+          <p>
+            We put a great deal of time into developing a sound architecture and ensuring we
+            have a solid understanding of your wants and needs. We'll work with you to
+            develop a game plan and we won't start working until you sign off on it.
+          </p>
+        </div>
+      </div>
+    </div>
 
-<page class="{{this.styleNamespace}} process design" id="design">
-  <centered>
-    <hbox xs="12" sm="10" md="8" justify="between">
-      <centered xs="12" sm="6">
-        {{svg-jar "design" class="svg-icon" height="500px" width="500px"}}
-      </centered>
+    <div class="flex flex-wrap items-center flex-col-reverse pt-6 pb-6 lg:flex-row">
+      <div class="w-full flex lg:pr-12 lg:w-1/2">
+        <div class="lg:max-w-md">
+          <h3 class="heading">Build</h3>
+          <h3 class="sub-heading">Convention over configuration</h3>
 
-      <box xs="12" sm="6" justify="center">
-        <h3 class="heading">Design</h3>
-        <h4 class="sub-heading">Measure twice, cut once</h4>
+          <p>
+            We use the latest versions of Ember.js and Ember-CLI in all of our products, and
+            we strive to stay up to date with new releases. We leverage the amazing Ember
+            community, and the huge breadth of addons, to help us iterate faster, and
+            focus on making quality apps, rather than reinventing the wheel.
+          </p>
+        </div>
+      </div>
 
-        <p class="info">
-          We put a great deal of time into developing a sound architecture and ensuring we
-          have a solid understanding of your wants and needs. We'll work with you to
-          develop a game plan and we won't start working until you sign off on it.
-        </p>
-      </box>
-    </hbox>
-  </centered>
-  {{scroll-suggest href="#build"}}
-</page>
+      <div class="w-full text-center lg:pl-12 lg:text-right lg:w-1/2">
+        {{svg-jar "build" class="max-w-md"}}
+      </div>
+    </div>
 
-<page class="{{this.styleNamespace}} process build" id="build">
-  <centered>
-    <hbox xs="12" sm="10" md="8" justify="between">
-      <centered xs="12" sm="6">
-        {{svg-jar "build" class="svg-icon" height="500px" width="500px"}}
-      </centered>
+    <div class="flex flex-wrap items-center pt-6 pb-6">
+      <div class="w-full text-center lg:pr-12 lg:text-left lg:w-1/2">
+        {{svg-jar "ship" class="max-w-md"}}
+      </div>
 
-      <box xs="12" sm="6" justify="center">
-        <h3 class="heading">Build</h3>
-        <h4 class="sub-heading">Convention over configuration</h4>
+      <div class="w-full flex lg:pl-12 lg:justify-end lg:w-1/2">
+        <div class="lg:max-w-md">
+          <h3 class="heading">Ship</h3>
+          <h3 class="sub-heading">Real artists ship</h3>
 
-        <p class="info">
-          We use the latest versions of Ember.js and Ember-CLI in all of our products, and
-          we strive to stay up to date with new releases. We leverage the amazing Ember
-          community, and the huge breadth of addons, to help us iterate faster, and
-          focus on making quality apps, rather than reinventing the wheel.
-        </p>
-      </box>
-    </hbox>
-  </centered>
-  {{scroll-suggest href="#ship"}}
-</page>
-
-<page class="{{this.styleNamespace}} process ship" id="ship">
-  <centered>
-    <hbox xs="12" sm="10" md="8" justify="between">
-      <centered xs="12" sm="6">
-        {{svg-jar "ship" class="svg-icon" height="500px" width="500px"}}
-      </centered>
-
-      <box xs="12" sm="6" justify="center">
-        <h3 class="heading">Ship</h3>
-        <h4 class="sub-heading">Real artists ship</h4>
-
-        <p class="info">
-          We'll keep you in the loop with regular demos, frequent calls, chats, dinners, drinks,
-          whatever floats your boat. We won't just develop huge chunks of the app and
-          hope you like it. Your input is crucial to making sure you are 100% happy
-          with the product.
-        </p>
-      </box>
-    </hbox>
-  </centered>
-  {{scroll-suggest href="#technologies"}}
-</page>
+          <p>
+            We'll keep you in the loop with regular demos, frequent calls, chats, dinners, drinks,
+            whatever floats your boat. We won't just develop huge chunks of the app and
+            hope you like it. Your input is crucial to making sure you are 100% happy
+            with the product.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

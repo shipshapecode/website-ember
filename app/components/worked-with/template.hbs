@@ -1,24 +1,33 @@
-<div class="{{this.styleNamespace}} worked-with" id="worked-with">
-  <centered class="text-center" xs="12" fit>
-    <h3>
-      We've had the pleasure of working with
-    </h3>
-  </centered>
-  <hbox class="image-container" fit>
-    <centered class="image">
-      <img src="/img/worked-with/netflix.png" alt="Netflix">
-    </centered>
-    <centered class="image">
-      <img src="/img/worked-with/mariana-tek.png" alt="Mariana Tek">
-    </centered>
-    <centered class="image">
-      <img src="/img/worked-with/socialcode.png" alt="SocialCode">
-    </centered>
-    <centered class="image">
-      <img src="/img/worked-with/greenlight-guru.svg" alt="greenlight.guru">
-    </centered>
-    <centered class="image">
-      <img src="/img/worked-with/scout.png" alt="Scout">
-    </centered>
-  </hbox>
+<div class="{{this.styleNamespace}} section flex flex-wrap justify-center">
+  <div class="section-content">
+    <div class="text-center w-full">
+      <h3 class="heading pb-8">
+        We've had the pleasure of working with
+      </h3>
+    </div>
+
+    <div class="flex flex-wrap items-center w-full pb-8">
+      <div class="client-logo">
+        {{svg-jar "scout" class="h-full w-full max-w-xs"}}
+      </div>
+      <div class="client-logo">
+        {{svg-jar "greenlight-guru" class="h-full w-full max-w-xs"}}
+      </div>
+      <div class="client-logo">
+        {{svg-jar "netflix" class="h-full w-full max-w-xs"}}
+      </div>
+      <div class="client-logo">
+        {{svg-jar "mariana-tek-full" class="h-full w-full max-w-xs"}}
+      </div>
+      <div class="client-logo">
+        {{svg-jar "socialcode" class="h-full w-full max-w-xs"}}
+      </div>
+    </div>
+
+    <div class="flex justify-center w-full">
+      {{#link-to "work" class="btn-navy mb-12"}}
+        View case studies
+      {{/link-to}}
+    </div>
+  </div>
 </div>

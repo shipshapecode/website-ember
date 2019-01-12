@@ -1,13 +1,10 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-const shim = require('@html-next/flexi-layouts/lib/pod-templates-shim');
 const { readFileSync } = require('fs');
 const { extname } = require('path');
 const yamlFront = require('yaml-front-matter');
 const walkSync = require('walk-sync');
-
-shim(EmberApp);
 
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
@@ -36,6 +33,7 @@ module.exports = function(defaults) {
     'ember-cli-markdown-to-json': [
       {
         attributes: [
+          'authorId',
           'categories',
           'date',
           'slug',
@@ -48,7 +46,7 @@ module.exports = function(defaults) {
         contentFolder: 'posts',
         contentTypes: ['description', 'html'],
         folder: 'blog/posts',
-        references: ['author'],
+        // references: ['author'],
         type: 'post'
       },
       {
@@ -102,21 +100,17 @@ module.exports = function(defaults) {
       extensions: ['js', 'css', 'map']
     },
     inlineContent: {
-      app: 'inline/styles/app.css',
       blog: 'inline/styles/blog.css',
       contact: 'inline/styles/contact.css',
-      'ember-consulting': 'inline/styles/ember-consulting.css',
       fonts: 'inline/styles/fonts.css',
       'google-analytics': {
         file: 'inline/ga.js',
         enabled: process.env.EMBER_ENV === 'production'
       },
-      home: 'inline/styles/home.css',
       'loading-indicator': {
         file: 'inline/loading-indicator.html',
         enabled: false
-      },
-      'open-source': 'inline/styles/open-source.css'
+      }
     },
     prember: {
       baseRoot: 'https://shipshape.io',
@@ -139,10 +133,17 @@ function buildPremberUrls() {
   // Build prember urls
   const staticURLs = [
     '/',
-    '/ember-consulting/',
-    '/open-source/',
+    '/blog/',
     '/contact/',
-    '/blog/'
+    '/ember-consulting/',
+    '/lost-at-sea/',
+    '/open-source/',
+    '/team/',
+    '/work/',
+    '/work/acquia/',
+    '/work/brokermate/',
+    '/work/netflix/',
+    '/work/socialcode/'
   ];
 
   const paths = walkSync('blog/posts');

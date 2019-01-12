@@ -1,37 +1,24 @@
 @import 'variables';
 
 .ember-consulting {
-  .fold-content {
-    p {
-      color: $color3;
-    }
-  }
-
-  .clients {
-    background-color: $off-white;
-  }
-
   .quote {
-    text-align: center;
-
     .quoteContent {
       // Mobile
       @media (max-width: 992px) {
         font-size: 30px;
         line-height: 35px;
       }
-      // Dektop
+      // Desktop
       @media (min-width: 992px) {
         font-size: 40px;
         line-height: 50px;
       }
 
-      color: $color4;
       padding: 10px 5vw;
     }
 
     .quoteInfo {
-      color: $dark;
+      color: $grey;
       font-size: 20px;
       line-height: 22px;
     }

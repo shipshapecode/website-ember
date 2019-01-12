@@ -7,13 +7,13 @@ export default Component.extend({
   tagName: 'article',
 
   author: alias('post.author'),
-  date: alias('post.date'),
-  slug: alias('post.slug'),
-  title: alias('post.title'),
+  date: alias('post.attributes.date'),
+  slug: alias('post.attributes.slug'),
+  title: alias('post.attributes.title'),
 
   init() {
     this._super(...arguments);
-    this.content = htmlSafe(this.post.html);
+    this.content = htmlSafe(this.post.attributes.html);
   },
 
   didRender() {

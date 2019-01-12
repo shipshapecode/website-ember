@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {{content-for 'google-analytics'}}
+    {{content-for "google-analytics"}}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
@@ -22,13 +22,9 @@
     {{content-for "head"}}
 
     <!-- Inline css for above the fold content -->
-    {{content-for 'app'}}
-    {{content-for 'fonts'}}
-    {{content-for 'blog'}}
-    {{content-for 'contact'}}
-    {{content-for 'ember-consulting'}}
-    {{content-for 'home'}}
-    {{content-for 'open-source'}}
+    {{content-for "fonts"}}
+    {{content-for "blog"}}
+    {{content-for "contact"}}
     <!-- End inline css for above the fold -->
 
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
@@ -39,8 +35,9 @@
   <body>
     {{content-for "body"}}
 
-    {{content-for 'concat-js'}}
+    {{content-for "concat-js"}}
 
     {{content-for "body-footer"}}
+    <script src="//rum-static.pingdom.net/pa-5c34bc319a3f8300160002d3.js" async></script>
   </body>
 </html>

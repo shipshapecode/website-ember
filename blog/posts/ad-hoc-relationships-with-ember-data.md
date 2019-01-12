@@ -1,5 +1,5 @@
 ---
-author: rwwagner90
+authorId: rwwagner90
 categories: 
   - ember.js
   - ember-data

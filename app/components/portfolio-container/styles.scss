@@ -2,52 +2,21 @@
   max-width: 100vw;
   overflow: hidden;
 
-  .heading {
-    text-align: center;
-  }
+  .addon-icon {
+    > g {
+      stroke: $dark;
+    }
 
-  .mobile-scroll,
-  .mouse-icon {
-    margin: 60px auto;
-    position: relative !important;
-  }
-
-  .mouse-icon {
-    left: auto !important;
+    > path {
+      fill: $dark;
+    }
   }
 
   .project {
-    padding: 3rem;
+    transition: transform 0.2s ease-in;
 
-    .repo {
-      transition: transform 0.2s ease-in;
-
-      &:hover {
-        transform: translateY(-10px);
-      }
-    }
-
-    .repo-name {
-      color: $dark;
-      font-weight: lighter;
-    }
-
-    .github-info {
-      color: $secondary;
-      font-size: 1.3rem;
-
-      .github-icon,
-      .star-icon {
-        padding: 0.25rem;
-
-        path {
-          fill: $secondary;
-        }
-      }
-
-      .star-icon {
-        padding-right: 0.25rem;
-      }
+    &:hover {
+      transform: translateY(-10px);
     }
   }
 }

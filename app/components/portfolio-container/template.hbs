@@ -1,39 +1,29 @@
-<page class="{{this.styleNamespace}} portfolio-container">
-  <hbox justify="center">
-    <centered xs="11">
-      <grid>
-        <centered xs="12" id="ember-addons">
-          <h2 class="section-heading">Ember Addons</h2>
-        </centered>
-        {{#each model as |project|}}
-          <centered xs="12" md="6" lg="3" itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project">
-            <a href="https://github.com/shipshapecode/{{project.name}}" class="repo" itemprop="codeRepository">
-              <grid>
-                <centered xs="12">
-                  <centered xs="10">
-                    {{svg-jar project.name height="150px" width="150px"}}
-                  </centered>
-                </centered>
-                <centered xs="12" class="text-center">
-                  <h3 class="repo-name">{{project.name}}</h3>
-                </centered>
-                <centered xs="12" class="text-center">
-                  <h5 class="repo-description">{{project.description}}</h5>
-                </centered>
-                <centered xs="12" class="github-info">
-                  <span class="star-icon">{{svg-jar "star" height="1.1rem" width="1.1rem"}}</span>
-                  <span class="star-count">{{project.stars}}</span>
-                  <span class="github-icon">
-                    {{svg-jar "github-alt" height="1.1rem" width="1.1rem"}}
-                  </span>
-                </centered>
-              </grid>
-            </a>
-          </centered>
-        {{/each}}
-      </grid>
-    </centered>
-  </hbox>
+<div class="{{this.styleNamespace}} portfolio-container section flex flex-wrap justify-center">
+  <div class="section-content">
+    <h2 class="heading">Ember Addons</h2>
+    <p>
+      The addons Ship Shape has created have been downloaded millions of times, and are used in
+      production apps of Fortune 100 companies.
+    </p>
 
-  {{scroll-suggest href="#sponsored-oss"}}
-</page>
+    <div class="flex flex-wrap justify-center">
+      {{#each model as |project|}}
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="project flex-1">
+          <a href="https://github.com/shipshapecode/{{project.name}}" class="repo" itemprop="codeRepository">
+            <div class="flex flex-wrap items-center justify-center">
+              <div>
+                {{svg-jar project.name class="addon-icon" height="150px" width="150px"}}
+              </div>
+              <div class="w-full text-center">
+                <h3 class="repo-name text-navy">{{project.name}}</h3>
+              </div>
+              <div class="text-center">
+                <h5 class="repo-description text-grey font-light">{{project.description}}</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

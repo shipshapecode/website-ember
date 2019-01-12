@@ -1,14 +1,18 @@
 import Route from '@ember/routing/route';
 import { setProperties } from '@ember/object';
 import { inject as service } from '@ember/service';
+import fetch from 'fetch';
 
 export default Route.extend({
   headData: service(),
 
-  async model({ author }) {
-    const posts = await this.store.findAll('post', { reload: true });
+  async model({ authorId }) {
+    let posts = await fetch('/posts/posts.json');
+    posts = await posts.json();
+    posts = posts.data;
+
     return posts.filter((post) => {
-      return post.get('author.id') === author;
+      return post.authorId === authorId;
     });
   },
 
@@ -16,8 +20,12 @@ export default Route.extend({
     this._super(...arguments);
 
     const authorId = this.paramsFor('blog.authors.author').author;
-    const author = await this.store.findRecord('author', authorId);
-    const authorName = author.name;
+    let author = await fetch(`/authors/${authorId}.json`);
+    author = await author.json();
+    author = author.data;
+    model.author = author;
+
+    const authorName = author.attributes.name;
     return setProperties(this.headData, {
       title: `Posts by ${authorName} - Blog - Ship Shape`,
       description: `${authorName} has written ${model.length} posts for Ship Shape.`,
@@ -26,11 +34,9 @@ export default Route.extend({
     });
   },
 
-  async setupController(controller) {
+  async setupController(controller, model) {
     this._super(...arguments);
 
-    const authorId = this.paramsFor('blog.authors.author').author;
-    const author = await this.store.findRecord('author', authorId);
-    controller.set('author', author);
+    controller.set('author', model.author);
   }
 });

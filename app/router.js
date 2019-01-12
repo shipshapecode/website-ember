@@ -44,6 +44,13 @@ Router.map(function() {
   this.route('contact');
   this.route('ember-consulting');
   this.route('open-source');
+  this.route('team');
+  this.route('work', function() {
+    this.route('brokermate');
+    this.route('netflix');
+    this.route('acquia');
+    this.route('socialcode');
+  });
   this.route('lost-at-sea', { path: '/*path' });
 });
 

@@ -1,0 +1,12 @@
+.btn {
+  @apply .font-bold .inline-block .pb-2 .pl-8 .pr-8 .pt-2 .rounded .text-white;
+
+}
+
+.btn-gold {
+  @apply .btn .bg-gold;
+}
+
+.btn-navy {
+  @apply .btn .bg-navy;
+}

@@ -1,162 +1,73 @@
-{{#if layoutService.isAtLeastDesktop}}
-  <hbox class="{{this.styleNamespace}} footer" justify="center">
-    <hbox xs="10">
-      <hbox class="links">
-        <hbox xs="4">
-          <vbox fit>
-            <hbox class="logo" fit>
-              {{svg-jar "logo"}}
-            </hbox>
-          </vbox>
-        </hbox>
-        <hbox xs="8" justify="end">
-          <hbox fit class="section" justify="end">
-            <ul>
-              <li>
-                <h6>Specialties</h6>
-              </li>
+<div class="{{this.styleNamespace}} text-base">
+  <div class="footer-top">
+    <div class="text-center pt-32 lg:pb-32">
+      {{svg-jar "compass" height="30px" width="30px" class="m-8"}}
 
-              <li>
-                {{link-to "Ember" "ember-consulting"}}
-              </li>
-            </ul>
-          </hbox>
+      <h3 class="font-bold p-4 text-5xl text-white">
+        Set a course for success
+      </h3>
 
-          <hbox fit class="section" justify="end">
-            <ul>
-              <li>
-                <h6>Company</h6>
-              </li>
+      <p class="p-4 text-gold">
+        Ember.js consulting, development, and training for your project.
+      </p>
 
-              <li>
-                {{link-to "Open Source" "open-source"}}
-              </li>
+      {{#link-to "contact" class="btn-gold inline-block m-12"}}
+        Let's talk
+      {{/link-to}}
+    </div>
+  </div>
 
-              <li>
-                {{link-to "Contact" "contact"}}
-              </li>
+  <div class="footer-bottom flex flex-wrap pl-24 pr-24 pt-12 pb-12">
+    <div class="w-full flex justify-center lg:justify-start lg:w-auto">
+      {{svg-jar "logo" class="footer-logo h-16 w-16"}}
+    </div>
 
-              <li>
-                {{link-to "Blog" "blog"}}
-              </li>
-            </ul>
-          </hbox>
-
-          <hbox fit class="section" justify="end">
-            <ul>
-              <li>
-                <h6>Connect</h6>
-              </li>
-
-              <li>
-                <a href="https://github.com/shipshapecode" aria-label="Ship Shape on GitHub">
-                  GitHub
-                </a>
-              </li>
-
-              <li>
-                <a href="https://twitter.com/shipshapecode" aria-label="Ship Shape on Twitter">
-                  Twitter
-                </a>
-              </li>
-
-              <li>
-                <a href="https://www.linkedin.com/company/ship-shape" aria-label="Ship Shape on LinkedIn">
-                  LinkedIn
-                </a>
-              </li>
-
-              <li>
-                <a href="mailto:ahoy@shipshape.io" itemprop="email">ahoy@shipshape.io</a>
-              </li>
-            </ul>
-          </hbox>
-        </hbox>
-      </hbox>
-
-      <hbox class="copyright" xs="12">
-        <div>
-          {{svg-jar "copyright"}} {{this.year}} <span itemprop="legalName">Ship Shape Consulting LLC</span>
-        </div>
-      </hbox>
-    </hbox>
-  </hbox>
-{{else}}
-  <grid class="{{this.styleNamespace}} footer">
-    <centered class="links" xs="12">
-      <grid>
-        <centered class="logo" xs="12">
-          {{svg-jar "logo"}}
-        </centered>
-
-        <centered xs="12" class="section text-center">
-          <ul>
-            <li>
-              <h6>Specialties</h6>
-            </li>
-
-            <li>
-              {{link-to "Ember" "ember-consulting"}}
-            </li>
-          </ul>
-        </centered>
-
-        <centered xs="12" class="section text-center">
-          <ul>
-            <li>
-              <h6>Company</h6>
-            </li>
-
-            <li>
-              {{link-to "Open Source" "open-source"}}
-            </li>
-
-            <li>
-              {{link-to "Contact" "contact"}}
-            </li>
-
-            <li>
-              {{link-to "Blog" "blog"}}
-            </li>
-          </ul>
-        </centered>
-
-        <centered xs="12" class="section text-center">
-          <ul>
-            <li>
-              <h6>Connect</h6>
-            </li>
-
-            <li>
-              <a href="https://github.com/shipshapecode" aria-label="Ship Shape on GitHub">
-                GitHub
-              </a>
-            </li>
-
-            <li>
-              <a href="https://twitter.com/shipshapecode" aria-label="Ship Shape on Twitter">
-                Twitter
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.linkedin.com/company/ship-shape" aria-label="Ship Shape on LinkedIn">
-                LinkedIn
-              </a>
-            </li>
-
-            <li>
-              <a href="mailto:ahoy@shipshape.io" itemprop="email">ahoy@shipshape.io</a>
-            </li>
-          </ul>
-        </centered>
-      </grid>
-    </centered>
-
-    <centered class="copyright" xs="12">
-      <div>
-        {{svg-jar "copyright"}} {{this.year}} <span itemprop="legalName">Ship Shape Consulting LLC</span>
+    <div class="flex flex-wrap items-center justify-center flex-1">
+      <div class="w-full lg:w-auto flex justify-center p-4">
+        {{#link-to "work"}}
+          Case Studies
+        {{/link-to}}
       </div>
-    </centered>
-  </grid>
-{{/if}}
+      <div class="w-full lg:w-auto flex justify-center p-4">
+        {{#link-to "ember-consulting"}}
+          Ember Consulting
+        {{/link-to}}
+      </div>
+      <div class="w-full lg:w-auto flex justify-center p-4">
+        {{#link-to "open-source"}}
+          Open Source
+        {{/link-to}}
+      </div>
+      <div class="w-full lg:w-auto flex justify-center p-4">
+        {{#link-to "open-source"}}
+          Blog
+        {{/link-to}}
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center w-full lg:justify-start lg:w-auto">
+      <a
+        aria-label="GitHub"
+        class="p-2"
+        href="https://github.com/shipshapecode"
+      >
+        {{svg-jar "github" height="22px" width="23px"}}
+      </a>
+      <a
+        aria-label="Twitter"
+        class="p-2"
+        href="https://twitter.com/shipshapecode"
+      >
+        {{svg-jar "twitter" height="19px" width="23px"}}
+      </a>
+      <a
+        aria-label="LinkedIn"
+        class="p-2"
+        href="https://www.linkedin.com/company/ship-shape/"
+      >
+        {{svg-jar "linkedin" height="20px" width="19px"}}
+      </a>
+    </div>
+
+  </div>
+</div>

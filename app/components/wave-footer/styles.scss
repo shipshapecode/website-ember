@@ -1,51 +1,33 @@
-&.footer {
-  background-color: $grey;
+& {
+  background: url(/img/sea.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  h6 {
-    color: $secondary;
-    font-weight: bold;
-  }
-
-  i {
-    padding: 10px;
-  }
-
-  .copyright {
-    border-top: 1px solid $secondary;
-    color: $off-white;
-    font-size: 0.5rem;
-    padding: 1rem 0;
-
-    svg {
-      height: 0.5rem;
-      margin-bottom: -0.0323rem;
-      width: 0.5rem;
-
-      path {
-        fill: $off-white;
-      }
+  .footer-logo {
+    path {
+      fill: $gold;
+      stroke: $gold;
+      stroke-width: 1.25rem;
     }
   }
 
-  .links,
-  .logo {
-    padding: 1rem 0;
-  }
+  .footer-bottom {
+    background: #142636;
 
-  .logo {
-    svg {
-      height: 4rem;
-      width: 4rem;
+    a {
+      color: $grey;
+      font-weight: bold;
 
-      path {
-        fill: $off-white;
-        stroke: $off-white;
-        stroke-width: 1.25rem;
+      &:hover {
+        color: $gold;
       }
     }
-  }
 
-  .section {
-    padding: 1rem 2rem;
+    svg {
+      path {
+        fill: $gold;
+      }
+    }
   }
 }

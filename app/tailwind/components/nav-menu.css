@@ -1,0 +1,35 @@
+.nav-links {
+  @apply .bg-white .fixed .flex-grow .h-screen .pin .w-full;
+}
+
+@screen lg {
+  .nav-links {
+    @apply .bg-transparent .h-auto .items-center .pl-2 .pr-2 .pt-2 .static .w-auto;
+  }
+}
+
+.nav-link {
+  @apply .block .font-bold .p-4 .text-base .text-grey;
+}
+
+.nav-link:hover {
+  @apply .text-navy;
+}
+
+.contact-link {
+  @apply .absolute .bg-navy .mt-12 .pin-b .text-white .w-full;
+}
+
+.contact-link:hover {
+  @apply .text-gold;
+}
+
+@screen lg {
+  .nav-link {
+    @apply .inline-block .mt-0;
+  }
+
+  .contact-link {
+    @apply .bg-navy .-mt-12 .pin-none .pt-16 .static .text-white .w-auto;
+  }
+}
