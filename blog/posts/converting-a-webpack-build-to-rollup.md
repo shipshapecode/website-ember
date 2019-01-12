@@ -20,7 +20,15 @@ In some cases, things were a simple 1:1 conversion from a webpack plugin to a ro
 We'll go through each conversion, step by step here, in the hopes that it will be helpful to others who may want to take rollup for a spin. If you just want
 to see the entire webpack config and the entire rollup config, you can skip to the bottom and compare them yourself.
 
-## browser-sync-webpack-plugin -> rollup-plugin-browsersync
+## Linting 
+
+### eslint-loader -> rollup-plugin-eslint
+
+### stylelint-webpack-plugin -> rollup-plugin-stylelint
+
+## Local Development
+
+### browser-sync-webpack-plugin -> rollup-plugin-browsersync
 
 We use browsersync for local development of the demo/docs site, so we can see everything updating in real time across browsers. This one was a fairly
 simple conversion.
@@ -62,6 +70,8 @@ new BrowserSyncPlugin(
 
 ```js
 // rollup.config.js
+
+// Only add the browsersync plugin if we are in development
 if (process.env.DEVELOPMENT) {
   plugins.push(browsersync({
     host: 'localhost',
@@ -84,7 +94,9 @@ if (process.env.DEVELOPMENT) {
 }
 ```
 
-## sass-loader -> rollup-plugin-sass
+## Styles
+
+### sass-loader -> rollup-plugin-sass
 
 In webpack we used a combination of `sass-loader`, `css-loader`, `postcss-loader`, `file-loader`, and `extract-loader` to consume our `scss` files 
 and output our various theme files.
@@ -182,6 +194,11 @@ const sassOptions = {
 
 plugins.push(sass(sassOptions));
 ```
+
+## Config Files
+
+For those of you who want to see the entire config for both webpack and rollup, to compare one to the other, here they are! It may also be helpful to
+check out the [PR](https://github.com/shipshapecode/shepherd/pull/309/files) where we converted from webpack to rollup, so you can see all the things involved.
 
 ## Summary
 
