@@ -1,7 +1,7 @@
 & {
   .blog-post {
     .attribution {
-      color: $darker-blue;
+      color: $grey-light;
       padding-top: 1rem;
     }
 
@@ -12,8 +12,8 @@
 
       a {
         background-color: $transparent;
-        border: 2px solid $dark;
-        color: $dark;
+        border: 2px solid $navy;
+        color: $navy;
         padding: 5px;
         text-decoration: none;
         transition-duration: 0.25s;
@@ -21,18 +21,18 @@
 
         &:active,
         &:visited {
-          color: $dark;
+          color: $navy;
         }
 
         &:hover {
-          background-color: $dark;
+          background-color: $navy;
           color: $white;
         }
       }
     }
 
     .title {
-      color: $dark;
+      color: $navy;
       font-size: 2rem;
     }
   }

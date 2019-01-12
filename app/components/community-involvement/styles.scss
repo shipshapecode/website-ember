@@ -1,16 +1,16 @@
 & {
   a {
-    color: $secondary;
+    color: $grey-light;
 
     svg {
-      fill: $secondary;
+      fill: $grey-light;
       transition-duration: 0.25s;
       transition-property: margin-left;
     }
 
     &:active,
     &:visited {
-      color: $secondary;
+      color: $grey-light;
     }
 
     &:hover {

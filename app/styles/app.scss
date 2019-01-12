@@ -14,7 +14,7 @@ $ecf: (
   'input-background': transparent,
   'input-border': darken($grey, 10%),
   'input-color': $grey,
-  'submit-color': $off-white
+  'submit-color': $white
 );
 
 @import 'alerts';
@@ -66,11 +66,11 @@ h1 {
 .cd-form {
   input[type="submit"] {
     &:disabled {
-      background-color: $dark-grey;
+      background-color: $grey;
       // pointer-events: none;
 
       /* Button disabled - CSS color class */
-      color: darken($off-white, 20%);
+      color: darken($white, 20%);
       cursor: not-allowed;
     }
   }
