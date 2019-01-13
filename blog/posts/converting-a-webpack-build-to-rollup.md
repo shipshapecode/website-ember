@@ -10,8 +10,6 @@ slug: converting-a-webpack-build-to-rollup
 title: Converting a Webpack Build to Rollup
 ---
 
-# Converting a Webpack Build to Rollup
-
 When we initially started on refreshing [Shepherd](https://github.com/shipshapecode/shepherd), we wanted to modernize the build process, and decided
 to switch from gulp to webpack. This worked well, and was a step in the right direction, but with all the buzz around rollup 1.0, we decided to give
 it a try.

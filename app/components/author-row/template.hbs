@@ -1,11 +1,22 @@
-<div class="{{this.styleNamespace}} flex flex-wrap justify-center lg:justify-start" itemprop="author" itemscope itemtype="http://schema.org/Person">
+<div class="flex flex-wrap justify-center pt-8 pb-8 lg:justify-start"
+     itemprop="author"
+     itemscope
+     itemtype="http://schema.org/Person"
+>
   <div class="items-center justify-center">
-    <img class="authorImage" src="{{@author.attributes.image}}" alt="Author image" itemprop="image">
+    <img
+      class="h-auto max-w-full rounded-full w-48"
+      src="{{@author.attributes.image}}"
+      alt="Author image"
+      itemprop="image"
+    >
   </div>
-  <div>
+
+  <div class="p-10">
     <h3 itemprop="name">
       {{@author.attributes.name}}
     </h3>
+
     <p>
       Read {{link-to "more posts" "blog.authors.author" author.id}} by this author.
     </p>

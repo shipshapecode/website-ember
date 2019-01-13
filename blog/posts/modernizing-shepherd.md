@@ -10,6 +10,4 @@ slug: modernizing-shepherd
 title: Modernizing Shepherd.js
 ---
 
-# Modernizing Shepherd.js
-
 Coming Soon :)
