@@ -9,6 +9,7 @@
 /node_modules/
 
 # misc
+/.env*
 /.sass-cache
 /concat-stats-for/
 /connect.lock

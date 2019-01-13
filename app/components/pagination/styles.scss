@@ -3,17 +3,17 @@
 
   .pagination-wrapper {
     font-size: 0;
-    position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   @keyframes pagination-container--animation-prev {
     0% {
       transform: translateX(0);
     }
+
     100% {
       transform: translateX(18px);
     }
@@ -23,6 +23,7 @@
     0% {
       transform: translateX(0);
     }
+
     100% {
       transform: translateX(-18px);
     }
@@ -54,7 +55,7 @@
 
   @keyframes slideLeft {
     0% {
-      transform: translateX(0px);
+      transform: translateX(0);
     }
 
     100% {
@@ -66,42 +67,33 @@
     animation: slideLeft 0.4s 0.3s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
   }
 
-  @keyframes little-dot--first--animation {
+  @keyframes little-dot--animation {
     0% {
       opacity: 1;
     }
+
     100% {
       opacity: 0;
     }
   }
 
   .transition-next .little-dot--first {
-    animation: little-dot--last--animation 0.3s forwards;
-  }
-
-
-  @keyframes little-dot--last--animation {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+    animation: little-dot--animation 0.3s forwards;
   }
 
   .transition-prev .little-dot--last {
-    animation: little-dot--last--animation 0.3s forwards;
+    animation: little-dot--animation 0.3s forwards;
   }
 
   @keyframes slideRight {
     0% {
-      transform: translateX(0px);
       opacity: 1;
+      transform: translateX(0);
     }
 
     100% {
-      transform: translateX(18px);
       opacity: 1;
+      transform: translateX(18px);
     }
   }
 
@@ -110,39 +102,43 @@
   }
 
   .big-dot {
-    width: 12px;
+    background: $red;
     height: 12px;
-    background: #f6af54;
-    position: absolute;
-    top: 50%;
     right: -6px;
+    top: 50%;
     transform: translateY(-50%);
+    width: 12px;
   }
 
   .transition-next .big-dot {
-    right: auto;
     left: -6px;
+    right: auto;
   }
 
   .big-dot-container {
-    width: 18px;
     height: 18px;
-    position: absolute;
-    top: 50%;
     right: 3px;
+    top: 50%;
     transform: translateY(-50%);
+    width: 18px;
     z-index: 10;
   }
 
   .transition-next .big-dot-container {
-    right: auto;
+    animation: big-dot-container--animation-next 0.3s forwards;
     left: 3px;
+    right: auto;
+  }
+
+  .transition-prev .big-dot-container {
+    animation: big-dot-container--animation-prev 0.3s forwards;
   }
 
   @keyframes big-dot-container--animation-prev {
     0% {
       transform: translateY(-50%);
     }
+
     100% {
       transform: translateY(-50%) rotate(-179deg);
     }
@@ -152,25 +148,17 @@
     0% {
       transform: translateY(-50%);
     }
+
     100% {
       transform: translateY(-50%) rotate(-181deg);
     }
   }
 
-  .transition-prev .big-dot-container {
-    animation: big-dot-container--animation-prev 0.3s forwards;
-  }
-
-  .transition-next .big-dot-container {
-    animation: big-dot-container--animation-next 0.3s forwards;
-  }
-
   .btn {
-    position: absolute;
+    cursor: pointer;
+    fill: $grey;
     top: 50%;
     transform: translateY(-50%);
-    fill: $grey;
-    cursor: pointer;
     transition: opacity 0.2s;
   }
 

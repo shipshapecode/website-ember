@@ -1,4 +1,8 @@
 & {
+  svg {
+    margin-bottom: -0.2rem;
+  }
+
   a {
     color: $grey-light;
 
@@ -22,10 +26,6 @@
         margin-left: 0.5rem;
       }
     }
-  }
-
-  svg {
-    margin-bottom: -0.2rem;
   }
 
   .ember-image {
