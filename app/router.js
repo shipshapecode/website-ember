@@ -10,9 +10,12 @@ const Router = EmberRouter.extend(RouterScroll, {
   rootURL: config.rootURL,
   fastboot: service(),
 
-  didTransition() {
+  init() {
     this._super(...arguments);
-    this._trackPage();
+
+    this.on('routeDidChange', () => {
+      this._trackPage();
+    });
   },
 
   _trackPage() {
@@ -46,9 +49,9 @@ Router.map(function() {
   this.route('open-source');
   this.route('team');
   this.route('work', function() {
+    this.route('acquia');
     this.route('brokermate');
     this.route('netflix');
-    this.route('acquia');
     this.route('socialcode');
   });
   this.route('lost-at-sea', { path: '/*path' });
