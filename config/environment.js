@@ -30,7 +30,7 @@ module.exports = function(environment) {
 
   ENV['ember-meta'] = {
     description: 'Ramblings about Ember.js, JavaScript, life, liberty, and the pursuit of happiness.',
-    imgSrc: 'http://i.imgur.com/KVqNjgO.png',
+    imgSrc: 'http://i.imgur.com/30OI4fv.png',
     siteName: 'Ship Shape',
     title: 'Blog - Ship Shape',
     twitterUsername: '@shipshapecode',
