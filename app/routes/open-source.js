@@ -1,31 +1,6 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-  model() {
-    return [
-      {
-        description: 'Guide your users through a tour of your app',
-        name: 'shepherd',
-        stars: 5934
-      },
-      {
-        description: 'An Ember addon for the site tour library Shepherd',
-        name: 'ember-shepherd',
-        stars: 133
-      },
-      {
-        description: 'Ember HTMLBars helpers for basic arithmetic',
-        name: 'ember-math-helpers',
-        stars: 81
-      },
-      {
-        description: 'An Ember addon that wraps the Flatpickr date picker',
-        name: 'ember-flatpickr',
-        stars: 78
-      }
-    ];
-  },
-
   afterModel(model) {
     model.metaTags = {
       title: 'Ember Addons and Open Source - Ship Shape',
