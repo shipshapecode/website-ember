@@ -41,7 +41,19 @@ $shevy: (
 }
 
 a {
+  color: $navy;
   text-decoration: none;
+  transition-duration: 0.25s;
+  transition-property: background-color, color, fill;
+
+  &:active,
+  &:visited {
+    color: $navy;
+  }
+
+  &:hover {
+    color: $red;
+  }
 }
 
 body {
@@ -83,11 +95,11 @@ h1 {
 }
 
 .hero {
-  padding: 0 5vw;
+  padding: 0 2rem;
 }
 
 .section {
-  padding: 5rem 5vw;
+  padding: 5rem 2rem;
 }
 
 .section-content {

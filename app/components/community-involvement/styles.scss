@@ -1,20 +1,28 @@
 & {
+  $shevy-blog-post: (
+    base-font-scale: (3.5, 3, 2, 1.5, 1.25, 1)
+  );
+
+  @include headings($shevy-blog-post);
+  @include content($shevy-blog-post);
+
   svg {
     margin-bottom: -0.2rem;
   }
 
   a {
-    color: $grey-light;
+    color: $navy;
+    font-weight: bold;
 
     svg {
-      fill: $grey-light;
+      fill: $navy;
       transition-duration: 0.25s;
       transition-property: margin-left;
     }
 
     &:active,
     &:visited {
-      color: $grey-light;
+      color: $navy;
     }
 
     &:hover {

@@ -1,6 +1,5 @@
 .btn {
   @apply .font-bold .inline-block .pb-2 .pl-8 .pr-8 .pt-2 .rounded .text-white;
-
 }
 
 .btn-gold {
@@ -9,4 +8,16 @@
 
 .btn-navy {
   @apply .btn .bg-navy;
+}
+
+.btn:active,
+.btn-gold:active,
+.btn-navy:active {
+  @apply .text-white;
+}
+
+.btn:visited,
+.btn-gold:visited,
+.btn-navy:visited {
+  @apply .text-white;
 }
