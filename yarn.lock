@@ -6093,6 +6093,13 @@ ember-validators@1.0.4:
     ember-cli-babel "^6.9.2"
     ember-require-module "^0.1.2"
 
+ember-x-tabs@rwwagner90/ember-x-tabs#cleanup-and-update:
+  version "1.0.2"
+  resolved "https://codeload.github.com/rwwagner90/ember-x-tabs/tar.gz/b2fdc706c8374aa17c7f8f0bc4d88e5dc8b640bf"
+  dependencies:
+    ember-cli-babel "^7.1.2"
+    ember-cli-htmlbars "^3.0.0"
+
 emoji-regex@^7.0.1:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-7.0.3.tgz#933a04052860c85e83c122479c4748a8e4c72156"

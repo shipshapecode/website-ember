@@ -1,5 +1,5 @@
 .tag {
-  @apply .bg-grey-transparent .inline-block .pl-4 .pr-4 .rounded .text-grey-light;
+  @apply .bg-grey-transparent .inline-block .mb-2 .mt-2 .pl-4 .pr-4 .rounded .text-grey-light;
 }
 
 .tag:active,

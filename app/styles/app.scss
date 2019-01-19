@@ -5,6 +5,7 @@
 @import 'contact';
 @import 'ember-consulting';
 @import 'pod-styles';
+@import 'tabs';
 
 //3rd party
 
@@ -41,18 +42,18 @@ $shevy: (
 }
 
 a {
-  color: $navy;
+  color: $red;
   text-decoration: none;
   transition-duration: 0.25s;
   transition-property: background-color, color, fill;
 
   &:active,
   &:visited {
-    color: $navy;
+    color: $red;
   }
 
   &:hover {
-    color: $red;
+    color: $navy;
   }
 }
 
@@ -63,15 +64,12 @@ body {
   font-weight: lighter;
 }
 
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: $grey;
-}
-
-h1 {
   @extend .heading;
 }
 

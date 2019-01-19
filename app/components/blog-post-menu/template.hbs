@@ -7,7 +7,7 @@
         By {{post.author.attributes.name}} {{date-format post.attributes.date "MM/DD/YYYY"}}
       </div>
 
-      <div class="tags pb-6 pt-6">
+      <div class="tags pb-4 pt-4">
         {{#each post.attributes.categories as |tag|}}
           {{link-to tag "blog.categories.category" (space-to-dash tag) class="tag"}}
         {{/each}}

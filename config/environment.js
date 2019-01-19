@@ -37,6 +37,12 @@ module.exports = function(environment) {
     url: 'https://shipshape.io/blog/'
   };
 
+  ENV['ember-x-tabs'] = {
+    includedThemes: ['line'],
+    excludeBaseStyles: false,
+    defaultTheme: 'line'
+  };
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

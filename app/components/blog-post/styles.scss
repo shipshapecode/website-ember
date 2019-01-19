@@ -1,4 +1,11 @@
 & {
+  $shevy-blog-post: (
+    base-font-scale: (2.5, 2, 1.75, 1.5, 1.25, 1)
+  );
+
+  @include headings($shevy-blog-post);
+  @include content($shevy-blog-post);
+
   color: $grey;
 
   .post-content {

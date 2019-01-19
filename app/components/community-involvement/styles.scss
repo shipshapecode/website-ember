@@ -1,10 +1,10 @@
 & {
-  $shevy-blog-post: (
+  $shevy-community-involvement: (
     base-font-scale: (3.5, 3, 2, 1.5, 1.25, 1)
   );
 
-  @include headings($shevy-blog-post);
-  @include content($shevy-blog-post);
+  @include headings($shevy-community-involvement);
+  @include content($shevy-community-involvement);
 
   svg {
     margin-bottom: -0.2rem;
