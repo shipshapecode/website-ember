@@ -1,0 +1,12 @@
+.tag {
+  @apply .bg-grey-transparent .inline-block .pl-4 .pr-4 .rounded .text-grey-light;
+}
+
+.tag:active,
+.tag:visited {
+  @apply .text-grey-light;
+}
+
+.tag:hover {
+  @apply .bg-navy .text-white;
+}
