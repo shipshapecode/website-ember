@@ -96,6 +96,33 @@ h6 {
   padding: 0 2rem;
 }
 
+.learn-more {
+  color: $navy;
+  font-weight: bold;
+
+  svg {
+    fill: $navy;
+    margin-bottom: -0.2rem;
+    transition-duration: 0.25s;
+    transition-property: margin-left;
+  }
+
+  &:active,
+  &:visited {
+    color: $navy;
+  }
+
+  &:hover {
+    color: $red;
+    cursor: pointer;
+
+    svg {
+      fill: $red;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
 .section {
   padding: 5rem 2rem;
 }

@@ -6,36 +6,6 @@
   @include headings($shevy-community-involvement);
   @include content($shevy-community-involvement);
 
-  svg {
-    margin-bottom: -0.2rem;
-  }
-
-  a {
-    color: $navy;
-    font-weight: bold;
-
-    svg {
-      fill: $navy;
-      transition-duration: 0.25s;
-      transition-property: margin-left;
-    }
-
-    &:active,
-    &:visited {
-      color: $navy;
-    }
-
-    &:hover {
-      color: $red;
-      cursor: pointer;
-
-      svg {
-        fill: $red;
-        margin-left: 0.5rem;
-      }
-    }
-  }
-
   .ember-image {
     height: 200px;
     width: auto;
