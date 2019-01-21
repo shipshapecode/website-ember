@@ -21,3 +21,8 @@
 .btn-navy:visited {
   @apply .text-white;
 }
+
+.btn-gold:hover,
+.btn-navy:hover {
+  @apply .bg-grey-transparent .text-navy;
+}

@@ -20,13 +20,21 @@
       font-weight: bold;
 
       &:hover {
-        color: $gold;
+        color: $grey-transparent;
       }
     }
 
     svg {
       path {
         fill: $gold;
+        transition-duration: 0.25s;
+        transition-property: fill;
+      }
+
+      &:hover {
+        path {
+          fill: $grey-transparent;
+        }
       }
     }
   }
