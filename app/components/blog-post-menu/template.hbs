@@ -9,7 +9,7 @@
 
       <div class="tags pb-4 pt-4">
         {{#each post.attributes.categories as |tag|}}
-          {{link-to tag "blog.categories.category" (space-to-dash tag) class="tag"}}
+          {{link-to tag "blog.categories.category" (space-to-dash tag) class="blog-tag"}}
         {{/each}}
       </div>
     </div>

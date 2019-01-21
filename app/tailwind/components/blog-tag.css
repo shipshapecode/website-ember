@@ -1,12 +1,12 @@
-.tag {
+.blog-tag {
   @apply .bg-grey-transparent .inline-block .mb-2 .mt-2 .pl-4 .pr-4 .rounded .text-grey-light;
 }
 
-.tag:active,
-.tag:visited {
+.blog-tag:active,
+.blog-tag:visited {
   @apply .text-grey-light;
 }
 
-.tag:hover {
+.blog-tag:hover {
   @apply .bg-navy .text-white;
 }
