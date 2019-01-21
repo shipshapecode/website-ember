@@ -11,10 +11,10 @@
 
 $ecf: (
   'background': transparent,
-  'color': $grey,
+  'color': $grey-light,
   'input-background': transparent,
-  'input-border': darken($grey, 10%),
-  'input-color': $grey,
+  'input-border': $grey-transparent,
+  'input-color': $grey-light,
   'submit-color': $white
 );
 
