@@ -6009,9 +6009,10 @@ ember-validators@^2.0.0:
     ember-cli-babel "^6.9.2"
     ember-require-module "^0.3.0"
 
-ember-x-tabs@rwwagner90/ember-x-tabs#cleanup-and-update:
-  version "1.0.2"
-  resolved "https://codeload.github.com/rwwagner90/ember-x-tabs/tar.gz/a5166787d14faa07e7b7ad2eb0939ba98f85dbf7"
+ember-x-tabs@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/ember-x-tabs/-/ember-x-tabs-1.0.3.tgz#40a92396d192374d27ab15a37f5dd7958a0cdb9b"
+  integrity sha512-bqwQeDKjpA8PK5y0CfYurRphMbHvQXFLtKgd+C/ThPI2NzXP2ZiWWi6kTTQujICdp/w6qb/o0H/Vgv3nD1zHnQ==
   dependencies:
     ember-cli-babel "^7.1.2"
     ember-cli-htmlbars "^3.0.0"
