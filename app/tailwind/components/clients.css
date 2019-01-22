@@ -1,5 +1,5 @@
 .client-logo {
-  @apply .p-8 .text-center .w-1/2;
+  @apply .flex .justify-center .items-center .p-8 .w-1/2;
 }
 
 @screen lg {
