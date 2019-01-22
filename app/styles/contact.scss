@@ -1,3 +1,21 @@
-.bot-field {
-  display: none;
+.contact {
+  .bot-field {
+    display: none;
+  }
+
+  .cd-form {
+    background-color: $transparent;
+    max-width: 40rem;
+    padding: 0;
+    width: 100%;
+  }
+
+  .cd-label {
+    margin-top: -8px;
+  }
+
+  .alerts {
+    margin-top: 11rem;
+    text-align: center;
+  }
 }

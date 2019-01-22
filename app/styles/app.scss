@@ -3,17 +3,17 @@
 @import 'variables';
 //Pages
 @import 'contact';
-@import 'ember-consulting';
 @import 'pod-styles';
+@import 'tabs';
 
 //3rd party
 
 $ecf: (
   'background': transparent,
-  'color': $grey,
+  'color': $grey-light,
   'input-background': transparent,
-  'input-border': darken($grey, 10%),
-  'input-color': $grey,
+  'input-border': $grey-transparent,
+  'input-color': $grey-light,
   'submit-color': $white
 );
 
@@ -41,7 +41,19 @@ $shevy: (
 }
 
 a {
+  color: $red;
   text-decoration: none;
+  transition-duration: 0.25s;
+  transition-property: background-color, color, fill;
+
+  &:active,
+  &:visited {
+    color: $red;
+  }
+
+  &:hover {
+    color: $navy;
+  }
 }
 
 body {
@@ -51,15 +63,12 @@ body {
   font-weight: lighter;
 }
 
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: $grey;
-}
-
-h1 {
   @extend .heading;
 }
 
@@ -83,11 +92,38 @@ h1 {
 }
 
 .hero {
-  padding: 0 5vw;
+  padding: 0 2rem;
+}
+
+.learn-more {
+  color: $navy;
+  font-weight: bold;
+
+  svg {
+    fill: $navy;
+    margin-bottom: -0.2rem;
+    transition-duration: 0.25s;
+    transition-property: margin-left;
+  }
+
+  &:active,
+  &:visited {
+    color: $navy;
+  }
+
+  &:hover {
+    color: $red;
+    cursor: pointer;
+
+    svg {
+      fill: $red;
+      margin-left: 0.5rem;
+    }
+  }
 }
 
 .section {
-  padding: 5rem 5vw;
+  padding: 5rem 2rem;
 }
 
 .section-content {

@@ -8,22 +8,6 @@
 
 @font-face {
   font-family: 'Pier Sans';
-  src: url('/fonts/PierSans-Medium.woff2') format('woff2'),
-  url('/fonts/PierSans-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Pier Sans';
-  src: url('/fonts/PierSans-MediumItalic.woff2') format('woff2'),
-  url('/fonts/PierSans-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Pier Sans';
   src: url('/fonts/PierSans-Bold.woff2') format('woff2'),
   url('/fonts/PierSans-Bold.woff') format('woff');
   font-weight: bold;
@@ -32,49 +16,9 @@
 
 @font-face {
   font-family: 'Pier Sans';
-  src: url('/fonts/PierSans-BoldItalic.woff2') format('woff2'),
-  url('/fonts/PierSans-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Pier Sans';
-  src: url('/fonts/PierSans-LightItalic.woff2') format('woff2'),
-  url('/fonts/PierSans-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Pier Sans';
-  src: url('/fonts/PierSans-Italic.woff2') format('woff2'),
-  url('/fonts/PierSans-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Pier Sans';
-  src: url('/fonts/PierSans-BlackItalic.woff2') format('woff2'),
-  url('/fonts/PierSans-BlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Pier Sans';
   src: url('/fonts/PierSans-Light.woff2') format('woff2'),
   url('/fonts/PierSans-Light.woff') format('woff');
   font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Pier Sans';
-  src: url('/fonts/PierSans-Black.woff2') format('woff2'),
-  url('/fonts/PierSans-Black.woff') format('woff');
-  font-weight: 900;
   font-style: normal;
 }
 

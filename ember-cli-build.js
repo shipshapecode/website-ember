@@ -101,7 +101,6 @@ module.exports = function(defaults) {
     },
     inlineContent: {
       blog: 'inline/styles/blog.css',
-      contact: 'inline/styles/contact.css',
       fonts: 'inline/styles/fonts.css',
       'google-analytics': {
         file: 'inline/ga.js',

@@ -224,7 +224,7 @@ This was just the initial implementation, but I will follow up with further post
 things like:
 
   - [Offline support with service workers](https://shipshape.io/blog/offline-first-prember-and-service-workers/)
-  - [Forcing trailing slashes in routes](https://shipshape.io/blog/forcing-trailing-slashes-in-routes/)
+  - [Forcing trailing slashes for routes](https://shipshape.io/blog/forcing-trailing-slashes-for-routes/)
   - Maintaining scroll position with `ember-router-scroll`
   - [Defining meta and tags similar to Ghost](https://shipshape.io/blog/ember-meta-tags-seo-social/)
   - Further SEO and structured data tweaks

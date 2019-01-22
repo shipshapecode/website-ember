@@ -1,53 +1,15 @@
 & {
   .blog-post {
-    .attribution {
-      color: $grey-light;
-      padding-top: 1rem;
-    }
-
-    .tag {
-      display: inline-block;
-      margin-right: 0.25rem;
-      margin-top: 1rem;
-
+    .blog-tag {
       a {
-        background-color: $transparent;
-        border: 2px solid $navy;
-        color: $navy;
-        padding: 5px;
-        text-decoration: none;
         transition-duration: 0.25s;
         transition-property: background-color, color, fill;
-
-        &:active,
-        &:visited {
-          color: $navy;
-        }
-
-        &:hover {
-          background-color: $navy;
-          color: $white;
-        }
       }
     }
 
     .title {
       color: $navy;
       font-size: 2rem;
-    }
-  }
-
-  .rss-button {
-    padding: 1rem 0;
-
-    svg {
-      path {
-        fill: $grey;
-
-        &:hover {
-          fill: $navy;
-        }
-      }
     }
   }
 }
