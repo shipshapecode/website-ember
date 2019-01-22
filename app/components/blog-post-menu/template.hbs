@@ -1,21 +1,15 @@
 <div class="{{this.styleNamespace}}">
-  <div class="rss-button">
-    <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fshipshape.io%2Ffeed.xml" target="_blank" rel="noopener">
-      {{svg-jar "rss"}}
-    </a>
-  </div>
-
   {{#each this.paginatedPosts as |post|}}
-    <div class="blog-post pt-2 pb-2">
+    <div class="blog-post border-b-2 border-grey-transparent border-solid pt-2 pb-2">
       {{link-to post.attributes.title "blog.post" post.attributes.slug class="title"}}
 
       <div class="attribution">
         By {{post.author.attributes.name}} {{date-format post.attributes.date "MM/DD/YYYY"}}
       </div>
 
-      <div class="tags">
+      <div class="tags pb-4 pt-4">
         {{#each post.attributes.categories as |tag|}}
-          <div class="tag">{{link-to tag "blog.categories.category" (space-to-dash tag)}}</div>
+          {{link-to tag "blog.categories.category" (space-to-dash tag) class="blog-tag"}}
         {{/each}}
       </div>
     </div>
