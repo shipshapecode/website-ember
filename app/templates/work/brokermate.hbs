@@ -8,13 +8,9 @@
       <h3>Client</h3>
 
       <p>
-        Brokermate is a software as a service (SaaS) company.
-        The company provides a white-label application ("The Broker App"​) designed for the OTC derivatives marketplace.
-        The application is offered in two versions, Lite™ and Pro™.
-        Lite™ is designed for Affiliates & Introducing Brokers, while Pro™ is made for Brokers & Market Makers.
-        Brokermate’s application supports multiple languages and is a device agnostic solution.
-        The all-in-one framework comes with Liquidity, Pricing, and Risk Management, as well as the standard CRM,
-        Marketing, and Accounting functionality.
+        Brokermate is a financial technology platform that provides all the tools required to run a successful brokerage. Until
+        now, brokers have had to rely on several different technologies to manage their business. Brokermate eliminates these
+        layers and brings together everything you need in one solution.
       </p>
     </div>
 
@@ -22,10 +18,8 @@
       <h3>Challenge</h3>
 
       <p>
-        Brokermate needed site tours to show users around their app, and walk them through things like setting up
-        their profile. They needed these tours to have very custom styles, span across routes, trigger actions on
-        step completion, and have the app still be interactive while the tour is running, to allow the users to
-        follow along with the tour and complete the action items.
+        While developing a highly complex brokerage management and client interaction application, Brokermate discovered that
+        new users needed a way to quickly get started using the service.
       </p>
     </div>
 
@@ -33,15 +27,40 @@
       <h3>Solution</h3>
 
       <p>
-        We used Shepherd.js and ember-shepherd, two open source libraries we maintain, to create some tours.
+        Integrating the Shepherd tour library, we were able to manage multiple visual guides for first time users to add
+        required settings and communicate how the applications functioned. This was done in a way that lead new users to a home
+        setup page, then tracked each tour state to ensure completion.
       </p>
+      <img src="/img/work/brokermate/brokermate-home.png" alt="Brokermate Home page with a few tours compeleted">
+      <p>
+        We leveraged the existing library and customized many steps to accomodate design connections for the purpsose
+        of alerting the user of those steps with the location in the app they are currently located. We also had to add step tracking
+        throughout the app to ensure that users had to complete certain steps, such as changing pages or adding account settings, before
+        transitioning through tour steps.
+      </p>
+      <img src="/img/work/brokermate/linux-step-3.png" alt="Brokermate offerings step 0">
+
+      <p>
+        Finally, we needed the tours to integrate into application features such as translations and transition animations
+        so that they felt like an integrated part of the application as apposed to an add-on.
+      </p>
+      <img src="/img/work/brokermate/brokermate-ar-step.png" alt="Brokermate Home page with a few tours compeleted">
     </div>
 
     <div>
       <h3>Outcome</h3>
 
       <p>
+        New users are now shown a list of tours to help add required configurations and quickly get them familiar with the
+        application. The user is scopped to either completing the action asked in the step
+        or canceling a tour in order to return later.
+      </p>
+      <img src="/img/work/brokermate/linux-step-0.png" alt="Brokermate offerings step 0">
 
+      <p>
+        They begin tours with customized themes for the tours to integrate natually into the
+        application flow. All features for this global application were applied to the tour
+        initialization allowing for international, routeable, and trackable tours.
       </p>
     </div>
   </div>
