@@ -1,4 +1,5 @@
 import container from 'tailwindcss/plugins/container';
+import gradient from '../plugins/gradient';
 
 import colors from './colors';
 import screens from './screens';
@@ -125,6 +126,11 @@ export default {
     container({
       // center: true,
       // padding: '1rem',
+    }),
+    gradient({
+      gradients: {
+        'brokermate': ['#3FB7E6', '#782599']
+      }
     })
   ],
 
