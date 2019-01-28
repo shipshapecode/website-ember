@@ -8,6 +8,10 @@ export default Component.extend({
 
   author: alias('post.author'),
   date: alias('post.attributes.date'),
+  nextSlug: alias('post.attributes.nextSlug'),
+  nextTitle: alias('post.attributes.nextTitle'),
+  previousSlug: alias('post.attributes.previousSlug'),
+  previousTitle: alias('post.attributes.previousTitle'),
   slug: alias('post.attributes.slug'),
   title: alias('post.attributes.title'),
 

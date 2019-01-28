@@ -6,6 +6,10 @@ categories:
   - ember-data
   - get or create
 date: '2018-10-8'
+nextSlug: converting-a-webpack-build-to-rollup
+nextTitle: Converting a Webpack Build to Rollup
+previousSlug: forcing-trailing-slashes-for-routes
+previousTitle: Forcing Trailing Slashes for Routes
 slug: ember-data-belongs-to-find-or-create
 title: Creating a Default Record When a belongsTo Request Errors
 ---

@@ -15,6 +15,28 @@
       </AuthorRow>
 
       {{content}}
+
+      <div class="border-t-2 border-grey-transparent border-solid flex flex-wrap w-full">
+        {{#if this.previousSlug}}
+          <div class="border-r-2 border-grey-transparent border-solid font-bold p-12 w-1/2 hover:bg-grey-transparent cursor-pointer">
+            <a class="h-full w-full" href="/blog/{{this.previousSlug}}/">
+              <span class="text-navy">Previous</span>
+
+              <h3>{{this.previousTitle}}</h3>
+            </a>
+          </div>
+        {{/if}}
+
+        {{#if this.nextSlug}}
+          <div class="font-bold p-12 w-1/2 hover:bg-grey-transparent cursor-pointer">
+            <a class="h-full w-full" href="/blog/{{this.nextSlug}}/">
+              <span class="text-navy">Next Up</span>
+
+              <h3>{{this.nextTitle}}</h3>
+            </a>
+          </div>
+        {{/if}}
+      </div>
     </div>
   </div>
 </div>
