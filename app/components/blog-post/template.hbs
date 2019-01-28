@@ -4,15 +4,17 @@
 
   <div class="post-content section flex flex-wrap justify-center">
     <div class="max-w-lg w-full">
-      <h1 class="blog-post-title" itemprop="headline">{{this.title}}</h1>
-      <time class="post-date"
-            datetime="{{this.date}}"
-            itemprop="datePublished dateModified">
-        {{date-format this.date "MM/DD/YYYY"}}
-      </time>
+      <h1 class="blog-post-title" itemprop="headline">
+        {{this.title}}
+      </h1>
+
+      <AuthorRow
+        @author={{this.author}}
+        @date={{this.date}}
+      >
+      </AuthorRow>
 
       {{content}}
-      <AuthorRow @author={{this.author}}></AuthorRow>
     </div>
   </div>
 </div>
