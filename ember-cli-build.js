@@ -6,6 +6,8 @@ const { extname } = require('path');
 const yamlFront = require('yaml-front-matter');
 const walkSync = require('walk-sync');
 
+const SERVICE_WORKER_VERSION = '72';
+
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
     gzip: {
@@ -28,7 +30,7 @@ module.exports = function(defaults) {
         'fonts/**/*',
         'img/**/*'
       ],
-      version: '71'
+      version: SERVICE_WORKER_VERSION
     },
     'ember-cli-markdown-to-json': [
       {
@@ -76,7 +78,7 @@ module.exports = function(defaults) {
       ]
     },
     'esw-prember': {
-      version: '71'
+      version: SERVICE_WORKER_VERSION
     },
     emberCliConcat: {
       js: {
