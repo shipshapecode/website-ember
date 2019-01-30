@@ -166,21 +166,23 @@
     </div>
 
     <div class="border-t-2 border-grey-transparent border-solid flex flex-wrap w-full">
-      <div class="border-r-2 border-grey-transparent border-solid font-bold p-12 w-1/2 hover:bg-grey-transparent cursor-pointer">
-        <a class="h-full w-full" href="">
-          <span class="text-navy">Previous</span>
+      {{#link-to
+        'work.socialcode'
+        class="border-r-2 border-grey-transparent border-solid flex-1 font-bold p-12 w-1/2 hover:bg-grey-transparent"
+      }}
+        <span class="text-navy">Previous</span>
 
-          <h3>Scout</h3>
-        </a>
-      </div>
+        <h3>SocialCode</h3>
+      {{/link-to}}
 
-      <div class="font-bold p-12 w-1/2 hover:bg-grey-transparent cursor-pointer">
-        <a class="h-full w-full" href="">
-          <span class="text-navy">Next Up</span>
+      {{#link-to
+        'work.netflix'
+        class="flex-1 font-bold p-12 w-1/2 hover:bg-grey-transparent"
+      }}
+        <span class="text-navy">Next Up</span>
 
-          <h3>Netflix</h3>
-        </a>
-      </div>
+        <h3>Netflix</h3>
+      {{/link-to}}
     </div>
   </div>
 </div>
