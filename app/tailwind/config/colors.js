@@ -17,7 +17,10 @@
 export default {
   transparent: 'transparent',
 
+  'acquia-blue': '#31A9E1',
+  black: '#000000',
   navy: '#00213B',
+  'netflix-red': '#E50914',
   gold: '#BBA46F',
   grey: '#5F6976',
   'grey-light': '#909BA0',

@@ -91,6 +91,12 @@ h6 {
   }
 }
 
+.fill-white {
+  path {
+    fill: $white;
+  }
+}
+
 .hero {
   padding: 0 2rem;
 }
