@@ -15,5 +15,6 @@
 export default {
   '0': '0',
   full: '100%',
+  '75vh': '75vh',
   screen: '100vh'
 };
