@@ -1,9 +1,10 @@
 import { A } from '@ember/array';
 import Route from '@ember/routing/route';
-import { inject as service } from '@ember/service';
+import { inject as service } from "@ember-decorators/service";
 
-export default Route.extend({
-  fastboot: service(),
+export default class Application extends Route {
+  @service fastboot;
+
   model() {
     return {
       links: A([
@@ -41,4 +42,4 @@ export default Route.extend({
       ])
     };
   }
-});
+}

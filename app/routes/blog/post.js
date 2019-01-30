@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 import fetch from "fetch";
 
-export default Route.extend({
+export default class Post extends Route {
   async model({ path }) {
     let authors = await fetch('/authors/authors.json');
     authors = await authors.json();
@@ -16,8 +16,7 @@ export default Route.extend({
     });
 
     return post;
-  },
-
+  }
 
   afterModel(model) {
     const { categories, date, description, slug, title } = model.attributes;
@@ -31,4 +30,4 @@ export default Route.extend({
       title
     };
   }
-});
+}

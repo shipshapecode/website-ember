@@ -1,8 +1,10 @@
 import Controller from '@ember/controller';
-import { sort } from '@ember/object/computed';
+import { sort } from "@ember-decorators/object/computed";
 
-export default Controller.extend({
+export default class Category extends Controller {
   // eslint-disable-next-line
-  dateSort: ['date:desc'],
-  blogPostsSortedByDate: sort('model', 'dateSort')
-});
+  dateSort = ['date:desc'];
+
+  @sort('model', 'dateSort')
+  blogPostsSortedByDate;
+}

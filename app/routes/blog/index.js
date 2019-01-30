@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 import asyncForEach from 'ember-async-await-for-each';
 import fetch from 'fetch';
 
-export default Route.extend({
+export default class Index extends Route {
   async model() {
     let authors = await fetch('/authors/authors.json');
     authors = await authors.json();
@@ -19,11 +19,11 @@ export default Route.extend({
     });
 
     return posts;
-  },
+  }
 
   resetController(controller, isExiting, transition) {
     if (isExiting && transition.targetName !== 'error') {
       controller.set('page', 1);
     }
   }
-});
+}

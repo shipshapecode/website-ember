@@ -1,11 +1,11 @@
 import Route from '@ember/routing/route';
 import { capitalize } from '@ember/string';
 import { setProperties } from '@ember/object';
-import { inject as service } from '@ember/service';
+import { inject as service } from "@ember-decorators/service";
 import fetch from 'fetch';
 
-export default Route.extend({
-  headData: service(),
+export default class Category extends Route {
+  @service headData;
 
   async model({ category }) {
     let posts = await fetch('/posts/posts.json');
@@ -19,10 +19,10 @@ export default Route.extend({
 
       return dasherizedCategories.includes(category);
     });
-  },
+  }
 
   async afterModel(model) {
-    this._super(...arguments);
+    super.afterModel(...arguments);
 
     const category = this.paramsFor('blog.categories.category').category;
     const capitalizedCategory = capitalize(category);
@@ -32,13 +32,13 @@ export default Route.extend({
       type: 'website',
       url: `https://shipshape.io/blog/categories/${category.replace(/ /g, '-')}/`
     });
-  },
+  }
 
   setupController(controller) {
-    this._super(...arguments);
+    super.setupController(...arguments);
 
     const category = this.paramsFor('blog.categories.category').category;
     const capitalizedCategory = capitalize(category);
     controller.set('category', capitalizedCategory);
   }
-});
+}

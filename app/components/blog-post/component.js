@@ -1,27 +1,42 @@
 import Component from '@ember/component';
-import { alias } from '@ember/object/computed';
+import { className, tagName } from '@ember-decorators/component';
+import { alias } from '@ember-decorators/object/computed';
 import { htmlSafe } from '@ember/template';
 
-export default Component.extend({
-  classNameBindings: ['slug'],
-  tagName: 'article',
+@tagName('article')
+export default class BlogPost extends Component {
+  @alias('post.author')
+  author;
 
-  author: alias('post.author'),
-  date: alias('post.attributes.date'),
-  nextSlug: alias('post.attributes.nextSlug'),
-  nextTitle: alias('post.attributes.nextTitle'),
-  previousSlug: alias('post.attributes.previousSlug'),
-  previousTitle: alias('post.attributes.previousTitle'),
-  slug: alias('post.attributes.slug'),
-  title: alias('post.attributes.title'),
+  @alias('post.attributes.date')
+  date;
+
+  @alias('post.attributes.nextSlug')
+  nextSlug;
+
+  @alias('post.attributes.nextTitle')
+  nextTitle;
+
+  @alias('post.attributes.previousSlug')
+  previousSlug;
+
+  @alias('post.attributes.previousTitle')
+  previousTitle;
+
+  @alias('post.attributes.slug')
+  @className
+  slug;
+
+  @alias('post.attributes.title')
+  title;
 
   init() {
-    this._super(...arguments);
+    super.init(...arguments);
     this.content = htmlSafe(this.post.attributes.html);
-  },
+  }
 
   didRender() {
-    this._super(...arguments);
+    super.didRender(...arguments);
 
     let nodeList = this.element.querySelectorAll('pre:not(.no-line-numbers) > code');
 
@@ -34,4 +49,4 @@ export default Component.extend({
 
     Prism.highlightAll();
   }
-});
+}

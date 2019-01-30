@@ -1,8 +1,9 @@
 import Component from '@ember/component';
-import { computed } from '@ember/object';
+import { computed } from "@ember-decorators/object";
 
-export default Component.extend({
-  paginatedPosts: computed('page', 'posts.[]', function() {
+export default class BlogPostMenu extends Component {
+  @computed('page', 'posts.[]')
+  get paginatedPosts() {
     const page = this.get('page');
     const posts = this.get('posts');
 
@@ -14,5 +15,5 @@ export default Component.extend({
 
       return blogPostsSortedByDate.slice(start, end);
     }
-  })
-});
+  }
+}

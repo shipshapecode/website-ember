@@ -18,7 +18,9 @@
     "test": "ember test"
   },
   "devDependencies": {
+    "@ember-decorators/babel-transforms": "^3.1.0",
     "@ember/optional-features": "^0.7.0",
+    "babel-eslint": "^8.0.0",
     "broccoli-asset-rev": "^3.0.0",
     "date-fns": "^1.30.1",
     "ember-async-await-for-each": "^0.0.2",
@@ -50,6 +52,7 @@
     "ember-contact-form": "^0.2.1",
     "ember-cp-validations": "^4.0.0-beta.5",
     "ember-debonair": "^0.4.2",
+    "ember-decorators": "^5.1.2",
     "ember-export-application-global": "^2.0.0",
     "ember-fetch": "^6.4.0",
     "ember-link-action": "^0.1.3",

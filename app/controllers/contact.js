@@ -1,8 +1,8 @@
 /* eslint-disable ember/avoid-leaking-state-in-ember-objects */
 import Controller from '@ember/controller';
 
-export default Controller.extend({
-  projectTypes: [
+export default class Contact extends Controller {
+  projectTypes = [
     {
       fieldName: 'oss',
       name: 'projectType',
@@ -18,5 +18,5 @@ export default Controller.extend({
       name: 'projectType',
       text: 'Ember Development'
     }
-  ]
-});
+  ];
+}

@@ -1,8 +1,8 @@
 import Route from '@ember/routing/route';
-import { inject as service } from '@ember/service';
+import { inject as service } from "@ember-decorators/service";
 
-export default Route.extend({
-  router: service(),
+export default class LostAtSea extends Route {
+  @service router;
 
   model() {
     return {
@@ -13,7 +13,7 @@ export default Route.extend({
         url: 'https://shipshape.io/lost-at-sea/'
       }
     };
-  },
+  }
 
   redirect() {
     const url = this.router.location.formatURL('/lost-at-sea');
@@ -21,4 +21,4 @@ export default Route.extend({
       this.replaceWith('/lost-at-sea/');
     }
   }
-});
+}
