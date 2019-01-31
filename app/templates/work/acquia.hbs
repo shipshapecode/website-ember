@@ -185,24 +185,12 @@
       </p>
     </div>
 
-    <div class="border-t-2 border-grey-transparent border-solid flex flex-wrap w-full">
-      {{#link-to
-        "work.brokermate"
-        class="border-r-2 border-grey-transparent border-solid flex-1 font-bold p-4 lg:p-12 w-1/2 hover:bg-grey-transparent"
-      }}
-        <span class="text-navy text-sm lg:text-xl">Previous</span>
-
-        <h3 class="text-xl lg:text-4xl">Brokermate</h3>
-      {{/link-to}}
-
-      {{#link-to
-        "work.socialcode"
-        class="flex-1 font-bold p-4 lg:p-12 w-1/2 hover:bg-grey-transparent"
-      }}
-        <span class="text-navy text-sm lg:text-xl">Next Up</span>
-
-        <h3 class="text-xl lg:text-4xl">SocialCode</h3>
-      {{/link-to}}
-    </div>
+    <BottomLinks
+      @nextLink="work.socialcode"
+      @nextLinkText="SocialCode"
+      @previousLink="work.brokermate"
+      @previousLinkText="Brokermate"
+    >
+    </BottomLinks>
   </div>
 </div>

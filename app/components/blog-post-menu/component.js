@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import { computed } from "@ember-decorators/object";
+import { computed } from '@ember-decorators/object';
 
 export default class BlogPostMenu extends Component {
   @computed('page', 'posts.[]')
@@ -10,12 +10,7 @@ export default class BlogPostMenu extends Component {
     const start = (page - 1) * 10;
     const end = start + 10;
 
-    if (posts && posts.sortBy) {
-      const blogPostsSortedByDate = posts.sortBy('attributes.date').reverse();
 
-      return blogPostsSortedByDate.slice(start, end);
-    }
-
-    return [];
+    return posts.slice(start, end);
   }
 }

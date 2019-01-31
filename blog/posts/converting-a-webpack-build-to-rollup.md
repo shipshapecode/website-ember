@@ -6,8 +6,10 @@ categories:
   - site tour
   - webpack
 date: '2019-01-25'
-previousSlug: ember-data-belongs-to-find-or-create
-previousTitle: Creating a Default Record When a belongsTo Request Errors
+nextSlug: ember-data-belongs-to-find-or-create
+nextTitle: Creating a Default Record When a belongsTo Request Errors
+previousSlug: ember-data-passing-query-params-to-save
+previousTitle: Ember Data | Passing query params to .save()
 slug: converting-a-webpack-build-to-rollup
 title: Converting a Webpack Build to Rollup
 ---

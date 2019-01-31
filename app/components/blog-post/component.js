@@ -2,6 +2,7 @@ import Component from '@ember/component';
 import { className, tagName } from '@ember-decorators/component';
 import { alias } from '@ember-decorators/object/computed';
 import { htmlSafe } from '@ember/template';
+import { set } from '@ember/object';
 
 @tagName('article')
 export default class BlogPost extends Component {
@@ -30,9 +31,9 @@ export default class BlogPost extends Component {
   @alias('post.attributes.title')
   title;
 
-  init() {
-    super.init(...arguments);
-    this.content = htmlSafe(this.post.attributes.html);
+  didReceiveAttrs() {
+    super.didReceiveAttrs(...arguments);
+    set(this, 'content', htmlSafe(this.post.attributes.html));
   }
 
   didRender() {

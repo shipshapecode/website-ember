@@ -18,7 +18,17 @@ export default class Index extends Route {
       });
     });
 
-    return posts;
+    return posts.sort((post1, post2) => {
+      if(post1.attributes.date > post2.attributes.date){
+        return -1;
+      }
+
+      if(post1.attributes.date < post2.attributes.date){
+        return 1;
+      }
+
+      return 0;
+    });
   }
 
   resetController(controller, isExiting, transition) {
