@@ -1,24 +1,35 @@
-<div class="flex flex-wrap justify-center pt-8 pb-8 lg:justify-start"
-     itemprop="author"
-     itemscope
-     itemtype="http://schema.org/Person"
+<div
+  class="flex items-center pb-8"
+  itemprop="author"
+  itemscope
+  itemtype="http://schema.org/Person"
 >
-  <div class="items-center justify-center">
+  <div class="w-12">
     <img
-      class="h-auto max-w-full rounded-full w-48"
+      class="h-auto rounded-full w-full"
       src="{{@author.attributes.image}}"
       alt="Author image"
       itemprop="image"
     >
   </div>
 
-  <div class="p-10">
-    <h3 itemprop="name">
-      {{@author.attributes.name}}
-    </h3>
+  <div class="pl-2 pb-2">
+    By
 
-    <p>
-      Read {{link-to "more posts" "blog.authors.author" author.id}} by this author.
-    </p>
+    {{link-to
+      @author.attributes.name
+      "blog.authors.author"
+      @author.id
+      itemprop="name"
+    }}
+
+    |
+
+    <time
+      datetime="{{this.date}}"
+      itemprop="datePublished dateModified"
+    >
+      {{date-format @date "MM/DD/YYYY"}}
+    </time>
   </div>
 </div>

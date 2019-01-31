@@ -6,12 +6,10 @@
   @include headings($shevy-blog-post);
   @include content($shevy-blog-post);
 
-  color: $grey;
-
   .post-content {
     code {
       &[class*="language-"] {
-        font-size: 16px;
+        font-size: 14px;
       }
 
       &:not([class*="language-"]) {

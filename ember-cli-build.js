@@ -38,6 +38,10 @@ module.exports = function(defaults) {
           'authorId',
           'categories',
           'date',
+          'nextSlug',
+          'nextTitle',
+          'previousSlug',
+          'previousTitle',
           'slug',
           'title'
         ],
