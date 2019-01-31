@@ -15,5 +15,7 @@ export default class BlogPostMenu extends Component {
 
       return blogPostsSortedByDate.slice(start, end);
     }
+
+    return [];
   }
 }
