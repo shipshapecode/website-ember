@@ -7,10 +7,14 @@ export default class BlogPostMenu extends Component {
     const page = this.get('page');
     const posts = this.get('posts');
 
-    const start = (page - 1) * 10;
-    const end = start + 10;
+    if (posts) {
+      const start = (page - 1) * 10;
+      const end = start + 10;
 
 
-    return posts.slice(start, end);
+      return posts.slice(start, end);
+    }
+
+    return [];
   }
 }
