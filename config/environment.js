@@ -1,7 +1,12 @@
 'use strict';
 
 module.exports = function(environment) {
-  const ENV = {
+  let ENV = {
+    'ember-resolver': {
+      features: {
+        EMBER_RESOLVER_MODULE_UNIFICATION: true
+      }
+    },
     modulePrefix: 'website',
     environment,
     rootURL: '/',
@@ -11,6 +16,7 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+        'ember-module-unification': true
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
@@ -49,8 +55,6 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    // ENV.host = 'http://localhost:3000';
-    // ENV.host = 'https://shipshape-api.herokuapp.com';
   }
 
   if (environment === 'test') {
@@ -66,7 +70,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.host = 'https://shipshape-api.herokuapp.com';
+
   }
 
   return ENV;

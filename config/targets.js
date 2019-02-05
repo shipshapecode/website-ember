@@ -1,11 +1,8 @@
-'use strict';
-
-const browsers = [
-  'last 2 Chrome versions',
-  'last 2 Firefox versions',
-  'last 2 Safari versions'
-];
-
 module.exports = {
-  browsers
+  browsers: [
+    'ie 11',
+    'last 1 Chrome versions',
+    'last 1 Firefox versions',
+    'last 1 Safari versions'
+  ]
 };
