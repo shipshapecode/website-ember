@@ -10,7 +10,7 @@
 
     <div class="flex flex-wrap justify-center items-center">
       <form class="cd-form floating-labels" name="contact-us" netlify-honeypot="bot-field"
-        {{action (route-action "sendContactRequest" model) on="submit"}} netlify>
+        {{action (action "sendContactRequest" model) on="submit"}} netlify>
         <fieldset>
           <legend>Personal Info</legend>
           <div class="bot-field">

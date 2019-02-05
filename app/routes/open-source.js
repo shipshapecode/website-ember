@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 
-export default Route.extend({
+export default class OpenSource extends Route {
   afterModel(model) {
     model.metaTags = {
       title: 'Ember Addons and Open Source - Ship Shape',
@@ -13,4 +13,4 @@ export default Route.extend({
       url: 'https://shipshape.io/open-source/'
     };
   }
-});
+}

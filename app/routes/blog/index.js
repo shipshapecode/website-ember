@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 import asyncForEach from 'ember-async-await-for-each';
 import fetch from 'fetch';
 
-export default Route.extend({
+export default class Index extends Route {
   async model() {
     let authors = await fetch('/authors/authors.json');
     authors = await authors.json();
@@ -18,12 +18,22 @@ export default Route.extend({
       });
     });
 
-    return posts;
-  },
+    return posts.sort((post1, post2) => {
+      if(post1.attributes.date > post2.attributes.date){
+        return -1;
+      }
+
+      if(post1.attributes.date < post2.attributes.date){
+        return 1;
+      }
+
+      return 0;
+    });
+  }
 
   resetController(controller, isExiting, transition) {
     if (isExiting && transition.targetName !== 'error') {
       controller.set('page', 1);
     }
   }
-});
+}

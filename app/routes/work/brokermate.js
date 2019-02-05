@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 
-export default Route.extend({
+export default class Brokermate extends Route {
   model() {
     return {
       metaTags: {
@@ -11,4 +11,4 @@ export default Route.extend({
       }
     };
   }
-});
+}

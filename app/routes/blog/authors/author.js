@@ -1,10 +1,10 @@
 import Route from '@ember/routing/route';
 import { setProperties } from '@ember/object';
-import { inject as service } from '@ember/service';
+import { inject as service } from "@ember-decorators/service";
 import fetch from 'fetch';
 
-export default Route.extend({
-  headData: service(),
+export default class Author extends Route {
+  @service headData;
 
   async model({ authorId }) {
     let posts = await fetch('/posts/posts.json');
@@ -14,10 +14,10 @@ export default Route.extend({
     return posts.filter((post) => {
       return post.authorId === authorId;
     });
-  },
+  }
 
   async afterModel(model) {
-    this._super(...arguments);
+    super.afterModel(...arguments);
 
     const authorId = this.paramsFor('blog.authors.author').author;
     let author = await fetch(`/authors/${authorId}.json`);
@@ -32,11 +32,11 @@ export default Route.extend({
       type: 'website',
       url: `https://shipshape.io/blog/authors/${encodeURIComponent(authorId)}/`
     });
-  },
+  }
 
   async setupController(controller, model) {
-    this._super(...arguments);
+    super.setupController(...arguments);
 
     controller.set('author', model.author);
   }
-});
+}

@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 import { htmlSafe } from '@ember/string';
 
-export default Route.extend({
+export default class Index extends Route {
   model() {
     return {
       clients: [
@@ -149,4 +149,4 @@ export default Route.extend({
       }
     };
   }
-});
+}
