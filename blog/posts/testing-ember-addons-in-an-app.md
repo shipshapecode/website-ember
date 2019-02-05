@@ -7,6 +7,10 @@ categories:
   - in-repo addon
   - in-repo engine
 date: '2018-02-13'
+nextSlug: using-components-in-ember-mixin-unit-tests
+nextTitle: Using Components in Ember Mixin Unit Tests
+previousSlug: ember-3-1-testing-and-optional-features
+previousTitle: Updating to Ember 3.1 and Enabling Optional Features
 slug: testing-ember-addons-in-an-app
 title: Testing Ember Addons in a Real App Using ember-cli-addon-tests
 ---

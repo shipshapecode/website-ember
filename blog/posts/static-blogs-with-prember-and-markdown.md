@@ -10,6 +10,10 @@ categories:
   - prerender
   - static
 date: '2018-04-04'
+nextSlug: ember-3-1-testing-and-optional-features
+nextTitle: Updating to Ember 3.1 and Enabling Optional Features
+previousSlug: ember-inspector-the-journey-so-far
+previousTitle: Ember Inspector - The Journey so Far
 slug: static-blogs-with-prember-and-markdown
 title: Static Blogs with Prember and Markdown
 ---

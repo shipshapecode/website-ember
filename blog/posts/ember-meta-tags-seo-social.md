@@ -9,6 +9,10 @@ categories:
   - opengraph
   - prember
 date: '2018-04-15'
+nextSlug: ember-inspector-the-journey-so-far
+nextTitle: Ember Inspector - The Journey so Far
+previousSlug: offline-first-prember-and-service-workers
+previousTitle: Offline First Prember Apps with Service Workers
 slug: ember-meta-tags-seo-social
 title: Ember Meta - Adding Meta Tags to Your Blog
 ---

@@ -10,6 +10,10 @@ categories:
   - static
   - service workers
 date: '2018-04-27'
+nextSlug: ember-meta-tags-seo-social
+nextTitle: Ember Meta - Adding Meta Tags to Your Blog
+previousSlug: ad-hoc-relationships-with-ember-data
+previousTitle: Ad Hoc Relationships with Ember Data
 slug: offline-first-prember-and-service-workers
 title: Offline First Prember Apps with Service Workers
 ---

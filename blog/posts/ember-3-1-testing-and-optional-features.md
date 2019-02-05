@@ -5,6 +5,10 @@ categories:
   - ember optional features
   - ember update 
 date: '2018-02-18'
+nextSlug: testing-ember-addons-in-an-app
+nextTitle: Testing Ember Addons in a Real App Using ember-cli-addon-tests
+previousSlug: static-blogs-with-prember-and-markdown
+previousTitle: Static Blogs with Prember and Markdown
 slug: ember-3-1-testing-and-optional-features
 title: Updating to Ember 3.1 and Enabling Optional Features
 ---

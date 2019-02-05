@@ -5,6 +5,10 @@ categories:
   - ember-data
   - query params
 date: '2016-05-22'
+nextSlug: converting-a-webpack-build-to-rollup
+nextTitle: Converting a Webpack Build to Rollup
+previousSlug: helpful-resources-for-new-ember-devs
+previousTitle: Helpful Resources for New Ember Devs
 slug: ember-data-passing-query-params-to-save
 title: Ember Data | Passing query params to .save()
 ---

@@ -4,6 +4,10 @@ categories:
   - ember.js
   - ember inspector
 date: '2018-04-09'
+nextSlug: static-blogs-with-prember-and-markdown
+nextTitle: Static Blogs with Prember and Markdown
+previousSlug: ember-meta-tags-seo-social
+previousTitle: Ember Meta - Adding Meta Tags to Your Blog
 slug: ember-inspector-the-journey-so-far
 title: Ember Inspector - The Journey so Far
 ---

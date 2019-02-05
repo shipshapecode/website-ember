@@ -5,6 +5,10 @@ categories:
   - ember resources
   - ember tutorials
 date: '2016-06-30'
+nextSlug: ember-data-passing-query-params-to-save
+nextTitle: Ember Data | Passing query params to .save()
+previousSlug: ember-in-repo-addons
+previousTitle: Ember In-Repo Addons
 slug: helpful-resources-for-new-ember-devs
 title: Helpful Resources for New Ember Devs
 ---

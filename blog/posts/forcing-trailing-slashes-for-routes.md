@@ -7,6 +7,10 @@ categories:
   - static html
   - trailing slash
 date: '2018-08-13'
+nextSlug: ad-hoc-relationships-with-ember-data
+nextTitle: Ad Hoc Relationships with Ember Data
+previousSlug: ember-data-belongs-to-find-or-create
+previousTitle: Creating a Default Record When a belongsTo Request Errors
 slug: forcing-trailing-slashes-for-routes
 title: Forcing Trailing Slashes for Routes
 ---

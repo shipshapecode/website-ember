@@ -5,6 +5,10 @@ categories:
   - ember-data
   - relationships
 date: '2018-08-07'
+nextSlug: offline-first-prember-and-service-workers
+nextTitle: Offline First Prember Apps with Service Workers
+previousSlug: forcing-trailing-slashes-for-routes
+previousTitle: Forcing Trailing Slashes for Routes
 slug: ad-hoc-relationships-with-ember-data
 title: Ad Hoc Relationships with Ember Data
 ---
