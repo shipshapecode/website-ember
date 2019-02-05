@@ -5,7 +5,7 @@ categories:
   - shepherd.js
   - site tour
   - webpack
-date: '2019-01-25'
+date: '2019-02-05'
 nextSlug: ember-data-belongs-to-find-or-create
 nextTitle: Creating a Default Record When a belongsTo Request Errors
 previousSlug: ember-data-passing-query-params-to-save
@@ -20,7 +20,15 @@ step in the right direction, but with all the buzz around [rollup](https://rollu
 
 In some cases, things were a simple 1:1 conversion from a webpack plugin to a rollup plugin, but other things were much less straightforward.
 We'll go through each conversion, step by step here, in the hopes that it will be helpful to others who may want to take rollup for a spin. If you just want
-to see the entire webpack config and the entire rollup config, you can skip to the bottom and compare them yourself.
+to see the entire webpack config and the entire rollup config, you can [skip to the bottom](#configfiles) and compare them yourself.
+
+## Table of Contents
+1. [Linting](#linting)
+2. [Local Development](#localdevelopment)
+3. [Styles](#styles)
+4. [Transpilation/Minification](#transpilationminification)
+5. [Config Files](#configfiles)
+6. [Summary](#summary)
 
 ## Linting 
 
