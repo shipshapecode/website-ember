@@ -5,7 +5,7 @@ export default class Netflix extends Route {
     return {
       metaTags: {
         title: 'Case Study - Netflix',
-        description: '',
+        description: 'Learn how we helped build finance tools for the world\'s number one streaming platform.',
         type: 'website',
         url: 'https://shipshape.io/work/netflix/'
       }

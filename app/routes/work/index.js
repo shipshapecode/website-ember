@@ -6,20 +6,6 @@ export default class Index extends Route {
     return {
       clients: [
         {
-          heading: 'Netflix',
-          imageURL: '/img/clients/netflix.png',
-          panelHeading: 'Netflix',
-          panelSubheading: 'Staff augmentation, feature development, test coverage',
-          panelInfo: htmlSafe(`
-          <p>
-            We were integrated with the Studio Finance UI team at Netflix, working primarily on Gravity, which is a 
-            financial app that allows users to upload and edit large amounts of data about shows and movies. It was a
-            mostly unmaintained app when we started, and we were tasked with whipping it into shape and increasing the
-            code coverage from tests.
-          </p>
-          `)
-        },
-        {
           heading: 'SocialCode',
           imageURL: '/img/clients/socialcode.png',
           panelHeading: 'SocialCode',
@@ -73,25 +59,6 @@ export default class Index extends Route {
           `)
         },
         {
-          heading: 'Mentrs',
-          imageURL: '/img/clients/mentrs-logo.png',
-          panelHeading: 'Mentrs',
-          panelSubheading: 'MVP app development and staff training',
-          panelInfo: htmlSafe(
-            `<p>
-            We worked on the Mentrs MVP from the ground up,
-            starting with running 'ember new', and adding all the addons, 
-            ESLint plugins, template lintings, and doing all the initial 
-            work required to create an Ember app, rooted in the latest Ember standards.
-          </p>
-
-          <p>
-            Features we implemented included everything from login and sign up, 
-            to class creation, and Stripe integration for paying to enroll in classes.
-          </p>`
-          )
-        },
-        {
           heading: 'Scout',
           imageURL: '/img/clients/scout-logo.png',
           panelHeading: 'Scout',
@@ -114,19 +81,6 @@ export default class Index extends Route {
           `)
         },
         {
-          heading: 'Williamson Wagner',
-          imageURL: '/img/clients/WW.png',
-          panelHeading: 'Williamson Wagner',
-          panelSubheading: 'Logo design, web design, and website',
-          panelInfo: htmlSafe(
-            `<p>
-            We worked on every facet of Williamson Wagner's brand.
-            From logo designs, to shirt designs, to web design and
-            full development of williamsonwagner.com.
-          </p>`
-          )
-        },
-        {
           heading: 'greenlight.guru',
           imageURL: '/img/clients/greenlight-logo.png',
           panelHeading: 'greenlight.guru',
@@ -143,7 +97,7 @@ export default class Index extends Route {
 
       metaTags: {
         title: 'Case Studies - Ship Shape',
-        description: '',
+        description: 'See a few examples of our work in Ember Consulting, and how we solve tough problems for our clients.',
         type: 'website',
         url: 'https://shipshape.io/work/'
       }

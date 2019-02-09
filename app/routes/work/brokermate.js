@@ -5,7 +5,7 @@ export default class Brokermate extends Route {
     return {
       metaTags: {
         title: 'Case Study - Brokermate',
-        description: '',
+        description: 'Learn how we helped Brokermate create custom site tours, to walk new users through their brokerage app.',
         type: 'website',
         url: 'https://shipshape.io/work/brokermate/'
       }
