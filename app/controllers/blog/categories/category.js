@@ -1,10 +1,4 @@
-import Controller from '@ember/controller';
-import { sort } from "@ember-decorators/object/computed";
+import BlogIndexController from '../index';
 
-export default class Category extends Controller {
-  // eslint-disable-next-line
-  dateSort = ['date:desc'];
-
-  @sort('model', 'dateSort')
-  blogPostsSortedByDate;
+export default class Category extends BlogIndexController {
 }

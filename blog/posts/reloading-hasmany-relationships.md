@@ -3,7 +3,6 @@ authorId: rwwagner90
 categories: 
   - ember.js
   - ember-data
-  - hasMany
 date: '2017-07-31'
 nextSlug: aiming-for-targets-with-ember
 nextTitle: Aiming for Targets with Ember

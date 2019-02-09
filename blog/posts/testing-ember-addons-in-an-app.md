@@ -3,9 +3,7 @@ authorId: rwwagner90
 categories: 
   - ember.js
   - ember addons
-  - testing ember addons
-  - in-repo addon
-  - in-repo engine
+  - testing
 date: '2018-02-13'
 nextSlug: using-components-in-ember-mixin-unit-tests
 nextTitle: Using Components in Ember Mixin Unit Tests

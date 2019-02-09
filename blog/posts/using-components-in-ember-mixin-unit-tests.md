@@ -1,11 +1,8 @@
 ---
 authorId: rwwagner90
 categories: 
-  - component rendering
-  - container
-  - ember
   - ember.js
-  - unit tests
+  - testing
 date: '2017-11-29'
 nextSlug: ember-without-jquery
 nextTitle: Removing jQuery from Ember - For Dummies

@@ -1,7 +1,6 @@
 ---
 authorId: rwwagner90
 categories: 
-  - blog
   - ember.js
   - ember-meta
   - fastboot

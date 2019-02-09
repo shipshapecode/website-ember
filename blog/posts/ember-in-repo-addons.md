@@ -2,7 +2,6 @@
 authorId: rwwagner90
 categories: 
   - ember.js
-  - in-repo addons
 date: '2016-07-19'
 nextSlug: helpful-resources-for-new-ember-devs
 nextTitle: Helpful Resources for New Ember Devs

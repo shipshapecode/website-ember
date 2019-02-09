@@ -4,6 +4,12 @@
 
 <div class="blog-posts section flex flex-wrap justify-center">
   <div class="section-content">
-    <BlogPostMenu @posts={{blogPostsSortedByDate}}></BlogPostMenu>
+    <BlogPostMenu
+      @navigatePages={{action "navigatePages"}}
+      @page={{this.page}}
+      @posts={{this.model}}
+      @totalPosts={{this.model.length}}
+    >
+    </BlogPostMenu>
   </div>
 </div>

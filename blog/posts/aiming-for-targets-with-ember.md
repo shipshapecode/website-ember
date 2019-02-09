@@ -1,11 +1,7 @@
 ---
 authorId: rwwagner90
-categories: 
-  - babili
+categories:
   - ember.js
-  - ember-targets
-  - targets 
-  - uglify
 date: '2017-04-29'
 nextSlug: ember-in-repo-addons
 nextTitle: Ember In-Repo Addons

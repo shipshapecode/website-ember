@@ -2,8 +2,6 @@
 authorId: rwwagner90
 categories: 
   - ember.js
-  - ember resources
-  - ember tutorials
 date: '2016-06-30'
 nextSlug: ember-data-passing-query-params-to-save
 nextTitle: Ember Data | Passing query params to .save()

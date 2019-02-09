@@ -1,13 +1,10 @@
 ---
 authorId: rwwagner90
 categories: 
-  - blog
   - ember.js
   - fastboot
-  - ghost
   - markdown
   - prember
-  - prerender
   - static
 date: '2018-04-04'
 nextSlug: ember-3-1-testing-and-optional-features

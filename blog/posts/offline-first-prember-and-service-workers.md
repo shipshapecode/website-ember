@@ -1,12 +1,9 @@
 ---
 authorId: rwwagner90
 categories: 
-  - blog
   - ember.js
   - fastboot
-  - offline first
   - prember
-  - prerender
   - static
   - service workers
 date: '2018-04-27'

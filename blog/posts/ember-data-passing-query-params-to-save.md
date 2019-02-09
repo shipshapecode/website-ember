@@ -3,7 +3,6 @@ authorId: rwwagner90
 categories: 
   - ember.js
   - ember-data
-  - query params
 date: '2016-05-22'
 nextSlug: converting-a-webpack-build-to-rollup
 nextTitle: Converting a Webpack Build to Rollup

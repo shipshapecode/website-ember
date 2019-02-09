@@ -1,10 +1,8 @@
 ---
 authorId: rwwagner90
-categories: 
-  - catch belongsTo 404
+categories:
   - ember.js
   - ember-data
-  - get or create
 date: '2018-10-8'
 previousSlug: converting-a-webpack-build-to-rollup
 previousTitle: Converting a Webpack Build to Rollup

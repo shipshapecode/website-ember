@@ -2,10 +2,6 @@
 authorId: rwwagner90
 categories: 
   - ember.js
-  - history-location
-  - routes
-  - static html
-  - trailing slash
 date: '2018-08-13'
 nextSlug: ad-hoc-relationships-with-ember-data
 nextTitle: Ad Hoc Relationships with Ember Data
