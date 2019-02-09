@@ -1,21 +1,16 @@
-import BlogIndexRoute from '../index';
 import Route from '@ember/routing/route';
 import { capitalize } from '@ember/string';
 import { setProperties } from '@ember/object';
 import { inject as service } from '@ember-decorators/service';
-import fetch from 'fetch';
 
-export default class Category extends BlogIndexRoute {
+export default class Category extends Route {
   @service headData;
 
   async model({ category }) {
-    let posts = await super.model(...arguments);
-
-    debugger;
+    let posts = await this.modelFor('blog');
 
     if (posts) {
       return posts.filter((post) => {
-        debugger;
         const dasherizedCategories = post.attributes.categories.map((category) => {
           return category.replace(/ /g, '-');
         });

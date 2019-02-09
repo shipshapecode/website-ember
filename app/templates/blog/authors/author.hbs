@@ -1,12 +1,19 @@
-<HeroBlock @heroClasses="blog-author">
-  <h1 class="heading">{{author.attributes.name}}</h1>
-  <h2>
-    {{model.length}} posts
-  </h2>
-</HeroBlock>
-
 <div class="blog-posts section flex flex-wrap justify-center">
   <div class="section-content">
-    <BlogPostMenu @posts={{model}}></BlogPostMenu>
+    <div class="flex items-center">
+      <h1>{{this.author.attributes.name}}</h1>
+    </div>
+
+    <p>
+      {{this.model.length}} posts
+    </p>
+
+    <BlogPostMenu
+      @navigatePages={{action "navigatePages"}}
+      @page={{this.page}}
+      @posts={{this.model}}
+      @totalPosts={{this.model.length}}
+    >
+    </BlogPostMenu>
   </div>
 </div>

@@ -106,7 +106,6 @@ module.exports = function(defaults) {
       extensions: ['js', 'css', 'map']
     },
     inlineContent: {
-      blog: 'inline/styles/blog.css',
       fonts: 'inline/styles/fonts.css',
       'google-analytics': {
         file: 'inline/ga.js',

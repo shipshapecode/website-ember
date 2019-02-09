@@ -7,9 +7,7 @@ export default class Author extends Route {
   @service headData;
 
   async model({ authorId }) {
-    let posts = await fetch('/posts/posts.json');
-    posts = await posts.json();
-    posts = posts.data;
+    const posts = this.modelFor('blog');
 
     return posts.filter((post) => {
       return post.authorId === authorId;
