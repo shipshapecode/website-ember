@@ -1,6 +1,4 @@
 import Route from '@ember/routing/route';
-import asyncForEach from 'ember-async-await-for-each';
-import fetch from 'fetch';
 
 export default class Index extends Route {
   async model() {

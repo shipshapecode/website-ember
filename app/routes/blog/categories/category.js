@@ -9,15 +9,13 @@ export default class Category extends Route {
   async model({ category }) {
     let posts = await this.modelFor('blog');
 
-    if (posts) {
-      return posts.filter((post) => {
-        const dasherizedCategories = post.attributes.categories.map((category) => {
-          return category.replace(/ /g, '-');
-        });
-
-        return dasherizedCategories.includes(category);
+    return posts.filter((post) => {
+      const dasherizedCategories = post.attributes.categories.map((category) => {
+        return category.replace(/ /g, '-');
       });
-    }
+
+      return dasherizedCategories.includes(category);
+    });
   }
 
   async afterModel(model) {

@@ -1,3 +1,11 @@
-<HeroBlock @heroClasses="blog">
-  <h1>Categories</h1>
-</HeroBlock>
+<div class="blog-posts section flex flex-wrap justify-center">
+  <div class="section-content">
+    <div class="flex items-center">
+      <h1>Categories</h1>
+    </div>
+
+    {{#each this.model as |category|}}
+      <p>{{category}}</p>
+    {{/each}}
+  </div>
+</div>

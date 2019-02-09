@@ -24,8 +24,8 @@ module('Acceptance | blog/post', function(hooks) {
 
     const tags = document.head.querySelectorAll('meta[property="article:tag"]');
 
-    assert.equal(tags[0].content, 'catch belongsTo 404', 'first tag is correct');
-    assert.equal(tags[1].content, 'ember.js', 'second tag is correct');
+    assert.equal(tags[0].content, 'ember.js', 'first tag is correct');
+    assert.equal(tags[1].content, 'ember-data', 'second tag is correct');
   });
 
   test('visiting /blog/post and checking opengraph meta', async function(assert) {
@@ -53,7 +53,7 @@ module('Acceptance | blog/post', function(hooks) {
     assert.equal(document.head.querySelector('meta[name="twitter:label2"]').content,
       'Filed under', 'twitter label2 is correct');
     assert.equal(document.head.querySelector('meta[name="twitter:data2"]').content,
-      'catch belongsTo 404, ember.js, ember-data, get or create',
+      'ember.js, ember-data',
       'twitter filed under is correct');
   });
 });
