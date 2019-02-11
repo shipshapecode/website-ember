@@ -17,6 +17,7 @@ module.exports = {
   },
   globals: {
     galite: false,
+    percySnapshot: true,
     Prism: false
   },
   rules: {

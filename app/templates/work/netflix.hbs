@@ -31,33 +31,21 @@
         with whipping the apps into shape, increasing code coverage from tests, and developing some
         long awaited new features.
       </p>
+
+      <p>
+        One of these features was the Cost Categories page in Gravity. Gravity was fully integrated with Ember Data,
+        and mostly used JSON API for the endpoints previously, but the new endpoints were using a different format
+        that did not follow REST or JSON API standards, which meant we needed a very custom Ember Data setup, to support
+        these APIs.
+      </p>
     </div>
 
-    <div class="bg-grey flex flex-wrap min-h-75vh justify-center">
-      <div class="flex flex-wrap justify-center items-center p-4 lg:p-24 md:flex-no-wrap">
-        <div class="p-4 lg:p-8">
-          <img
-            alt="Mobile Placeholder"
-            class="h-auto w-full"
-            src="/img/work/mobile-placeholder.png"
-          >
-        </div>
-
-        <div class="p-4 lg:p-8">
-          <img
-            alt="Mobile Placeholder"
-            class="h-auto w-full"
-            src="/img/work/mobile-placeholder.png"
-          >
-        </div>
-
-        <div class="p-4 lg:p-8">
-          <img
-            alt="Mobile Placeholder"
-            class="h-auto w-full"
-            src="/img/work/mobile-placeholder.png"
-          >
-        </div>
+    <div class="bg-grey flex justify-center lg:flex-1">
+      <div class="p-4 lg:p-12">
+        <img
+          alt="Cost Categories Page in Gravity"
+          src="/img/work/netflix/cost-categories.png"
+        >
       </div>
     </div>
 
@@ -65,12 +53,12 @@
       <h4>Solution</h4>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Varius quam quisque id diam vel quam elementum pulvinar. Semper feugiat nibh sed pulvinar proin gravida
-        hendrerit lectus a. Risus at ultrices mi tempus imperdiet. Lacus laoreet non curabitur gravida arcu ac
-        tortor dignissim convallis. Lorem ipsum dolor sit amet. Turpis cursus in hac habitasse platea dictumst
-        quisque sagittis. Vitae tortor condimentum lacinia quis vel eros donec ac. Nec tincidunt praesent semper
-        feugiat nibh sed. Dui accumsan sit amet nulla facilisi.
+        One of the first issues we had to overcome was displaying a table of default values when a call to get
+        the cost categories returned a 404. With JSON API, this would have returned a 200, with an empty response, but
+        with our API it returned a 404, which would typically but your app into an error state. To get around this,
+        we caught the error, and instead returned the default data we wanted. The details of this approach are outlined
+        in our blog post on
+        <a href="/blog/ember-data-belongs-to-find-or-create/">Creating a Default Record When a belongsTo Request Errors</a>.
       </p>
     </div>
 
@@ -104,12 +92,11 @@
 
     <div class="p-4 lg:p-12">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Varius quam quisque id diam vel quam elementum pulvinar. Semper feugiat nibh sed pulvinar proin gravida
-        hendrerit lectus a. Risus at ultrices mi tempus imperdiet. Lacus laoreet non curabitur gravida arcu ac
-        tortor dignissim convallis. Lorem ipsum dolor sit amet. Turpis cursus in hac habitasse platea dictumst
-        quisque sagittis. Vitae tortor condimentum lacinia quis vel eros donec ac. Nec tincidunt praesent semper
-        feugiat nibh sed. Dui accumsan sit amet nulla facilisi.
+        Another issue we encountered was it was not possible to setup links to pull in related data automatically,
+        like you typically would with JSON API, so we decided to setup custom serializers that manually added in the links.
+        This allowed us to use typical belongsTo and hasMany relationships and automatically fetch the data we needed.
+        The setup for this is outlined in our blog post on
+        <a href="/blog/ad-hoc-relationships-with-ember-data/">Ad Hoc Relationships with Ember Data</a>.
       </p>
     </div>
 
@@ -138,12 +125,12 @@
 
     <div class="p-4 lg:p-12">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Varius quam quisque id diam vel quam elementum pulvinar. Semper feugiat nibh sed pulvinar proin gravida
-        hendrerit lectus a. Risus at ultrices mi tempus imperdiet. Lacus laoreet non curabitur gravida arcu ac
-        tortor dignissim convallis. Lorem ipsum dolor sit amet. Turpis cursus in hac habitasse platea dictumst
-        quisque sagittis. Vitae tortor condimentum lacinia quis vel eros donec ac. Nec tincidunt praesent semper
-        feugiat nibh sed. Dui accumsan sit amet nulla facilisi.
+        In addition to the custom Ember Data work we did, we had a need for a table that would allow us to use
+        very specific components in each cell, and add header rows with the cost category names, with an optional
+        add row functionality, for categories that supported multiple values of the same type. To accomplish this,
+        we used <a href="https://github.com/offirgolan/ember-light-table">ember-light-table</a>, and nested
+        <a href="https://github.com/cibernox/ember-power-select">ember-power-select</a> dropdowns in the cells.
+        This allowed us to set default placeholder values, and disabled fields that were not editable.
       </p>
     </div>
 
@@ -151,31 +138,21 @@
       <h4>Outcome</h4>
 
       <p>
-        We were integrated with the Studio Finance UI team at Netflix, working primarily on Gravity, which is a
-        financial app that allows users to upload and edit large amounts of data about shows and movies. It was a
-        mostly unmaintained app when we started, and we were tasked with whipping it into shape and increasing the
-        code coverage from tests.
+        The Cost Categories table now allows developers to use Ember Data like any other app, and interact with the models
+        in the way they are used to. The table also allows users to accurately track the cost category values,
+        which both shows the cost values with more granularity than before, and allows for multiple values
+        of the same type, via the add row functionality we developed.
       </p>
     </div>
 
     <div class="bg-netflix-red flex justify-center lg:flex-1">
       <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
         <img
-          alt="Desktop Placeholder"
-          src="/img/work/desktop-placeholder.png"
+          alt="Cost Categories Page in Gravity"
+          class="flex"
+          src="/img/work/netflix/cost-categories.png"
         >
       </div>
-    </div>
-
-    <div class="p-4 lg:p-12">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Varius quam quisque id diam vel quam elementum pulvinar. Semper feugiat nibh sed pulvinar proin gravida
-        hendrerit lectus a. Risus at ultrices mi tempus imperdiet. Lacus laoreet non curabitur gravida arcu ac
-        tortor dignissim convallis. Lorem ipsum dolor sit amet. Turpis cursus in hac habitasse platea dictumst
-        quisque sagittis. Vitae tortor condimentum lacinia quis vel eros donec ac. Nec tincidunt praesent semper
-        feugiat nibh sed. Dui accumsan sit amet nulla facilisi.
-      </p>
     </div>
 
     <BottomLinks
