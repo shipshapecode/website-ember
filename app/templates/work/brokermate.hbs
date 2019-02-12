@@ -101,10 +101,11 @@
 
     <div class="p-4 lg:p-12">
       <p>
-        We leveraged the existing Shepherd and ember-shepherd libraries, and added additional features to them,
-        to allow us to fully customize many steps, and accommodate design requirements. The site tour we created
-        helped walk the users through several different app features, and illustrated the location of these features
-        in the app they are currently using. We also added step tracking, throughout the app, to ensure that users
+        We leveraged the existing <a href="https://github.com/shipshapecode/shepherd">Shepherd</a> and
+        <a href="https://github.com/shipshapecode/ember-shepherd">ember-shepherd</a> libraries, and added additional
+        features to them, to allow us to fully customize many steps, and accommodate design requirements. The site tour
+        we created helped walk the users through several different app features, and illustrated the location of these
+        features, in the app they are currently using. We also added step tracking, throughout the app, to ensure that users
         completed certain steps, such as changing pages or adding account settings, before transitioning to subsequent
         tour steps.
       </p>
@@ -130,7 +131,6 @@
           >
         </div>
       </div>
-
     </div>
 
     <div class="p-4 lg:p-12">
@@ -148,18 +148,7 @@
         application. The user is scoped to either completing the action asked in the step or canceling a tour, in order to
         return later.
       </p>
-    </div>
 
-    <div class="bg-gradient-brokermate flex justify-center lg:flex-1">
-      <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-        <img
-          alt="Brokermate Tour with a detailed step on desktop"
-          src="/img/work/brokermate/bm-desktop_step-detailed.png"
-        >
-      </div>
-    </div>
-
-    <div class="p-4 lg:p-12">
       <p>
         They begin tours with customized tour themes that integrate naturally into the application flow. All features for
         this global application were applied to the tour initialization allowing for international, routable, and trackable
@@ -167,9 +156,19 @@
       </p>
     </div>
 
+    <div class="bg-gradient-brokermate flex justify-center lg:flex-1">
+      <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
+        <img
+          alt="Brokermate Tour with a detailed step on desktop"
+          class="flex"
+          src="/img/work/brokermate/bm-desktop_step-detailed.png"
+        >
+      </div>
+    </div>
+
     <BottomLinks
-      @nextLink="work.acquia"
-      @nextLinkText="Acquia"
+      @nextLink="work.socialcode"
+      @nextLinkText="SocialCode"
       @previousLink="work.netflix"
       @previousLinkText="Netflix"
     >
