@@ -25,11 +25,11 @@
       <h4>Challenge</h4>
 
       <p>
-        Netflix created several apps, several years ago, for their internal teams to use for
-        keeping track of finances across the spectrum. The developers that initially wrote the apps
-        had left the company, and the apps had been neglected for a long time. Ship Shape was tasked
-        with whipping the apps into shape, increasing code coverage from tests, and developing some
-        long awaited new features.
+        Netflix maintains several apps, for their internal teams to use for keeping track of finances across
+        the spectrum. There is currently a big push to standardize all the apps, and convert them to React,
+        but there was still Ember work to be done, in the meantime. Ship Shape was tasked
+        with whipping the Ember apps into shape, increasing code coverage from tests, and developing some
+        long awaited new features, freeing up the internal Netflix teams to work on the rewrite.
       </p>
 
       <p>
@@ -38,15 +38,6 @@
         that did not follow REST or JSON API standards, which meant we needed a very custom Ember Data setup, to support
         these APIs.
       </p>
-    </div>
-
-    <div class="bg-grey flex justify-center lg:flex-1">
-      <div class="p-4 lg:p-12">
-        <img
-          alt="Cost Categories Page in Gravity"
-          src="/img/work/netflix/cost-categories.png"
-        >
-      </div>
     </div>
 
     <div class="p-4 lg:p-12">
@@ -60,37 +51,7 @@
         in our blog post on
         <a href="/blog/ember-data-belongs-to-find-or-create/">Creating a Default Record When a belongsTo Request Errors</a>.
       </p>
-    </div>
 
-    <div class="bg-netflix-red flex flex-wrap min-h-75vh justify-center">
-      <div class="flex flex-wrap justify-center items-center p-4 lg:p-24 md:flex-no-wrap">
-        <div class="p-4 lg:p-8">
-          <img
-            alt="Mobile Placeholder"
-            class="h-auto w-full"
-            src="/img/work/mobile-placeholder.png"
-          >
-        </div>
-
-        <div class="p-4 lg:p-8">
-          <img
-            alt="Mobile Placeholder"
-            class="h-auto w-full"
-            src="/img/work/mobile-placeholder.png"
-          >
-        </div>
-
-        <div class="p-4 lg:p-8">
-          <img
-            alt="Mobile Placeholder"
-            class="h-auto w-full"
-            src="/img/work/mobile-placeholder.png"
-          >
-        </div>
-      </div>
-    </div>
-
-    <div class="p-4 lg:p-12">
       <p>
         Another issue we encountered was it was not possible to setup links to pull in related data automatically,
         like you typically would with JSON API, so we decided to setup custom serializers that manually added in the links.
@@ -98,32 +59,7 @@
         The setup for this is outlined in our blog post on
         <a href="/blog/ad-hoc-relationships-with-ember-data/">Ad Hoc Relationships with Ember Data</a>.
       </p>
-    </div>
 
-    <div class="flex flex-wrap justify-center w-full lg:h-75vh">
-      <div class="bg-grey flex justify-center items-center p-4 lg:flex-1 lg:mr-8">
-        <div class="p-4 lg:p-32">
-          <img
-            alt="Mobile Placeholder"
-            class="h-auto w-full"
-            src="/img/work/mobile-placeholder.png"
-          >
-        </div>
-      </div>
-
-      <div class="bg-netflix-red flex justify-center items-center p-4 lg:flex-1">
-        <div class="p-4 lg:p-32">
-          <img
-            alt="Mobile Placeholder"
-            class="h-auto w-full"
-            src="/img/work/mobile-placeholder.png"
-          >
-        </div>
-      </div>
-
-    </div>
-
-    <div class="p-4 lg:p-12">
       <p>
         In addition to the custom Ember Data work we did, we had a need for a table that would allow us to use
         very specific components in each cell, and add header rows with the cost category names, with an optional
@@ -132,15 +68,6 @@
         <a href="https://github.com/cibernox/ember-power-select">ember-power-select</a> dropdowns in the cells.
         This allowed us to set default placeholder values, and disabled fields that were not editable.
       </p>
-    </div>
-
-    <div class="bg-grey flex justify-center lg:flex-1">
-      <div class="p-4 lg:p-12">
-        <img
-          alt="Cost Categories Page in Gravity"
-          src="/img/work/netflix/cost-categories.png"
-        >
-      </div>
     </div>
 
     <div class="p-4 lg:p-12">
@@ -152,16 +79,6 @@
         which both shows the cost values with more granularity than before, and allows for multiple values
         of the same type, via the add row functionality we developed.
       </p>
-    </div>
-
-    <div class="bg-netflix-red flex justify-center lg:flex-1">
-      <div class="pl-4 pr-4 pt-4 lg:pl-24 lg:pr-24 lg:pt-12">
-        <img
-          alt="Cost Categories Page in Gravity"
-          class="flex"
-          src="/img/work/netflix/cost-categories.png"
-        >
-      </div>
     </div>
 
     <BottomLinks
