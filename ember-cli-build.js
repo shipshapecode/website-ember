@@ -10,7 +10,7 @@ const SERVICE_WORKER_VERSION = '78';
 
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
-    gzip: {
+    brotli: {
       appendSuffix: false,
       extensions: ['js', 'css', 'svg'],
       keepUncompressed: false

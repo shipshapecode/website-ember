@@ -797,23 +797,6 @@
     ember-cli-babel "^7.1.4"
     ember-cli-htmlbars-inline-precompile "^2.0.0 || ^1.0.5"
 
-"@floatboth/broccoli-zopfli@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@floatboth/broccoli-zopfli/-/broccoli-zopfli-1.0.3.tgz#b71a8f6d33f9ce7ed83fdb53808e8d97842f47c2"
-  integrity sha512-fxIoTmGlGJQxQCYziLIGX+HrGCzB7+g26/kHZ444EP7bw55krqCC6sf1pSDhM2ot0qtUHtlFtNV5iOzbZEUAtA==
-  dependencies:
-    "@gfx/zopfli" "^1.0.8"
-    broccoli-filter "^1.3.0"
-    broccoli-kitchen-sink-helpers "^0.3.1"
-    rsvp "^4.8.2"
-
-"@gfx/zopfli@^1.0.8":
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/@gfx/zopfli/-/zopfli-1.0.10.tgz#8cccfcbd670f676cb240812bcf8380c9a66da367"
-  integrity sha512-PAR3ICucog1HV+hDVF+VYNfnvB/JmE4C8YqxhMMEuxyycFthrv6hIEeCoNsRVF3J+SEtNLWRPTOXgcvQkZIM5A==
-  dependencies:
-    base64-js "^1.3.0"
-
 "@glimmer/compiler@^0.38.0":
   version "0.38.0"
   resolved "https://registry.yarnpkg.com/@glimmer/compiler/-/compiler-0.38.0.tgz#fde12464feef3f3c82ef6a0cab1813074f34a5a4"
@@ -2555,7 +2538,7 @@ base64-js@0.0.8:
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-0.0.8.tgz#1101e9544f4a76b1bc3b26d452ca96d7a35e7978"
   integrity sha1-EQHpVE9KdrG8OybUUsqW16NeeXg=
 
-base64-js@^1.0.2, base64-js@^1.2.3, base64-js@^1.3.0:
+base64-js@^1.0.2, base64-js@^1.2.3:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.0.tgz#cab1e6118f051095e58b5281aea8c1cd22bfc0e3"
   integrity sha512-ccav/yGvoa80BQDljCxsmmQ3Xvx60/UpBIij5QN21W3wBi/hhIC9OoO+KLpu9IJTS9j4DRVJ3aDDF9cMSoa2lw==
@@ -2861,6 +2844,16 @@ broccoli-babel-transpiler@^7.1.0, broccoli-babel-transpiler@^7.1.1:
     rsvp "^4.8.3"
     workerpool "^2.3.1"
 
+broccoli-brotli@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/broccoli-brotli/-/broccoli-brotli-1.0.2.tgz#ad67bba2f1b454864f3481b38e9d8a3a1f30537c"
+  integrity sha512-c78Osgx8zvd/vjbJjjvwGWB2rpAl2Bnbf9JxaQdwd3j6e4TIekThBl2O6a0gthZvVm5eyL60FixXC17o6lfb9w==
+  dependencies:
+    broccoli-filter "^1.2.4"
+    broccoli-kitchen-sink-helpers "^0.3.1"
+    iltorb "^2.0.2"
+    rsvp "^4.7.0"
+
 broccoli-builder@^0.18.14:
   version "0.18.14"
   resolved "https://registry.yarnpkg.com/broccoli-builder/-/broccoli-builder-0.18.14.tgz#4b79e2f844de11a4e1b816c3f49c6df4776c312d"
@@ -2984,7 +2977,7 @@ broccoli-file-creator@^1.1.1:
     broccoli-plugin "^1.1.0"
     mkdirp "^0.5.1"
 
-broccoli-filter@^1.2.2, broccoli-filter@^1.2.3, broccoli-filter@^1.3.0:
+broccoli-filter@^1.2.2, broccoli-filter@^1.2.3, broccoli-filter@^1.2.4, broccoli-filter@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/broccoli-filter/-/broccoli-filter-1.3.0.tgz#71e3a8e32a17f309e12261919c5b1006d6766de6"
   integrity sha512-VXJXw7eBfG82CFxaBDjYmyN7V72D4In2zwLVQJd/h3mBfF3CMdRTsv2L20lmRTtCv1sAHcB+LgMso90e/KYiLw==
@@ -5199,6 +5192,13 @@ ember-cli-broccoli-sane-watcher@^3.0.0:
     rsvp "^3.0.18"
     sane "^4.0.0"
 
+ember-cli-brotli@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/ember-cli-brotli/-/ember-cli-brotli-0.1.3.tgz#cda6db0653ef0d409da74123e7b56245c241bb7f"
+  integrity sha512-uY8awcWXaXfN/vMyXD1hdg0IzjYFDTk94iM2fj7Mr5+9Si9796jyWob4/ZovQkvI6+hRnDPOtmoi4eODwi3e8A==
+  dependencies:
+    broccoli-brotli "^1.0.2"
+
 ember-cli-bundle-analyzer@^0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/ember-cli-bundle-analyzer/-/ember-cli-bundle-analyzer-0.0.5.tgz#3903f30ae6d3074c5ea480c877b51e79fb670e8e"
@@ -5576,13 +5576,6 @@ ember-cli-version-checker@^3.0.0:
   dependencies:
     resolve "^1.9.0"
     semver "^5.6.0"
-
-ember-cli-zopfli@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ember-cli-zopfli/-/ember-cli-zopfli-1.0.1.tgz#4cd8d0908994b628e8309f11a216bb84008df70e"
-  integrity sha512-pFdmG5ltbAz2qdaAiEeM0QusOdloLCxxi5FRqUxTE6Ok6hcOuwBj3KsVOCJ1O0uj61pDf1bju86pwQeQr4uAOA==
-  dependencies:
-    "@floatboth/broccoli-zopfli" "1.0.3"
 
 ember-cli@~3.8.0-beta.1:
   version "3.8.0-beta.1"
@@ -7936,7 +7929,7 @@ ignore@^5.0.4:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.0.4.tgz#33168af4a21e99b00c5d41cbadb6a6cb49903a45"
   integrity sha512-WLsTMEhsQuXpCiG173+f3aymI43SXa+fB1rSfbzyP4GkPP+ZFVuO0/3sFUGNBtifisPeDcl/uD/Y2NxZ7xFq4g==
 
-iltorb@^2.0.5:
+iltorb@^2.0.2, iltorb@^2.0.5:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/iltorb/-/iltorb-2.4.1.tgz#3ae14f0a76ba880503884a2fe630b1f748eb4c17"
   integrity sha512-huyAN7dSNe2b7VAl5AyvaeZ8XTcDTSF1b8JVYDggl+SBfHsORq3qMZeesZW7zoEy21s15SiERAITWT5cwxu1Uw==
