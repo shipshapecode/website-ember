@@ -6,15 +6,10 @@ const { extname } = require('path');
 const yamlFront = require('yaml-front-matter');
 const walkSync = require('walk-sync');
 
-const SERVICE_WORKER_VERSION = '79';
+const SERVICE_WORKER_VERSION = '80';
 
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
-    brotli: {
-      appendSuffix: false,
-      extensions: ['js', 'css', 'svg'],
-      keepUncompressed: false
-    },
     imagemin: {
       enabled: true,
       plugins: [

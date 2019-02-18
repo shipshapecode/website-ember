@@ -2844,16 +2844,6 @@ broccoli-babel-transpiler@^7.1.0, broccoli-babel-transpiler@^7.1.1:
     rsvp "^4.8.3"
     workerpool "^2.3.1"
 
-broccoli-brotli@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/broccoli-brotli/-/broccoli-brotli-1.0.2.tgz#ad67bba2f1b454864f3481b38e9d8a3a1f30537c"
-  integrity sha512-c78Osgx8zvd/vjbJjjvwGWB2rpAl2Bnbf9JxaQdwd3j6e4TIekThBl2O6a0gthZvVm5eyL60FixXC17o6lfb9w==
-  dependencies:
-    broccoli-filter "^1.2.4"
-    broccoli-kitchen-sink-helpers "^0.3.1"
-    iltorb "^2.0.2"
-    rsvp "^4.7.0"
-
 broccoli-builder@^0.18.14:
   version "0.18.14"
   resolved "https://registry.yarnpkg.com/broccoli-builder/-/broccoli-builder-0.18.14.tgz#4b79e2f844de11a4e1b816c3f49c6df4776c312d"
@@ -2977,7 +2967,7 @@ broccoli-file-creator@^1.1.1:
     broccoli-plugin "^1.1.0"
     mkdirp "^0.5.1"
 
-broccoli-filter@^1.2.2, broccoli-filter@^1.2.3, broccoli-filter@^1.2.4, broccoli-filter@^1.3.0:
+broccoli-filter@^1.2.2, broccoli-filter@^1.2.3, broccoli-filter@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/broccoli-filter/-/broccoli-filter-1.3.0.tgz#71e3a8e32a17f309e12261919c5b1006d6766de6"
   integrity sha512-VXJXw7eBfG82CFxaBDjYmyN7V72D4In2zwLVQJd/h3mBfF3CMdRTsv2L20lmRTtCv1sAHcB+LgMso90e/KYiLw==
@@ -5191,13 +5181,6 @@ ember-cli-broccoli-sane-watcher@^3.0.0:
     heimdalljs-logger "^0.1.7"
     rsvp "^3.0.18"
     sane "^4.0.0"
-
-ember-cli-brotli@^0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/ember-cli-brotli/-/ember-cli-brotli-0.1.3.tgz#cda6db0653ef0d409da74123e7b56245c241bb7f"
-  integrity sha512-uY8awcWXaXfN/vMyXD1hdg0IzjYFDTk94iM2fj7Mr5+9Si9796jyWob4/ZovQkvI6+hRnDPOtmoi4eODwi3e8A==
-  dependencies:
-    broccoli-brotli "^1.0.2"
 
 ember-cli-bundle-analyzer@^0.0.5:
   version "0.0.5"
@@ -7929,7 +7912,7 @@ ignore@^5.0.4:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.0.4.tgz#33168af4a21e99b00c5d41cbadb6a6cb49903a45"
   integrity sha512-WLsTMEhsQuXpCiG173+f3aymI43SXa+fB1rSfbzyP4GkPP+ZFVuO0/3sFUGNBtifisPeDcl/uD/Y2NxZ7xFq4g==
 
-iltorb@^2.0.2, iltorb@^2.0.5:
+iltorb@^2.0.5:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/iltorb/-/iltorb-2.4.1.tgz#3ae14f0a76ba880503884a2fe630b1f748eb4c17"
   integrity sha512-huyAN7dSNe2b7VAl5AyvaeZ8XTcDTSF1b8JVYDggl+SBfHsORq3qMZeesZW7zoEy21s15SiERAITWT5cwxu1Uw==
