@@ -29,6 +29,7 @@ export default {
   '32': '8rem',
   '48': '12rem',
   '64': '16rem',
+  '140': '36rem',
   full: '100%',
   '75vh': '75vh',
   screen: '100vh'

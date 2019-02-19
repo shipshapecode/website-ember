@@ -13,6 +13,7 @@
 */
 
 export default {
+  '35rem': '35rem',
   full: '100%',
   screen: '100vh'
 };
