@@ -6,7 +6,7 @@ const { extname } = require('path');
 const yamlFront = require('yaml-front-matter');
 const walkSync = require('walk-sync');
 
-const SERVICE_WORKER_VERSION = '82';
+const SERVICE_WORKER_VERSION = '83';
 
 module.exports = function(defaults) {
   const app = new EmberApp(defaults, {
