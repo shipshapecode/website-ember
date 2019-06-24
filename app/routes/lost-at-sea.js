@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-import { inject as service } from "@ember-decorators/service";
+import { inject as service } from "@ember/service";
 
 export default class LostAtSea extends Route {
   @service router;

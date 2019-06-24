@@ -2,7 +2,7 @@ import EmberObject from '@ember/object';
 import ContactValidations from '../validations/contact';
 import Route from '@ember/routing/route';
 import { getOwner } from '@ember/application';
-import { inject as service } from '@ember-decorators/service';
+import { inject as service } from '@ember/service';
 
 export default class Contact extends Route {
   @service flashMessages;

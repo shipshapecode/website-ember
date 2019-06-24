@@ -1,7 +1,7 @@
 import Controller from '@ember/controller';
 import { set } from '@ember/object';
-import { action } from "@ember-decorators/object";
-import { sort } from "@ember-decorators/object/computed";
+import { action } from "@ember/object";
+import { sort } from "@ember/object/computed";
 
 export default class Index extends Controller {
   queryParams = ['page'];

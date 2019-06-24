@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 import { className, tagName } from '@ember-decorators/component';
-import { alias } from '@ember-decorators/object/computed';
+import { alias } from '@ember/object/computed';
 import { htmlSafe } from '@ember/template';
 import { set } from '@ember/object';
 

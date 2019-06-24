@@ -1,6 +1,6 @@
 /* eslint-disable ember/avoid-leaking-state-in-ember-objects */
 import Controller from '@ember/controller';
-import { action } from '@ember-decorators/object';
+import { action } from '@ember/object';
 import { get } from '@ember/object';
 import fetch from 'fetch';
 

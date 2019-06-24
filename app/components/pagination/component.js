@@ -1,7 +1,7 @@
 import Component from '@ember/component';
 import { later } from '@ember/runloop';
 import { set } from '@ember/object';
-import { action, computed } from '@ember-decorators/object';
+import { action, computed } from '@ember/object';
 
 export default class Pagination extends Component {
   transitionNext = false;

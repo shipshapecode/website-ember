@@ -1,6 +1,6 @@
 import Route from '@ember/routing/route';
 import { setProperties } from '@ember/object';
-import { inject as service } from "@ember-decorators/service";
+import { inject as service } from "@ember/service";
 import fetch from 'fetch';
 
 export default class Author extends Route {

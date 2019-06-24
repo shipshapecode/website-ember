@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 import { capitalize } from '@ember/string';
 import { setProperties } from '@ember/object';
-import { inject as service } from '@ember-decorators/service';
+import { inject as service } from '@ember/service';
 
 export default class Category extends Route {
   @service headData;
