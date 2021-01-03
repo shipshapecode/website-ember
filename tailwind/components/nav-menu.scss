@@ -1,0 +1,70 @@
+.nav-links {
+  @apply bg-white fixed flex-grow h-screen inset-0 w-full;
+}
+
+@screen lg {
+  .nav-links {
+    @apply bg-transparent h-auto items-center pl-2 pr-2 pt-2 static w-auto;
+  }
+}
+
+.contact-link,
+.nav-link {
+  @apply block font-bold p-4 text-base text-grey;
+}
+
+@screen lg {
+  .nav-link {
+    @apply inline-block mt-0;
+  }
+}
+
+.nav-link:active,
+.nav-link:visited {
+  @apply text-grey;
+}
+
+.nav-link:hover {
+  @apply text-navy;
+}
+
+@screen lg {
+  .contact-link {
+    @apply bg-navy -mt-12 inset-auto pt-16 static text-white w-auto;
+  }
+
+  .contact-link:hover {
+    @apply text-gold;
+  }
+
+  .contact-link:active,
+  .contact-link:visited {
+    @apply text-white;
+  }
+
+  .nav-link-alt {
+    @apply block font-bold p-4 text-base text-white;
+  }
+
+  .nav-link-alt:active,
+  .nav-link-alt:visited {
+    @apply text-white;
+  }
+
+  .nav-link-alt:hover {
+    @apply text-gold;
+  }
+
+  .contact-link-alt {
+    @apply bg-white -mt-12 inset-auto pt-16 static text-navy w-auto;
+  }
+
+  .contact-link-alt:active,
+  .contact-link-alt:visited {
+    @apply text-navy;
+  }
+
+  .contact-link-alt:hover {
+    @apply text-gold;
+  }
+}

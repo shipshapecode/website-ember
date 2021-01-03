@@ -9,8 +9,8 @@ export default class Pagination extends Component {
 
   @computed('page', 'totalPosts')
   get postsRemaining() {
-    const page = this.get('page');
-    const totalPosts = this.get('totalPosts');
+    const page = this.page;
+    const totalPosts = this.totalPosts;
 
     return page * 10 < totalPosts;
   }

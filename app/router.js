@@ -1,28 +1,29 @@
-import config from './config/environment';
-import EmberRouter from '@ember/routing/router';
-import RouterScroll from 'ember-router-scroll';
-import { get, getWithDefault } from '@ember/object';
+
+import EmberRouterScroll from 'ember-router-scroll';
+import config from 'website/config/environment';
+import { get } from '@ember/object';
 import { run } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 
-const Router = EmberRouter.extend(RouterScroll, {
-  location: config.locationType,
-  rootURL: config.rootURL,
-  fastboot: service(),
+export default class Router extends EmberRouterScroll {
+  location = config.locationType;
+  rootURL = config.rootURL;
 
-  init() {
-    this._super(...arguments);
+  @service fastboot;
+
+  constructor() {
+    super(...arguments);
 
     this.on('routeDidChange', () => {
       this._trackPage();
     });
-  },
+  }
 
   _trackPage() {
     if (!get(this, 'fastboot.isFastBoot')) {
       run.scheduleOnce('afterRender', this, () => {
         const page = document.location.pathname;
-        const title = getWithDefault(this, 'currentRouteName', 'unknown');
+        const title = (this.currentRouteName === undefined ? 'unknown' : this.currentRouteName);
 
         if (typeof galite === 'undefined') {
           return;
@@ -31,7 +32,7 @@ const Router = EmberRouter.extend(RouterScroll, {
       });
     }
   }
-});
+}
 
 Router.map(function() {
   this.route('home', { path: '/' });
@@ -56,5 +57,3 @@ Router.map(function() {
   });
   this.route('lost-at-sea', { path: '/*path' });
 });
-
-export default Router;
