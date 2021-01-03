@@ -1,22 +1,24 @@
-import config from './config/environment';
-import EmberRouter from '@ember/routing/router';
+
+import EmberRouterScroll from 'ember-router-scroll';
+import config from 'website/config/environment';
 import RouterScroll from 'ember-router-scroll';
 import { get, getWithDefault } from '@ember/object';
 import { run } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 
-const Router = EmberRouter.extend(RouterScroll, {
-  location: config.locationType,
-  rootURL: config.rootURL,
-  fastboot: service(),
+export default class Router extends EmberRouterScroll {
+  location = config.locationType;
+  rootURL = config.rootURL;
+
+  @service fastboot;
 
   init() {
-    this._super(...arguments);
+    super.init(...arguments);
 
     this.on('routeDidChange', () => {
       this._trackPage();
     });
-  },
+  }
 
   _trackPage() {
     if (!get(this, 'fastboot.isFastBoot')) {
@@ -31,7 +33,7 @@ const Router = EmberRouter.extend(RouterScroll, {
       });
     }
   }
-});
+}
 
 Router.map(function() {
   this.route('home', { path: '/' });
@@ -56,5 +58,3 @@ Router.map(function() {
   });
   this.route('lost-at-sea', { path: '/*path' });
 });
-
-export default Router;
