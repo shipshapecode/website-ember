@@ -1,4 +1,4 @@
-@import 'tailwind';
+@import 'tailwind.scss';
 @import 'shevy/shevy';
 @import 'variables';
 //Pages
@@ -71,7 +71,7 @@ h3,
 h4,
 h5,
 h6 {
-  @extend .heading;
+  @apply heading;
 }
 
 .cd-form {
@@ -135,5 +135,5 @@ h6 {
 }
 
 .section-content {
-  @extend .max-w-4xl, .w-full;
+  @apply .max-w-8xl .w-full;
 }

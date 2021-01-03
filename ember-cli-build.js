@@ -111,6 +111,23 @@ module.exports = function(defaults) {
         enabled: false
       }
     },
+    postcssOptions: {
+      compile: {
+        extension: 'scss',
+        enabled: true,
+        parser: require('postcss-scss'),
+        syntax: 'postcss-scss',
+        plugins: [
+          {
+            module: require('@csstools/postcss-sass'),
+            options: {
+              includePaths: ['tailwind/components']
+            }
+          },
+          require('tailwindcss')('./tailwind.config.js')
+        ]
+      }
+    },
     prember: {
       baseRoot: 'https://shipshape.io',
       urls: buildPremberUrls()

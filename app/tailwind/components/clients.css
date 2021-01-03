@@ -1,9 +1,0 @@
-.client-logo {
-  @apply .flex .justify-center .items-center .p-8 .w-1/2;
-}
-
-@screen lg {
-  .client-logo {
-    @apply .flex-1 .p-12 .w-auto;
-  }
-}
