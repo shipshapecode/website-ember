@@ -11,8 +11,8 @@ export default class Router extends EmberRouterScroll {
 
   @service fastboot;
 
-  init() {
-    super.init(...arguments);
+  constructor() {
+    super(...arguments);
 
     this.on('routeDidChange', () => {
       this._trackPage();

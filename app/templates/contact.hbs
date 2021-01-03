@@ -9,67 +9,36 @@
     </p>
 
     <div class="flex flex-wrap justify-center items-center">
-      <form class="cd-form floating-labels" name="contact-us" netlify-honeypot="bot-field"
-        {{action (action "sendContactRequest" model) on="submit"}} netlify>
+      <form class="cd-form floating-labels" name="contact-us" netlify-honeypot="bot-field" {{action (action "sendContactRequest" model) on="submit"}} netlify>
         <fieldset>
           <legend>Personal Info</legend>
           <div class="bot-field">
             <label>Don’t fill this out if you're human: <input name="bot-field"></label>
           </div>
 
-          {{contact-input
-            fieldName="name"
-            labelText="Name"
-            required=true
-            type="text"
-            value=model.name
-          }}
+          <ContactInput @fieldName="name" @labelText="Name" @required={{true}} @type="text" @value={{model.name}} />
 
-          {{contact-input
-            fieldName="company"
-            labelText="Company"
-            required=false
-            type="text"
-            value=model.company
-          }}
+          <ContactInput @fieldName="company" @labelText="Company" @required={{false}} @type="text" @value={{model.company}} />
 
-          {{contact-input
-            fieldName="email"
-            labelText="Email"
-            required=true
-            type="email"
-            value=model.email
-          }}
+          <ContactInput @fieldName="email" @labelText="Email" @required={{true}} @type="email" @value={{model.email}} />
         </fieldset>
 
         <fieldset>
           <legend>Project Info</legend>
 
-          {{form-list
-            groupValue=model.projectType
-            options=projectTypes
-            type="radio"}}
+          <FormList @groupValue={{model.projectType}} @options={{projectTypes}} @type="radio" />
 
-          {{contact-input
-            fieldName="description"
-            labelText="Project description"
-            required=true
-            textarea=true
-            value=model.description
-          }}
+          <ContactInput @fieldName="description" @labelText="Project description" @required={{true}} @textarea={{true}} @value={{model.description}} />
 
         </fieldset>
 
         <div>
-          {{input
-            disabled=(v-get model "isTruelyInvalid")
-            type="submit"
-            value="Send Message"}}
+          <Input @disabled={{v-get model "isTruelyInvalid"}} @type="submit" @value="Send Message" />
         </div>
 
         <div class="alerts text-center">
           {{#each flashMessages.queue as |flash|}}
-            {{flash-message flash=flash}}
+            <FlashMessage @flash={{flash}} />
           {{/each}}
         </div>
       </form>
