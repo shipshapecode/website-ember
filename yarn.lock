@@ -6006,14 +6006,6 @@ ember-cp-validations@^4.0.0-beta.9:
     ember-require-module "^0.3.0"
     ember-validators "^2.0.0"
 
-ember-debonair@^0.4.2:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/ember-debonair/-/ember-debonair-0.4.4.tgz#961658d51320050e137795e868a4fc9558ef8840"
-  integrity sha512-T4sKvbsiTm6+pVi4+gfPaxEDadnv78d3mhTt5+cvAYExCpQUT0kqyb0C2M+s/kTyztV6HgBXIF1uL0F/n++ISA==
-  dependencies:
-    ember-cli-babel "^6.6.0"
-    sort-by "^1.2.0"
-
 ember-decorators@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/ember-decorators/-/ember-decorators-6.0.0.tgz#7f324660bed126e45d0c0877924dde9681dc1821"
@@ -10739,11 +10731,6 @@ object-keys@^1.0.12:
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.0.tgz#11bd22348dd2e096a045ab06f6c85bcc340fa032"
   integrity sha512-6OO5X1+2tYkNyNEx6TsCxEqFfRWaqx6EtMiSbGrw8Ob8v9Ne+Hl8rBAgLBZn5wjEz3s/s6U1WXFUFOcxxAwUpg==
 
-object-path@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.6.0.tgz#b69a7d110937934f336ca561fd9be1ad7b7e0cb7"
-  integrity sha1-tpp9EQk3k08zbKVh/ZvhrXt+DLc=
-
 object-path@0.x.x:
   version "0.11.4"
   resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.4.tgz#370ae752fbf37de3ea70a861c23bba8915691949"
@@ -13059,13 +13046,6 @@ socket.io@^2.1.0:
     socket.io-adapter "~1.1.0"
     socket.io-client "2.2.0"
     socket.io-parser "~3.3.0"
-
-sort-by@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/sort-by/-/sort-by-1.2.0.tgz#ed92bbff9fd2284b41f6503e38496607b225fe6f"
-  integrity sha1-7ZK7/5/SKEtB9lA+OElmB7Il/m8=
-  dependencies:
-    object-path "0.6.0"
 
 sort-keys-length@^1.0.0:
   version "1.0.1"
