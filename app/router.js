@@ -1,8 +1,7 @@
 
 import EmberRouterScroll from 'ember-router-scroll';
 import config from 'website/config/environment';
-import RouterScroll from 'ember-router-scroll';
-import { get, getWithDefault } from '@ember/object';
+import { get } from '@ember/object';
 import { run } from '@ember/runloop';
 import { inject as service } from '@ember/service';
 
@@ -24,7 +23,7 @@ export default class Router extends EmberRouterScroll {
     if (!get(this, 'fastboot.isFastBoot')) {
       run.scheduleOnce('afterRender', this, () => {
         const page = document.location.pathname;
-        const title = getWithDefault(this, 'currentRouteName', 'unknown');
+        const title = (this.currentRouteName === undefined ? 'unknown' : this.currentRouteName);
 
         if (typeof galite === 'undefined') {
           return;
