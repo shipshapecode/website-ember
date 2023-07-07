@@ -85,7 +85,7 @@
     "prember-rss-feed": "^1.5.0",
     "prember-sitemap-generator": "^0.1.1",
     "qunit-dom": "^1.6.0",
-    "stylelint": "^13.8.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-ship-shape": "^0.7.0",
     "tailwindcss": "^1.9.6",
     "yaml-front-matter": "^4.1.1"
